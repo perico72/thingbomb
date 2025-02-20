@@ -31,7 +31,14 @@ import {
   Timer,
   Volume2,
 } from "lucide-solid";
-import { createSignal, onMount, Show, untrack } from "solid-js";
+import {
+  createEffect,
+  createSignal,
+  onCleanup,
+  onMount,
+  Show,
+  untrack,
+} from "solid-js";
 import { createStoredSignal } from "./hooks/localStorage";
 import { cn } from "./libs/cn";
 import {
@@ -40,6 +47,7 @@ import {
   TextFieldRoot,
 } from "./components/ui/textfield";
 import { Button } from "./components/ui/button";
+import "prism-code-editor/prism/languages/css";
 import {
   Dialog,
   DialogContent,
@@ -63,6 +71,7 @@ import {
   SwitchThumb,
 } from "./components/ui/switch";
 import { updateWeatherManually } from "./hooks/weather";
+import { basicEditor } from "prism-code-editor/setups";
 
 interface PomodoroConfig {
   workMinutes: number;
@@ -276,6 +285,31 @@ function SettingsTrigger({
       }
     });
   });
+  let editor: any;
+
+  createEffect(() => {
+    const editorElement = document.getElementById("editor");
+
+    if (settingsMenu() === "advanced" && !editor) {
+      editor = basicEditor("#editor", {
+        language: "css",
+        theme: "github-dark",
+        value: userCSS(),
+        onUpdate: (value: string) => {
+          setUserCSS(value);
+          injectUserCSS(value);
+        },
+      });
+    }
+
+    onCleanup(() => {
+      if (editor && settingsMenu() != "advanced") {
+        editor.remove();
+        editor = null;
+      }
+    });
+  });
+
   function SettingsPage() {
     return (
       <div
@@ -1176,18 +1210,7 @@ function SettingsTrigger({
               <h3 class="text-lg font-[600]">
                 {chrome.i18n.getMessage("custom_css")}
               </h3>
-              <div class="flex gap-2 items-center">
-                <textarea
-                  class="mt-2 h-full w-full resize-none rounded-xl bg-black/10 p-3 text-sm text-white
-                    shadow-inner shadow-white/10 outline-none backdrop-blur-2xl focus:ring-2"
-                  value={userCSS()}
-                  placeholder={chrome.i18n.getMessage("custom_css")}
-                  onInput={(e) => {
-                    setUserCSS(e.currentTarget.value);
-                    injectUserCSS(e.currentTarget.value);
-                  }}
-                ></textarea>
-              </div>
+              <div id="editor" class="w-full !h-fit bg-transparent"></div>
               <br />
               <h3 class="text-lg font-[600]">
                 {chrome.i18n.getMessage("clear_data")}

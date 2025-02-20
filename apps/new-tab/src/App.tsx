@@ -892,7 +892,7 @@ const App: Component = () => {
       )}
       <div
         class={cn(
-          "fixed inset-0 overflow-hidden p-4",
+          "fixed inset-0 overflow-hidden p-4 !bg-cover",
           imageLoaded() ? "" : "bg-white dark:bg-[#1f1f1f]"
         )}
         id="background-container"
@@ -1199,8 +1199,10 @@ const App: Component = () => {
                   hover:backdrop-blur-3xl dark:focus-within:bg-black/20 dark:hover:bg-black/20`,
                   {
                     "opacity-0 hover:opacity-100": hideSettings(),
-                    "bottom-0": !selectedImage().location,
-                    "bottom-[8px]": selectedImage().location,
+                    "bottom-0":
+                      background() != "image" || !selectedImage().location,
+                    "bottom-[8px]":
+                      background() == "image" && selectedImage().location,
                   }
                 )}
               >
