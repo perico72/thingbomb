@@ -13,7 +13,8 @@
   "default_locale": "en",
   "description": "Flowtide is a beautiful new tab page for your browser.",
   "icons": {
-    "128": "assets/logo.png"
+    "128": "assets/logo-128.png",
+    "256": "assets/logo-256.png"
   },
   "manifest_version": 3,
   "name": "Flowtide - Beautiful New Tab",

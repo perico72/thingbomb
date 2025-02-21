@@ -163,14 +163,10 @@ function SettingsTrigger({
   const [font, setFont] = createStoredSignal("font", "sans");
   const [theme, setTheme] = createStoredSignal("kb-color-mode", "system");
   const [background, setBackground] = createStoredSignal("background", "image");
-  const [layout, setLayout] = createStoredSignal("layout", "center");
+  const [layout, setLayout] = createStoredSignal("layout", "top");
   const [clockFormat, setClockFormat] = createStoredSignal(
     "clockFormat",
     "12h"
-  );
-  const [squareWidgets, setSquareWidgets] = createStoredSignal(
-    "squareWidgets",
-    false
   );
   const [name, setName] = createStoredSignal("name", "");
   const [greetingNameValue, setGreetingNameValue] = createSignal(name());
@@ -343,6 +339,9 @@ function SettingsTrigger({
             onmousedown={() => {
               setSettingsMenu("general");
             }}
+            onclick={() => {
+              setSettingsMenu("general");
+            }}
           >
             <Settings
               height={20}
@@ -362,6 +361,9 @@ function SettingsTrigger({
               outline-none hover:bg-black/5 active:opacity-80 data-[selected]:bg-black/10
               data-[selected]:backdrop-blur-2xl dark:text-white dark:hover:bg-white/5
               dark:data-[selected]:bg-white/10`}
+            onclick={() => {
+              setSettingsMenu("appearance");
+            }}
           >
             <Palette
               height={20}
@@ -381,6 +383,9 @@ function SettingsTrigger({
               outline-none hover:bg-black/5 active:opacity-80 data-[selected]:bg-black/10
               data-[selected]:backdrop-blur-2xl dark:text-white dark:hover:bg-white/5
               dark:data-[selected]:bg-white/10`}
+            onclick={() => {
+              setSettingsMenu("background");
+            }}
           >
             <Image
               height={20}
@@ -401,6 +406,9 @@ function SettingsTrigger({
               outline-none hover:bg-black/5 active:opacity-80 data-[selected]:bg-black/10
               data-[selected]:backdrop-blur-2xl dark:text-white dark:hover:bg-white/5
               dark:data-[selected]:bg-white/10`}
+            onclick={() => {
+              setSettingsMenu("advanced");
+            }}
           >
             <Hammer
               height={20}
@@ -410,8 +418,185 @@ function SettingsTrigger({
           </button>
           <br />
           <button
+            {...(settingsMenu() == "bookmarks"
+              ? { "data-selected": "true" }
+              : "")}
+            onmousedown={() => {
+              setSettingsMenu("bookmarks");
+            }}
+            onclick={() => {
+              setSettingsMenu("bookmarks");
+            }}
+            id="bookmarksButton"
+            class={`flex items-center gap-2 rounded-lg px-4 py-2 text-left text-sm text-black
+              outline-none hover:bg-black/5 active:opacity-80 data-[selected]:bg-black/10
+              data-[selected]:backdrop-blur-2xl dark:text-white dark:hover:bg-white/5
+              dark:data-[selected]:bg-white/10`}
+          >
+            <Bookmark
+              height={20}
+              class="size-6 rounded-lg bg-purple-700 p-0.5 text-white"
+            />
+            {chrome.i18n.getMessage("bookmarks")}
+          </button>
+          <button
+            {...(settingsMenu() == "counter"
+              ? { "data-selected": "true" }
+              : "")}
+            onmousedown={() => {
+              setSettingsMenu("counter");
+            }}
+            onclick={() => {
+              setSettingsMenu("counter");
+            }}
+            id="counterButton"
+            class={`flex items-center gap-2 rounded-lg px-4 py-2 text-left text-sm text-black
+              outline-none hover:bg-black/5 active:opacity-80 data-[selected]:bg-black/10
+              data-[selected]:backdrop-blur-2xl dark:text-white dark:hover:bg-white/5
+              dark:data-[selected]:bg-white/10`}
+          >
+            <Plus
+              height={20}
+              class="size-6 rounded-lg bg-cyan-700 p-0.5 text-white"
+            />
+            {chrome.i18n.getMessage("counter")}
+          </button>
+          <button
+            {...(settingsMenu() == "date" ? { "data-selected": "true" } : "")}
+            onmousedown={() => {
+              setSettingsMenu("date");
+            }}
+            onclick={() => {
+              setSettingsMenu("date");
+            }}
+            id="dateButton"
+            class={`flex items-center gap-2 rounded-lg px-4 py-2 text-left text-sm text-black
+              outline-none hover:bg-black/5 active:opacity-80 data-[selected]:bg-black/10
+              data-[selected]:backdrop-blur-2xl dark:text-white dark:hover:bg-white/5
+              dark:data-[selected]:bg-white/10`}
+          >
+            <Calendar
+              height={20}
+              class="size-6 rounded-lg bg-amber-700 p-0.5 text-white"
+            />
+            {chrome.i18n.getMessage("date")}
+          </button>
+          <button
+            {...(settingsMenu() == "mantras"
+              ? { "data-selected": "true" }
+              : "")}
+            onmousedown={() => {
+              setSettingsMenu("mantras");
+            }}
+            onclick={() => {
+              setSettingsMenu("mantras");
+            }}
+            id="mantrasButton"
+            class={`flex items-center gap-2 rounded-lg px-4 py-2 text-left text-sm text-black
+              outline-none hover:bg-black/5 active:opacity-80 data-[selected]:bg-black/10
+              data-[selected]:backdrop-blur-2xl dark:text-white dark:hover:bg-white/5
+              dark:data-[selected]:bg-white/10`}
+          >
+            <Quote
+              height={20}
+              class="size-6 rounded-lg bg-orange-900 p-0.5 text-white"
+            />
+            {chrome.i18n.getMessage("mantras")}
+          </button>
+          <button
+            {...(settingsMenu() == "notepad"
+              ? { "data-selected": "true" }
+              : "")}
+            onmousedown={() => {
+              setSettingsMenu("notepad");
+            }}
+            onclick={() => {
+              setSettingsMenu("notepad");
+            }}
+            id="notepadButton"
+            class={`flex items-center gap-2 rounded-lg px-4 py-2 text-left text-sm text-black
+              outline-none hover:bg-black/5 active:opacity-80 data-[selected]:bg-black/10
+              data-[selected]:backdrop-blur-2xl dark:text-white dark:hover:bg-white/5
+              dark:data-[selected]:bg-white/10`}
+          >
+            <Notebook
+              height={20}
+              class="size-6 rounded-lg bg-white p-0.5 text-black"
+            />
+            {chrome.i18n.getMessage("notepad")}
+          </button>
+          <button
+            {...(settingsMenu() == "pomodoro"
+              ? { "data-selected": "true" }
+              : "")}
+            onmousedown={() => {
+              setSettingsMenu("pomodoro");
+            }}
+            onclick={() => {
+              setSettingsMenu("pomodoro");
+            }}
+            id="pomodoroButton"
+            class={`flex items-center gap-2 rounded-lg px-4 py-2 text-left text-sm text-black
+              outline-none hover:bg-black/5 active:opacity-80 data-[selected]:bg-black/10
+              data-[selected]:backdrop-blur-2xl dark:text-white dark:hover:bg-white/5
+              dark:data-[selected]:bg-white/10`}
+          >
+            <Clock
+              height={20}
+              class="size-6 rounded-lg bg-blue-700 p-0.5 text-white"
+            />
+            {chrome.i18n.getMessage("pomodoro")}
+          </button>
+          <button
+            {...(settingsMenu() == "soundscapes"
+              ? { "data-selected": "true" }
+              : "")}
+            onmousedown={() => {
+              setSettingsMenu("soundscapes");
+            }}
+            onclick={() => {
+              setSettingsMenu("soundscapes");
+            }}
+            id="soundscapesButton"
+            class={`flex items-center gap-2 rounded-lg px-4 py-2 text-left text-sm text-black
+              outline-none hover:bg-black/5 active:opacity-80 data-[selected]:bg-black/10
+              data-[selected]:backdrop-blur-2xl dark:text-white dark:hover:bg-white/5
+              dark:data-[selected]:bg-white/10`}
+          >
+            <Volume2
+              height={20}
+              class="size-6 rounded-lg bg-zinc-700 p-0.5 text-white"
+            />
+            {chrome.i18n.getMessage("soundscapes")}
+          </button>
+          <button
+            {...(settingsMenu() == "stopwatch"
+              ? { "data-selected": "true" }
+              : "")}
+            onmousedown={() => {
+              setSettingsMenu("stopwatch");
+            }}
+            onclick={() => {
+              setSettingsMenu("stopwatch");
+            }}
+            id="stopwatchButton"
+            class={`flex items-center gap-2 rounded-lg px-4 py-2 text-left text-sm text-black
+              outline-none hover:bg-black/5 active:opacity-80 data-[selected]:bg-black/10
+              data-[selected]:backdrop-blur-2xl dark:text-white dark:hover:bg-white/5
+              dark:data-[selected]:bg-white/10`}
+          >
+            <Timer
+              height={20}
+              class="size-6 rounded-lg bg-orange-500 p-0.5 text-white"
+            />
+            {chrome.i18n.getMessage("stopwatch")}
+          </button>
+          <button
             {...(settingsMenu() == "todos" ? { "data-selected": "true" } : "")}
             onmousedown={() => {
+              setSettingsMenu("todos");
+            }}
+            onclick={() => {
               setSettingsMenu("todos");
             }}
             id="todosButton"
@@ -444,156 +629,6 @@ function SettingsTrigger({
               class="size-6 rounded-lg bg-orange-700 p-0.5 text-white"
             />
             {chrome.i18n.getMessage("weather")}
-          </button>
-          <button
-            {...(settingsMenu() == "notepad"
-              ? { "data-selected": "true" }
-              : "")}
-            onmousedown={() => {
-              setSettingsMenu("notepad");
-            }}
-            id="notepadButton"
-            class={`flex items-center gap-2 rounded-lg px-4 py-2 text-left text-sm text-black
-              outline-none hover:bg-black/5 active:opacity-80 data-[selected]:bg-black/10
-              data-[selected]:backdrop-blur-2xl dark:text-white dark:hover:bg-white/5
-              dark:data-[selected]:bg-white/10`}
-          >
-            <Notebook
-              height={20}
-              class="size-6 rounded-lg bg-white p-0.5 text-black"
-            />
-            {chrome.i18n.getMessage("notepad")}
-          </button>
-          <button
-            {...(settingsMenu() == "date" ? { "data-selected": "true" } : "")}
-            onmousedown={() => {
-              setSettingsMenu("date");
-            }}
-            id="dateButton"
-            class={`flex items-center gap-2 rounded-lg px-4 py-2 text-left text-sm text-black
-              outline-none hover:bg-black/5 active:opacity-80 data-[selected]:bg-black/10
-              data-[selected]:backdrop-blur-2xl dark:text-white dark:hover:bg-white/5
-              dark:data-[selected]:bg-white/10`}
-          >
-            <Calendar
-              height={20}
-              class="size-6 rounded-lg bg-amber-700 p-0.5 text-white"
-            />
-            {chrome.i18n.getMessage("date")}
-          </button>
-          <button
-            {...(settingsMenu() == "bookmarks"
-              ? { "data-selected": "true" }
-              : "")}
-            onmousedown={() => {
-              setSettingsMenu("bookmarks");
-            }}
-            id="bookmarksButton"
-            class={`flex items-center gap-2 rounded-lg px-4 py-2 text-left text-sm text-black
-              outline-none hover:bg-black/5 active:opacity-80 data-[selected]:bg-black/10
-              data-[selected]:backdrop-blur-2xl dark:text-white dark:hover:bg-white/5
-              dark:data-[selected]:bg-white/10`}
-          >
-            <Bookmark
-              height={20}
-              class="size-6 rounded-lg bg-purple-700 p-0.5 text-white"
-            />
-            {chrome.i18n.getMessage("bookmarks")}
-          </button>
-          <button
-            {...(settingsMenu() == "counter"
-              ? { "data-selected": "true" }
-              : "")}
-            onmousedown={() => {
-              setSettingsMenu("counter");
-            }}
-            id="counterButton"
-            class={`flex items-center gap-2 rounded-lg px-4 py-2 text-left text-sm text-black
-              outline-none hover:bg-black/5 active:opacity-80 data-[selected]:bg-black/10
-              data-[selected]:backdrop-blur-2xl dark:text-white dark:hover:bg-white/5
-              dark:data-[selected]:bg-white/10`}
-          >
-            <Plus
-              height={20}
-              class="size-6 rounded-lg bg-cyan-700 p-0.5 text-white"
-            />
-            {chrome.i18n.getMessage("counter")}
-          </button>
-          <button
-            {...(settingsMenu() == "stopwatch"
-              ? { "data-selected": "true" }
-              : "")}
-            onmousedown={() => {
-              setSettingsMenu("stopwatch");
-            }}
-            id="stopwatchButton"
-            class={`flex items-center gap-2 rounded-lg px-4 py-2 text-left text-sm text-black
-              outline-none hover:bg-black/5 active:opacity-80 data-[selected]:bg-black/10
-              data-[selected]:backdrop-blur-2xl dark:text-white dark:hover:bg-white/5
-              dark:data-[selected]:bg-white/10`}
-          >
-            <Timer
-              height={20}
-              class="size-6 rounded-lg bg-orange-500 p-0.5 text-white"
-            />
-            {chrome.i18n.getMessage("stopwatch")}
-          </button>
-          <button
-            {...(settingsMenu() == "pomodoro"
-              ? { "data-selected": "true" }
-              : "")}
-            onmousedown={() => {
-              setSettingsMenu("pomodoro");
-            }}
-            id="pomodoroButton"
-            class={`flex items-center gap-2 rounded-lg px-4 py-2 text-left text-sm text-black
-              outline-none hover:bg-black/5 active:opacity-80 data-[selected]:bg-black/10
-              data-[selected]:backdrop-blur-2xl dark:text-white dark:hover:bg-white/5
-              dark:data-[selected]:bg-white/10`}
-          >
-            <Clock
-              height={20}
-              class="size-6 rounded-lg bg-blue-700 p-0.5 text-white"
-            />
-            {chrome.i18n.getMessage("pomodoro")}
-          </button>
-          <button
-            {...(settingsMenu() == "soundscapes"
-              ? { "data-selected": "true" }
-              : "")}
-            onmousedown={() => {
-              setSettingsMenu("soundscapes");
-            }}
-            id="soundscapesButton"
-            class={`flex items-center gap-2 rounded-lg px-4 py-2 text-left text-sm text-black
-              outline-none hover:bg-black/5 active:opacity-80 data-[selected]:bg-black/10
-              data-[selected]:backdrop-blur-2xl dark:text-white dark:hover:bg-white/5
-              dark:data-[selected]:bg-white/10`}
-          >
-            <Volume2
-              height={20}
-              class="size-6 rounded-lg bg-zinc-700 p-0.5 text-white"
-            />
-            {chrome.i18n.getMessage("soundscapes")}
-          </button>
-          <button
-            {...(settingsMenu() == "mantras"
-              ? { "data-selected": "true" }
-              : "")}
-            onmousedown={() => {
-              setSettingsMenu("mantras");
-            }}
-            id="mantrasButton"
-            class={`flex items-center gap-2 rounded-lg px-4 py-2 text-left text-sm text-black
-              outline-none hover:bg-black/5 active:opacity-80 data-[selected]:bg-black/10
-              data-[selected]:backdrop-blur-2xl dark:text-white dark:hover:bg-white/5
-              dark:data-[selected]:bg-white/10`}
-          >
-            <Quote
-              height={20}
-              class="size-6 rounded-lg bg-orange-900 p-0.5 text-white"
-            />
-            {chrome.i18n.getMessage("mantras")}
           </button>
         </div>
         <div class="h-full w-full overflow-y-auto p-10 pt-6 pr-10">
@@ -887,54 +922,6 @@ function SettingsTrigger({
                   }}
                   icon={<span class="!text-5xl font-bold">24h</span>}
                 />
-              </div>
-              <br />
-              <br />
-              <h3 class="text-lg font-[600]">
-                {chrome.i18n.getMessage("date_format")}
-              </h3>
-              <div class="card-group grid-cols-2 grid-rows-1">
-                <BigButton
-                  {...(dateFormat() === "normal"
-                    ? { "data-selected": true }
-                    : {})}
-                  onmousedown={() => {
-                    setDateFormat("normal");
-                  }}
-                  icon={<span class="!text-5xl font-bold">Normal</span>}
-                />
-                <BigButton
-                  {...(dateFormat() === "iso-8601"
-                    ? { "data-selected": true }
-                    : {})}
-                  onmousedown={() => {
-                    setDateFormat("iso-8601");
-                  }}
-                  icon={<span class="!text-5xl font-bold">ISO-8601</span>}
-                />
-              </div>
-              <br />
-              <br />
-              <h3 class="mb-2 text-lg font-[600]">
-                {chrome.i18n.getMessage("square_widgets")}
-              </h3>
-              <div class="flex">
-                <input
-                  type="checkbox"
-                  class="mt-0.5 shrink-0 rounded border-gray-200 text-blue-600 focus:ring-blue-500
-                    disabled:pointer-events-none disabled:opacity-50 dark:border-neutral-700
-                    dark:bg-neutral-800 dark:checked:border-blue-500 dark:checked:bg-blue-500
-                    dark:focus:ring-offset-gray-800"
-                  id="sw-checked-checkbox"
-                  onChange={(e) => setSquareWidgets(e.currentTarget.checked)}
-                  checked={actuallyBoolean(squareWidgets())}
-                />
-                <label
-                  for="sw-checked-checkbox"
-                  class="ms-3 text-sm text-gray-800 dark:text-neutral-400"
-                >
-                  {chrome.i18n.getMessage("square_widgets_description")}
-                </label>
               </div>
               <br />
               <br />
@@ -1277,6 +1264,35 @@ function SettingsTrigger({
                   {chrome.i18n.getMessage("enabled")}
                 </SwitchLabel>
               </Switch>
+              {actuallyBoolean(dateContained()) && (
+                <div>
+                  <br />
+                  <span class="text-sm">
+                    {chrome.i18n.getMessage("date_format")}
+                  </span>
+                  <Switch
+                    class="flex items-center space-x-2"
+                    checked={dateFormat() == "iso-8601"}
+                    onChange={(value: boolean) => {
+                      if (value) {
+                        setDateFormat("iso-8601");
+                      } else {
+                        setDateFormat("normal");
+                      }
+                    }}
+                  >
+                    <SwitchControl>
+                      <SwitchThumb />
+                    </SwitchControl>
+                    <SwitchLabel
+                      class="text-sm font-medium leading-none data-[disabled]:cursor-not-allowed
+                        data-[disabled]:opacity-70"
+                    >
+                      ISO-8601
+                    </SwitchLabel>
+                  </Switch>
+                </div>
+              )}
             </>
           )}
           {settingsMenu() === "todos" && (
@@ -1624,9 +1640,9 @@ function SettingsTrigger({
                   {chrome.i18n.getMessage("enabled")}
                 </SwitchLabel>
               </Switch>
-              <br />
-              {pomodoroContained() && (
+              {actuallyBoolean(pomodoroContained()) && (
                 <div>
+                  <br />
                   <TextFieldRoot class="mt-1 flex-1">
                     <span class="text-sm font-medium text-muted-foreground">
                       {chrome.i18n.getMessage("work_minutes")}

@@ -28,7 +28,7 @@ import {
 import { v4 as uuidv4 } from "uuid";
 import { TodoPopover } from "./Widgets";
 import data from "../public/_locales/en/messages.json";
-import images from "./images";
+import images from "./libs/images";
 import { cn } from "./libs/cn";
 import { SettingsTrigger } from "./Settings";
 import {
@@ -39,33 +39,33 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "./components/ui/dialog";
-import { createStoredSignal } from "./hooks/localStorage";
-import { TextField, TextFieldRoot } from "./components/ui/textfield";
-import { CommandPalette } from "./components/ui/cmd";
-import { formattedClock } from "./hooks/clockFormatter";
+import { createStoredSignal } from "@/hooks/localStorage";
+import { TextField, TextFieldRoot } from "@/components/ui/textfield";
+import { CommandPalette } from "@/components/ui/cmd";
+import { formattedClock } from "@/hooks/clockFormatter";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "./components/ui/dropdown-menu";
+} from "@/components/ui/dropdown-menu";
 import { DropdownMenuSubTriggerProps } from "@kobalte/core/dropdown-menu";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "./components/ui/popover";
+} from "@/components/ui/popover";
 import { PopoverTriggerProps } from "@kobalte/core/popover";
-import soundscapes, { Soundscape } from "./soundscapes";
-import { actuallyBoolean } from "./libs/boolean";
-import { useWeather } from "./hooks/weather";
+import soundscapes, { Soundscape } from "@/libs/soundscapes";
+import { actuallyBoolean } from "@/libs/boolean";
+import { useWeather } from "@/hooks/weather";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "./components/ui/select";
+} from "@/components/ui/select";
 import { SelectItemProps } from "@kobalte/core/select";
 
 type MessageKeys = keyof typeof data;
@@ -232,10 +232,6 @@ const App: Component = () => {
     "hideSettings",
     false
   );
-  const [squareWidgets, setSquareWidgets] = createStoredSignal(
-    "squareWidgets",
-    false
-  );
   const [userCSS] = createStoredSignal("userCSS", "");
   const [currentlyPlaying, setCurrentlyPlaying] = createSignal<any>(null);
   const [pageIconURL] = createStoredSignal("iconUrl", "assets/logo.png");
@@ -243,15 +239,18 @@ const App: Component = () => {
   const [selectedColor] = createSignal(
     colorPalette[Math.floor(Math.random() * colorPalette.length)]
   );
-  const [clockFormat, setClockFormat] = createStoredSignal("clockFormat", "");
+  const [clockFormat, setClockFormat] = createStoredSignal(
+    "clockFormat",
+    "12h"
+  );
   const [notepad, setNotepad] = createStoredSignal<string>("notepad", "");
-  const [layout] = createStoredSignal("layout", "center");
+  const [layout] = createStoredSignal("layout", "top");
   const [currentFont, setFont] = createStoredSignal("font", "sans");
   const [background, setBackground] = createStoredSignal("background", "image");
   const [name, setName] = createStoredSignal("name", "");
   const [bookmarks, setBookmarks] = createSignal<any[]>([]);
   const [pageTitle, setPageTitle] = createStoredSignal("pageTitle", "");
-  const [textStyle] = createStoredSignal("textStyle", "normal");
+  const [textStyle, setTextStyle] = createStoredSignal("textStyle", "normal");
   const [color] = createStoredSignal("color", "unset");
   const [opacity] = createStoredSignal("opacity", "0.8");
   const [wallpaperBlur] = createStoredSignal<number>("wallpaperBlur", 0);
@@ -275,7 +274,7 @@ const App: Component = () => {
   });
   const [dateContained, setDateContained] = createStoredSignal(
     "dateContained",
-    true
+    false
   );
   const [counterContained, setCounterContained] = createStoredSignal(
     "counterContained",
@@ -546,151 +545,195 @@ const App: Component = () => {
   };
   const OnboardingScreen2: Component = () => {
     return (
-      <div class="overflow-y-auto max-h-[70%]">
-        <h1 class="text-[26px] font-semibold m-0 p-0">
-          {chrome.i18n.getMessage("customize")}
-        </h1>
-        <p class="text-[#4D4842] dark:text-[#B2B7BD] text-[15px]">
-          {chrome.i18n.getMessage("customize_desc")}
-        </p>
-        <br />
-        <span class="text-sm">{chrome.i18n.getMessage("background")}</span>
-        <Select
-          options={["image", "solid_color", "gradient", "blank"]}
-          placeholder={chrome.i18n.getMessage("background")}
-          defaultValue={background().replaceAll("-", "_")}
-          onChange={(value: string | null) => {
-            if (value == "image") {
-              setBackground("image");
-              return;
-            }
-            if (value == "solid_color") {
-              setBackground("solid-color");
-              return;
-            }
-            if (value == "gradient") {
-              setBackground("gradient");
-              return;
-            }
-            if (value == "blank") {
-              setBackground("blank");
-              return;
-            }
-          }}
-          itemComponent={(props: SelectItemProps) => (
-            <SelectItem
-              item={props.item}
-              class={cn({
-                "!font-sans": props.item.rawValue == "sans",
-                "!font-serif": props.item.rawValue == "serif",
-                "!font-mono": props.item.rawValue == "mono",
-                "!font-comic-sans": props.item.rawValue == "comic_sans",
-              })}
-            >
-              {chrome.i18n.getMessage(
-                props.item.rawValue as "sans" | "serif" | "mono" | "comic_sans"
-              )}
-            </SelectItem>
-          )}
-        >
-          <SelectTrigger class="w-[180px] bg-[#DFDEDC] dark:bg-[#111113]">
-            <SelectValue<string>>
-              {(state: any) =>
-                chrome.i18n.getMessage(
-                  state.selectedOption() as
+      <div class="h-full grid grid-rows-[calc(100%-38px)_38px]">
+        <div class="overflow-y-auto">
+          <h1 class="text-[26px] font-semibold m-0 p-0">
+            {chrome.i18n.getMessage("customize")}
+          </h1>
+          <p class="text-[#4D4842] dark:text-[#B2B7BD] text-[15px]">
+            {chrome.i18n.getMessage("customize_desc")}
+          </p>
+          <br />
+          <span class="text-sm">{chrome.i18n.getMessage("background")}</span>
+          <Select
+            options={["image", "solid_color", "gradient", "blank"]}
+            placeholder={chrome.i18n.getMessage("background")}
+            defaultValue={background().replaceAll("-", "_")}
+            onChange={(value: string | null) => {
+              if (value == "image") {
+                setBackground("image");
+                return;
+              }
+              if (value == "solid_color") {
+                setBackground("solid-color");
+                return;
+              }
+              if (value == "gradient") {
+                setBackground("gradient");
+                return;
+              }
+              if (value == "blank") {
+                setBackground("blank");
+                return;
+              }
+            }}
+            itemComponent={(props: SelectItemProps) => (
+              <SelectItem
+                item={props.item}
+                class={cn({
+                  "!font-sans": props.item.rawValue == "sans",
+                  "!font-serif": props.item.rawValue == "serif",
+                  "!font-mono": props.item.rawValue == "mono",
+                  "!font-comic-sans": props.item.rawValue == "comic_sans",
+                })}
+              >
+                {chrome.i18n.getMessage(
+                  props.item.rawValue as
                     | "sans"
                     | "serif"
                     | "mono"
                     | "comic_sans"
-                )
+                )}
+              </SelectItem>
+            )}
+          >
+            <SelectTrigger class="w-[180px] bg-[#DFDEDC] dark:bg-[#111113]">
+              <SelectValue<string>>
+                {(state: any) =>
+                  chrome.i18n.getMessage(
+                    state.selectedOption() as
+                      | "sans"
+                      | "serif"
+                      | "mono"
+                      | "comic_sans"
+                  )
+                }
+              </SelectValue>
+            </SelectTrigger>
+            <SelectContent class="bg-[#DFDEDC] dark:bg-[#111113]" />
+          </Select>
+          <br />
+          <span class="text-sm">{chrome.i18n.getMessage("font")}</span>
+          <Select
+            options={["sans", "serif", "mono", "comic_sans"]}
+            placeholder={chrome.i18n.getMessage("select_font")}
+            defaultValue={currentFont()}
+            onChange={(value: string | null) => {
+              if (value == "sans") {
+                setFont("sans");
+                return;
               }
-            </SelectValue>
-          </SelectTrigger>
-          <SelectContent class="bg-[#DFDEDC] dark:bg-[#111113]" />
-        </Select>
-        <br />
-        <span class="text-sm">{chrome.i18n.getMessage("font")}</span>
-        <Select
-          options={["sans", "serif", "mono", "comic_sans"]}
-          placeholder={chrome.i18n.getMessage("select_font")}
-          defaultValue={currentFont()}
-          onChange={(value: string | null) => {
-            if (value == "sans") {
-              setFont("sans");
-              return;
-            }
-            if (value == "serif") {
-              setFont("serif");
-              return;
-            }
-            if (value == "mono") {
-              setFont("mono");
-              return;
-            }
-            if (value == "comic_sans") {
-              setFont("comic-sans");
-              return;
-            }
-          }}
-          itemComponent={(props: SelectItemProps) => (
-            <SelectItem
-              item={props.item}
-              class={cn({
-                "!font-sans": props.item.rawValue == "sans",
-                "!font-serif": props.item.rawValue == "serif",
-                "!font-mono": props.item.rawValue == "mono",
-                "!font-comic-sans": props.item.rawValue == "comic_sans",
-              })}
-            >
-              {chrome.i18n.getMessage(
-                props.item.rawValue as "sans" | "serif" | "mono" | "comic_sans"
-              )}
-            </SelectItem>
-          )}
-        >
-          <SelectTrigger class="w-[180px] bg-[#DFDEDC] dark:bg-[#111113]">
-            <SelectValue<string>>
-              {(state: any) =>
-                chrome.i18n.getMessage(
-                  state.selectedOption() as
+              if (value == "serif") {
+                setFont("serif");
+                return;
+              }
+              if (value == "mono") {
+                setFont("mono");
+                return;
+              }
+              if (value == "comic_sans") {
+                setFont("comic-sans");
+                return;
+              }
+            }}
+            itemComponent={(props: SelectItemProps) => (
+              <SelectItem
+                item={props.item}
+                class={cn({
+                  "!font-sans": props.item.rawValue == "sans",
+                  "!font-serif": props.item.rawValue == "serif",
+                  "!font-mono": props.item.rawValue == "mono",
+                  "!font-comic-sans": props.item.rawValue == "comic_sans",
+                })}
+              >
+                {chrome.i18n.getMessage(
+                  props.item.rawValue as
                     | "sans"
                     | "serif"
                     | "mono"
                     | "comic_sans"
-                )
+                )}
+              </SelectItem>
+            )}
+          >
+            <SelectTrigger class="w-[180px] bg-[#DFDEDC] dark:bg-[#111113]">
+              <SelectValue<string>>
+                {(state: any) =>
+                  chrome.i18n.getMessage(
+                    state.selectedOption() as
+                      | "sans"
+                      | "serif"
+                      | "mono"
+                      | "comic_sans"
+                  )
+                }
+              </SelectValue>
+            </SelectTrigger>
+            <SelectContent class="bg-[#DFDEDC] dark:bg-[#111113]" />
+          </Select>
+          <br />
+          <span class="text-sm">{chrome.i18n.getMessage("clock_format")}</span>
+          <Select
+            options={["12h", "24h"]}
+            placeholder={chrome.i18n.getMessage("clock_format")}
+            defaultValue={clockFormat()}
+            onChange={(value: string | null) => {
+              if (value == "12h") {
+                setClockFormat("12h");
+                return;
               }
-            </SelectValue>
-          </SelectTrigger>
-          <SelectContent class="bg-[#DFDEDC] dark:bg-[#111113]" />
-        </Select>
-        <br />
-        <span class="text-sm">{chrome.i18n.getMessage("clock_format")}</span>
-        <Select
-          options={["12h", "24h"]}
-          placeholder={chrome.i18n.getMessage("clock_format")}
-          defaultValue={clockFormat()}
-          onChange={(value: string | null) => {
-            if (value == "12h") {
-              setClockFormat("12h");
-              return;
-            }
-            if (value == "24h") {
-              setClockFormat("24h");
-              return;
-            }
-          }}
-          itemComponent={(props: SelectItemProps) => (
-            <SelectItem item={props.item}>{props.item.rawValue}</SelectItem>
-          )}
-        >
-          <SelectTrigger class="w-[180px] bg-[#DFDEDC] dark:bg-[#111113]">
-            <SelectValue<string>>
-              {(state: any) => state.selectedOption()}
-            </SelectValue>
-          </SelectTrigger>
-          <SelectContent class="bg-[#DFDEDC] dark:bg-[#111113]" />
-        </Select>
-        <div class="flex items-center gap-2 p-7.5 absolute bottom-0 left-0 right-0 bg-transparent">
+              if (value == "24h") {
+                setClockFormat("24h");
+                return;
+              }
+            }}
+            itemComponent={(props: SelectItemProps) => (
+              <SelectItem item={props.item}>{props.item.rawValue}</SelectItem>
+            )}
+          >
+            <SelectTrigger class="w-[180px] bg-[#DFDEDC] dark:bg-[#111113]">
+              <SelectValue<string>>
+                {(state: any) => state.selectedOption()}
+              </SelectValue>
+            </SelectTrigger>
+            <SelectContent class="bg-[#DFDEDC] dark:bg-[#111113]" />
+          </Select>
+          <br />
+          <span class="text-sm">{chrome.i18n.getMessage("text_style")}</span>
+          <Select
+            options={["normal", "lowercase", "uppercase"]}
+            placeholder={chrome.i18n.getMessage("text_style")}
+            defaultValue={textStyle()}
+            onChange={(value: string | null) => {
+              if (value == "lowercase") {
+                setTextStyle("lowercase");
+                return;
+              }
+              if (value == "uppercase") {
+                setTextStyle("uppercase");
+                return;
+              }
+              if (value == "normal") {
+                setTextStyle("normal");
+                return;
+              }
+            }}
+            itemComponent={(props: SelectItemProps) => (
+              <SelectItem item={props.item}>
+                {chrome.i18n.getMessage(props.item.rawValue)}
+              </SelectItem>
+            )}
+          >
+            <SelectTrigger class="w-[180px] bg-[#DFDEDC] dark:bg-[#111113]">
+              <SelectValue<string>>
+                {(state: any) => chrome.i18n.getMessage(state.selectedOption())}
+              </SelectValue>
+            </SelectTrigger>
+            <SelectContent class="bg-[#DFDEDC] dark:bg-[#111113]" />
+          </Select>
+          <br />
+        </div>
+        <div class="flex items-center gap-2 bg-[#18191B] pt-2">
           <Button
             variant={"outline"}
             class="px-2.5"
@@ -763,7 +806,14 @@ const App: Component = () => {
     return (
       <Dialog open={true}>
         <DialogContent
-          class={cn("max-h-[550px] max-w-[800px]")}
+          class={cn("max-h-[550px] max-w-[800px]", {
+            "**:!font-sans": currentFont() == "sans",
+            "**:!font-serif": currentFont() == "serif",
+            "**:!font-mono": currentFont() == "mono",
+            "**:!font-comic-sans": currentFont() == "comic-sans",
+            "**:!lowercase": textStyle() == "lowercase",
+            "**:!uppercase": textStyle() == "uppercase",
+          })}
           overlayClass="!backdrop-blur-xl"
         >
           <div
@@ -1322,8 +1372,14 @@ const App: Component = () => {
             <Show when={itemsHidden() == "false"}>
               <div
                 id="bottom-center-widgets-container"
-                class="text-md fixed bottom-0 left-0 right-0 -z-50 m-2.5 flex !h-[36px] items-center
-                  justify-center gap-2 text-center font-medium"
+                class={cn(
+                  `text-md fixed bottom-0 left-0 right-0 -z-50 m-2.5 flex !h-[36px] items-center
+                  justify-center gap-2 text-center font-medium`,
+                  {
+                    "bottom-[8px]":
+                      background() == "image" && selectedImage().location,
+                  }
+                )}
               >
                 <Show when={actuallyBoolean(mantrasContained())}>
                   <p class="text-white">
@@ -1435,56 +1491,56 @@ const App: Component = () => {
                 </div>
               </Show>
               <p class="mt-3 text-3xl font-medium text-white">
-                <Show when={name() == ""}>
-                  <Show when={actuallyBoolean(dateContained())}>
-                    {dateFormat() == "normal" ? (
-                      <span id="nightstandDay">
-                        {
-                          [
-                            "Sunday",
-                            "Monday",
-                            "Tuesday",
-                            "Wednesday",
-                            "Thursday",
-                            "Friday",
-                            "Saturday",
-                          ][new Date().getDay()]
-                        }
-                        ,{" "}
-                        {
-                          [
-                            "January",
-                            "February",
-                            "March",
-                            "April",
-                            "May",
-                            "June",
-                            "July",
-                            "August",
-                            "September",
-                            "October",
-                            "November",
-                            "December",
-                          ][new Date().getMonth()]
-                        }{" "}
-                        {new Date().getDate()}
-                      </span>
-                    ) : (
-                      <span id="nightstandDay">
-                        {new Date().toISOString().split("T")[0]}
-                      </span>
-                    )}
-                  </Show>
+                <Show when={actuallyBoolean(dateContained())}>
+                  {dateFormat() == "normal" ? (
+                    <span id="nightstandDay">
+                      {
+                        [
+                          "Sunday",
+                          "Monday",
+                          "Tuesday",
+                          "Wednesday",
+                          "Thursday",
+                          "Friday",
+                          "Saturday",
+                        ][new Date().getDay()]
+                      }
+                      ,{" "}
+                      {
+                        [
+                          "January",
+                          "February",
+                          "March",
+                          "April",
+                          "May",
+                          "June",
+                          "July",
+                          "August",
+                          "September",
+                          "October",
+                          "November",
+                          "December",
+                        ][new Date().getMonth()]
+                      }{" "}
+                      {new Date().getDate()}
+                    </span>
+                  ) : (
+                    <span id="nightstandDay">
+                      {new Date().toISOString().split("T")[0]}
+                    </span>
+                  )}
                 </Show>
                 <Show when={name() != ""}>
-                  {new Date().getHours() < 12
-                    ? new Date().getHours() >= 5
-                      ? chrome.i18n.getMessage("good_morning")
-                      : chrome.i18n.getMessage("good_night")
-                    : new Date().getHours() < 18
-                      ? chrome.i18n.getMessage("good_afternoon")
-                      : chrome.i18n.getMessage("good_evening")}
-                  , {name()}.
+                  <span class="block">
+                    {new Date().getHours() < 12
+                      ? new Date().getHours() >= 5
+                        ? chrome.i18n.getMessage("good_morning")
+                        : chrome.i18n.getMessage("good_night")
+                      : new Date().getHours() < 18
+                        ? chrome.i18n.getMessage("good_afternoon")
+                        : chrome.i18n.getMessage("good_evening")}
+                    , {name()}.
+                  </span>
                 </Show>
               </p>
               <Show when={bookmarksContained()}>

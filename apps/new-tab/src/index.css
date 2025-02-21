@@ -194,7 +194,7 @@ button[disabled=""] {
   transition: all 0.1s ease-in-out;
 }
 
-.dark .button {
+html[data-kb-theme="dark"] .button {
   background-color: #edeef0;
   border-radius: 8.55px;
   height: 30.6px;
@@ -204,7 +204,7 @@ button[disabled=""] {
   transition: all 0.1s ease-in-out;
 }
 
-.dark .button:hover {
+html[data-kb-theme="dark"] .button:hover {
   border: 1px solid #fff;
   background-color: #fff !important;
 }
@@ -218,7 +218,7 @@ button[disabled=""] {
   gap: 4px;
   transition: all 0.1s ease-in-out;
 }
-.dark .button-outline {
+html[data-kb-theme="dark"] .button-outline {
   background-color: #1f2123;
   border-radius: 8.55px;
   height: 30.6px;
@@ -233,7 +233,7 @@ button[disabled=""] {
   background-color: #dfdedc !important;
 }
 
-.dark .button-outline:hover {
+html[data-kb-theme="dark"] .button-outline:hover {
   border: 1px solid #3d4447;
   background-color: #202123 !important;
 }
