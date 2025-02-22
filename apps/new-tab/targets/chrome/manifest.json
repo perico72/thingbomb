@@ -15,8 +15,8 @@
   "description": "Flowtide is a beautiful new tab page for your browser.",
   "host_permissions": ["https://www.flowtide.app/*"],
   "icons": {
-    "128": "assets/logo-128.png",
-    "256": "assets/logo-256.png"
+    "128": "assets/icon-128.png",
+    "256": "assets/icon-256.png"
   },
   "manifest_version": 3,
   "name": "Flowtide - Beautiful New Tab",
