@@ -276,6 +276,10 @@ const App: Component = () => {
     "dateContained",
     false
   );
+  const [clockContained, setClockContained] = createStoredSignal(
+    "clockContained",
+    true
+  );
   const [counterContained, setCounterContained] = createStoredSignal(
     "counterContained",
     false
@@ -1259,7 +1263,8 @@ const App: Component = () => {
                   focus-within:bg-white/20 focus-within:backdrop-blur-3xl hover:bg-white/20
                   hover:backdrop-blur-3xl dark:focus-within:bg-black/20 dark:hover:bg-black/20`,
                   {
-                    "opacity-0 hover:opacity-100": hideSettings(),
+                    "opacity-0 hover:opacity-100":
+                      actuallyBoolean(hideSettings()),
                     "bottom-0":
                       background() != "image" || !selectedImage().location,
                     "bottom-[8px]":
@@ -1492,13 +1497,15 @@ const App: Component = () => {
               <Show
                 when={actuallyBoolean(pomodoroContained())}
                 fallback={
-                  <h1
-                    class="m-0 p-0 text-[170px] font-semibold text-white [line-height:1.2]
-                      tracking-[-0.06em]"
-                    id="nightstandClock"
-                  >
-                    {clock().time}
-                  </h1>
+                  <Show when={actuallyBoolean(clockContained())}>
+                    <h1
+                      class="m-0 p-0 text-[170px] font-semibold text-white [line-height:1.2]
+                        tracking-[-0.06em]"
+                      id="nightstandClock"
+                    >
+                      {clock().time}
+                    </h1>
+                  </Show>
                 }
               >
                 <div class="flex flex-col items-center justify-center">

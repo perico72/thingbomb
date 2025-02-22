@@ -209,6 +209,10 @@ function SettingsTrigger({
     "dateContained",
     false
   );
+  const [clockContained, setClockContained] = createStoredSignal(
+    "clockContained",
+    true
+  );
   const [counterContained, setCounterContained] = createStoredSignal(
     "counterContained",
     false
@@ -438,6 +442,26 @@ function SettingsTrigger({
               class="size-6 rounded-lg bg-purple-700 p-0.5 text-white"
             />
             {chrome.i18n.getMessage("bookmarks")}
+          </button>
+          <button
+            {...(settingsMenu() == "clock" ? { "data-selected": "true" } : "")}
+            onmousedown={() => {
+              setSettingsMenu("clock");
+            }}
+            onclick={() => {
+              setSettingsMenu("clock");
+            }}
+            id="clockButton"
+            class={`flex items-center gap-2 rounded-lg px-4 py-2 text-left text-sm text-black
+              outline-none hover:bg-black/5 active:opacity-80 data-[selected]:bg-black/10
+              data-[selected]:backdrop-blur-2xl dark:text-white dark:hover:bg-white/5
+              dark:data-[selected]:bg-white/10`}
+          >
+            <Clock
+              height={20}
+              class="size-6 rounded-lg bg-teal-700 p-0.5 text-white"
+            />
+            {chrome.i18n.getMessage("clock")}
           </button>
           <button
             {...(settingsMenu() == "counter"
@@ -940,33 +964,6 @@ function SettingsTrigger({
                   onclick={() => setTextStyle("lowercase")}
                   title={chrome.i18n.getMessage("lowercase")}
                   icon={<span class="!text-5xl font-bold !lowercase">aa</span>}
-                />
-              </div>
-              <br />
-              <br />
-              <h3 class="text-lg font-[600]">
-                {chrome.i18n.getMessage("clock_format")}
-              </h3>
-              <div class="card-group grid-cols-2 grid-rows-1">
-                <BigButton
-                  {...(clockFormat() === "12h"
-                    ? { "data-selected": true }
-                    : {})}
-                  onmousedown={() => {
-                    setClockFormat("12h");
-                  }}
-                  onclick={() => setClockFormat("12h")}
-                  icon={<span class="!text-5xl font-bold">12h</span>}
-                />
-                <BigButton
-                  {...(clockFormat() === "24h"
-                    ? { "data-selected": true }
-                    : {})}
-                  onmousedown={() => {
-                    setClockFormat("24h");
-                  }}
-                  onclick={() => setClockFormat("24h")}
-                  icon={<span class="!text-5xl font-bold">24h</span>}
                 />
               </div>
               <br />
@@ -1934,6 +1931,57 @@ function SettingsTrigger({
                   {chrome.i18n.getMessage("enabled")}
                 </SwitchLabel>
               </Switch>
+            </>
+          )}
+          {settingsMenu() === "clock" && (
+            <>
+              <h3 class="text-lg font-[600] mb-2">
+                {chrome.i18n.getMessage("clock")}
+              </h3>
+              <Switch
+                class="flex items-center space-x-2"
+                checked={actuallyBoolean(clockContained())}
+                onChange={(value: boolean) => {
+                  setClockContained(value);
+                }}
+              >
+                <SwitchControl>
+                  <SwitchThumb />
+                </SwitchControl>
+                <SwitchLabel
+                  class="text-sm font-medium leading-none data-[disabled]:cursor-not-allowed
+                    data-[disabled]:opacity-70"
+                >
+                  {chrome.i18n.getMessage("enabled")}
+                </SwitchLabel>
+              </Switch>
+              {actuallyBoolean(clockContained()) && (
+                <div>
+                  <br />
+                  <span class="text-sm">
+                    {chrome.i18n.getMessage("clock_format")}
+                  </span>
+                  <RadioGroup
+                    defaultValue={clockFormat()}
+                    onChange={(value: string) => {
+                      setClockFormat(value);
+                    }}
+                  >
+                    <RadioGroupItem value="12h" class="flex items-center gap-2">
+                      <RadioGroupItemControl />
+                      <RadioGroupItemLabel class="text-sm">
+                        12h
+                      </RadioGroupItemLabel>
+                    </RadioGroupItem>
+                    <RadioGroupItem value="24h" class="flex items-center gap-2">
+                      <RadioGroupItemControl />
+                      <RadioGroupItemLabel class="text-sm">
+                        24h
+                      </RadioGroupItemLabel>
+                    </RadioGroupItem>
+                  </RadioGroup>
+                </div>
+              )}
             </>
           )}
           {settingsMenu() === "counter" && (
