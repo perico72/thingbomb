@@ -730,6 +730,11 @@ function SettingsTrigger({
                         (e.currentTarget as HTMLInputElement)?.value
                       )
                     }
+                    onkeydown={(e: KeyboardEvent) => {
+                      if (e.key == "Enter") {
+                        setName(greetingNameValue());
+                      }
+                    }}
                   />
                   <br />
                   <span class="text-muted-foreground text-sm">
@@ -762,6 +767,16 @@ function SettingsTrigger({
                         (e.currentTarget as HTMLInputElement)?.value
                       )
                     }
+                    onkeydown={(e: KeyboardEvent) => {
+                      if (e.key == "Enter") {
+                        setPageIcon(pageIconValue());
+                        setPageIconURL(
+                          pageIconValue() == ""
+                            ? "assets/logo.png"
+                            : textToImage(pageIconValue())
+                        );
+                      }
+                    }}
                   />
                   <TextField
                     placeholder={chrome.i18n.getMessage("new_tab")}
@@ -772,6 +787,11 @@ function SettingsTrigger({
                         (e.currentTarget as HTMLInputElement)?.value
                       )
                     }
+                    onkeydown={(e: KeyboardEvent) => {
+                      if (e.key == "Enter") {
+                        setPageTitle(pageTitleValue());
+                      }
+                    }}
                   />
                 </TextFieldRoot>
                 <Button
@@ -1413,6 +1433,39 @@ function SettingsTrigger({
                           (e.currentTarget as HTMLInputElement)?.value
                         )
                       }
+                      onkeydown={(e: KeyboardEvent) => {
+                        if (e.key == "Enter") {
+                          setLocationCityValue(locationCityValue());
+                          fetch(
+                            `https://geocoding-api.open-meteo.com/v1/search?name=${locationCityValue()}&count=10&language=en&format=json`
+                          )
+                            .then((response) => response.json())
+                            .then((data) => {
+                              if (data.results.length > 0) {
+                                setLocationCityValue("");
+                                setCity(data.results[0].name);
+                                setLatitudeInput(data.results[0].latitude);
+                                setLongitudeInput(data.results[0].longitude);
+                                (document.getElementById(
+                                  "latitude-input"
+                                ) as HTMLInputElement)!.value =
+                                  data.results[0].latitude;
+                                (document.getElementById(
+                                  "longitude-input"
+                                ) as HTMLInputElement)!.value =
+                                  data.results[0].longitude;
+                                setLocation([
+                                  data.results[0].latitude,
+                                  data.results[0].longitude,
+                                ]);
+                                updateWeatherManually(
+                                  data.results[0].latitude,
+                                  data.results[0].longitude
+                                );
+                              }
+                            });
+                        }
+                      }}
                     />
                     <Button
                       onClick={() => {
@@ -1468,6 +1521,20 @@ function SettingsTrigger({
                             (e.currentTarget as HTMLInputElement)?.value
                           )
                         }
+                        onkeydown={(e: KeyboardEvent) => {
+                          if (e.key == "Enter") {
+                            setCity("");
+                            setLocationCityValue("");
+                            setLocation([
+                              Number(latitudeInput()),
+                              Number(longitudeInput()),
+                            ]);
+                            updateWeatherManually(
+                              Number(latitudeInput()),
+                              Number(longitudeInput())
+                            );
+                          }
+                        }}
                         id="latitude-input"
                       />
                     </TextFieldRoot>
@@ -1482,6 +1549,20 @@ function SettingsTrigger({
                             (e.currentTarget as HTMLInputElement)?.value
                           )
                         }
+                        onkeydown={(e: KeyboardEvent) => {
+                          if (e.key == "Enter") {
+                            setCity("");
+                            setLocationCityValue("");
+                            setLocation([
+                              Number(latitudeInput()),
+                              Number(longitudeInput()),
+                            ]);
+                            updateWeatherManually(
+                              Number(latitudeInput()),
+                              Number(longitudeInput())
+                            );
+                          }
+                        }}
                         id="longitude-input"
                       />
                     </TextFieldRoot>
