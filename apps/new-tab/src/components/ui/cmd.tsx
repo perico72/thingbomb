@@ -314,6 +314,22 @@ export function CommandPalette(props: any) {
                 });
               }, 2000);
             }}
+            onclick={() => {
+              const copiedResult = result().result;
+              setResult({
+                result: chrome.i18n.getMessage("copied_to_clipboard"),
+                copied: true,
+                expression: result().expression,
+              });
+              navigator.clipboard.writeText(String(copiedResult));
+              setTimeout(() => {
+                setResult({
+                  result: copiedResult,
+                  copied: false,
+                  expression: result().expression,
+                });
+              }, 2000);
+            }}
           >
             <span class="text-2xl font-bold">{result().result}</span>
           </div>

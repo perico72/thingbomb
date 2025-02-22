@@ -533,6 +533,10 @@ const App: Component = () => {
               setOnboardingScreen(2);
               setName(greetingNameValue());
             }}
+            onclick={() => {
+              setOnboardingScreen(2);
+              setName(greetingNameValue());
+            }}
           >
             {greetingNameValue() == ""
               ? chrome.i18n.getMessage("skip")
@@ -739,6 +743,7 @@ const App: Component = () => {
             class="px-2.5"
             onMouseDown={() => setOnboardingScreen(1)}
             title={chrome.i18n.getMessage("go_back")}
+            onclick={() => setOnboardingScreen(1)}
           >
             <ArrowLeft class="transition-transform group-hover:translate-x-1 size-[13.3px]" />
           </Button>
@@ -747,6 +752,7 @@ const App: Component = () => {
             onmousedown={() => {
               setOnboardingScreen(3);
             }}
+            onclick={() => setOnboardingScreen(3)}
           >
             {chrome.i18n.getMessage("next")}
             <ArrowRight class="transition-transform group-hover:translate-x-1 size-[13.3px]" />
@@ -785,6 +791,7 @@ const App: Component = () => {
             class="px-2.5"
             onMouseDown={() => setOnboardingScreen(2)}
             title={chrome.i18n.getMessage("go_back")}
+            onclick={() => setOnboardingScreen(2)}
           >
             <ArrowLeft class="transition-transform group-hover:translate-x-1 size-[13.3px]" />
           </Button>
@@ -793,6 +800,7 @@ const App: Component = () => {
             onmousedown={() => {
               setNeedsOnboarding(true);
             }}
+            onclick={() => setNeedsOnboarding(true)}
           >
             {chrome.i18n.getMessage("finish")}
             <ArrowRight class="transition-transform group-hover:translate-x-1 size-[13.3px]" />
@@ -1189,6 +1197,7 @@ const App: Component = () => {
                 >
                   <button
                     onmousedown={() => setCounter(Number(counter()) - 1)}
+                    onclick={() => setCounter(Number(counter()) - 1)}
                     class="text-sm font-semibold"
                   >
                     <Minus class="h-5 w-5" fill="currentColor" />
@@ -1196,6 +1205,7 @@ const App: Component = () => {
                   <p class="select-none text-sm font-semibold">{counter()}</p>
                   <button
                     onmousedown={() => setCounter(Number(counter()) + 1)}
+                    onclick={() => setCounter(Number(counter()) + 1)}
                     class="text-sm font-semibold"
                   >
                     <Plus class="h-5 w-5" fill="currentColor" />
@@ -1212,6 +1222,7 @@ const App: Component = () => {
                   </p>
                   <button
                     onmousedown={() => setStopwatchRunning(!stopwatchRunning())}
+                    onclick={() => setStopwatchRunning(!stopwatchRunning())}
                   >
                     {stopwatchRunning() ? (
                       <Pause class="h-5 w-5" fill="currentColor" />
@@ -1267,6 +1278,9 @@ const App: Component = () => {
                   onmousedown={() => {
                     setItemsHidden(itemsHidden() == "true" ? "false" : "true");
                   }}
+                  onclick={() => {
+                    setItemsHidden(itemsHidden() == "true" ? "false" : "true");
+                  }}
                 >
                   {itemsHidden() == "true" ? <EyeOff /> : <Eye />}
                 </button>
@@ -1280,6 +1294,44 @@ const App: Component = () => {
                         : chrome.i18n.getMessage("pause_background_changes")
                     }
                     onmousedown={() => {
+                      if (backgroundPaused() == "true") {
+                        setBackgroundPaused("false");
+                      } else {
+                        setSelectedImage({
+                          url: (
+                            document.getElementById(
+                              "wallpaper"
+                            ) as HTMLImageElement
+                          ).src,
+                          expiry: Infinity,
+                          author: document
+                            .getElementById("wallpaper")!
+                            .getAttribute("data-author")
+                            ? JSON.parse(
+                                document
+                                  .getElementById("wallpaper")!
+                                  .getAttribute("data-author") as string | "{}"
+                              )
+                            : undefined,
+                          location: document
+                            .getElementById("wallpaper")!
+                            .getAttribute("data-location")
+                            ? document
+                                .getElementById("wallpaper")!
+                                .getAttribute("data-location")
+                            : undefined,
+                          directLink: document
+                            .getElementById("wallpaper")!
+                            .getAttribute("data-direct-link")
+                            ? document
+                                .getElementById("wallpaper")!
+                                .getAttribute("data-direct-link")
+                            : undefined,
+                        });
+                        setBackgroundPaused("true");
+                      }
+                    }}
+                    onclick={() => {
                       if (backgroundPaused() == "true") {
                         setBackgroundPaused("false");
                       } else {
@@ -1470,6 +1522,12 @@ const App: Component = () => {
                           playing: !pomodoro().playing,
                         })
                       }
+                      onclick={() =>
+                        setPomodoro({
+                          ...pomodoro(),
+                          playing: !pomodoro().playing,
+                        })
+                      }
                       title={
                         pomodoro().playing
                           ? chrome.i18n.getMessage("stop")
@@ -1556,6 +1614,14 @@ const App: Component = () => {
                       <a
                         href={bookmark.url}
                         onmousedown={(e) => {
+                          e.preventDefault();
+                          if (!(e.ctrlKey || e.metaKey)) {
+                            window.location.href = bookmark.url;
+                          } else {
+                            window.open(bookmark.url);
+                          }
+                        }}
+                        onclick={(e) => {
                           e.preventDefault();
                           if (!(e.ctrlKey || e.metaKey)) {
                             window.location.href = bookmark.url;

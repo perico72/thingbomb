@@ -618,6 +618,7 @@ function SettingsTrigger({
             onmousedown={() => {
               setSettingsMenu("weather");
             }}
+            onclick={() => setSettingsMenu("weather")}
             id="weatherButton"
             class={`flex items-center gap-2 rounded-lg px-4 py-2 text-left text-sm text-black
               outline-none hover:bg-black/5 active:opacity-80 data-[selected]:bg-black/10
@@ -646,6 +647,7 @@ function SettingsTrigger({
                     onmousedown={() => {
                       setLayout("top-left");
                     }}
+                    onclick={() => setLayout("top-left")}
                     title={chrome.i18n.getMessage("top_left")}
                     icon={
                       <ArrowUpLeft class="size-[64px]" fill="currentColor" />
@@ -656,6 +658,7 @@ function SettingsTrigger({
                     onmousedown={() => {
                       setLayout("top");
                     }}
+                    onclick={() => setLayout("top")}
                     title={chrome.i18n.getMessage("top")}
                     icon={<ArrowUp class="size-[64px]" fill="currentColor" />}
                   />
@@ -666,6 +669,7 @@ function SettingsTrigger({
                     onmousedown={() => {
                       setLayout("top-right");
                     }}
+                    onclick={() => setLayout("top-right")}
                     title={chrome.i18n.getMessage("top_right")}
                     icon={
                       <ArrowUpRight class="size-[64px]" fill="currentColor" />
@@ -678,6 +682,7 @@ function SettingsTrigger({
                     onmousedown={() => {
                       setLayout("bottom-left");
                     }}
+                    onclick={() => setLayout("bottom-left")}
                     title={chrome.i18n.getMessage("bottom_left")}
                     icon={
                       <ArrowDownLeft class="size-[64px]" fill="currentColor" />
@@ -690,6 +695,7 @@ function SettingsTrigger({
                     onmousedown={() => {
                       setLayout("center");
                     }}
+                    onclick={() => setLayout("center")}
                     title={chrome.i18n.getMessage("center")}
                     icon={<Dot class="size-[64px]" fill="currentColor" />}
                   />
@@ -700,6 +706,7 @@ function SettingsTrigger({
                     onmousedown={() => {
                       setLayout("bottom-right");
                     }}
+                    onclick={() => setLayout("bottom-right")}
                     title={chrome.i18n.getMessage("bottom_right")}
                     icon={
                       <ArrowDownRight class="size-[64px]" fill="currentColor" />
@@ -731,6 +738,7 @@ function SettingsTrigger({
                 </TextFieldRoot>
                 <Button
                   onmousedown={() => setName(greetingNameValue())}
+                  onclick={() => setName(greetingNameValue())}
                   disabled={name() == greetingNameValue()}
                 >
                   {name() == greetingNameValue()
@@ -768,6 +776,15 @@ function SettingsTrigger({
                 </TextFieldRoot>
                 <Button
                   onmousedown={() => {
+                    setPageTitle(pageTitleValue());
+                    setPageIcon(pageIconValue());
+                    setPageIconURL(
+                      pageIconValue() == ""
+                        ? "assets/logo.png"
+                        : textToImage(pageIconValue())
+                    );
+                  }}
+                  onclick={() => {
                     setPageTitle(pageTitleValue());
                     setPageIcon(pageIconValue());
                     setPageIconURL(
@@ -827,6 +844,7 @@ function SettingsTrigger({
                   onmousedown={() => {
                     setFont("sans");
                   }}
+                  onclick={() => setFont("sans")}
                   title={chrome.i18n.getMessage("sans")}
                   icon={<span class="!font-sans !text-5xl font-bold">Aa</span>}
                 />
@@ -835,6 +853,7 @@ function SettingsTrigger({
                   onmousedown={() => {
                     setFont("serif");
                   }}
+                  onclick={() => setFont("serif")}
                   title={chrome.i18n.getMessage("serif")}
                   icon={<span class="!font-serif !text-5xl font-bold">Aa</span>}
                 />
@@ -843,6 +862,7 @@ function SettingsTrigger({
                   onmousedown={() => {
                     setFont("mono");
                   }}
+                  onclick={() => setFont("mono")}
                   title={chrome.i18n.getMessage("mono")}
                   icon={<span class="!font-mono !text-5xl font-bold">Aa</span>}
                 />
@@ -853,6 +873,7 @@ function SettingsTrigger({
                   onmousedown={() => {
                     setFont("comic-sans");
                   }}
+                  onclick={() => setFont("comic-sans")}
                   title={chrome.i18n.getMessage("comic_sans")}
                   icon={
                     <span class="!font-comic-sans !text-5xl font-bold">Aa</span>
@@ -872,6 +893,7 @@ function SettingsTrigger({
                   onmousedown={() => {
                     setTextStyle("uppercase");
                   }}
+                  onclick={() => setTextStyle("uppercase")}
                   title={chrome.i18n.getMessage("uppercase")}
                   icon={<span class="!text-5xl font-bold !uppercase">AA</span>}
                 />
@@ -882,6 +904,7 @@ function SettingsTrigger({
                   onmousedown={() => {
                     setTextStyle("normal");
                   }}
+                  onclick={() => setTextStyle("normal")}
                   title={chrome.i18n.getMessage("normal")}
                   icon={
                     <span class="!text-5xl font-bold !normal-case">Aa</span>
@@ -894,6 +917,7 @@ function SettingsTrigger({
                   onmousedown={() => {
                     setTextStyle("lowercase");
                   }}
+                  onclick={() => setTextStyle("lowercase")}
                   title={chrome.i18n.getMessage("lowercase")}
                   icon={<span class="!text-5xl font-bold !lowercase">aa</span>}
                 />
@@ -911,6 +935,7 @@ function SettingsTrigger({
                   onmousedown={() => {
                     setClockFormat("12h");
                   }}
+                  onclick={() => setClockFormat("12h")}
                   icon={<span class="!text-5xl font-bold">12h</span>}
                 />
                 <BigButton
@@ -920,6 +945,7 @@ function SettingsTrigger({
                   onmousedown={() => {
                     setClockFormat("24h");
                   }}
+                  onclick={() => setClockFormat("24h")}
                   icon={<span class="!text-5xl font-bold">24h</span>}
                 />
               </div>
@@ -961,6 +987,7 @@ function SettingsTrigger({
                   onmousedown={() => {
                     setBackground("image");
                   }}
+                  onclick={() => setBackground("image")}
                   title={chrome.i18n.getMessage("image")}
                   icon={<Image class="size-[64px]" fill="none" />}
                 />
@@ -971,6 +998,7 @@ function SettingsTrigger({
                   onmousedown={() => {
                     setBackground("solid-color");
                   }}
+                  onclick={() => setBackground("solid-color")}
                   title={chrome.i18n.getMessage("solid_color")}
                   icon={<PaintBucket class="size-[64px]" fill="none" />}
                 />
@@ -981,6 +1009,7 @@ function SettingsTrigger({
                   onmousedown={() => {
                     setBackground("gradient");
                   }}
+                  onclick={() => setBackground("gradient")}
                   title={chrome.i18n.getMessage("gradient")}
                   icon={<Sunrise class="size-[64px]" fill="none" />}
                 />
@@ -991,6 +1020,7 @@ function SettingsTrigger({
                   onmousedown={() => {
                     setBackground("blank");
                   }}
+                  onclick={() => setBackground("blank")}
                   title={chrome.i18n.getMessage("blank")}
                   icon={<Square class="size-[64px]" fill="none" />}
                 />
@@ -1001,6 +1031,7 @@ function SettingsTrigger({
                   onmousedown={() => {
                     setBackground("custom-url");
                   }}
+                  onclick={() => setBackground("custom-url")}
                   title={chrome.i18n.getMessage("custom_url")}
                   icon={<Link class="size-[64px]" fill="none" />}
                 />
@@ -1011,6 +1042,7 @@ function SettingsTrigger({
                   onmousedown={() => {
                     setBackground("local-file");
                   }}
+                  onclick={() => setBackground("local-file")}
                   title={chrome.i18n.getMessage("local_file")}
                   icon={<File class="size-[64px]" fill="none" />}
                 />
@@ -1123,6 +1155,10 @@ function SettingsTrigger({
                     localStorage.removeItem("selectedImage");
                     setWallpaperChangeTime(1);
                   }}
+                  onclick={() => {
+                    localStorage.removeItem("selectedImage");
+                    setWallpaperChangeTime(1);
+                  }}
                   title={chrome.i18n.getMessage("every_reload")}
                   icon={<RefreshCcw class="size-[64px]" fill="none" />}
                 />
@@ -1131,6 +1167,10 @@ function SettingsTrigger({
                     ? { "data-selected": true }
                     : {})}
                   onmousedown={() => {
+                    localStorage.removeItem("selectedImage");
+                    setWallpaperChangeTime(1000 * 60 * 60);
+                  }}
+                  onclick={() => {
                     localStorage.removeItem("selectedImage");
                     setWallpaperChangeTime(1000 * 60 * 60);
                   }}
@@ -1145,6 +1185,10 @@ function SettingsTrigger({
                     localStorage.removeItem("selectedImage");
                     setWallpaperChangeTime(1000 * 60 * 60 * 24);
                   }}
+                  onclick={() => {
+                    localStorage.removeItem("selectedImage");
+                    setWallpaperChangeTime(1000 * 60 * 60 * 24);
+                  }}
                   title={chrome.i18n.getMessage("every_day")}
                   icon={<Calendar1 class="size-[64px]" fill="none" />}
                 />
@@ -1153,6 +1197,10 @@ function SettingsTrigger({
                     ? { "data-selected": true }
                     : {})}
                   onmousedown={() => {
+                    localStorage.removeItem("selectedImage");
+                    setWallpaperChangeTime(1000 * 60 * 60 * 24 * 7);
+                  }}
+                  onclick={() => {
                     localStorage.removeItem("selectedImage");
                     setWallpaperChangeTime(1000 * 60 * 60 * 24 * 7);
                   }}
