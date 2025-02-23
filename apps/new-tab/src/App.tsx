@@ -503,7 +503,7 @@ const App: Component = () => {
           {chrome.i18n.getMessage("welcome_message")}
         </h1>
         <p class="text-[#4D4842] dark:text-[#B2B7BD] text-[15px]">
-          {chrome.i18n.getMessage("greeting_description")}
+          {chrome.i18n.getMessage("greeting_description_1")}
         </p>
         <br />
         <TextFieldRoot class="flex-1">

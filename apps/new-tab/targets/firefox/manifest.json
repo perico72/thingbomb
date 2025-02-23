@@ -10,14 +10,21 @@
   "chrome_url_overrides": {
     "newtab": "index.html"
   },
+  "content_scripts": [
+    {
+      "matches": ["https://www.flowtide.app/plugins/*"],
+      "js": ["content.js"]
+    }
+  ],
   "default_locale": "en",
   "description": "Flowtide is a beautiful and modern new tab page for your browser. Dark customization, modern design, tools, and more.",
+  "host_permissions": ["https://www.flowtide.app/*"],
   "icons": {
     "128": "assets/icon-128.png",
     "256": "assets/icon-256.png"
   },
   "manifest_version": 3,
   "name": "Flowtide - Beautiful New Tab",
-  "permissions": ["bookmarks"],
+  "permissions": ["bookmarks", "storage"],
   "version": "4.0.0"
 }

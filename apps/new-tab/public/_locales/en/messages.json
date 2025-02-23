@@ -290,7 +290,7 @@
   "greeting": {
     "message": "Greeting"
   },
-  "greeting_description": {
+  "greeting_description_1": {
     "message": "What should we call you?"
   },
   "hide_items": {
@@ -460,6 +460,9 @@
   },
   "pinned_bookmarks": {
     "message": "Pinned bookmarks"
+  },
+  "plugins": {
+    "message": "Plugins"
   },
   "pomodoro": {
     "message": "Pomodoro"

@@ -5,7 +5,7 @@ import plugins from "../../plugins/plugins/items.json";
 interface Plugin {
   title: string;
   description: string;
-  url: string;
+  url: string[];
   author: {
     name: string;
     url: string;
@@ -23,13 +23,13 @@ export async function getStaticPaths() {
 ---
 
 {
-  typedPlugins[Astro.params.pluginId].url.startsWith(
-    "data:text/css;base64,"
-  ) ? (
+  typedPlugins[Astro.params.pluginId].url[
+    typedPlugins[Astro.params.pluginId].url.length - 1
+  ].startsWith("data:text/css;base64,") ? (
     <PluginItem
       title={typedPlugins[Astro.params.pluginId].title}
       description={typedPlugins[Astro.params.pluginId].description}
-      url={typedPlugins[Astro.params.pluginId].url}
+      url={JSON.stringify(typedPlugins[Astro.params.pluginId].url)}
       author={typedPlugins[Astro.params.pluginId].author}
     />
   ) : (
