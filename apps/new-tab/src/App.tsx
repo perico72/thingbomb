@@ -1037,13 +1037,19 @@ const App: Component = () => {
                   </DropdownMenuContent>
                 </DropdownMenu>
               </Show>
-              <Show when={natureSounds() || focusSounds() || ambienceSounds()}>
+              <Show
+                when={actuallyBoolean(
+                  natureSounds() ||
+                    actuallyBoolean(focusSounds()) ||
+                    actuallyBoolean(ambienceSounds())
+                )}
+              >
                 <DropdownMenu placement="bottom">
                   <DropdownMenuTrigger
                     as={(props: DropdownMenuSubTriggerProps) => (
                       <Button
                         variant="outline"
-                        class="!bg-transparent text-sm !shadow-none hover:!bg-zinc-700"
+                        class="!bg-transparent text-sm !shadow-none hover:!bg-zinc-700 !border-none"
                         {...props}
                       >
                         <Volume2 class="h-4 w-4 text-gray-300" />
@@ -1065,7 +1071,7 @@ const App: Component = () => {
                           View sound credits
                         </DropdownMenuItem>
                         <br />
-                        <Show when={natureSounds()}>
+                        <Show when={actuallyBoolean(natureSounds())}>
                           <span class="select-none p-2 pb-5 pt-5 text-sm font-semibold">
                             {chrome.i18n.getMessage("nature_sounds")}
                           </span>
@@ -1097,8 +1103,8 @@ const App: Component = () => {
                               </DropdownMenuItem>
                             ))}
                         </Show>
-                        <Show when={focusSounds()}>
-                          {natureSounds() && <br />}
+                        <Show when={actuallyBoolean(focusSounds())}>
+                          {actuallyBoolean(natureSounds()) && <br />}
                           <span class="select-none p-2 pb-5 pt-5 text-sm font-semibold">
                             {chrome.i18n.getMessage("focus_sounds")}
                           </span>
@@ -1136,8 +1142,9 @@ const App: Component = () => {
                               </DropdownMenuItem>
                             ))}
                         </Show>
-                        <Show when={ambienceSounds()}>
-                          {(focusSounds() || natureSounds()) && <br />}
+                        <Show when={actuallyBoolean(ambienceSounds())}>
+                          {(actuallyBoolean(focusSounds()) ||
+                            actuallyBoolean(natureSounds())) && <br />}
                           <span class="select-none p-2 pb-5 pt-5 text-sm font-medium">
                             {chrome.i18n.getMessage("ambience_sounds")}
                           </span>
@@ -1608,7 +1615,7 @@ const App: Component = () => {
                   </span>
                 </Show>
               </p>
-              <Show when={bookmarksContained()}>
+              <Show when={actuallyBoolean(bookmarksContained())}>
                 <Show when={safeParse(bookmarksShown(), bookmarksShown())[0]}>
                   <br />
                   <div class="flex gap-2 flex-wrap justify-center">

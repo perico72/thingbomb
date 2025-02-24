@@ -1,7 +1,12 @@
 async function checkIfUrlIsAlreadySaved(url) {
   return new Promise((resolve) => {
     chrome.storage.local.get({ dataUrls: [] }, (result) => {
-      resolve(result.dataUrls.some((item) => item.includes(url)));
+      result.dataUrls.forEach((item) => {
+        if (item.includes(url)) {
+          resolve(true);
+        }
+      });
+      resolve(false);
     });
   });
 }
