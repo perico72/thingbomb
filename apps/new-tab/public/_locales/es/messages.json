@@ -240,10 +240,10 @@
     "message": "Solicitud de funciones"
   },
   "feedback_callout": {
-    "message": "Necesitamos su opinión."
+    "message": "¡Necesitamos su opinión!"
   },
   "feedback_callout_desc": {
-    "message": "Ayúdenos a dar forma al futuro de Flowtide y díganos qué quiere ver a continuación. Nos encantará conocer tu opinión."
+    "message": "Ayúdenos a dar forma al futuro de Flowtide y díganos qué quiere ver a continuación. ¡Nos encantará conocer tu opinión!"
   },
   "file_read_error": {
     "message": "No hemos podido leer el archivo. Por favor, inténtelo de nuevo."
