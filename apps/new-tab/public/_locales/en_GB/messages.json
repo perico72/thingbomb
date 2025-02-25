@@ -14,6 +14,9 @@
   "added": {
     "message": "Added"
   },
+  "advanced": {
+    "message": "Advanced"
+  },
   "ambience": {
     "message": "Ambience"
   },
@@ -25,6 +28,9 @@
   },
   "appearance": {
     "message": "Appearance"
+  },
+  "available_bookmarks": {
+    "message": "Available bookmarks"
   },
   "background": {
     "message": "Background"
@@ -47,11 +53,20 @@
   "bookmarks_description": {
     "message": "Easy access to your first 9 bookmarks with this widget."
   },
+  "bottom_left": {
+    "message": "Bottom left"
+  },
+  "bottom_right": {
+    "message": "Bottom right"
+  },
   "break": {
     "message": "Break"
   },
   "break_minutes": {
     "message": "Break minutes"
+  },
+  "cancel": {
+    "message": "Cancel"
   },
   "center": {
     "message": "Center"
@@ -61,6 +76,12 @@
   },
   "choose_mode": {
     "message": "Choose a mode"
+  },
+  "clear_data": {
+    "message": "Clear data"
+  },
+  "clear_data_description": {
+    "message": "Clear all data from the extension. THIS CANNOT BE UNDONE."
   },
   "clock": {
     "message": "Clock"
@@ -77,11 +98,17 @@
   "comic_sans": {
     "message": "Comic Sans"
   },
+  "community_desc": {
+    "message": "Join the Flowtide community on Discord to showcase your work, ask questions, test new features, and chat with the community."
+  },
   "complete": {
     "message": "Complete"
   },
   "compose_gmail_message": {
     "message": "Compose Gmail Message"
+  },
+  "coordinates": {
+    "message": "Coordinates"
   },
   "copied_to_clipboard": {
     "message": "Copied to clipboard"
@@ -149,11 +176,23 @@
   "custom_color": {
     "message": "Custom color"
   },
+  "custom_css": {
+    "message": "Custom CSS"
+  },
   "custom_url": {
     "message": "Custom URL"
   },
+  "customize": {
+    "message": "Customize your new tab"
+  },
+  "customize_desc": {
+    "message": "Give your New Tab a personal touch with a variety of customization options. These are just a few options; the possibilities are almost limitless."
+  },
   "dark": {
     "message": "Dark"
+  },
+  "dashboard": {
+    "message": "Dashboard"
   },
   "date": {
     "message": "Date"
@@ -164,8 +203,20 @@
   "date_format": {
     "message": "Date format"
   },
+  "default": {
+    "message": "Default"
+  },
+  "discord": {
+    "message": "Join the Discord"
+  },
+  "display_name": {
+    "message": "Display name"
+  },
   "edit_the_pomodoro_settings": {
     "message": "Edit the pomodoro settings."
+  },
+  "enabled": {
+    "message": "Enabled"
   },
   "enter_greeting": {
     "message": "Enter greeting"
@@ -188,6 +239,21 @@
   "feature_request": {
     "message": "Feature request"
   },
+  "feedback_callout": {
+    "message": "We need your feedback!"
+  },
+  "feedback_callout_desc": {
+    "message": "Help us shape the future of Flowtide and tell us what you want to see next. We'd love to hear from you!"
+  },
+  "file_read_error": {
+    "message": "We couldn't read the file. Please try again."
+  },
+  "file_too_large": {
+    "message": "File too large (max size is ~2.5 MB)"
+  },
+  "finish": {
+    "message": "Finish"
+  },
   "focus": {
     "message": "Focus"
   },
@@ -209,6 +275,9 @@
   "get_started": {
     "message": "Get started"
   },
+  "give_feedback": {
+    "message": "Give feedback"
+  },
   "go_back": {
     "message": "Go back"
   },
@@ -228,10 +297,16 @@
     "message": "Gradient"
   },
   "greeting": {
-    "message": "Set up a greeting"
+    "message": "Greeting"
+  },
+  "greeting_description_1": {
+    "message": "What should we call you?"
   },
   "hide_items": {
     "message": "Hide items"
+  },
+  "hide_message": {
+    "message": "Hide message"
   },
   "hide_settings": {
     "message": "Hide settings button"
@@ -245,6 +320,18 @@
   "image": {
     "message": "Image"
   },
+  "imperial": {
+    "message": "Imperial"
+  },
+  "invalid_file_type": {
+    "message": "Invalid file type. Please upload an image file."
+  },
+  "join_the_community": {
+    "message": "Join the community"
+  },
+  "latitude": {
+    "message": "Latitude"
+  },
   "layout": {
     "message": "Layout"
   },
@@ -256,6 +343,12 @@
   },
   "local_file": {
     "message": "Local file"
+  },
+  "location": {
+    "message": "Location"
+  },
+  "longitude": {
+    "message": "Longitude"
   },
   "lowercase": {
     "message": "Lowercase"
@@ -311,6 +404,9 @@
   "mantras_description": {
     "message": "Inspirational mantras on every new tab."
   },
+  "metric": {
+    "message": "Metric"
+  },
   "mode": {
     "message": "Mode"
   },
@@ -338,8 +434,14 @@
   "new_wallpaper": {
     "message": "New wallpaper"
   },
+  "next": {
+    "message": "Next"
+  },
   "nightstand": {
-    "message": "Night stand"
+    "message": "Nightstand"
+  },
+  "no_bookmarks": {
+    "message": "No bookmarks"
   },
   "no_results": {
     "message": "No results found"
@@ -367,6 +469,12 @@
   },
   "pause_background_changes": {
     "message": "Pause background changes"
+  },
+  "pinned_bookmarks": {
+    "message": "Pinned bookmarks"
+  },
+  "plugins": {
+    "message": "Plugins"
   },
   "pomodoro": {
     "message": "Pomodoro"
@@ -398,8 +506,14 @@
   "search": {
     "message": "Search"
   },
+  "select_font": {
+    "message": "Select a font"
+  },
   "serif": {
     "message": "Serif"
+  },
+  "set": {
+    "message": "Set"
   },
   "set_greeting": {
     "message": "Set greeting"
@@ -414,10 +528,13 @@
     "message": "Skip"
   },
   "solid_color": {
-    "message": "Solid colour"
+    "message": "Solid color"
   },
   "sound_attribution": {
     "message": "Sound attribution"
+  },
+  "soundscapes": {
+    "message": "Soundscapes"
   },
   "speed_dial": {
     "message": "Speed Dial"
@@ -446,8 +563,14 @@
   "stopwatch_description": {
     "message": "Add a stopwatch widget to your start page."
   },
+  "tasks": {
+    "message": "Tasks"
+  },
   "text_style": {
     "message": "Text style"
+  },
+  "thanks": {
+    "message": "Thank you for using Flowtide!"
   },
   "theme": {
     "message": "Theme"
@@ -456,7 +579,7 @@
     "message": "To-do list"
   },
   "todo_list_description": {
-    "message": "Track your to-dos with an easy widget."
+    "message": "Track your todos with an easy widget."
   },
   "toggle_theme": {
     "message": "Toggle theme"
@@ -464,14 +587,29 @@
   "top": {
     "message": "Top"
   },
+  "top_left": {
+    "message": "Top left"
+  },
+  "top_right": {
+    "message": "Top right"
+  },
   "type_command": {
     "message": "Type a command"
+  },
+  "unit": {
+    "message": "Unit"
   },
   "uppercase": {
     "message": "Uppercase"
   },
   "wallpaper_blur": {
     "message": "Wallpaper blur"
+  },
+  "weather": {
+    "message": "Weather"
+  },
+  "weatherDisclaimer": {
+    "message": "<a href=\"$1\">Weather data by Open-Meteo.com</a>. Weather data is provided 'as-is' without any warranty or guarantee of accuracy. Location data is handled by Open-Meteo and subject to their privacy policy."
   },
   "welcome_message": {
     "message": "Welcome to Flowtide"
