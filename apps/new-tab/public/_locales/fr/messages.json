@@ -14,6 +14,9 @@
   "added": {
     "message": "Ajouté"
   },
+  "advanced": {
+    "message": "Avancé"
+  },
   "ambience": {
     "message": "Ambiance"
   },
@@ -26,11 +29,14 @@
   "appearance": {
     "message": "Apparence"
   },
+  "available_bookmarks": {
+    "message": "Signets disponibles"
+  },
   "background": {
-    "message": "Arrière-plan"
+    "message": "Contexte"
   },
   "blank": {
-    "message": "Vide"
+    "message": "Blanc"
   },
   "blocks": {
     "message": "Blocs"
@@ -39,7 +45,7 @@
     "message": "Améliorez votre page Nouvel onglet avec des blocs magnifiquement conçus par Flowtide. Vous pouvez en ajouter autant que vous le souhaitez à votre page d'accueil."
   },
   "bookmark_folders": {
-    "message": "Dossiers de marque-pages"
+    "message": "Dossiers de signets"
   },
   "bookmarks": {
     "message": "Signets"
@@ -47,11 +53,20 @@
   "bookmarks_description": {
     "message": "Accédez facilement à vos 9 premiers signets grâce à ce widget."
   },
+  "bottom_left": {
+    "message": "En bas à gauche"
+  },
+  "bottom_right": {
+    "message": "En bas à droite"
+  },
   "break": {
     "message": "Pause"
   },
   "break_minutes": {
     "message": "Pause minutes"
+  },
+  "cancel": {
+    "message": "Annuler"
   },
   "center": {
     "message": "Centre"
@@ -62,14 +77,20 @@
   "choose_mode": {
     "message": "Choisir un mode"
   },
+  "clear_data": {
+    "message": "Effacer les données"
+  },
+  "clear_data_description": {
+    "message": "Efface toutes les données de l'extension. CETTE OPÉRATION NE PEUT ÊTRE ANNULÉE."
+  },
   "clock": {
     "message": "Horloge"
   },
   "clock_description": {
-    "message": "Ajoutez un widget horloge à votre page d'accueil."
+    "message": "Ajoute un widget horloge à votre page d'accueil."
   },
   "clock_format": {
-    "message": "Format horloge"
+    "message": "Format de l'horloge"
   },
   "close": {
     "message": "Fermer"
@@ -77,11 +98,17 @@
   "comic_sans": {
     "message": "Comic Sans"
   },
+  "community_desc": {
+    "message": "Rejoignez la communauté Flowtide sur Discord pour présenter votre travail, poser des questions, tester de nouvelles fonctionnalités et discuter avec la communauté."
+  },
   "complete": {
     "message": "Compléter"
   },
   "compose_gmail_message": {
-    "message": "Écrire un message Gmail"
+    "message": "Composer un message Gmail"
+  },
+  "coordinates": {
+    "message": "Coordonnées"
   },
   "copied_to_clipboard": {
     "message": "Copié dans le presse-papiers"
@@ -114,19 +141,19 @@
     "message": "Créer un dépôt GitHub"
   },
   "create_google_calendar_event": {
-    "message": "Créer un événement Google Agenda"
+    "message": "Créer un événement dans Google Agenda"
   },
   "create_google_document": {
     "message": "Créer un document Google"
   },
   "create_google_sheet": {
-    "message": "Créer Google Sheet"
+    "message": "Créer une feuille Google"
   },
   "create_google_slide": {
-    "message": "Créer un slide Google"
+    "message": "Créer une diapositive Google"
   },
   "create_notion_page": {
-    "message": "Créer une page de Notion"
+    "message": "Créer une page de notions"
   },
   "create_paper_document": {
     "message": "Créer un document papier"
@@ -138,7 +165,7 @@
     "message": "Créer une tâche Todoist"
   },
   "create_vercel_project": {
-    "message": "Create Vercel Project"
+    "message": "Créer un projet Vercel"
   },
   "create_word_document": {
     "message": "Créer un document Word"
@@ -147,25 +174,49 @@
     "message": "Créer une réunion Zoom"
   },
   "custom_color": {
-    "message": "Custom color"
+    "message": "Couleur personnalisée"
+  },
+  "custom_css": {
+    "message": "CSS personnalisé"
   },
   "custom_url": {
     "message": "URL personnalisée"
   },
+  "customize": {
+    "message": "Personnalisez votre nouvel onglet"
+  },
+  "customize_desc": {
+    "message": "Donnez à votre nouvel onglet une touche personnelle grâce à de nombreuses options de personnalisation. Il ne s'agit que de quelques options ; les possibilités sont presque illimitées."
+  },
   "dark": {
     "message": "Sombre"
+  },
+  "dashboard": {
+    "message": "Tableau de bord"
   },
   "date": {
     "message": "Date"
   },
   "date_description": {
-    "message": "Un widget élégant qui affiche la date du jour."
+    "message": "Un widget de date élégant qui affiche la date du jour."
   },
   "date_format": {
     "message": "Format de la date"
   },
+  "default": {
+    "message": "Défaut"
+  },
+  "discord": {
+    "message": "Rejoindre le Discord"
+  },
+  "display_name": {
+    "message": "Nom d'affichage"
+  },
   "edit_the_pomodoro_settings": {
     "message": "Modifier les paramètres pomodoro."
+  },
+  "enabled": {
+    "message": "Activé"
   },
   "enter_greeting": {
     "message": "Saisir le message d'accueil"
@@ -188,6 +239,21 @@
   "feature_request": {
     "message": "Demande de fonctionnalité"
   },
+  "feedback_callout": {
+    "message": "Nous avons besoin de votre avis !"
+  },
+  "feedback_callout_desc": {
+    "message": "Aidez-nous à façonner l'avenir de Flowtide et dites-nous ce que vous attendez de nous. Nous sommes ravis d'avoir de vos nouvelles !"
+  },
+  "file_read_error": {
+    "message": "Nous n'avons pas pu lire le fichier. Veuillez réessayer."
+  },
+  "file_too_large": {
+    "message": "Fichier trop volumineux (la taille maximale est de ~2,5 Mo)"
+  },
+  "finish": {
+    "message": "Finition"
+  },
   "focus": {
     "message": "Focus"
   },
@@ -198,7 +264,7 @@
     "message": "Des paysages sonores pour vous aider à vous concentrer."
   },
   "font": {
-    "message": "Font"
+    "message": "Police"
   },
   "forum": {
     "message": "Forum"
@@ -208,6 +274,9 @@
   },
   "get_started": {
     "message": "Commencer"
+  },
+  "give_feedback": {
+    "message": "Donner un retour d'information"
   },
   "go_back": {
     "message": "Retourner"
@@ -225,25 +294,43 @@
     "message": "Bonne nuit"
   },
   "gradient": {
-    "message": "Dégradé"
+    "message": "Gradient"
   },
   "greeting": {
-    "message": "Créer un message d'accueil"
+    "message": "Salutation"
+  },
+  "greeting_description_1": {
+    "message": "Comment devrions-nous vous appeler ?"
   },
   "hide_items": {
-    "message": "Masquer les éléments"
+    "message": "Cacher les éléments"
+  },
+  "hide_message": {
+    "message": "Masquer le message"
   },
   "hide_settings": {
-    "message": "Hide settings button"
+    "message": "Masquer le bouton des paramètres"
   },
   "hide_settings_description": {
-    "message": "Hide the settings button except on hover"
+    "message": "Cacher le bouton des paramètres sauf au survol"
   },
   "icon": {
     "message": "Icône"
   },
   "image": {
     "message": "Image"
+  },
+  "imperial": {
+    "message": "Impérial"
+  },
+  "invalid_file_type": {
+    "message": "Type de fichier non valide. Veuillez télécharger un fichier image."
+  },
+  "join_the_community": {
+    "message": "Rejoindre la communauté"
+  },
+  "latitude": {
+    "message": "Latitude"
   },
   "layout": {
     "message": "Mise en page"
@@ -257,6 +344,12 @@
   "local_file": {
     "message": "Fichier local"
   },
+  "location": {
+    "message": "Localisation"
+  },
+  "longitude": {
+    "message": "Longitude"
+  },
   "lowercase": {
     "message": "Minuscules"
   },
@@ -264,43 +357,43 @@
     "message": "Chaque jour est une chance de grandir."
   },
   "mantra_10": {
-    "message": "Soyez ici, en ce moment."
+    "message": "Soyez ici, dans ce moment."
   },
   "mantra_11": {
-    "message": "Chaque souffle est un nouveau départ."
+    "message": "Chaque respiration est un nouveau départ."
   },
   "mantra_12": {
-    "message": "Le présent est tout ce que nous avons vraiment."
+    "message": "Le moment présent est tout ce que nous avons vraiment."
   },
   "mantra_13": {
-    "message": "Rêvez grand, commencez petit."
+    "message": "Rêver grand, commencer petit."
   },
   "mantra_14": {
     "message": "Concentrez-vous sur ce que vous pouvez contrôler."
   },
   "mantra_15": {
-    "message": "La grandeur commence par la première étape."
+    "message": "La grandeur commence par le premier pas."
   },
   "mantra_2": {
-    "message": "Progress, pas la perfection."
+    "message": "Le progrès, pas la perfection."
   },
   "mantra_3": {
-    "message": "De petites étapes mènent à de grands changements."
+    "message": "De petits pas mènent à de grands changements."
   },
   "mantra_4": {
-    "message": "Les retours sont des configurations pour les retours."
+    "message": "Les revers sont des occasions de retour."
   },
   "mantra_5": {
     "message": "Vous êtes plus fort que vous ne le pensez."
   },
   "mantra_6": {
-    "message": "Les défis construisent votre force."
+    "message": "Les défis vous renforcent."
   },
   "mantra_7": {
-    "message": "Les bonnes choses vous attendent."
+    "message": "De bonnes choses vous attendent."
   },
   "mantra_8": {
-    "message": "Voyez le bien dans toutes les situations."
+    "message": "Voir le bon côté de chaque situation."
   },
   "mantra_9": {
     "message": "Un cœur plein d'espoir voit des possibilités infinies."
@@ -311,6 +404,9 @@
   "mantras_description": {
     "message": "Des mantras inspirants dans chaque nouvel onglet."
   },
+  "metric": {
+    "message": "Métrique"
+  },
   "mode": {
     "message": "Mode"
   },
@@ -318,7 +414,7 @@
     "message": "Mono"
   },
   "more": {
-    "message": "En savoir plus"
+    "message": "Plus d'informations"
   },
   "nature": {
     "message": "Nature"
@@ -338,8 +434,14 @@
   "new_wallpaper": {
     "message": "Nouveau papier peint"
   },
+  "next": {
+    "message": "Suivant"
+  },
   "nightstand": {
     "message": "Table de nuit"
+  },
+  "no_bookmarks": {
+    "message": "Pas de signets"
   },
   "no_results": {
     "message": "Aucun résultat trouvé"
@@ -367,6 +469,12 @@
   },
   "pause_background_changes": {
     "message": "Mettre en pause les modifications de l'arrière-plan"
+  },
+  "pinned_bookmarks": {
+    "message": "Signets épinglés"
+  },
+  "plugins": {
+    "message": "Plugins"
   },
   "pomodoro": {
     "message": "Pomodoro"
@@ -398,14 +506,20 @@
   "search": {
     "message": "Recherche"
   },
+  "select_font": {
+    "message": "Sélectionner une police"
+  },
   "serif": {
-    "message": "Serif"
+    "message": "Sérif"
+  },
+  "set": {
+    "message": "Set (jeu de mots)"
   },
   "set_greeting": {
-    "message": "Définir un message d'accueil."
+    "message": "Définir un message d'accueil"
   },
   "settings": {
-    "message": "Réglages"
+    "message": "Paramètres"
   },
   "show_items": {
     "message": "Afficher les articles"
@@ -419,14 +533,17 @@
   "sound_attribution": {
     "message": "Attribution du son"
   },
+  "soundscapes": {
+    "message": "Paysages sonores"
+  },
   "speed_dial": {
     "message": "Numérotation rapide"
   },
   "square_widgets": {
-    "message": "Square widgets (very experimental)"
+    "message": "Widgets carrés (très expérimental)"
   },
   "square_widgets_description": {
-    "message": "Allow the clock and date widgets to be square"
+    "message": "Permettre aux widgets de l'horloge et de la date d'être carrés"
   },
   "start": {
     "message": "Démarrage"
@@ -446,8 +563,14 @@
   "stopwatch_description": {
     "message": "Ajoutez un widget chronomètre à votre page d'accueil."
   },
+  "tasks": {
+    "message": "Tâches"
+  },
   "text_style": {
     "message": "Style de texte"
+  },
+  "thanks": {
+    "message": "Merci d'utiliser Flowtide !"
   },
   "theme": {
     "message": "Thème"
@@ -459,19 +582,34 @@
     "message": "Suivez vos tâches grâce à un widget facile à utiliser."
   },
   "toggle_theme": {
-    "message": "Totale theme"
+    "message": "Toggle theme"
   },
   "top": {
-    "message": "Haut"
+    "message": "Haut de page"
+  },
+  "top_left": {
+    "message": "En haut à gauche"
+  },
+  "top_right": {
+    "message": "En haut à droite"
   },
   "type_command": {
     "message": "Tapez une commande"
+  },
+  "unit": {
+    "message": "Unité"
   },
   "uppercase": {
     "message": "Majuscules"
   },
   "wallpaper_blur": {
     "message": "Papier peint flou"
+  },
+  "weather": {
+    "message": "Météo"
+  },
+  "weatherDisclaimer": {
+    "message": "<a href=\"$1\">Données météorologiques par Open-Meteo.com</a>. Les données météorologiques sont fournies \"en l'état\" sans aucune garantie d'exactitude. Les données de localisation sont traitées par Open-Meteo et soumises à leur politique de confidentialité."
   },
   "welcome_message": {
     "message": "Bienvenue à Flowtide"
