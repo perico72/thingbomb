@@ -296,7 +296,7 @@ function SettingsTrigger({
     createStoredSignal<number>("wallpaperChangeTime", 1000 * 60 * 60 * 24);
   const [pageIconURL, setPageIconURL] = createStoredSignal(
     "iconUrl",
-    "assets/logo.png"
+    "assets/icon-256.png"
   );
   const [textStyle, setTextStyle] = createStoredSignal("textStyle", "normal");
   onMount(() => {
@@ -822,7 +822,7 @@ function SettingsTrigger({
                         setPageIcon(pageIconValue());
                         setPageIconURL(
                           pageIconValue() == ""
-                            ? "assets/logo.png"
+                            ? "assets/icon-256.png"
                             : textToImage(pageIconValue())
                         );
                       }
@@ -850,7 +850,7 @@ function SettingsTrigger({
                     setPageIcon(pageIconValue());
                     setPageIconURL(
                       pageIconValue() == ""
-                        ? "assets/logo.png"
+                        ? "assets/icon-256.png"
                         : textToImage(pageIconValue())
                     );
                   }}
@@ -859,7 +859,7 @@ function SettingsTrigger({
                     setPageIcon(pageIconValue());
                     setPageIconURL(
                       pageIconValue() == ""
-                        ? "assets/logo.png"
+                        ? "assets/icon-256.png"
                         : textToImage(pageIconValue())
                     );
                   }}

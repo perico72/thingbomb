@@ -254,7 +254,7 @@ const App: Component = () => {
   );
   const [userCSS] = createStoredSignal("userCSS", "");
   const [currentlyPlaying, setCurrentlyPlaying] = createSignal<any>(null);
-  const [pageIconURL] = createStoredSignal("iconUrl", "assets/logo.png");
+  const [pageIconURL] = createStoredSignal("iconUrl", "assets/icon-256.png");
   const [dateFormat] = createStoredSignal("dateFormat", "normal");
   const [selectedColor] = createSignal(
     colorPalette[Math.floor(Math.random() * colorPalette.length)]
