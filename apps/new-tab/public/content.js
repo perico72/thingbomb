@@ -38,11 +38,14 @@ const saveDataUrl = () => {
       ? dataNewUrls[dataNewUrls.length - 1]
       : null;
     const dataTitle = button.getAttribute("data-title") || "";
+    const dataId = button.getAttribute("data-id") || "";
 
     if (!dataUrl) return;
 
     button.setAttribute("data-url", dataUrl);
-    const storageEntry = dataTitle ? `${dataTitle}{<>}${dataUrl}` : dataUrl;
+    const storageEntry = dataTitle
+      ? `${dataTitle}{<>}${dataId}{<>}${dataUrl}`
+      : dataUrl;
     const isUrlAlreadySaved = await checkIfUrlIsAlreadySaved(dataUrl);
 
     if (dataUrl.startsWith("data:text/css;base64,")) {

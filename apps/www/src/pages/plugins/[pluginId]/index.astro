@@ -50,6 +50,7 @@ export async function getStaticPaths() {
       description={typedPlugins[Astro.params.pluginId].description}
       url={JSON.stringify(typedPlugins[Astro.params.pluginId].url)}
       author={typedPlugins[Astro.params.pluginId].author}
+      id={Astro.params.pluginId}
     />
   ) : (
     <div>Invalid file</div>
