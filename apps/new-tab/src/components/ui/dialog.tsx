@@ -50,9 +50,9 @@ export const DialogContent = <T extends ValidComponent = "div">(
     <DialogPrimitive.Portal>
       <DialogPrimitive.Overlay
         class={cn(
-          `dark:bg-background/80 data-[expanded]:animate-in data-[closed]:animate-out
-          data-[closed]:fade-out-0 data-[expanded]:fade-in-0 fixed inset-0 z-50
-          bg-black/80 backdrop-blur-xl`,
+          `data-[expanded]:animate-in data-[closed]:animate-out data-[closed]:fade-out-0
+          data-[expanded]:fade-in-0 fixed inset-0 z-50 bg-white/10 dark:bg-black/80
+          backdrop-blur-xl`,
           local.overlayClass
         )}
         {...rest}
@@ -61,8 +61,9 @@ export const DialogContent = <T extends ValidComponent = "div">(
         <DialogPrimitive.Content
           class={cn(
             `data-[closed]:transform-[scale(95%)] z-50 grid max-h-[60vh] h-full w-full
-            max-w-md overflow-y-auto rounded-xl bg-white dark:bg-[#18191B] border-[#2E3235]
-            border-1 p-6 backdrop-blur-2xl duration-300 ease-out data-[closed]:opacity-0`,
+            max-w-md overflow-y-auto rounded-xl bg-white dark:bg-[#18191B] border-[#C0C0B8]
+            dark:border-[#2E3235] border-1 p-6 backdrop-blur-2xl duration-300 ease-out
+            data-[closed]:opacity-0`,
             local.class
           )}
           {...rest}

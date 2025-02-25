@@ -1049,7 +1049,7 @@ const App: Component = () => {
                     as={(props: DropdownMenuSubTriggerProps) => (
                       <Button
                         variant="outline"
-                        class="!bg-transparent text-sm !shadow-none hover:!bg-zinc-700 !border-none"
+                        class="!bg-transparent text-sm !shadow-none hover:!bg-zinc-700 !border-none !text-white"
                         {...props}
                       >
                         <Volume2 class="h-4 w-4 text-gray-300" />
@@ -1204,7 +1204,7 @@ const App: Component = () => {
               <Show when={actuallyBoolean(counterContained())}>
                 <div
                   id="counter-widget"
-                  class="flex items-center gap-2 px-4 py-2"
+                  class="flex items-center gap-2 px-4 py-2 !text-white"
                 >
                   <button
                     onmousedown={() => setCounter(Number(counter()) - 1)}
@@ -1226,7 +1226,7 @@ const App: Component = () => {
               <Show when={actuallyBoolean(stopwatchContained())}>
                 <div
                   id="stopwatch-widget"
-                  class="flex items-center gap-2 px-4 py-2"
+                  class="flex items-center gap-2 px-4 py-2 !text-white"
                 >
                   <p class="select-none text-sm font-semibold">
                     {formatTime(stopwatchTime())}
@@ -1246,7 +1246,7 @@ const App: Component = () => {
               <Show when={actuallyBoolean(weatherContained())}>
                 <div
                   id="weather-widget"
-                  class="flex items-center gap-2 px-3 py-1 w-full select-none"
+                  class="flex items-center gap-2 px-3 py-1 w-full select-none !text-white"
                 >
                   <span>
                     {city() != "" && `${city()} • `}

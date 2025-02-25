@@ -99,7 +99,7 @@
     "message": "Comic Sans"
   },
   "community_desc": {
-    "message": "Join the Flowtide community on Discord to share your creations, get help, and stay up to date with the latest updates."
+    "message": "Join the Flowtide community on Discord to showcase your work, ask questions, test new features, and chat with the community."
   },
   "complete": {
     "message": "Complete"
@@ -239,6 +239,12 @@
   "feature_request": {
     "message": "Feature request"
   },
+  "feedback_callout": {
+    "message": "We need your feedback!"
+  },
+  "feedback_callout_desc": {
+    "message": "Help us shape the future of Flowtide and tell us what you want to see next. We'd love to hear from you!"
+  },
   "file_read_error": {
     "message": "We couldn't read the file. Please try again."
   },
@@ -269,6 +275,9 @@
   "get_started": {
     "message": "Get started"
   },
+  "give_feedback": {
+    "message": "Give feedback"
+  },
   "go_back": {
     "message": "Go back"
   },
@@ -295,6 +304,9 @@
   },
   "hide_items": {
     "message": "Hide items"
+  },
+  "hide_message": {
+    "message": "Hide message"
   },
   "hide_settings": {
     "message": "Hide settings button"
