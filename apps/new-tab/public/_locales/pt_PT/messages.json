@@ -1,491 +1,629 @@
 {
   "actions": {
-    "message": "Actions"
+    "message": "Acções"
   },
   "add": {
-    "message": "Add"
+    "message": "Adicionar"
   },
   "add_task": {
-    "message": "Add task"
+    "message": "Adicionar tarefa"
   },
   "add_widget": {
-    "message": "Add widget"
+    "message": "Adicionar widget"
   },
   "added": {
-    "message": "Added"
+    "message": "Adicionado"
+  },
+  "advanced": {
+    "message": "Avançado"
   },
   "ambience": {
-    "message": "Ambience"
+    "message": "Ambiente"
   },
   "ambience_sounds": {
-    "message": "Ambience Sounds"
+    "message": "Sons de ambiente"
   },
   "ambience_sounds_description": {
-    "message": "Ambient soundscapes to help you relax."
+    "message": "Paisagens sonoras ambientais para o ajudar a relaxar."
   },
   "appearance": {
-    "message": "Appearance"
+    "message": "Aparência"
+  },
+  "available_bookmarks": {
+    "message": "Marcadores disponíveis"
   },
   "background": {
-    "message": "Background"
+    "message": "Antecedentes"
   },
   "blank": {
-    "message": "Blank"
+    "message": "Em branco"
   },
   "blocks": {
-    "message": "Blocks"
+    "message": "Blocos"
   },
   "blocks_description": {
-    "message": "Supercharge your New Tab page with beautifully designed blocks created by Flowtide. You can add as many as you like to your start page."
+    "message": "Melhore a sua página Novo separador com blocos com um design fantástico criados pela Flowtide. Pode adicionar tantos quantos quiser à sua página inicial."
   },
   "bookmark_folders": {
-    "message": "Bookmark Folders"
+    "message": "Pastas de marcadores"
   },
   "bookmarks": {
-    "message": "Bookmarks"
+    "message": "Marcadores"
   },
   "bookmarks_description": {
-    "message": "Easy access to your first 9 bookmarks with this widget."
+    "message": "Fácil acesso aos seus primeiros 9 favoritos com este widget."
+  },
+  "bottom_left": {
+    "message": "Em baixo à esquerda"
+  },
+  "bottom_right": {
+    "message": "Em baixo à direita"
   },
   "break": {
-    "message": "Break"
+    "message": "Intervalo"
   },
   "break_minutes": {
-    "message": "Break minutes"
+    "message": "Minutos de pausa"
+  },
+  "cancel": {
+    "message": "Cancelar"
   },
   "center": {
-    "message": "Center"
+    "message": "Centro"
   },
   "choose_file": {
-    "message": "Choose file"
+    "message": "Escolher ficheiro"
   },
   "choose_mode": {
-    "message": "Choose a mode"
+    "message": "Selecionar um modo"
+  },
+  "clear_data": {
+    "message": "Limpar dados"
+  },
+  "clear_data_description": {
+    "message": "Limpa todos os dados da extensão. ISTO NÃO PODE SER ANULADO."
   },
   "clock": {
-    "message": "Clock"
+    "message": "Relógio"
   },
   "clock_description": {
-    "message": "Adds a clock widget to your start page."
+    "message": "Adiciona um widget de relógio à sua página inicial."
   },
   "clock_format": {
-    "message": "Clock format"
+    "message": "Formato do relógio"
   },
   "close": {
-    "message": "Close"
+    "message": "Fechar"
   },
   "comic_sans": {
     "message": "Comic Sans"
   },
+  "community_desc": {
+    "message": "Junte-se à comunidade Flowtide no Discord para mostrar o seu trabalho, fazer perguntas, testar novas funcionalidades e conversar com a comunidade."
+  },
   "complete": {
-    "message": "Complete"
+    "message": "Completo"
   },
   "compose_gmail_message": {
-    "message": "Compose Gmail Message"
+    "message": "Compor mensagem do Gmail"
+  },
+  "coordinates": {
+    "message": "Coordenadas"
   },
   "copied_to_clipboard": {
-    "message": "Copied to clipboard"
+    "message": "Copiado para a área de transferência"
   },
   "counter": {
-    "message": "Counter"
+    "message": "Balcão"
   },
   "counter_description": {
-    "message": "Count things easily."
+    "message": "Contar coisas facilmente."
   },
   "create_bitly_link": {
-    "message": "Create Bitly Link"
+    "message": "Criar link Bitly"
   },
   "create_canva_design": {
-    "message": "Create Canva Design"
+    "message": "Criar design do Canva"
   },
   "create_canva_video": {
-    "message": "Create Canva Video"
+    "message": "Criar vídeo do Canva"
   },
   "create_excel_workbook": {
-    "message": "Create Excel Workbook"
+    "message": "Criar livro de trabalho do Excel"
   },
   "create_figma_file": {
-    "message": "Create Figma File"
+    "message": "Criar ficheiro Figma"
   },
   "create_github_gist": {
-    "message": "Create GitHub Gist"
+    "message": "Criar Gist do GitHub"
   },
   "create_github_repository": {
-    "message": "Create GitHub Repository"
+    "message": "Criar repositório GitHub"
   },
   "create_google_calendar_event": {
-    "message": "Create Google Calendar Event"
+    "message": "Criar evento do Google Calendar"
   },
   "create_google_document": {
-    "message": "Create Google Document"
+    "message": "Criar documento do Google"
   },
   "create_google_sheet": {
-    "message": "Create Google Sheet"
+    "message": "Criar folha do Google"
   },
   "create_google_slide": {
-    "message": "Create Google Slide"
+    "message": "Criar Google Slide"
   },
   "create_notion_page": {
-    "message": "Create Notion Page"
+    "message": "Criar página de noções"
   },
   "create_paper_document": {
-    "message": "Create Paper Document"
+    "message": "Criar documento em papel"
   },
   "create_powerpoint_presentation": {
-    "message": "Create PowerPoint Presentation"
+    "message": "Criar apresentação do PowerPoint"
   },
   "create_todoist_task": {
-    "message": "Create Todoist Task"
+    "message": "Criar tarefa Todoist"
   },
   "create_vercel_project": {
-    "message": "Create Vercel Project"
+    "message": "Criar projeto Vercel"
   },
   "create_word_document": {
-    "message": "Create Word Document"
+    "message": "Criar documento do Word"
   },
   "create_zoom_meeting": {
-    "message": "Create Zoom Meeting"
+    "message": "Criar reunião Zoom"
   },
   "custom_color": {
-    "message": "Custom color"
+    "message": "Cor personalizada"
+  },
+  "custom_css": {
+    "message": "CSS personalizado"
   },
   "custom_url": {
-    "message": "Custom URL"
+    "message": "URL personalizado"
+  },
+  "customize": {
+    "message": "Personalizar o novo separador"
+  },
+  "customize_desc": {
+    "message": "Dê um toque pessoal ao seu Novo separador com uma variedade de opções de personalização. Estas são apenas algumas opções; as possibilidades são quase ilimitadas."
   },
   "dark": {
-    "message": "Dark"
+    "message": "Escuro"
+  },
+  "dashboard": {
+    "message": "Painel de controlo"
   },
   "date": {
-    "message": "Date"
+    "message": "Data"
   },
   "date_description": {
-    "message": "A sleek date widget that shows you the current date."
+    "message": "Um elegante widget de data que mostra a data atual."
   },
   "date_format": {
-    "message": "Date format"
+    "message": "Formato da data"
+  },
+  "default": {
+    "message": "Predefinição"
+  },
+  "discord": {
+    "message": "Junte-se ao Discord"
+  },
+  "display_name": {
+    "message": "Nome de exibição"
   },
   "edit_the_pomodoro_settings": {
-    "message": "Edit the pomodoro settings."
+    "message": "Editar as definições de pomodoro."
+  },
+  "enabled": {
+    "message": "Ativado"
   },
   "enter_greeting": {
-    "message": "Enter greeting"
+    "message": "Introduzir saudação"
   },
   "enter_name": {
-    "message": "Enter your name"
+    "message": "Introduza o seu nome"
   },
   "every_day": {
-    "message": "Every day"
+    "message": "Todos os dias"
   },
   "every_hour": {
-    "message": "Every hour"
+    "message": "Cada hora"
   },
   "every_reload": {
-    "message": "Every reload"
+    "message": "Cada recarga"
   },
   "every_week": {
-    "message": "Every week"
+    "message": "Todas as semanas"
   },
   "feature_request": {
-    "message": "Feature request"
+    "message": "Pedido de funcionalidade"
+  },
+  "feedback_callout": {
+    "message": "Precisamos dos vossos comentários!"
+  },
+  "feedback_callout_desc": {
+    "message": "Ajude-nos a moldar o futuro da Flowtide e diga-nos o que quer ver a seguir. Gostaríamos muito de o ouvir!"
+  },
+  "file_read_error": {
+    "message": "Não foi possível ler o ficheiro. Por favor, tente novamente."
+  },
+  "file_too_large": {
+    "message": "Ficheiro demasiado grande (o tamanho máximo é de ~2,5 MB)"
+  },
+  "finish": {
+    "message": "Acabamento"
   },
   "focus": {
-    "message": "Focus"
+    "message": "Foco"
   },
   "focus_sounds": {
-    "message": "Focus Sounds"
+    "message": "Sons de foco"
   },
   "focus_sounds_description": {
-    "message": "Soundscapes to help you focus."
+    "message": "Paisagens sonoras para o ajudar a concentrar-se."
   },
   "font": {
-    "message": "Font"
+    "message": "Tipo de letra"
   },
   "forum": {
-    "message": "Forum"
+    "message": "Fórum"
   },
   "general": {
-    "message": "General"
+    "message": "Geral"
   },
   "get_started": {
-    "message": "Get started"
+    "message": "Começar a trabalhar"
+  },
+  "give_feedback": {
+    "message": "Dar feedback"
   },
   "go_back": {
-    "message": "Go back"
+    "message": "Voltar atrás"
   },
   "good_afternoon": {
-    "message": "Good afternoon"
+    "message": "Boa tarde"
   },
   "good_evening": {
-    "message": "Good evening"
+    "message": "Boa noite"
   },
   "good_morning": {
-    "message": "Good morning"
+    "message": "Bom dia"
   },
   "good_night": {
-    "message": "Good night"
+    "message": "Boa noite"
   },
   "gradient": {
-    "message": "Gradient"
+    "message": "Gradiente"
   },
   "greeting": {
-    "message": "Set up a greeting"
+    "message": "Saudação"
+  },
+  "greeting_description_1": {
+    "message": "O que é que lhe devemos chamar?"
   },
   "hide_items": {
-    "message": "Hide items"
+    "message": "Ocultar itens"
+  },
+  "hide_message": {
+    "message": "Ocultar mensagem"
   },
   "hide_settings": {
-    "message": "Hide settings button"
+    "message": "Ocultar o botão de definições"
   },
   "hide_settings_description": {
-    "message": "Hide the settings button except on hover"
+    "message": "Ocultar o botão de definições, exceto ao passar o rato"
   },
   "icon": {
-    "message": "Icon"
+    "message": "Ícone"
   },
   "image": {
-    "message": "Image"
+    "message": "Imagem"
+  },
+  "imperial": {
+    "message": "Imperial"
+  },
+  "invalid_file_type": {
+    "message": "Tipo de ficheiro inválido. Carregue um ficheiro de imagem."
+  },
+  "join_the_community": {
+    "message": "Juntar-se à comunidade"
+  },
+  "latitude": {
+    "message": "Latitude"
   },
   "layout": {
-    "message": "Layout"
+    "message": "Disposição"
   },
   "leave_blank_to_disable": {
-    "message": "Leave blank to disable."
+    "message": "Deixar em branco para desativar."
   },
   "light": {
-    "message": "Light"
+    "message": "Luz"
   },
   "local_file": {
-    "message": "Local file"
+    "message": "Ficheiro local"
+  },
+  "location": {
+    "message": "Localização"
+  },
+  "longitude": {
+    "message": "Longitude"
   },
   "lowercase": {
-    "message": "Lowercase"
+    "message": "Minúsculas"
   },
   "mantra_1": {
-    "message": "Every day is a chance to grow."
+    "message": "Cada dia é uma oportunidade para crescer."
   },
   "mantra_10": {
-    "message": "Be here, in this moment."
+    "message": "Estar aqui, neste momento."
   },
   "mantra_11": {
-    "message": "Each breath is a fresh start."
+    "message": "Cada respiração é um novo começo."
   },
   "mantra_12": {
-    "message": "The now is all we truly have."
+    "message": "O agora é tudo o que realmente temos."
   },
   "mantra_13": {
-    "message": "Dream big, start small."
+    "message": "Sonhar em grande, começar pequeno."
   },
   "mantra_14": {
-    "message": "Focus on what you can control."
+    "message": "Concentre-se no que pode controlar."
   },
   "mantra_15": {
-    "message": "Greatness begins with the first step."
+    "message": "A grandeza começa com o primeiro passo."
   },
   "mantra_2": {
-    "message": "Progress, not perfection."
+    "message": "Progresso, não perfeição."
   },
   "mantra_3": {
-    "message": "Small steps lead to big changes."
+    "message": "Pequenos passos conduzem a grandes mudanças."
   },
   "mantra_4": {
-    "message": "Setbacks are setups for comebacks."
+    "message": "As contrariedades são preparações para as reviravoltas."
   },
   "mantra_5": {
-    "message": "You are stronger than you think."
+    "message": "És mais forte do que pensas."
   },
   "mantra_6": {
-    "message": "Challenges build your strength."
+    "message": "Os desafios aumentam a sua força."
   },
   "mantra_7": {
-    "message": "Good things are coming your way."
+    "message": "Estão a chegar coisas boas."
   },
   "mantra_8": {
-    "message": "See the good in every situation."
+    "message": "Ver o lado bom de cada situação."
   },
   "mantra_9": {
-    "message": "A hopeful heart sees endless possibilities."
+    "message": "Um coração esperançoso vê possibilidades infinitas."
   },
   "mantras": {
     "message": "Mantras"
   },
   "mantras_description": {
-    "message": "Inspirational mantras on every new tab."
+    "message": "Mantras inspiradores em cada novo separador."
+  },
+  "metric": {
+    "message": "Métrica"
   },
   "mode": {
-    "message": "Mode"
+    "message": "Modo"
   },
   "mono": {
     "message": "Mono"
   },
   "more": {
-    "message": "More"
+    "message": "Mais"
   },
   "nature": {
-    "message": "Nature"
+    "message": "Natureza"
   },
   "nature_description": {
-    "message": "Listen to nature soundscapes with this widget."
+    "message": "Ouça paisagens sonoras da natureza com este widget."
   },
   "nature_sounds": {
-    "message": "Nature Sounds"
+    "message": "Sons da natureza"
   },
   "new_tab": {
-    "message": "New Tab"
+    "message": "Novo separador"
   },
   "new_task": {
-    "message": "New task"
+    "message": "Nova tarefa"
   },
   "new_wallpaper": {
-    "message": "New wallpaper"
+    "message": "Novo papel de parede"
+  },
+  "next": {
+    "message": "Seguinte"
   },
   "nightstand": {
-    "message": "Nightstand"
+    "message": "Mesa de cabeceira"
+  },
+  "no_bookmarks": {
+    "message": "Sem marcadores"
   },
   "no_results": {
-    "message": "No results found"
+    "message": "Não foram encontrados resultados"
   },
   "normal": {
     "message": "Normal"
   },
   "notepad": {
-    "message": "Notepad"
+    "message": "Bloco de notas"
   },
   "notepad_description": {
-    "message": "A simple notepad widget."
+    "message": "Um simples widget de bloco de notas."
   },
   "notepad_disclaimer": {
-    "message": "Notes are stored in your browser's local storage, which may be unreliable and could result in data loss."
+    "message": "As notas são guardadas no armazenamento local do seu browser, o que pode não ser fiável e resultar em perda de dados."
   },
   "opacity": {
-    "message": "Opacity"
+    "message": "Opacidade"
   },
   "page": {
-    "message": "Page title and icon"
+    "message": "Título e ícone da página"
   },
   "page_title": {
-    "message": "Page title"
+    "message": "Título da página"
   },
   "pause_background_changes": {
-    "message": "Pause background changes"
+    "message": "Pausa nas alterações de fundo"
+  },
+  "pinned_bookmarks": {
+    "message": "Marcadores fixados"
+  },
+  "plugins": {
+    "message": "Plugins"
   },
   "pomodoro": {
     "message": "Pomodoro"
   },
   "pomodoro_description": {
-    "message": "Use the pomodoro technique for an interval-based workflow."
+    "message": "Utilize a técnica pomodoro para um fluxo de trabalho baseado em intervalos."
   },
   "pomodoro_settings": {
-    "message": "Pomodoro Settings"
+    "message": "Definições Pomodoro"
   },
   "pomodoro_timer": {
-    "message": "Pomodoro timer"
+    "message": "Temporizador Pomodoro"
   },
   "reset": {
-    "message": "Reset"
+    "message": "Reiniciar"
   },
   "resources": {
-    "message": "Resources"
+    "message": "Recursos"
   },
   "sans": {
     "message": "Sans"
   },
   "save": {
-    "message": "Save"
+    "message": "Guardar"
   },
   "saved": {
-    "message": "Saved"
+    "message": "Guardado"
   },
   "search": {
-    "message": "Search"
+    "message": "Pesquisar"
+  },
+  "select_font": {
+    "message": "Selecionar um tipo de letra"
   },
   "serif": {
-    "message": "Serif"
+    "message": "Serifa"
+  },
+  "set": {
+    "message": "Conjunto"
   },
   "set_greeting": {
-    "message": "Set greeting"
+    "message": "Definir saudação"
   },
   "settings": {
-    "message": "Settings"
+    "message": "Definições"
   },
   "show_items": {
-    "message": "Show items"
+    "message": "Mostrar itens"
   },
   "skip": {
-    "message": "Skip"
+    "message": "Saltar"
   },
   "solid_color": {
-    "message": "Solid color"
+    "message": "Cor sólida"
   },
   "sound_attribution": {
-    "message": "Sound attribution"
+    "message": "Atribuição de som"
+  },
+  "soundscapes": {
+    "message": "Paisagens sonoras"
   },
   "speed_dial": {
-    "message": "Speed Dial"
+    "message": "Marcação rápida"
   },
   "square_widgets": {
-    "message": "Square widgets (very experimental)"
+    "message": "Widgets quadrados (muito experimental)"
   },
   "square_widgets_description": {
-    "message": "Allow the clock and date widgets to be square"
+    "message": "Permitir que os widgets de relógio e data sejam quadrados"
   },
   "start": {
-    "message": "Start"
+    "message": "Início"
   },
   "start_background_changes": {
-    "message": "Start background changes"
+    "message": "Iniciar alterações de fundo"
   },
   "start_using": {
-    "message": "Start using Flowtide"
+    "message": "Começar a utilizar Flowtide"
   },
   "stop": {
-    "message": "Stop"
+    "message": "Parar"
   },
   "stopwatch": {
-    "message": "Stopwatch"
+    "message": "Cronómetro"
   },
   "stopwatch_description": {
-    "message": "Add a stopwatch widget to your start page."
+    "message": "Adicione um widget de cronómetro à sua página inicial."
+  },
+  "tasks": {
+    "message": "Tarefas"
   },
   "text_style": {
-    "message": "Text style"
+    "message": "Estilo de texto"
+  },
+  "thanks": {
+    "message": "Obrigado por utilizar Flowtide!"
   },
   "theme": {
-    "message": "Theme"
+    "message": "Tema"
   },
   "todo_list": {
-    "message": "To-do list"
+    "message": "Lista de tarefas"
   },
   "todo_list_description": {
-    "message": "Track your todos with an easy widget."
+    "message": "Acompanhe as suas tarefas com um widget fácil."
   },
   "toggle_theme": {
-    "message": "Toggle theme"
+    "message": "Alternar tema"
   },
   "top": {
-    "message": "Top"
+    "message": "Topo"
+  },
+  "top_left": {
+    "message": "Em cima à esquerda"
+  },
+  "top_right": {
+    "message": "Em cima à direita"
   },
   "type_command": {
-    "message": "Type a command"
+    "message": "Introduzir um comando"
+  },
+  "unit": {
+    "message": "Unidade"
   },
   "uppercase": {
-    "message": "Uppercase"
+    "message": "Maiúsculas"
   },
   "wallpaper_blur": {
-    "message": "Wallpaper blur"
+    "message": "Borrão do papel de parede"
+  },
+  "weather": {
+    "message": "Tempo"
+  },
+  "weatherDisclaimer": {
+    "message": "<a href=\"$1\">Dados meteorológicos fornecidos por Open-Meteo.com</a>. Os dados meteorológicos são fornecidos \"tal como estão\", sem qualquer garantia de exatidão. Os dados de localização são geridos pela Open-Meteo e estão sujeitos à sua política de privacidade."
   },
   "welcome_message": {
-    "message": "Welcome to Flowtide"
+    "message": "Bem-vindo à Flowtide"
   },
   "widgets": {
     "message": "Widgets"
   },
   "work": {
-    "message": "Work"
+    "message": "Trabalho"
   },
   "work_minutes": {
-    "message": "Work minutes"
+    "message": "Minutos de trabalho"
   },
   "you_may_need_to_refresh": {
-    "message": "You may need to refresh the page to see the changes."
+    "message": "Poderá ser necessário atualizar a página para ver as alterações."
   }
 }
