@@ -30,7 +30,7 @@ function formattedClock() {
   onMount(() => {
     const intervalId = setInterval(() => {
       setCurrentClock(createClock(new Date()));
-    }, 1000);
+    }, 300);
     onCleanup(() => clearInterval(intervalId));
   });
 

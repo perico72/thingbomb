@@ -40,7 +40,9 @@ const { title, description, url, author } = Astro.props;
             {author.name}
           </a>
         </p>
-        <Button disabled data-url={url} full-width>Add to Flowtide</Button>
+        <Button disabled data-new-url={url} data-title={title} full-width
+          >Add to Flowtide</Button
+        >
       </div>
       <div>
         <p class="text-white text-lg mt-3">{description}</p>

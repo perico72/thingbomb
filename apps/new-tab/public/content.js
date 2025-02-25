@@ -19,52 +19,55 @@
 */
 
 async function checkIfUrlIsAlreadySaved(url) {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     chrome.storage.local.get({ dataUrls: [] }, (result) => {
-      const dataUrls = result.dataUrls;
-      if (dataUrls.includes(url)) {
-        resolve(true);
-      } else {
-        resolve(false);
-      }
+      result.dataUrls.forEach((item) => {
+        if (item.includes(url)) {
+          resolve(true);
+        }
+      });
+      resolve(false);
     });
   });
 }
 
 const saveDataUrl = () => {
-  document.querySelectorAll("button[data-url]").forEach(async (button) => {
-    const dataUrl = button.getAttribute("data-url");
+  document.querySelectorAll("button[data-new-url]").forEach(async (button) => {
+    const dataNewUrls = JSON.parse(button.getAttribute("data-new-url") || "[]");
+    const dataUrl = dataNewUrls.length
+      ? dataNewUrls[dataNewUrls.length - 1]
+      : null;
+    const dataTitle = button.getAttribute("data-title") || "";
+
+    if (!dataUrl) return;
+
+    button.setAttribute("data-url", dataUrl);
+    const storageEntry = dataTitle ? `${dataTitle}{<>}${dataUrl}` : dataUrl;
     const isUrlAlreadySaved = await checkIfUrlIsAlreadySaved(dataUrl);
-    if (dataUrl.startsWith("data:text/css;base64,") && !isUrlAlreadySaved) {
+
+    if (dataUrl.startsWith("data:text/css;base64,")) {
       button.disabled = false;
-      button.innerHTML = "Add to Flowtide";
-    } else if (isUrlAlreadySaved) {
-      button.disabled = false;
-      button.innerHTML = "Remove from Flowtide";
+      button.innerHTML = isUrlAlreadySaved
+        ? "Remove from Flowtide"
+        : "Add to Flowtide";
     }
 
     button.addEventListener("click", async () => {
       const isSaved = await checkIfUrlIsAlreadySaved(dataUrl);
-      if (isSaved) {
-        chrome.storage.local.get({ dataUrls: [] }, (result) => {
-          const dataUrls = result.dataUrls;
-          const index = dataUrls.indexOf(dataUrl);
-          dataUrls.splice(index, 1);
-          chrome.storage.local.set({ dataUrls });
+      chrome.storage.local.get({ dataUrls: [] }, (result) => {
+        let dataUrls = result.dataUrls;
 
+        if (isSaved) {
+          dataUrls = dataUrls.filter((item) => !item.includes(dataUrl));
           button.innerHTML = "Add to Flowtide";
-          button.disabled = false;
-        });
-      } else {
-        chrome.storage.local.get({ dataUrls: [] }, (result) => {
-          const dataUrls = result.dataUrls;
-          dataUrls.push(dataUrl);
-          chrome.storage.local.set({ dataUrls });
-
+        } else {
+          dataUrls.push(storageEntry);
           button.innerHTML = "Remove from Flowtide";
-          button.disabled = false;
-        });
-      }
+        }
+
+        chrome.storage.local.set({ dataUrls });
+        button.disabled = false;
+      });
     });
   });
 };
