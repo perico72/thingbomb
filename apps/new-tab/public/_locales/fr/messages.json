@@ -510,10 +510,10 @@
     "message": "Sélectionner une police"
   },
   "serif": {
-    "message": "Sérif"
+    "message": "Serif"
   },
   "set": {
-    "message": "Set (jeu de mots)"
+    "message": "Set"
   },
   "set_greeting": {
     "message": "Définir un message d'accueil"
@@ -522,7 +522,7 @@
     "message": "Paramètres"
   },
   "share_flowtide": {
-    "message": "Share Flowtide with a friend!"
+    "message": "Partagez Flowtide avec un ami !"
   },
   "show_items": {
     "message": "Afficher les articles"
