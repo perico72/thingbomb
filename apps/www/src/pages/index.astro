@@ -1,210 +1,517 @@
 ---
-/*
-    Flowtide
-    Copyright (C) 2024-present George Stone
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see {http://www.gnu.org/licenses/}.
-
-    https://github.com/thingbomb/flowtide
-*/
 import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
-import Button from "../components/Button.astro";
-
-let defaultBrowser = "chrome";
-
-let sections = [
-  {
-    title: "Track your todos",
-    description:
-      "Keep track of your tasks and projects with Flowtide's todo list.",
-  },
-  {
-    title: "Listen to relaxing soundscapes",
-    description:
-      "Flowtide has a collection of beautiful soundscapes to relax with.",
-  },
-  {
-    title: "See a beautiful wallpaper",
-    description: "Flowtide comes with a collection of beautiful wallpapers.",
-  },
-  {
-    title: "Customize your start page",
-    description:
-      "Flowtide is fully customizable. You can change the wallpaper, the soundscapes, and the todo list.",
-  },
-  {
-    title: "Pomodoro timer",
-    description: "Use the pomodoro timer to stay focused.",
-  },
-  {
-    title: "Open-source",
-    description:
-      "Flowtide is open-source. You can find the source code on GitHub.",
-  },
-];
+import Header from "../components/Header.astro";
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
-    <BaseHead
-      title={`${SITE_TITLE} - beautiful new tab`}
-      description={SITE_DESCRIPTION}
-    />
+    <BaseHead title="Flowtide - Next-Level New Tab Experience" description="" />
   </head>
-  <body class="bg-black">
+  <body
+    class="bg-black text-white min-h-screen bg-gradient-to-br from-black via-neutral-900
+      to-neutral-800 font-sans"
+  >
     <Header />
-    <section
-      class="flex flex-col items-center justify-center pt-24 max-w-7xl text-center m-auto"
-    >
-      <h1
-        class="animate-fade-in -translate-y-4 text-balance py-6 text-5xl text-white font-semibold leading-none tracking-tighter opacity-0 [--animation-delay:200ms] sm:text-6xl md:text-7xl lg:text-8xl"
-      >
-        Flowtide is a modern, customizable start page for your browser.
-      </h1>
-      <p
-        class="animate-fade-in mb-12 -translate-y-4 text-balance text-lg tracking-tight text-gray-400 opacity-0 [--animation-delay:400ms] md:text-xl"
-      >
-        Flowtide is an open-source, minimal, and beautiful New Tab page for your
-        browser. Track your todos, see a beautiful wallpaper, and listen to
-        relaxing soundscapes.
-      </p>
-      <div
-        class="animate-fade-in opacity-0 [--animation-delay:600ms] flex gap-3"
-      >
-        <Button
-          id="browser-button"
-          href="https://chromewebstore.google.com/detail/fpdjjjmglibdjocjpcchgkbakeelaghm"
-        >
-          Download for Chrome
-        </Button>
-        <Button variant="outline" href="/install"> Other browsers </Button>
-      </div>
-      <div class="animate-fade-in opacity-0 [--animation-delay:650ms] mt-2">
+    <section class="pt-32 pb-20 px-4 sm:px-6 relative">
+      <div class="max-w-4xl mx-auto text-center relative z-10">
         <a
-          class="text-white text-sm hover:underline"
-          href="https://demo.flowtide.app"
+          class="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-white/10
+            backdrop-blur-md border border-white/20 text-sm"
+          href="https://github.com/thingbomb/flowtide"
         >
-          Try web version
-        </a>
-      </div>
-      <br />
-      <div
-        class="m-4 !mt-4 rounded-3xl bg-white/5 p-2 ring-1 ring-inset ring-zinc-600/10 xl:-m-2 lg:rounded-2xl lg:p-2 animate-fade-in opacity-0 [--animation-delay:800ms]"
-      >
-        <img
-          src="/hero.jpeg"
-          alt="Flowtide hero image"
-          class="rounded-3xl w-full mt-0"
-        />
-      </div>
-    </section>
-    <section
-      class="flex flex-col items-center justify-center pt-24 max-w-screen-xl text-center opacity-0 m-auto mt-8 animate-fade-in [--animation-delay:1000ms]"
-    >
-      <h1
-        class="tracking-tight text-3xl font-semibold leading-tight text-white sm:text-4xl md:text-5xl lg:text-6xl -translate-y-4 text-balance"
-      >
-        Features to boost your browser
-      </h1>
-      <div
-        class="grid grid-cols-1 grid-rows-6 gap-4 mt-8 sm:grid-cols-2 sm:grid-rows-3 xl:grid-cols-3 xl:grid-rows-2 p-3"
-      >
-        {
-          sections.map((section) => (
-            <div class="flex flex-col gap-2 text-left bg-zinc-900 p-4 rounded-2xl">
-              <h2 class="tracking-tight text-2xl mt-0 font-semibold leading-tight text-white">
-                {section.title}
-              </h2>
-              <p class="text-lg text-gray-400 m-0">{section.description}</p>
-            </div>
-          ))
-        }
-      </div>
-      <section
-        class="flex flex-col items-center justify-center pt-24 mb-12 max-w-screen-xl text-center m-auto mt-8 animate-fade-in opacity-0 [--animation-delay:1200ms]"
-      >
-        <h1
-          class="tracking-tight text-3xl font-semibold leading-tight text-white sm:text-4xl md:text-5xl lg:text-6xl -translate-y-4 text-balance"
-        >
-          A next-level productivity tool.
-        </h1>
-        <p
-          class="mb-4 mt-4 -translate-y-4 text-balance text-lg tracking-tight text-gray-400 md:text-xl"
-        >
-          Search your bookmarks, solve math, count words, and create content
-          with Magic Search. <br />To use it, just type `/` in Flowtide and
-          you're good to go.
-        </p>
-        <div
-          class="m-4 !mt-4 rounded-3xl bg-white/5 p-2 ring-1 ring-inset ring-zinc-600/10 xl:-m-2 lg:rounded-2xl lg:p-2 animate-fade-in opacity-0 [--animation-delay:800ms]"
-        >
-          <img
-            src="/magic-search.jpeg"
-            alt="Magic search image"
-            class="rounded-3xl w-full mt-0"
-          />
-        </div>
-      </section>
-      <section
-        class="flex flex-col items-center justify-center pt-24 mb-12 max-w-screen-xl text-center m-auto mt-8 animate-fade-in opacity-0 [--animation-delay:1400ms]"
-      >
-        <h1
-          class="tracking-tight text-3xl font-semibold leading-tight text-white sm:text-4xl md:text-5xl lg:text-6xl -translate-y-4 text-balance"
-        >
-          Ready to give it a try?
-        </h1>
-        <p
-          class="mb-4 mt-4 -translate-y-4 text-balance text-lg tracking-tight text-gray-400 md:text-xl"
-        >
-          Install it today for your preferred browser and start using the magic
-          of Flowtide.
-        </p>
-        <div
-          class="animate-fade-in opacity-0 [--animation-delay:600ms] flex gap-3"
-        >
-          <Button
-            id="browser-button-2"
-            href="https://chromewebstore.google.com/detail/flowtide-beautiful-new-ta/fpdjjjmglibakeelaghm"
+          <svg
+            viewBox="0 0 256 250"
+            width="16"
+            height="16"
+            fill="#fff"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid"
           >
-            Download for Chrome
-          </Button>
-          <Button variant="outline" href="/install"> Other browsers </Button>
+            <path
+              d="M128.001 0C57.317 0 0 57.307 0 128.001c0 56.554 36.676 104.535 87.535 121.46 6.397 1.185 8.746-2.777 8.746-6.158 0-3.052-.12-13.135-.174-23.83-35.61 7.742-43.124-15.103-43.124-15.103-5.823-14.795-14.213-18.73-14.213-18.73-11.613-7.944.876-7.78.876-7.78 12.853.902 19.621 13.19 19.621 13.19 11.417 19.568 29.945 13.911 37.249 10.64 1.149-8.272 4.466-13.92 8.127-17.116-28.431-3.236-58.318-14.212-58.318-63.258 0-13.975 5-25.394 13.188-34.358-1.329-3.224-5.71-16.242 1.24-33.874 0 0 10.749-3.44 35.21 13.121 10.21-2.836 21.16-4.258 32.038-4.307 10.878.049 21.837 1.47 32.066 4.307 24.431-16.56 35.165-13.12 35.165-13.12 6.967 17.63 2.584 30.65 1.255 33.873 8.207 8.964 13.173 20.383 13.173 34.358 0 49.163-29.944 59.988-58.447 63.157 4.591 3.972 8.682 11.762 8.682 23.704 0 17.126-.148 30.91-.148 35.126 0 3.407 2.304 7.398 8.792 6.14C219.37 232.5 256 184.537 256 128.002 256 57.307 198.691 0 128.001 0Zm-80.06 182.34c-.282.636-1.283.827-2.194.39-.929-.417-1.45-1.284-1.15-1.922.276-.655 1.279-.838 2.205-.399.93.418 1.46 1.293 1.139 1.931Zm6.296 5.618c-.61.566-1.804.303-2.614-.591-.837-.892-.994-2.086-.375-2.66.63-.566 1.787-.301 2.626.591.838.903 1 2.088.363 2.66Zm4.32 7.188c-.785.545-2.067.034-2.86-1.104-.784-1.138-.784-2.503.017-3.05.795-.547 2.058-.055 2.861 1.075.782 1.157.782 2.522-.019 3.08Zm7.304 8.325c-.701.774-2.196.566-3.29-.49-1.119-1.032-1.43-2.496-.726-3.27.71-.776 2.213-.558 3.315.49 1.11 1.03 1.45 2.505.701 3.27Zm9.442 2.81c-.31 1.003-1.75 1.459-3.199 1.033-1.448-.439-2.395-1.613-2.103-2.626.301-1.01 1.747-1.484 3.207-1.028 1.446.436 2.396 1.602 2.095 2.622Zm10.744 1.193c.036 1.055-1.193 1.93-2.715 1.95-1.53.034-2.769-.82-2.786-1.86 0-1.065 1.202-1.932 2.733-1.958 1.522-.03 2.768.818 2.768 1.868Zm10.555-.405c.182 1.03-.875 2.088-2.387 2.37-1.485.271-2.861-.365-3.05-1.386-.184-1.056.893-2.114 2.376-2.387 1.514-.263 2.868.356 3.061 1.403Z"
+            >
+            </path>
+          </svg>
+          Open Source
+        </a>
+        <h1
+          class="text-4xl sm:text-5xl md:text-6xl font-bold mb-1 bg-clip-text h-fit
+            text-transparent bg-gradient-to-r from-white to-gray-300 m-0 p-0"
+        >
+          Your New Tab
+        </h1>
+        <h1
+          class="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 bg-clip-text h-fit p-0 m-0
+            text-transparent bg-gradient-to-r from-teal-200 to-teal-500 !leading-[70px]"
+        >
+          Redesigned
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-400 mb-8 max-w-2xl mx-auto">
+          Transform every new tab into a beautifully designed place for your
+          to-dos, bookmarks, and more. Free to use for <i>everyone</i>.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+          <a
+            href="/install"
+            class="bg-white text-black px-4 py-2 rounded-md font-medium hover:bg-gray-200
+              transition-colors text-sm"
+          >
+            Get started
+          </a>
+          <a
+            href="https://demo.flowtide.app"
+            class="bg-white/10 backdrop-blur-md text-white px-4 py-2 rounded-md font-medium
+              hover:bg-white/20 transition-colors border border-white/20 text-sm"
+          >
+            Try demo
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 px-4 sm:px-6 relative">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+            A design you'll love
+          </h2>
+          <p class="text-gray-400 max-w-2xl mx-auto">
+            Flowtide has been crafted with design in mind. Our goal is for it to
+            be easy to use, beautiful, and most importantly, customizable.
+          </p>
+        </div>
+
+        <div class="relative">
+          <div
+            class="relative backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-4
+              shadow-2xl overflow-hidden"
+          >
+            <div class="aspect-[75/41] rounded-lg overflow-hidden relative">
+              <div
+                class="h-full w-full z-0 absolute inset-0"
+                style="background-size: cover; background-image: url(data:image/png;base64,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);"
+              >
+              </div>
+              <img
+                src="https://storage.flowtide.app/hero.jpg"
+                alt="Flowtide Screenshot"
+                class="w-full h-auto z-10 absolute inset-0 m-0 p-0"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-20 px-4 sm:px-6 relative">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl sm:text-4xl font-bold mb-4">Awesome features</h2>
+          <p class="text-gray-400 max-w-2xl mx-auto">
+            Everything you need to stay productive and organized. We've got you
+            covered.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div
+            class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-xl p-6
+              hover:bg-white/10 transition-colors"
+          >
+            <div
+              class="w-10 h-10 bg-gradient-to-br from-teal-300 to-teal-500 rounded-lg flex
+                items-center justify-center mb-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-zap"
+              >
+                <path
+                  d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"
+                >
+                </path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Optimized for speed</h3>
+            <p class="text-gray-400">
+              We are constantly working to improve Flowtide's speed. We believe
+              that speed is the key to a great user experience. Our background
+              images load very quickly as long as you don't choose to get a new
+              image every reload.
+            </p>
+          </div>
+          <div
+            class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-xl p-6
+              hover:bg-white/10 transition-colors"
+          >
+            <div
+              class="w-10 h-10 bg-gradient-to-br from-teal-300 to-teal-500 rounded-lg flex
+                items-center justify-center mb-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-sliders-vertical"
+              >
+                <line x1="4" x2="4" y1="21" y2="14"></line><line
+                  x1="4"
+                  x2="4"
+                  y1="10"
+                  y2="3"
+                >
+                </line><line x1="12" x2="12" y1="21" y2="12"></line><line
+                  x1="12"
+                  x2="12"
+                  y1="8"
+                  y2="3"
+                >
+                </line><line x1="20" x2="20" y1="21" y2="16"></line><line
+                  x1="20"
+                  x2="20"
+                  y1="12"
+                  y2="3"
+                >
+                </line><line x1="2" x2="6" y1="14" y2="14"></line><line
+                  x1="10"
+                  x2="14"
+                  y1="8"
+                  y2="8"
+                >
+                </line><line x1="18" x2="22" y1="16" y2="16"></line>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Customizable</h3>
+            <p class="text-gray-400">
+              Customize your entire experience with layouts, fonts, and more.
+              You can even add your own Custom CSS and install <a
+                href="/plugins"
+                class="text-teal-500"
+              >
+                plugins
+              </a> from our gallery for almost infinite possibilities.
+            </p>
+          </div>
+
+          <div
+            class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-xl p-6
+              hover:bg-white/10 transition-colors"
+          >
+            <div
+              class="w-10 h-10 bg-gradient-to-br from-teal-300 to-teal-500 rounded-lg flex
+                items-center justify-center mb-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-shield-check"
+              >
+                <path
+                  d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+                >
+                </path><path d="m9 12 2 2 4-4"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Privacy-minded</h3>
+            <p class="text-gray-400">
+              Your data stays on your device. However, limited data may be
+              collected and processed by our third-party service providers.
+              Learn more in our <a
+                href="/website-privacy"
+                class="text-teal-500"
+              >
+                website privacy policy
+              </a> and <a href="/extension-privacy" class="text-teal-500">
+                extension privacy policy.
+              </a>
+            </p>
+          </div>
+
+          <div
+            class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-xl p-6
+              hover:bg-white/10 transition-colors"
+          >
+            <div
+              class="w-10 h-10 bg-gradient-to-br from-teal-300 to-teal-500 rounded-lg flex
+                items-center justify-center mb-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-hash"
+              >
+                <line x1="4" x2="20" y1="9" y2="9"></line><line
+                  x1="4"
+                  x2="20"
+                  y1="15"
+                  y2="15"
+                >
+                </line><line x1="10" x2="8" y1="3" y2="21"></line><line
+                  x1="16"
+                  x2="14"
+                  y1="3"
+                  y2="21"
+                >
+                </line>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Custom CSS</h3>
+            <p class="text-gray-400">
+              Unlock the full potential of Flowtide using Custom CSS. There are
+              almost no limits to what you can do with CSS. You can change the
+              color scheme, add your own fonts, and more.
+            </p>
+          </div>
+
+          <div
+            class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-xl p-6
+              hover:bg-white/10 transition-colors"
+          >
+            <div
+              class="w-10 h-10 bg-gradient-to-br from-teal-300 to-teal-500 rounded-lg flex
+                items-center justify-center mb-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-square"
+              >
+                <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Widgets</h3>
+            <p class="text-gray-400">
+              Add useful and insightful widgets like weather, tasks, notes, and
+              more. If you're a pomodoro person, you'll love our built-in
+              pomodoro timer for getting work done. You're even able to listen
+              to relaxing soundscapes to help you focus.
+            </p>
+          </div>
+
+          <div
+            class="backdrop-blur-xl bg-white/5 border border-white/10 rounded-xl p-6
+              hover:bg-white/10 transition-colors"
+          >
+            <div
+              class="w-10 h-10 bg-gradient-to-br from-teal-300 to-teal-500 rounded-lg flex
+                items-center justify-center mb-4"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-audio-lines"
+              >
+                <path d="M2 10v3"></path><path d="M6 6v11"></path><path
+                  d="M10 3v18"
+                >
+                </path><path d="M14 8v7"></path><path d="M18 5v13"></path><path
+                  d="M22 10v3"
+                >
+                </path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Soundscapes</h3>
+            <p class="text-gray-400">
+              Soundscapes for almost any mood. You can listen to relaxing lofi
+              music for relaxing, or river sounds for a more energetic
+              experience. Configure which types of soundscapes you see to suit
+              your mood.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 px-4 sm:px-6 relative">
+      <div
+        class="max-w-6xl mx-auto backdrop-blur-xl bg-white/5 border border-white/10 rounded-2xl
+          p-8 overflow-hidden"
+      >
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div>
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 mb-4 rounded-full bg-white/10
+                backdrop-blur-md border border-white/20 text-sm"
+            >
+              <svg
+                class="w-4 h-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                >
+                </path>
+              </svg>
+              Open Source
+            </div>
+            <h2 class="text-3xl font-bold mb-4">
+              Built by the community, for the community
+            </h2>
+            <p class="text-gray-400 mb-6">
+              Flowtide is open source and free forever. We believe in
+              transparency and community-driven development.
+            </p>
+            <ul class="space-y-3 mb-6">
+              <li class="flex items-center">
+                <svg
+                  class="w-5 h-5 mr-2 text-green-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  >
+                  </path>
+                </svg>
+                <span>GPLv3 Licensed</span>
+              </li>
+              <li class="flex items-center">
+                <svg
+                  class="w-5 h-5 mr-2 text-green-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  >
+                  </path>
+                </svg>
+                <span>Community-driven development</span>
+              </li>
+              <li class="flex items-center">
+                <svg
+                  class="w-5 h-5 mr-2 text-green-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  >
+                  </path>
+                </svg>
+                <span>Feature requests</span>
+              </li>
+            </ul>
+            <div class="flex flex-wrap gap-3">
+              <a
+                href="https://github.com/thingbomb/flowtide"
+                class="bg-white/10 text-white px-3 py-1.5 rounded-md text-sm font-medium
+                  hover:bg-white/20 transition-colors flex items-center gap-2"
+              >
+                <svg
+                  class="w-4 h-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                  >
+                  </path>
+                </svg>
+                View Source
+              </a>
+              <a
+                href="https://github.com/thingbomb/flowtide/issues"
+                class="bg-white/5 text-white px-3 py-1.5 rounded-md text-sm font-medium
+                  hover:bg-white/10 transition-colors"
+              >
+                Report Issues
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="py-20 px-4 sm:px-6 relative">
+        <div
+          class="max-w-4xl mx-auto backdrop-blur-xl bg-gradient-to-r from-teal-900/30
+            to-teal-900/30 border border-white/10 rounded-2xl p-8 md:p-12 text-center"
+        >
+          <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+            Break free from the old New Tab page
+          </h2>
+          <p class="text-xl text-gray-300 mb-8">
+            Join hundreds of users who have upgraded their browsing experience.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-3 justify-center">
+            <a
+              href="/install"
+              class="bg-white text-black px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-200
+                transition-colors"
+            >
+              Get started
+            </a>
+            <a
+              href="https://demo.flowtide.app"
+              class="bg-white/10 backdrop-blur-md text-white px-4 py-2 rounded-md text-sm font-medium
+                hover:bg-white/20 transition-colors border border-white/20"
+            >
+              Try demo
+            </a>
+          </div>
         </div>
       </section>
-      <script>
-        const isFirefox = navigator.userAgent.toLowerCase().includes("firefox");
-        const button = document.getElementById(
-          "browser-button"
-        ) as HTMLLinkElement;
-        const button2 = document.getElementById(
-          "browser-button-2"
-        ) as HTMLLinkElement;
-        if (button && button2 && isFirefox) {
-          button.href =
-            "https://addons.mozilla.org/en-US/firefox/addon/flowtide-new-tab/";
-          button.textContent = "Download for Firefox";
-          button2.href =
-            "https://addons.mozilla.org/en-US/firefox/addon/flowtide-new-tab/";
-          button2.textContent = "Download for Firefox";
-        }
-      </script>
-      <script src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+
+      <Footer />
     </section>
-    <Footer />
   </body>
 </html>

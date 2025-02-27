@@ -400,6 +400,7 @@ const App: Component = () => {
     "ambienceSounds",
     false
   );
+  let cursorHideTimeout: any;
   const [stopwatchTime, setStopwatchTime] = createSignal(0);
   const [stopwatchRunning, setStopwatchRunning] = createSignal(false);
   const [counter, setCounter] = createStoredSignal("counter", 0);
@@ -446,6 +447,14 @@ const App: Component = () => {
     }
 
     injectUserCSS(userCSS());
+
+    document.addEventListener("mousemove", () => {
+      clearTimeout(cursorHideTimeout);
+      document.body.classList.remove("cursor-none");
+      cursorHideTimeout = setTimeout(() => {
+        document.body.classList.add("cursor-none");
+      }, 4000);
+    });
 
     setInterval(() => {
       if (stopwatchContained() && stopwatchRunning()) {
