@@ -11,6 +11,7 @@ import {
   CommandShortcut,
 } from "./command";
 import Mexp from "math-expression-evaluator";
+import { untrack } from "solid-js/web";
 
 interface Bookmark {
   name: string;
@@ -295,48 +296,18 @@ export function CommandPalette(props: any) {
       />
       <CommandList class="scrollbar">
         {result().result != null && (
-          <div
-            class="m-3 cursor-pointer select-none rounded-lg bg-neutral-800 p-6 text-center
-              hover:bg-neutral-900"
-            onmousedown={() => {
+          <CommandItem
+            class="flex m-2 items-center"
+            onSelect={() => {
               const copiedResult = result().result;
-              setResult({
-                result: chrome.i18n.getMessage("copied_to_clipboard"),
-                copied: true,
-                expression: result().expression,
-              });
               navigator.clipboard.writeText(String(copiedResult));
-              setTimeout(() => {
-                setResult({
-                  result: copiedResult,
-                  copied: false,
-                  expression: result().expression,
-                });
-              }, 2000);
+              setOpen(false);
             }}
-            onclick={() => {
-              const copiedResult = result().result;
-              setResult({
-                result: chrome.i18n.getMessage("copied_to_clipboard"),
-                copied: true,
-                expression: result().expression,
-              });
-              navigator.clipboard.writeText(String(copiedResult));
-              setTimeout(() => {
-                setResult({
-                  result: copiedResult,
-                  copied: false,
-                  expression: result().expression,
-                });
-              }, 2000);
-            }}
+            keywords={[`${result().expression}`]}
           >
-            <span class="text-2xl font-bold">{result().result}</span>
-          </div>
+            <span class="text-primary">{result().result}</span>
+          </CommandItem>
         )}
-        <CommandEmpty class="hidden" aria-hidden="false">
-          {result().result == null ? chrome.i18n.getMessage("no_results") : ""}
-        </CommandEmpty>
         <CommandGroup heading={chrome.i18n.getMessage("bookmarks")}>
           {loadedBookmarks() ? (
             <div>
