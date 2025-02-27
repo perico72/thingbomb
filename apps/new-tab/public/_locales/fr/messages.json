@@ -521,6 +521,9 @@
   "settings": {
     "message": "Paramètres"
   },
+  "share_flowtide": {
+    "message": "Share Flowtide with a friend!"
+  },
   "show_items": {
     "message": "Afficher les articles"
   },
