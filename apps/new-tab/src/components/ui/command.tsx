@@ -1,4 +1,22 @@
-import { cn } from "../../libs/cn";
+/*
+  Copyright © 2023 shadcn Copyright © 2023 hngngn
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated 
+  documentation files (the “Software”), to deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to
+  permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
+  INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR 
+  PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE 
+  LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR 
+  OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+  DEALINGS IN THE SOFTWARE.
+*/
+
+import { cn } from "@/libs/cn";
 import type {
   CommandDialogProps,
   CommandEmptyProps,
@@ -66,7 +84,8 @@ export const CommandInput = (props: VoidProps<CommandInputProps>) => {
       </svg>
       <CommandPrimitive.Input
         class={cn(
-          "placeholder:text-muted-foreground flex h-10 w-full rounded-md bg-transparent py-3 text-sm outline-none disabled:cursor-not-allowed disabled:opacity-50",
+          `placeholder:text-muted-foreground flex h-10 w-full rounded-md bg-transparent
+          py-3 text-sm outline-none disabled:cursor-not-allowed disabled:opacity-50`,
           local.class
         )}
         {...rest}
@@ -81,7 +100,10 @@ export const CommandItem = (props: CommandItemProps) => {
   return (
     <CommandPrimitive.Item
       class={cn(
-        "aria-selected:text-accent-foreground relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none aria-disabled:pointer-events-none aria-disabled:opacity-50 aria-selected:bg-black/10 dark:aria-selected:bg-white/10",
+        `aria-selected:text-accent-foreground relative flex cursor-default select-none
+        items-center rounded-sm px-2 py-1.5 text-sm outline-none
+        aria-disabled:pointer-events-none aria-disabled:opacity-50
+        aria-selected:bg-black/10 dark:aria-selected:bg-white/10`,
         local.class
       )}
       data-type="command-item"
@@ -109,8 +131,14 @@ export const CommandDialog = (props: CommandDialogProps) => {
 
   return (
     <Dialog {...rest}>
-      <DialogContent class="overflow-hidden p-0">
-        <Command class="[&_[cmdk-group-heading]]:text-muted-foreground [&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group]:not([hidden])_~[cmdk-group]]:pt-0 [&_[cmdk-group]]:px-2 [&_[cmdk-input-wrapper]_svg]:size-5 [&_[cmdk-input]]:h-12 [&_[cmdk-item]]:px-2 [&_[cmdk-item]]:py-3 [&_[cmdk-item]_svg]:size-5">
+      <DialogContent class="overflow-hidden p-0 max-h-[40vh] h-fit">
+        <Command
+          class="[&_[cmdk-group-heading]]:text-muted-foreground [&_[cmdk-group-heading]]:px-2
+            [&_[cmdk-group-heading]]:font-medium
+            [&_[cmdk-group]:not([hidden])_~[cmdk-group]]:pt-0 [&_[cmdk-group]]:px-2
+            [&_[cmdk-input-wrapper]_svg]:size-5 [&_[cmdk-input]]:h-12 [&_[cmdk-item]]:px-2
+            [&_[cmdk-item]]:py-3 [&_[cmdk-item]_svg]:size-5"
+        >
           {local.children}
         </Command>
       </DialogContent>
@@ -135,7 +163,9 @@ export const CommandGroup = (props: CommandGroupProps) => {
   return (
     <CommandPrimitive.Group
       class={cn(
-        "text-foreground [&_[cmdk-group-heading]]:text-muted-foreground overflow-hidden p-1 [&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5 [&_[cmdk-group-heading]]:text-xs [&_[cmdk-group-heading]]:font-medium",
+        `text-foreground [&_[cmdk-group-heading]]:text-muted-foreground overflow-hidden
+        p-1 [&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5
+        [&_[cmdk-group-heading]]:text-xs [&_[cmdk-group-heading]]:font-medium`,
         local.class
       )}
       {...rest}

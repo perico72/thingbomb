@@ -12,6 +12,8 @@
   },
   "devDependencies": {
     "prettier": "^3.3.3",
+    "prettier-plugin-classnames": "^0.7.6",
+    "prettier-plugin-sort-json": "^4.1.1",
     "prettier-plugin-tailwindcss": "^0.6.9",
     "turbo": "^2.3.3",
     "typescript": "5.5.4"
@@ -21,4 +23,3 @@
     "node": ">=18"
   }
 }
-

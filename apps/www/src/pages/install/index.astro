@@ -31,93 +31,51 @@ let defaultBrowser = "chrome";
 <html lang="en">
   <head>
     <BaseHead
-      title={`Install for your browser - ${SITE_TITLE}`}
+      title={`Download -  ${SITE_TITLE}`}
       description={SITE_DESCRIPTION}
     />
   </head>
   <body class="bg-black">
     <Header title={SITE_TITLE} />
-    <main
-      class="flex flex-col items-center justify-center max-w-screen-xl text-left m-auto mt-8"
-    >
-      <h1
-        class="tracking-tight text-3xl font-semibold leading-tight text-white sm:text-4xl md:text-5xl lg:text-6xl -translate-y-4 text-balance animate-fade-in opacity-0 [--animation-delay:200ms]"
-      >
-        Install Flowtide
-      </h1>
-      <p
-        class="animate-fade-in mb-12 -translate-y-4 text-balance text-lg tracking-tight text-gray-400 opacity-0 [--animation-delay:400ms] md:text-xl"
-      >
-        Choose your browser to get started with Flowtide
-      </p>
-
-      <div
-        class="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full p-4 animate-fade-in opacity-0 [--animation-delay:600ms]"
-      >
-        <a
-          class="flex items-center gap-4 p-4 rounded-xl bg-zinc-900"
-          href="https://chromewebstore.google.com/detail/flowtide-beautiful-new-ta/fpdjjjmglibdjocjpcchgkbakeelaghm"
+    <section class="pt-12 pb-20 px-4 sm:px-6 relative">
+      <div class="max-w-4xl mx-auto text-center relative z-10">
+        <h1
+          class="text-4xl sm:text-5xl md:text-6xl font-bold mb-1 bg-clip-text h-fit
+            text-transparent bg-gradient-to-r from-white to-gray-300 m-0 p-0"
         >
-          <div class="text-left">
-            <h3 class="text-lg font-medium text-white">Google Chrome</h3>
-            <p class="text-sm text-gray-400">Install from Chrome Web Store</p>
-          </div>
-        </a>
-
-        <a
-          class="flex items-center gap-4 p-4 rounded-xl bg-zinc-900"
-          href="https://addons.mozilla.org/en-US/firefox/addon/flowtide-new-tab/"
+          Download
+        </h1>
+        <h1
+          class="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 bg-clip-text h-fit p-0 m-0
+            text-transparent bg-gradient-to-r from-teal-200 to-teal-500 !leading-[70px]"
         >
-          <div class="text-left">
-            <h3 class="text-lg font-medium text-white">Mozilla Firefox</h3>
-            <p class="text-sm text-gray-400">
-              Get a beautiful new tab page for Firefox
-            </p>
-          </div>
-        </a>
-
-        <a
-          class="flex items-center gap-4 p-4 rounded-xl bg-zinc-900"
-          href="https://chromewebstore.google.com/detail/flowtide-beautiful-new-ta/fpdjjjmglibdjocjpcchgkbakeelaghm"
-        >
-          <div class="text-left">
-            <h3 class="text-lg font-medium text-white">Microsoft Edge</h3>
-            <p class="text-sm text-gray-400">Install from Chrome Web Store</p>
-          </div>
-        </a>
-        <a
-          class="flex items-center gap-4 p-4 rounded-xl bg-zinc-900"
-          href="https://docs.flowtide.app/install-guides/vivaldi"
-        >
-          <div class="text-left">
-            <h3 class="text-lg font-medium text-white">Vivaldi</h3>
-            <p class="text-sm text-gray-400">
-              Follow our guide to install Flowtide in Vivaldi
-            </p>
-          </div>
-        </a>
-        <a
-          class="flex items-center gap-4 p-4 rounded-xl bg-zinc-900"
-          href="https://github.com/thingbomb/flowtide/releases/latest/download/Dist-chrome.zip"
-        >
-          <div class="text-left">
-            <h3 class="text-lg font-medium text-white">ZIP archive (Chrome)</h3>
-            <p class="text-sm text-gray-400">Chrome-compatible ZIP archive</p>
-          </div>
-        </a>
-        <a
-          class="flex items-center gap-4 p-4 rounded-xl bg-zinc-900"
-          href="https://github.com/thingbomb/flowtide/releases/latest/download/Dist-firefox.zip"
-        >
-          <div class="text-left">
-            <h3 class="text-lg font-medium text-white">
-              ZIP archive (Firefox)
-            </h3>
-            <p class="text-sm text-gray-400">Firefox-compatible ZIP archive</p>
-          </div>
-        </a>
+          Flowtide
+        </h1>
+        <div class="flex flex-col gap-3 justify-center">
+          <a
+            href="https://www.flowtide.app/install/chrome"
+            class="bg-white/10 backdrop-blur-md text-white px-4 py-3 rounded-md font-medium
+              hover:bg-white/20 transition-colors border border-white/20 text-2xl"
+          >
+            Chrome
+          </a>
+          <a
+            href="https://addons.mozilla.org/en-US/firefox/addon/flowtide-new-tab/"
+            class="bg-white/10 backdrop-blur-md text-white px-4 py-3 rounded-md font-medium
+              hover:bg-white/20 transition-colors border border-white/20 text-2xl"
+          >
+            Firefox
+          </a>
+          <a
+            href="https://microsoftedge.microsoft.com/addons/detail/flowtide-beautiful-new-/pldehmgohfonmgglijmfppbhbfghiace"
+            class="bg-white/10 backdrop-blur-md text-white px-4 py-3 rounded-md font-medium
+              hover:bg-white/20 transition-colors border border-white/20 text-2xl"
+          >
+            Edge
+          </a>
+        </div>
       </div>
-    </main>
+    </section>
     <br />
     <Footer />
     <script src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

@@ -1,4 +1,22 @@
-import { cn } from "../../libs/cn";
+/*
+  Copyright © 2023 shadcn Copyright © 2023 hngngn
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated 
+  documentation files (the “Software”), to deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to
+  permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
+  INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR 
+  PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE 
+  LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR 
+  OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+  DEALINGS IN THE SOFTWARE.
+*/
+
+import { cn } from "@/libs/cn";
 import type { CheckboxControlProps } from "@kobalte/core/checkbox";
 import { Checkbox as CheckboxPrimitive } from "@kobalte/core/checkbox";
 import type { PolymorphicProps } from "@kobalte/core/polymorphic";
@@ -24,10 +42,16 @@ export const CheckboxControl = <T extends ValidComponent = "div">(
 
   return (
     <>
-      <CheckboxPrimitive.Input class="[&:focus-visible+div]:ring-ring [&:focus-visible+div]:ring-offset-background [&:focus-visible+div]:outline-none [&:focus-visible+div]:ring-[1.5px] [&:focus-visible+div]:ring-offset-2" />
+      <CheckboxPrimitive.Input
+        class="[&:focus-visible+div]:ring-ring [&:focus-visible+div]:ring-offset-background
+          [&:focus-visible+div]:outline-none [&:focus-visible+div]:ring-[1.5px]
+          [&:focus-visible+div]:ring-offset-2"
+      />
       <CheckboxPrimitive.Control
         class={cn(
-          "size-4 !cursor-pointer rounded-md bg-white p-1 ring-1 ring-inset ring-black/35 data-[checked]:bg-white/25 dark:bg-white/10 dark:ring-white/15 dark:data-[checked]:bg-white",
+          `size-4 !cursor-pointer rounded-md bg-white p-1 ring-1 ring-inset ring-black/35
+          data-[checked]:bg-white/25 dark:bg-white/10 dark:ring-white/15
+          dark:data-[checked]:bg-white`,
           local.class
         )}
         {...rest}
