@@ -6,6 +6,8 @@ heroImage: "/rewriting.jpg"
 author: "George"
 ---
 
+> Most of this article is outdated. I have changed the approach yet again from a block-based widget approach into a more traditional New Tab approach (which is not drag-and-drop). I have also determined that making a JavaScript-based plugin system is not technically feasible within a browser extension. This article is being preserved for historical purposes; it may no longer be accurate.
+
 I decided to rewrite Flowtide entirely using SolidJS. This article will explain the reasons, technical decisions, and the future of Flowtide.
 
 For context, Flowtide is a New Tab page for Chrome and Firefox that aims to be beautiful and customizable. It is free and open-source software.
