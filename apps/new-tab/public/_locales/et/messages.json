@@ -1,477 +1,477 @@
 {
   "actions": {
-    "message": "Actions"
+    "message": "Meetmed"
   },
   "add": {
-    "message": "Add"
+    "message": "Lisa"
   },
   "add_task": {
-    "message": "Add task"
+    "message": "Lisa ülesanne"
   },
   "add_widget": {
-    "message": "Add widget"
+    "message": "Vidina lisamine"
   },
   "added": {
-    "message": "Added"
+    "message": "Lisatud"
   },
   "advanced": {
-    "message": "Advanced"
+    "message": "Täiustatud"
   },
   "ambience": {
-    "message": "Ambience"
+    "message": "Ambiente"
   },
   "ambience_sounds": {
     "message": "Ambience Sounds"
   },
   "ambience_sounds_description": {
-    "message": "Ambient soundscapes to help you relax."
+    "message": "Ambientne helimaastik, mis aitab teil lõõgastuda."
   },
   "appearance": {
-    "message": "Appearance"
+    "message": "Välimus"
   },
   "available_bookmarks": {
-    "message": "Available bookmarks"
+    "message": "Saadaolevad järjehoidjad"
   },
   "background": {
-    "message": "Background"
+    "message": "Taustaks"
   },
   "blank": {
-    "message": "Blank"
+    "message": "Tühi"
   },
   "blocks": {
-    "message": "Blocks"
+    "message": "Blokid"
   },
   "blocks_description": {
-    "message": "Supercharge your New Tab page with beautifully designed blocks created by Flowtide. You can add as many as you like to your start page."
+    "message": "Supercharge your New Tab page with beautifully designed blocks created by Blooft. You can add as many as you like to your start page."
   },
   "bookmark_folders": {
-    "message": "Bookmark Folders"
+    "message": "Järjehoidja kaustad"
   },
   "bookmarks": {
-    "message": "Bookmarks"
+    "message": "Järjehoidjad"
   },
   "bookmarks_description": {
-    "message": "Easy access to your first 9 bookmarks with this widget."
+    "message": "Selle vidina abil saate hõlpsasti ligi oma 9 esimesele järjehoidjale."
   },
   "bottom_left": {
-    "message": "Bottom left"
+    "message": "All vasakpoolne"
   },
   "bottom_right": {
-    "message": "Bottom right"
+    "message": "All paremal"
   },
   "break": {
     "message": "Break"
   },
   "break_minutes": {
-    "message": "Break minutes"
+    "message": "Pausiminutid"
   },
   "cancel": {
-    "message": "Cancel"
+    "message": "Tühista"
   },
   "center": {
-    "message": "Center"
+    "message": "Keskus"
   },
   "choose_file": {
-    "message": "Choose file"
+    "message": "Vali fail"
   },
   "choose_mode": {
-    "message": "Choose a mode"
+    "message": "Valige režiim"
   },
   "clear_data": {
-    "message": "Clear data"
+    "message": "Selged andmed"
   },
   "clear_data_description": {
-    "message": "Clear all data from the extension. THIS CANNOT BE UNDONE."
+    "message": "Tühjendage kõik andmed laiendusest. SEDA EI SAA TÜHISTADA."
   },
   "clock": {
-    "message": "Clock"
+    "message": "Kell"
   },
   "clock_description": {
-    "message": "Adds a clock widget to your start page."
+    "message": "Lisab kellavidin oma avalehele."
   },
   "clock_format": {
-    "message": "Clock format"
+    "message": "Kellade formaat"
   },
   "close": {
-    "message": "Close"
+    "message": "Sulge"
   },
   "comic_sans": {
     "message": "Comic Sans"
   },
   "community_desc": {
-    "message": "Join the Flowtide community on Discord to showcase your work, ask questions, test new features, and chat with the community."
+    "message": "Join the Blooft community on Discord to showcase your work, ask questions, test new features, and chat with the community."
   },
   "complete": {
-    "message": "Complete"
+    "message": "Täielik"
   },
   "compose_gmail_message": {
-    "message": "Compose Gmail Message"
+    "message": "Gmaili sõnumi koostamine"
   },
   "coordinates": {
-    "message": "Coordinates"
+    "message": "Koordinaadid"
   },
   "copied_to_clipboard": {
-    "message": "Copied to clipboard"
+    "message": "Kopeeritud lõikelauale"
   },
   "counter": {
     "message": "Counter"
   },
   "counter_description": {
-    "message": "Count things easily."
+    "message": "Lugege asju lihtsalt."
   },
   "create_bitly_link": {
-    "message": "Create Bitly Link"
+    "message": "Bitly lingi loomine"
   },
   "create_canva_design": {
-    "message": "Create Canva Design"
+    "message": "Loo Canva disain"
   },
   "create_canva_video": {
-    "message": "Create Canva Video"
+    "message": "Canva video loomine"
   },
   "create_excel_workbook": {
-    "message": "Create Excel Workbook"
+    "message": "Exceli töövihiku loomine"
   },
   "create_figma_file": {
-    "message": "Create Figma File"
+    "message": "Figma faili loomine"
   },
   "create_github_gist": {
-    "message": "Create GitHub Gist"
+    "message": "Loo GitHub Gist"
   },
   "create_github_repository": {
-    "message": "Create GitHub Repository"
+    "message": "GitHubi repositooriumi loomine"
   },
   "create_google_calendar_event": {
-    "message": "Create Google Calendar Event"
+    "message": "Google kalendri sündmuse loomine"
   },
   "create_google_document": {
-    "message": "Create Google Document"
+    "message": "Google'i dokumendi loomine"
   },
   "create_google_sheet": {
-    "message": "Create Google Sheet"
+    "message": "Google'i lehe loomine"
   },
   "create_google_slide": {
-    "message": "Create Google Slide"
+    "message": "Google Slide'i loomine"
   },
   "create_notion_page": {
-    "message": "Create Notion Page"
+    "message": "Loo mõiste lehekülg"
   },
   "create_paper_document": {
-    "message": "Create Paper Document"
+    "message": "Paberdokumendi loomine"
   },
   "create_powerpoint_presentation": {
-    "message": "Create PowerPoint Presentation"
+    "message": "PowerPoint esitluse loomine"
   },
   "create_todoist_task": {
-    "message": "Create Todoist Task"
+    "message": "Todoist ülesande loomine"
   },
   "create_vercel_project": {
-    "message": "Create Vercel Project"
+    "message": "Luua Vercel projekt"
   },
   "create_word_document": {
-    "message": "Create Word Document"
+    "message": "Wordi dokumendi loomine"
   },
   "create_zoom_meeting": {
-    "message": "Create Zoom Meeting"
+    "message": "Zoomi koosoleku loomine"
   },
   "custom_color": {
-    "message": "Custom color"
+    "message": "Kohandatud värv"
   },
   "custom_css": {
-    "message": "Custom CSS"
+    "message": "Kohandatud CSS"
   },
   "custom_url": {
-    "message": "Custom URL"
+    "message": "Kohandatud URL"
   },
   "customize": {
-    "message": "Customize your new tab"
+    "message": "Kohandage oma uut vahekaarti"
   },
   "customize_desc": {
-    "message": "Give your New Tab a personal touch with a variety of customization options. These are just a few options; the possibilities are almost limitless."
+    "message": "Andke oma uuele vahekaardile isikupärane ilme mitmesuguste kohandamisvõimalustega. Need on vaid mõned võimalused; võimalused on peaaegu piiramatud."
   },
   "dark": {
-    "message": "Dark"
+    "message": "Tume"
   },
   "dashboard": {
-    "message": "Dashboard"
+    "message": "Armatuurlaud"
   },
   "date": {
-    "message": "Date"
+    "message": "Kuupäev"
   },
   "date_description": {
-    "message": "A sleek date widget that shows you the current date."
+    "message": "Elegantne kuupäeva vidin, mis näitab teile praegust kuupäeva."
   },
   "date_format": {
-    "message": "Date format"
+    "message": "Kuupäeva formaat"
   },
   "default": {
-    "message": "Default"
+    "message": "Vaikimisi"
   },
   "discord": {
-    "message": "Join the Discord"
+    "message": "Liitu diskoriga"
   },
   "display_name": {
-    "message": "Display name"
+    "message": "Kuva nimi"
   },
   "edit_the_pomodoro_settings": {
-    "message": "Edit the pomodoro settings."
+    "message": "Muuda pomodoro seadeid."
   },
   "enabled": {
-    "message": "Enabled"
+    "message": "Lubatud"
   },
   "enter_greeting": {
-    "message": "Enter greeting"
+    "message": "Sisestage tervitus"
   },
   "enter_name": {
-    "message": "Enter your name"
+    "message": "Sisestage oma nimi"
   },
   "every_day": {
-    "message": "Every day"
+    "message": "Iga päev"
   },
   "every_hour": {
-    "message": "Every hour"
+    "message": "Iga tund"
   },
   "every_reload": {
-    "message": "Every reload"
+    "message": "Iga korduslaadimine"
   },
   "every_week": {
-    "message": "Every week"
+    "message": "Igal nädalal"
   },
   "feature_request": {
-    "message": "Feature request"
+    "message": "Funktsiooni taotlus"
   },
   "feedback_callout": {
-    "message": "We need your feedback!"
+    "message": "Vajame teie tagasisidet!"
   },
   "feedback_callout_desc": {
-    "message": "Help us shape the future of Flowtide and tell us what you want to see next. We'd love to hear from you!"
+    "message": "Help us shape the future of Blooft and tell us what you want to see next. We'd love to hear from you!"
   },
   "file_read_error": {
-    "message": "We couldn't read the file. Please try again."
+    "message": "Me ei saanud faili lugeda. Palun proovige uuesti."
   },
   "file_too_large": {
-    "message": "File too large (max size is ~2.5 MB)"
+    "message": "Faili liiga suur (maksimaalne suurus on ~2,5 MB)"
   },
   "finish": {
-    "message": "Finish"
+    "message": "Lõpeta"
   },
   "focus": {
-    "message": "Focus"
+    "message": "Fookus"
   },
   "focus_sounds": {
     "message": "Focus Sounds"
   },
   "focus_sounds_description": {
-    "message": "Soundscapes to help you focus."
+    "message": "Helimaastikud, mis aitavad teil keskenduda."
   },
   "font": {
     "message": "Font"
   },
   "forum": {
-    "message": "Forum"
+    "message": "Foorum"
   },
   "general": {
-    "message": "General"
+    "message": "Üldine"
   },
   "get_started": {
-    "message": "Get started"
+    "message": "Alusta"
   },
   "give_feedback": {
-    "message": "Give feedback"
+    "message": "Andke tagasisidet"
   },
   "go_back": {
-    "message": "Go back"
+    "message": "Mine tagasi"
   },
   "good_afternoon": {
-    "message": "Good afternoon"
+    "message": "Tere päevast."
   },
   "good_evening": {
-    "message": "Good evening"
+    "message": "Tere õhtust."
   },
   "good_morning": {
-    "message": "Good morning"
+    "message": "Tere hommikust."
   },
   "good_night": {
-    "message": "Good night"
+    "message": "Head ööd."
   },
   "gradient": {
     "message": "Gradient"
   },
   "greeting": {
-    "message": "Greeting"
+    "message": "Tervitus"
   },
   "greeting_description_1": {
-    "message": "What should we call you?"
+    "message": "Kuidas peaksime teid kutsuma?"
   },
   "hide_items": {
-    "message": "Hide items"
+    "message": "Varjata esemed"
   },
   "hide_message": {
-    "message": "Hide message"
+    "message": "Peida sõnum"
   },
   "hide_settings": {
-    "message": "Hide settings button"
+    "message": "Peida seadete nuppu"
   },
   "hide_settings_description": {
-    "message": "Hide the settings button except on hover"
+    "message": "Peida seadete nuppu, välja arvatud hõljumisel"
   },
   "icon": {
-    "message": "Icon"
+    "message": "Ikoon"
   },
   "image": {
-    "message": "Image"
+    "message": "Pilt"
   },
   "imperial": {
     "message": "Imperial"
   },
   "invalid_file_type": {
-    "message": "Invalid file type. Please upload an image file."
+    "message": "Vale failitüüp. Palun laadige üles pildifail."
   },
   "join_the_community": {
-    "message": "Join the community"
+    "message": "Liitu kogukonnaga"
   },
   "latitude": {
-    "message": "Latitude"
+    "message": "Laiuskraad"
   },
   "layout": {
-    "message": "Layout"
+    "message": "Paigutus"
   },
   "leave_blank_to_disable": {
-    "message": "Leave blank to disable."
+    "message": "Deaktiveerimiseks jätke tühjaks."
   },
   "light": {
-    "message": "Light"
+    "message": "Valgus"
   },
   "local_file": {
-    "message": "Local file"
+    "message": "Kohalik fail"
   },
   "location": {
-    "message": "Location"
+    "message": "Asukoht"
   },
   "longitude": {
-    "message": "Longitude"
+    "message": "Pikkuskraad"
   },
   "lowercase": {
-    "message": "Lowercase"
+    "message": "Väikeste tähtedega"
   },
   "mantra_1": {
-    "message": "Every day is a chance to grow."
+    "message": "Iga päev on võimalus kasvada."
   },
   "mantra_10": {
-    "message": "Be here, in this moment."
+    "message": "Olge siin, selles hetkes."
   },
   "mantra_11": {
-    "message": "Each breath is a fresh start."
+    "message": "Iga hingamine on uus algus."
   },
   "mantra_12": {
-    "message": "The now is all we truly have."
+    "message": "Praegu on kõik, mis meil tõeliselt on."
   },
   "mantra_13": {
-    "message": "Dream big, start small."
+    "message": "Unistage suurelt, alustage väikselt."
   },
   "mantra_14": {
-    "message": "Focus on what you can control."
+    "message": "Keskenduge sellele, mida saate kontrollida."
   },
   "mantra_15": {
-    "message": "Greatness begins with the first step."
+    "message": "Suurus algab esimesest sammust."
   },
   "mantra_2": {
-    "message": "Progress, not perfection."
+    "message": "Progress, mitte täiuslikkus."
   },
   "mantra_3": {
-    "message": "Small steps lead to big changes."
+    "message": "Väikesed sammud viivad suurte muutusteni."
   },
   "mantra_4": {
-    "message": "Setbacks are setups for comebacks."
+    "message": "Tagasilöögid on ettevalmistused tagasitulekuks."
   },
   "mantra_5": {
-    "message": "You are stronger than you think."
+    "message": "Sa oled tugevam kui sa arvad."
   },
   "mantra_6": {
-    "message": "Challenges build your strength."
+    "message": "Väljakutsed suurendavad teie tugevust."
   },
   "mantra_7": {
-    "message": "Good things are coming your way."
+    "message": "Head asjad on teie poole tulemas."
   },
   "mantra_8": {
-    "message": "See the good in every situation."
+    "message": "Näha igas olukorras head."
   },
   "mantra_9": {
-    "message": "A hopeful heart sees endless possibilities."
+    "message": "Lootustandev süda näeb lõputuid võimalusi."
   },
   "mantras": {
-    "message": "Mantras"
+    "message": "Mantra"
   },
   "mantras_description": {
-    "message": "Inspirational mantras on every new tab."
+    "message": "Inspireerivad mantrad igal uuel vahekaardil."
   },
   "metric": {
-    "message": "Metric"
+    "message": "Metriline"
   },
   "mode": {
-    "message": "Mode"
+    "message": "Režiim"
   },
   "mono": {
     "message": "Mono"
   },
   "more": {
-    "message": "More"
+    "message": "Rohkem"
   },
   "nature": {
-    "message": "Nature"
+    "message": "Loodus"
   },
   "nature_description": {
-    "message": "Listen to nature soundscapes with this widget."
+    "message": "Kuula selle vidinaga looduse helimaastikke."
   },
   "nature_sounds": {
-    "message": "Nature Sounds"
+    "message": "Looduse helid"
   },
   "new_tab": {
-    "message": "New Tab"
+    "message": "Uus vahekaart"
   },
   "new_task": {
-    "message": "New task"
+    "message": "Uus ülesanne"
   },
   "new_wallpaper": {
-    "message": "New wallpaper"
+    "message": "Uus taustapilt"
   },
   "next": {
-    "message": "Next"
+    "message": "Järgmine"
   },
   "nightstand": {
-    "message": "Nightstand"
+    "message": "Öölaud"
   },
   "no_bookmarks": {
-    "message": "No bookmarks"
+    "message": "Ei ole järjehoidjaid"
   },
   "no_results": {
-    "message": "No results found"
+    "message": "Tulemusi ei leitud"
   },
   "normal": {
-    "message": "Normal"
+    "message": "Tavaline"
   },
   "notepad": {
-    "message": "Notepad"
+    "message": "Märkmik"
   },
   "notepad_description": {
-    "message": "A simple notepad widget."
+    "message": "Lihtne märkmiku vidin."
   },
   "notepad_disclaimer": {
-    "message": "Notes are stored in your browser's local storage, which may be unreliable and could result in data loss."
+    "message": "Märkmeid salvestatakse teie brauseri kohalikku mällu, mis võib olla ebausaldusväärne ja põhjustada andmete kadumist."
   },
   "opacity": {
-    "message": "Opacity"
+    "message": "Läbipaistvus"
   },
   "page": {
-    "message": "Page title and icon"
+    "message": "Lehe pealkiri ja ikoon"
   },
   "page_title": {
-    "message": "Page title"
+    "message": "Lehekülje pealkiri"
   },
   "pause_background_changes": {
-    "message": "Pause background changes"
+    "message": "Tausta muutuste peatamine"
   },
   "pinned_bookmarks": {
-    "message": "Pinned bookmarks"
+    "message": "Kinnitatud järjehoidjad"
   },
   "plugins": {
     "message": "Plugins"
@@ -480,153 +480,153 @@
     "message": "Pomodoro"
   },
   "pomodoro_description": {
-    "message": "Use the pomodoro technique for an interval-based workflow."
+    "message": "Kasutage pomodoro tehnikat intervallipõhise töökorralduse jaoks."
   },
   "pomodoro_settings": {
-    "message": "Pomodoro Settings"
+    "message": "Pomodoro seaded"
   },
   "pomodoro_timer": {
-    "message": "Pomodoro timer"
+    "message": "Pomodoro taimer"
   },
   "reset": {
     "message": "Reset"
   },
   "resources": {
-    "message": "Resources"
+    "message": "Ressursid"
   },
   "sans": {
     "message": "Sans"
   },
   "save": {
-    "message": "Save"
+    "message": "Salvesta"
   },
   "saved": {
-    "message": "Saved"
+    "message": "Salvestatud"
   },
   "search": {
-    "message": "Search"
+    "message": "Otsi"
   },
   "select_font": {
-    "message": "Select a font"
+    "message": "Valige font"
   },
   "serif": {
     "message": "Serif"
   },
   "set": {
-    "message": "Set"
+    "message": "Komplekt"
   },
   "set_greeting": {
-    "message": "Set greeting"
+    "message": "Seadke tervitus"
   },
   "settings": {
-    "message": "Settings"
+    "message": "Seaded"
   },
   "share_flowtide": {
-    "message": "Share Flowtide with a friend!"
+    "message": "Share Blooft with a friend!"
   },
   "show_items": {
-    "message": "Show items"
+    "message": "Näita objekte"
   },
   "skip": {
-    "message": "Skip"
+    "message": "Jäta  vahele."
   },
   "solid_color": {
-    "message": "Solid color"
+    "message": "Ühevärviline"
   },
   "sound_attribution": {
-    "message": "Sound attribution"
+    "message": "Helide omistamine"
   },
   "soundscapes": {
     "message": "Soundscapes"
   },
   "speed_dial": {
-    "message": "Speed Dial"
+    "message": "Kiirvalimine"
   },
   "square_widgets": {
-    "message": "Square widgets (very experimental)"
+    "message": "Ruudukujulised vidinad (väga eksperimentaalne)"
   },
   "square_widgets_description": {
-    "message": "Allow the clock and date widgets to be square"
+    "message": "Luba kella ja kuupäeva vidinad olla ruudukujulised"
   },
   "start": {
     "message": "Start"
   },
   "start_background_changes": {
-    "message": "Start background changes"
+    "message": "Alusta taustamuutusi"
   },
   "start_using": {
-    "message": "Start using Flowtide"
+    "message": "Start using Blooft"
   },
   "stop": {
     "message": "Stop"
   },
   "stopwatch": {
-    "message": "Stopwatch"
+    "message": "Stoppkell"
   },
   "stopwatch_description": {
-    "message": "Add a stopwatch widget to your start page."
+    "message": "Lisage stoppkella vidin oma avalehele."
   },
   "tasks": {
-    "message": "Tasks"
+    "message": "Ülesanded"
   },
   "text_style": {
-    "message": "Text style"
+    "message": "Teksti stiil"
   },
   "thanks": {
-    "message": "Thank you for using Flowtide!"
+    "message": "Thank you for using Blooft!"
   },
   "theme": {
-    "message": "Theme"
+    "message": "Teema"
   },
   "todo_list": {
-    "message": "To-do list"
+    "message": "Tehtud ülesannete nimekiri"
   },
   "todo_list_description": {
-    "message": "Track your todos with an easy widget."
+    "message": "Jälgi oma todosid lihtsa vidina abil."
   },
   "toggle_theme": {
-    "message": "Toggle theme"
+    "message": "Teema vahetamine"
   },
   "top": {
     "message": "Top"
   },
   "top_left": {
-    "message": "Top left"
+    "message": "Ülemine vasakpoolne"
   },
   "top_right": {
-    "message": "Top right"
+    "message": "Paremal üleval"
   },
   "type_command": {
-    "message": "Type a command"
+    "message": "Sisestage käsk"
   },
   "unit": {
-    "message": "Unit"
+    "message": "Üksus"
   },
   "uppercase": {
-    "message": "Uppercase"
+    "message": "Suurtähtedega"
   },
   "wallpaper_blur": {
-    "message": "Wallpaper blur"
+    "message": "Taustapildi hägusus"
   },
   "weather": {
-    "message": "Weather"
+    "message": "Ilm"
   },
   "weatherDisclaimer": {
-    "message": "<a href=\"$1\">Weather data by Open-Meteo.com</a>. Weather data is provided 'as-is' without any warranty or guarantee of accuracy. Location data is handled by Open-Meteo and subject to their privacy policy."
+    "message": "<a href=\"$1\">Open-Meteo.com ilmaandmed</a>. Ilmaandmed on esitatud ilma igasuguse garantiita või täpsuse tagamiseta. Asukohaandmeid haldab Open-Meteo ja nende privaatsuspoliitikale alluvad."
   },
   "welcome_message": {
-    "message": "Welcome to Flowtide"
+    "message": "Welcome to Blooft"
   },
   "widgets": {
-    "message": "Widgets"
+    "message": "Vidinad"
   },
   "work": {
-    "message": "Work"
+    "message": "Töö"
   },
   "work_minutes": {
-    "message": "Work minutes"
+    "message": "Tööprotokollid"
   },
   "you_may_need_to_refresh": {
-    "message": "You may need to refresh the page to see the changes."
+    "message": "Muutuste nägemiseks peate võib-olla lehekülge värskendama."
   }
 }

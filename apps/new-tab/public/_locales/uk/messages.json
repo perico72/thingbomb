@@ -1,632 +1,632 @@
 {
   "actions": {
-    "message": "Actions"
+    "message": "Дії"
   },
   "add": {
-    "message": "Add"
+    "message": "Додати"
   },
   "add_task": {
-    "message": "Add task"
+    "message": "Додати завдання"
   },
   "add_widget": {
-    "message": "Add widget"
+    "message": "Додати віджет"
   },
   "added": {
-    "message": "Added"
+    "message": "Додано"
   },
   "advanced": {
-    "message": "Advanced"
+    "message": "Розширений"
   },
   "ambience": {
-    "message": "Ambience"
+    "message": "Атмосфера"
   },
   "ambience_sounds": {
-    "message": "Ambience Sounds"
+    "message": "Звуки навколишнього середовища"
   },
   "ambience_sounds_description": {
-    "message": "Ambient soundscapes to help you relax."
+    "message": "Атмосферні звукові пейзажі, які допоможуть вам розслабитися."
   },
   "appearance": {
-    "message": "Appearance"
+    "message": "Зовнішній вигляд"
   },
   "available_bookmarks": {
-    "message": "Available bookmarks"
+    "message": "Доступні закладки"
   },
   "background": {
-    "message": "Background"
+    "message": "Передумови"
   },
   "blank": {
-    "message": "Blank"
+    "message": "Порожній."
   },
   "blocks": {
-    "message": "Blocks"
+    "message": "Блоки"
   },
   "blocks_description": {
-    "message": "Supercharge your New Tab page with beautifully designed blocks created by Flowtide. You can add as many as you like to your start page."
+    "message": "Supercharge your New Tab page with beautifully designed blocks created by Blooft. You can add as many as you like to your start page."
   },
   "bookmark_folders": {
-    "message": "Bookmark Folders"
+    "message": "Папки закладок"
   },
   "bookmarks": {
-    "message": "Bookmarks"
+    "message": "Закладки"
   },
   "bookmarks_description": {
-    "message": "Easy access to your first 9 bookmarks with this widget."
+    "message": "Легкий доступ до перших 9 закладок за допомогою цього віджету."
   },
   "bottom_left": {
-    "message": "Bottom left"
+    "message": "Внизу зліва"
   },
   "bottom_right": {
-    "message": "Bottom right"
+    "message": "Внизу праворуч"
   },
   "break": {
-    "message": "Break"
+    "message": "Перерва."
   },
   "break_minutes": {
-    "message": "Break minutes"
+    "message": "Хвилини перерви"
   },
   "cancel": {
-    "message": "Cancel"
+    "message": "Скасувати"
   },
   "center": {
-    "message": "Center"
+    "message": "Центр"
   },
   "choose_file": {
-    "message": "Choose file"
+    "message": "Виберіть файл"
   },
   "choose_mode": {
-    "message": "Choose a mode"
+    "message": "Виберіть режим"
   },
   "clear_data": {
-    "message": "Clear data"
+    "message": "Чіткі дані"
   },
   "clear_data_description": {
-    "message": "Clear all data from the extension. THIS CANNOT BE UNDONE."
+    "message": "Очистити всі дані з розширення. ЦЕ НЕ МОЖНА СКАСУВАТИ."
   },
   "clock": {
-    "message": "Clock"
+    "message": "Годинник"
   },
   "clock_description": {
-    "message": "Adds a clock widget to your start page."
+    "message": "Додає віджет годинника на вашу стартову сторінку."
   },
   "clock_format": {
-    "message": "Clock format"
+    "message": "Формат годинника"
   },
   "close": {
-    "message": "Close"
+    "message": "Закрити"
   },
   "comic_sans": {
     "message": "Comic Sans"
   },
   "community_desc": {
-    "message": "Join the Flowtide community on Discord to showcase your work, ask questions, test new features, and chat with the community."
+    "message": "Join the Blooft community on Discord to showcase your work, ask questions, test new features, and chat with the community."
   },
   "complete": {
-    "message": "Complete"
+    "message": "Завершено"
   },
   "compose_gmail_message": {
-    "message": "Compose Gmail Message"
+    "message": "Створення повідомлення Gmail"
   },
   "coordinates": {
-    "message": "Coordinates"
+    "message": "Координати"
   },
   "copied_to_clipboard": {
-    "message": "Copied to clipboard"
+    "message": "Скопійовано в буфер обміну"
   },
   "counter": {
-    "message": "Counter"
+    "message": "Лічильник"
   },
   "counter_description": {
-    "message": "Count things easily."
+    "message": "Легко рахувати."
   },
   "create_bitly_link": {
-    "message": "Create Bitly Link"
+    "message": "Створіть Bitly Link"
   },
   "create_canva_design": {
-    "message": "Create Canva Design"
+    "message": "Створіть дизайн Canva"
   },
   "create_canva_video": {
-    "message": "Create Canva Video"
+    "message": "Створіть відео у Canva"
   },
   "create_excel_workbook": {
-    "message": "Create Excel Workbook"
+    "message": "Створення книги Excel"
   },
   "create_figma_file": {
-    "message": "Create Figma File"
+    "message": "Створення файлу Figma"
   },
   "create_github_gist": {
-    "message": "Create GitHub Gist"
+    "message": "Створіть GitHub Gist"
   },
   "create_github_repository": {
-    "message": "Create GitHub Repository"
+    "message": "Створення репозиторію GitHub"
   },
   "create_google_calendar_event": {
-    "message": "Create Google Calendar Event"
+    "message": "Створити подію в Календарі Google"
   },
   "create_google_document": {
-    "message": "Create Google Document"
+    "message": "Створіть Google Документ"
   },
   "create_google_sheet": {
-    "message": "Create Google Sheet"
+    "message": "Створіть аркуш Google"
   },
   "create_google_slide": {
-    "message": "Create Google Slide"
+    "message": "Створіть Google Slide"
   },
   "create_notion_page": {
-    "message": "Create Notion Page"
+    "message": "Створити сторінку поняття"
   },
   "create_paper_document": {
-    "message": "Create Paper Document"
+    "message": "Створити паперовий документ"
   },
   "create_powerpoint_presentation": {
-    "message": "Create PowerPoint Presentation"
+    "message": "Створення презентації PowerPoint"
   },
   "create_todoist_task": {
-    "message": "Create Todoist Task"
+    "message": "Створіть завдання в Тодоісті"
   },
   "create_vercel_project": {
-    "message": "Create Vercel Project"
+    "message": "Створити проект Vercel"
   },
   "create_word_document": {
-    "message": "Create Word Document"
+    "message": "Створити документ Word"
   },
   "create_zoom_meeting": {
-    "message": "Create Zoom Meeting"
+    "message": "Створити Zoom-нараду"
   },
   "custom_color": {
-    "message": "Custom color"
+    "message": "Нестандартний колір"
   },
   "custom_css": {
-    "message": "Custom CSS"
+    "message": "Кастомний CSS"
   },
   "custom_url": {
-    "message": "Custom URL"
+    "message": "Власна URL-адреса"
   },
   "customize": {
-    "message": "Customize your new tab"
+    "message": "Налаштуйте нову вкладку"
   },
   "customize_desc": {
-    "message": "Give your New Tab a personal touch with a variety of customization options. These are just a few options; the possibilities are almost limitless."
+    "message": "Надайте своїй новій вкладці індивідуального стилю за допомогою різноманітних опцій налаштування. Це лише кілька варіантів; можливості майже безмежні."
   },
   "dark": {
-    "message": "Dark"
+    "message": "Темнота."
   },
   "dashboard": {
-    "message": "Dashboard"
+    "message": "Приладова панель"
   },
   "date": {
-    "message": "Date"
+    "message": "Дата"
   },
   "date_description": {
-    "message": "A sleek date widget that shows you the current date."
+    "message": "Елегантний віджет дати, який показує поточну дату."
   },
   "date_format": {
-    "message": "Date format"
+    "message": "Формат дати"
   },
   "default": {
-    "message": "Default"
+    "message": "За замовчуванням"
   },
   "discord": {
-    "message": "Join the Discord"
+    "message": "Приєднуйтесь до Розбрату"
   },
   "display_name": {
-    "message": "Display name"
+    "message": "Ім'я користувача"
   },
   "edit_the_pomodoro_settings": {
-    "message": "Edit the pomodoro settings."
+    "message": "Відредагуйте налаштування помодоро."
   },
   "enabled": {
-    "message": "Enabled"
+    "message": "Увімкнено"
   },
   "enter_greeting": {
-    "message": "Enter greeting"
+    "message": "Введіть привітання"
   },
   "enter_name": {
-    "message": "Enter your name"
+    "message": "Введіть своє ім'я"
   },
   "every_day": {
-    "message": "Every day"
+    "message": "Щодня"
   },
   "every_hour": {
-    "message": "Every hour"
+    "message": "Щогодини"
   },
   "every_reload": {
-    "message": "Every reload"
+    "message": "Кожна перезарядка"
   },
   "every_week": {
-    "message": "Every week"
+    "message": "Щотижня"
   },
   "feature_request": {
-    "message": "Feature request"
+    "message": "Запит на функцію"
   },
   "feedback_callout": {
-    "message": "We need your feedback!"
+    "message": "Нам потрібен ваш відгук!"
   },
   "feedback_callout_desc": {
-    "message": "Help us shape the future of Flowtide and tell us what you want to see next. We'd love to hear from you!"
+    "message": "Help us shape the future of Blooft and tell us what you want to see next. We'd love to hear from you!"
   },
   "file_read_error": {
-    "message": "We couldn't read the file. Please try again."
+    "message": "Ми не змогли прочитати файл. Спробуйте ще раз."
   },
   "file_too_large": {
-    "message": "File too large (max size is ~2.5 MB)"
+    "message": "Файл занадто великий (максимальний розмір ~2.5 МБ)"
   },
   "finish": {
-    "message": "Finish"
+    "message": "Фініш."
   },
   "focus": {
-    "message": "Focus"
+    "message": "Фокус"
   },
   "focus_sounds": {
-    "message": "Focus Sounds"
+    "message": "Звуки фокусування"
   },
   "focus_sounds_description": {
-    "message": "Soundscapes to help you focus."
+    "message": "Звукові ефекти, які допоможуть вам зосередитися."
   },
   "font": {
-    "message": "Font"
+    "message": "Шрифт"
   },
   "forum": {
-    "message": "Forum"
+    "message": "Форум"
   },
   "general": {
-    "message": "General"
+    "message": "Генерал"
   },
   "get_started": {
-    "message": "Get started"
+    "message": "Починайте."
   },
   "give_feedback": {
-    "message": "Give feedback"
+    "message": "Залиште відгук"
   },
   "go_back": {
-    "message": "Go back"
+    "message": "Повернись."
   },
   "good_afternoon": {
-    "message": "Good afternoon"
+    "message": "Доброго дня."
   },
   "good_evening": {
-    "message": "Good evening"
+    "message": "Добрий вечір."
   },
   "good_morning": {
-    "message": "Good morning"
+    "message": "Доброго ранку."
   },
   "good_night": {
-    "message": "Good night"
+    "message": "Добраніч."
   },
   "gradient": {
-    "message": "Gradient"
+    "message": "Градієнт"
   },
   "greeting": {
-    "message": "Greeting"
+    "message": "Привітання"
   },
   "greeting_description_1": {
-    "message": "What should we call you?"
+    "message": "Як нам тебе називати?"
   },
   "hide_items": {
-    "message": "Hide items"
+    "message": "Приховати елементи"
   },
   "hide_message": {
-    "message": "Hide message"
+    "message": "Приховати повідомлення"
   },
   "hide_settings": {
-    "message": "Hide settings button"
+    "message": "Приховати кнопку налаштувань"
   },
   "hide_settings_description": {
-    "message": "Hide the settings button except on hover"
+    "message": "Приховати кнопку налаштувань, окрім як при наведенні"
   },
   "icon": {
-    "message": "Icon"
+    "message": "Ікона"
   },
   "image": {
-    "message": "Image"
+    "message": "Зображення"
   },
   "imperial": {
-    "message": "Imperial"
+    "message": "Імперіал"
   },
   "invalid_file_type": {
-    "message": "Invalid file type. Please upload an image file."
+    "message": "Неправильний тип файлу. Будь ласка, завантажте файл зображення."
   },
   "join_the_community": {
-    "message": "Join the community"
+    "message": "Приєднуйтесь до спільноти"
   },
   "latitude": {
-    "message": "Latitude"
+    "message": "Широта"
   },
   "layout": {
-    "message": "Layout"
+    "message": "Макет"
   },
   "leave_blank_to_disable": {
-    "message": "Leave blank to disable."
+    "message": "Залиште порожнє поле, щоб вимкнути."
   },
   "light": {
-    "message": "Light"
+    "message": "Світло"
   },
   "local_file": {
-    "message": "Local file"
+    "message": "Локальний файл"
   },
   "location": {
-    "message": "Location"
+    "message": "Місцезнаходження"
   },
   "longitude": {
-    "message": "Longitude"
+    "message": "Довгота"
   },
   "lowercase": {
-    "message": "Lowercase"
+    "message": "Малі літери"
   },
   "mantra_1": {
-    "message": "Every day is a chance to grow."
+    "message": "Кожен день - це шанс розвиватися."
   },
   "mantra_10": {
-    "message": "Be here, in this moment."
+    "message": "Будьте тут, у цій миті."
   },
   "mantra_11": {
-    "message": "Each breath is a fresh start."
+    "message": "Кожен вдих - це новий старт."
   },
   "mantra_12": {
-    "message": "The now is all we truly have."
+    "message": "Теперішнє - це все, що у нас є."
   },
   "mantra_13": {
-    "message": "Dream big, start small."
+    "message": "Мрійте про велике, починайте з малого."
   },
   "mantra_14": {
-    "message": "Focus on what you can control."
+    "message": "Зосередьтеся на тому, що ви можете контролювати."
   },
   "mantra_15": {
-    "message": "Greatness begins with the first step."
+    "message": "Велич починається з першого кроку."
   },
   "mantra_2": {
-    "message": "Progress, not perfection."
+    "message": "Прогрес, а не досконалість."
   },
   "mantra_3": {
-    "message": "Small steps lead to big changes."
+    "message": "Маленькі кроки ведуть до великих змін."
   },
   "mantra_4": {
-    "message": "Setbacks are setups for comebacks."
+    "message": "Невдачі - це підготовка до перемог."
   },
   "mantra_5": {
-    "message": "You are stronger than you think."
+    "message": "Ви сильніші, ніж ви думаєте."
   },
   "mantra_6": {
-    "message": "Challenges build your strength."
+    "message": "Виклики загартовують силу."
   },
   "mantra_7": {
-    "message": "Good things are coming your way."
+    "message": "Хороші речі йдуть на вашому шляху."
   },
   "mantra_8": {
-    "message": "See the good in every situation."
+    "message": "Бачити хороше в кожній ситуації."
   },
   "mantra_9": {
-    "message": "A hopeful heart sees endless possibilities."
+    "message": "Серце, що сповнене надії, бачить безмежні можливості."
   },
   "mantras": {
-    "message": "Mantras"
+    "message": "Мантри"
   },
   "mantras_description": {
-    "message": "Inspirational mantras on every new tab."
+    "message": "Надихаючі мантри на кожній новій вкладці."
   },
   "metric": {
-    "message": "Metric"
+    "message": "Метрика"
   },
   "mode": {
-    "message": "Mode"
+    "message": "Режим"
   },
   "mono": {
-    "message": "Mono"
+    "message": "Моно"
   },
   "more": {
-    "message": "More"
+    "message": "Більше"
   },
   "nature": {
-    "message": "Nature"
+    "message": "Природа"
   },
   "nature_description": {
-    "message": "Listen to nature soundscapes with this widget."
+    "message": "Слухайте звуки природи за допомогою цього віджету."
   },
   "nature_sounds": {
-    "message": "Nature Sounds"
+    "message": "Звуки природи"
   },
   "new_tab": {
-    "message": "New Tab"
+    "message": "Нова вкладка"
   },
   "new_task": {
-    "message": "New task"
+    "message": "Нове завдання"
   },
   "new_wallpaper": {
-    "message": "New wallpaper"
+    "message": "Нові шпалери"
   },
   "next": {
-    "message": "Next"
+    "message": "Далі"
   },
   "nightstand": {
-    "message": "Nightstand"
+    "message": "Тумбочка."
   },
   "no_bookmarks": {
-    "message": "No bookmarks"
+    "message": "Немає закладок"
   },
   "no_results": {
-    "message": "No results found"
+    "message": "Не знайдено жодного результату"
   },
   "normal": {
-    "message": "Normal"
+    "message": "Нормально."
   },
   "notepad": {
-    "message": "Notepad"
+    "message": "Блокнот."
   },
   "notepad_description": {
-    "message": "A simple notepad widget."
+    "message": "Простий віджет блокнота."
   },
   "notepad_disclaimer": {
-    "message": "Notes are stored in your browser's local storage, which may be unreliable and could result in data loss."
+    "message": "Нотатки зберігаються в локальному сховищі вашого браузера, яке може бути ненадійним і може призвести до втрати даних."
   },
   "opacity": {
-    "message": "Opacity"
+    "message": "Непрозорість"
   },
   "page": {
-    "message": "Page title and icon"
+    "message": "Назва сторінки та іконка"
   },
   "page_title": {
-    "message": "Page title"
+    "message": "Назва сторінки"
   },
   "pause_background_changes": {
-    "message": "Pause background changes"
+    "message": "Призупинити зміну фону"
   },
   "pinned_bookmarks": {
-    "message": "Pinned bookmarks"
+    "message": "Закріплені закладки"
   },
   "plugins": {
-    "message": "Plugins"
+    "message": "Плагіни"
   },
   "pomodoro": {
-    "message": "Pomodoro"
+    "message": "Помодоро"
   },
   "pomodoro_description": {
-    "message": "Use the pomodoro technique for an interval-based workflow."
+    "message": "Використовуйте техніку помодоро для інтервального робочого процесу."
   },
   "pomodoro_settings": {
-    "message": "Pomodoro Settings"
+    "message": "Налаштування Pomodoro"
   },
   "pomodoro_timer": {
-    "message": "Pomodoro timer"
+    "message": "Таймер Pomodoro"
   },
   "reset": {
-    "message": "Reset"
+    "message": "Перезавантаження"
   },
   "resources": {
-    "message": "Resources"
+    "message": "Ресурси"
   },
   "sans": {
-    "message": "Sans"
+    "message": "Без"
   },
   "save": {
-    "message": "Save"
+    "message": "Зберегти"
   },
   "saved": {
-    "message": "Saved"
+    "message": "Врятовано."
   },
   "search": {
-    "message": "Search"
+    "message": "Пошук"
   },
   "select_font": {
-    "message": "Select a font"
+    "message": "Виберіть шрифт"
   },
   "serif": {
-    "message": "Serif"
+    "message": "Засечка."
   },
   "set": {
-    "message": "Set"
+    "message": "Набір"
   },
   "set_greeting": {
-    "message": "Set greeting"
+    "message": "Встановити привітання"
   },
   "settings": {
-    "message": "Settings"
+    "message": "Налаштування"
   },
   "share_flowtide": {
-    "message": "Share Flowtide with a friend!"
+    "message": "Share Blooft with a friend!"
   },
   "show_items": {
-    "message": "Show items"
+    "message": "Показати товари"
   },
   "skip": {
-    "message": "Skip"
+    "message": "Пропустити."
   },
   "solid_color": {
-    "message": "Solid color"
+    "message": "Суцільний колір"
   },
   "sound_attribution": {
-    "message": "Sound attribution"
+    "message": "Атрибуція звуку"
   },
   "soundscapes": {
-    "message": "Soundscapes"
+    "message": "Звукові пейзажі"
   },
   "speed_dial": {
-    "message": "Speed Dial"
+    "message": "Швидкий набір"
   },
   "square_widgets": {
-    "message": "Square widgets (very experimental)"
+    "message": "Квадратні віджети (дуже експериментальні)"
   },
   "square_widgets_description": {
-    "message": "Allow the clock and date widgets to be square"
+    "message": "Дозволити віджетам годинника та дати бути квадратними"
   },
   "start": {
-    "message": "Start"
+    "message": "Старт"
   },
   "start_background_changes": {
-    "message": "Start background changes"
+    "message": "Почніть зміну фону"
   },
   "start_using": {
-    "message": "Start using Flowtide"
+    "message": "Start using Blooft"
   },
   "stop": {
-    "message": "Stop"
+    "message": "Стоп!"
   },
   "stopwatch": {
-    "message": "Stopwatch"
+    "message": "Секундомір."
   },
   "stopwatch_description": {
-    "message": "Add a stopwatch widget to your start page."
+    "message": "Додайте віджет секундоміра на стартову сторінку."
   },
   "tasks": {
-    "message": "Tasks"
+    "message": "Завдання"
   },
   "text_style": {
-    "message": "Text style"
+    "message": "Стиль тексту"
   },
   "thanks": {
-    "message": "Thank you for using Flowtide!"
+    "message": "Thank you for using Blooft!"
   },
   "theme": {
-    "message": "Theme"
+    "message": "Тема"
   },
   "todo_list": {
-    "message": "To-do list"
+    "message": "Список справ"
   },
   "todo_list_description": {
-    "message": "Track your todos with an easy widget."
+    "message": "Відстежуйте свої тодо за допомогою зручного віджету."
   },
   "toggle_theme": {
-    "message": "Toggle theme"
+    "message": "Переключити тему"
   },
   "top": {
-    "message": "Top"
+    "message": "Верхня частина"
   },
   "top_left": {
-    "message": "Top left"
+    "message": "Вгорі ліворуч"
   },
   "top_right": {
-    "message": "Top right"
+    "message": "Вгорі праворуч"
   },
   "type_command": {
-    "message": "Type a command"
+    "message": "Введіть команду"
   },
   "unit": {
-    "message": "Unit"
+    "message": "Одиниця"
   },
   "uppercase": {
-    "message": "Uppercase"
+    "message": "Верхній регістр"
   },
   "wallpaper_blur": {
-    "message": "Wallpaper blur"
+    "message": "Розмиття шпалер"
   },
   "weather": {
-    "message": "Weather"
+    "message": "Погода"
   },
   "weatherDisclaimer": {
-    "message": "<a href=\"$1\">Weather data by Open-Meteo.com</a>. Weather data is provided 'as-is' without any warranty or guarantee of accuracy. Location data is handled by Open-Meteo and subject to their privacy policy."
+    "message": "<a href=\"$1\">Дані про погоду від Open-Meteo.com</a>. Погодні дані надаються \"як є\" без будь-яких гарантій або гарантій точності. Дані про місцезнаходження обробляються Open-Meteo і підпадають під дію їхньої політики конфіденційності."
   },
   "welcome_message": {
-    "message": "Welcome to Flowtide"
+    "message": "Welcome to Blooft"
   },
   "widgets": {
-    "message": "Widgets"
+    "message": "Віджети"
   },
   "work": {
-    "message": "Work"
+    "message": "Робота"
   },
   "work_minutes": {
-    "message": "Work minutes"
+    "message": "Робочі протоколи"
   },
   "you_may_need_to_refresh": {
-    "message": "You may need to refresh the page to see the changes."
+    "message": "Можливо, вам доведеться оновити сторінку, щоб побачити зміни."
   }
 }

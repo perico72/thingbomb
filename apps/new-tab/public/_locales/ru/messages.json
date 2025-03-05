@@ -1,632 +1,632 @@
 {
   "actions": {
-    "message": "Actions"
+    "message": "Действия"
   },
   "add": {
-    "message": "Add"
+    "message": "Добавить"
   },
   "add_task": {
-    "message": "Add task"
+    "message": "Добавить задание"
   },
   "add_widget": {
-    "message": "Add widget"
+    "message": "Добавить виджет"
   },
   "added": {
-    "message": "Added"
+    "message": "Добавлено"
   },
   "advanced": {
-    "message": "Advanced"
+    "message": "Расширенный"
   },
   "ambience": {
     "message": "Ambience"
   },
   "ambience_sounds": {
-    "message": "Ambience Sounds"
+    "message": "Звуки атмосферы"
   },
   "ambience_sounds_description": {
-    "message": "Ambient soundscapes to help you relax."
+    "message": "Окружающие звуковые ландшафты помогут вам расслабиться."
   },
   "appearance": {
-    "message": "Appearance"
+    "message": "Внешний вид"
   },
   "available_bookmarks": {
-    "message": "Available bookmarks"
+    "message": "Доступные закладки"
   },
   "background": {
-    "message": "Background"
+    "message": "Фон"
   },
   "blank": {
-    "message": "Blank"
+    "message": "Пустой"
   },
   "blocks": {
-    "message": "Blocks"
+    "message": "Блоки"
   },
   "blocks_description": {
-    "message": "Supercharge your New Tab page with beautifully designed blocks created by Flowtide. You can add as many as you like to your start page."
+    "message": "Supercharge your New Tab page with beautifully designed blocks created by Blooft. You can add as many as you like to your start page."
   },
   "bookmark_folders": {
-    "message": "Bookmark Folders"
+    "message": "Папки с закладками"
   },
   "bookmarks": {
-    "message": "Bookmarks"
+    "message": "Закладки"
   },
   "bookmarks_description": {
-    "message": "Easy access to your first 9 bookmarks with this widget."
+    "message": "С помощью этого виджета можно легко получить доступ к 9 первым закладкам."
   },
   "bottom_left": {
-    "message": "Bottom left"
+    "message": "Слева внизу"
   },
   "bottom_right": {
-    "message": "Bottom right"
+    "message": "Справа внизу"
   },
   "break": {
-    "message": "Break"
+    "message": "Перерыв"
   },
   "break_minutes": {
-    "message": "Break minutes"
+    "message": "Минуты перерыва"
   },
   "cancel": {
-    "message": "Cancel"
+    "message": "Отмена"
   },
   "center": {
-    "message": "Center"
+    "message": "Центр"
   },
   "choose_file": {
-    "message": "Choose file"
+    "message": "Выберите файл"
   },
   "choose_mode": {
-    "message": "Choose a mode"
+    "message": "Выберите режим"
   },
   "clear_data": {
-    "message": "Clear data"
+    "message": "Очистить данные"
   },
   "clear_data_description": {
-    "message": "Clear all data from the extension. THIS CANNOT BE UNDONE."
+    "message": "Очистите все данные из расширения. ЭТО НЕЛЬЗЯ ОТМЕНИТЬ."
   },
   "clock": {
-    "message": "Clock"
+    "message": "Часы"
   },
   "clock_description": {
-    "message": "Adds a clock widget to your start page."
+    "message": "Добавляет виджет часов на стартовую страницу."
   },
   "clock_format": {
-    "message": "Clock format"
+    "message": "Формат часов"
   },
   "close": {
-    "message": "Close"
+    "message": "Закрыть"
   },
   "comic_sans": {
-    "message": "Comic Sans"
+    "message": "Комикс Санс"
   },
   "community_desc": {
-    "message": "Join the Flowtide community on Discord to showcase your work, ask questions, test new features, and chat with the community."
+    "message": "Join the Blooft community on Discord to showcase your work, ask questions, test new features, and chat with the community."
   },
   "complete": {
-    "message": "Complete"
+    "message": "Полный"
   },
   "compose_gmail_message": {
-    "message": "Compose Gmail Message"
+    "message": "Составить сообщение Gmail"
   },
   "coordinates": {
-    "message": "Coordinates"
+    "message": "Координаты"
   },
   "copied_to_clipboard": {
-    "message": "Copied to clipboard"
+    "message": "Скопировано в буфер обмена"
   },
   "counter": {
-    "message": "Counter"
+    "message": "Счетчик"
   },
   "counter_description": {
-    "message": "Count things easily."
+    "message": "Легко пересчитывайте предметы."
   },
   "create_bitly_link": {
-    "message": "Create Bitly Link"
+    "message": "Создание ссылки Bitly"
   },
   "create_canva_design": {
-    "message": "Create Canva Design"
+    "message": "Создание дизайна Canva"
   },
   "create_canva_video": {
-    "message": "Create Canva Video"
+    "message": "Создание видео в Canva"
   },
   "create_excel_workbook": {
-    "message": "Create Excel Workbook"
+    "message": "Создание рабочей книги Excel"
   },
   "create_figma_file": {
-    "message": "Create Figma File"
+    "message": "Создайте файл Figma"
   },
   "create_github_gist": {
-    "message": "Create GitHub Gist"
+    "message": "Создайте Gist на GitHub"
   },
   "create_github_repository": {
-    "message": "Create GitHub Repository"
+    "message": "Создайте репозиторий GitHub"
   },
   "create_google_calendar_event": {
-    "message": "Create Google Calendar Event"
+    "message": "Создание события в календаре Google"
   },
   "create_google_document": {
-    "message": "Create Google Document"
+    "message": "Создать документ Google"
   },
   "create_google_sheet": {
-    "message": "Create Google Sheet"
+    "message": "Создайте лист Google"
   },
   "create_google_slide": {
-    "message": "Create Google Slide"
+    "message": "Создайте слайд Google"
   },
   "create_notion_page": {
-    "message": "Create Notion Page"
+    "message": "Создать страницу понятий"
   },
   "create_paper_document": {
-    "message": "Create Paper Document"
+    "message": "Создание бумажного документа"
   },
   "create_powerpoint_presentation": {
-    "message": "Create PowerPoint Presentation"
+    "message": "Создание презентации PowerPoint"
   },
   "create_todoist_task": {
-    "message": "Create Todoist Task"
+    "message": "Создание задачи Todoist"
   },
   "create_vercel_project": {
-    "message": "Create Vercel Project"
+    "message": "Создание проекта Vercel"
   },
   "create_word_document": {
-    "message": "Create Word Document"
+    "message": "Создать документ Word"
   },
   "create_zoom_meeting": {
-    "message": "Create Zoom Meeting"
+    "message": "Создание собрания Zoom"
   },
   "custom_color": {
-    "message": "Custom color"
+    "message": "Пользовательский цвет"
   },
   "custom_css": {
-    "message": "Custom CSS"
+    "message": "Пользовательский CSS"
   },
   "custom_url": {
-    "message": "Custom URL"
+    "message": "Пользовательский URL"
   },
   "customize": {
-    "message": "Customize your new tab"
+    "message": "Настройте новую вкладку"
   },
   "customize_desc": {
-    "message": "Give your New Tab a personal touch with a variety of customization options. These are just a few options; the possibilities are almost limitless."
+    "message": "Придайте новой вкладке индивидуальность с помощью различных вариантов настройки. Это лишь несколько вариантов; возможности практически безграничны."
   },
   "dark": {
-    "message": "Dark"
+    "message": "Темнота"
   },
   "dashboard": {
-    "message": "Dashboard"
+    "message": "Приборная панель"
   },
   "date": {
-    "message": "Date"
+    "message": "Дата"
   },
   "date_description": {
-    "message": "A sleek date widget that shows you the current date."
+    "message": "Элегантный виджет даты, который показывает текущую дату."
   },
   "date_format": {
-    "message": "Date format"
+    "message": "Формат даты"
   },
   "default": {
-    "message": "Default"
+    "message": "По умолчанию"
   },
   "discord": {
-    "message": "Join the Discord"
+    "message": "Присоединяйтесь к Дискорду"
   },
   "display_name": {
-    "message": "Display name"
+    "message": "Отображаемое имя"
   },
   "edit_the_pomodoro_settings": {
-    "message": "Edit the pomodoro settings."
+    "message": "Отредактируйте настройки pomodoro."
   },
   "enabled": {
-    "message": "Enabled"
+    "message": "Включено"
   },
   "enter_greeting": {
-    "message": "Enter greeting"
+    "message": "Введите приветствие"
   },
   "enter_name": {
-    "message": "Enter your name"
+    "message": "Введите ваше имя"
   },
   "every_day": {
-    "message": "Every day"
+    "message": "Каждый день"
   },
   "every_hour": {
-    "message": "Every hour"
+    "message": "Каждый час"
   },
   "every_reload": {
-    "message": "Every reload"
+    "message": "Каждая перезарядка"
   },
   "every_week": {
-    "message": "Every week"
+    "message": "Каждую неделю"
   },
   "feature_request": {
-    "message": "Feature request"
+    "message": "Запрос функции"
   },
   "feedback_callout": {
-    "message": "We need your feedback!"
+    "message": "Нам нужны ваши отзывы!"
   },
   "feedback_callout_desc": {
-    "message": "Help us shape the future of Flowtide and tell us what you want to see next. We'd love to hear from you!"
+    "message": "Help us shape the future of Blooft and tell us what you want to see next. We'd love to hear from you!"
   },
   "file_read_error": {
-    "message": "We couldn't read the file. Please try again."
+    "message": "Мы не смогли прочитать файл. Пожалуйста, попробуйте еще раз."
   },
   "file_too_large": {
-    "message": "File too large (max size is ~2.5 MB)"
+    "message": "Файл слишком большой (максимальный размер ~2,5 МБ)"
   },
   "finish": {
-    "message": "Finish"
+    "message": "Отделка"
   },
   "focus": {
-    "message": "Focus"
+    "message": "Фокус"
   },
   "focus_sounds": {
-    "message": "Focus Sounds"
+    "message": "Фокусные звуки"
   },
   "focus_sounds_description": {
-    "message": "Soundscapes to help you focus."
+    "message": "Звуковые пейзажи помогут вам сосредоточиться."
   },
   "font": {
-    "message": "Font"
+    "message": "Шрифт"
   },
   "forum": {
-    "message": "Forum"
+    "message": "Форум"
   },
   "general": {
-    "message": "General"
+    "message": "Общие сведения"
   },
   "get_started": {
-    "message": "Get started"
+    "message": "Начать"
   },
   "give_feedback": {
-    "message": "Give feedback"
+    "message": "Дать обратную связь"
   },
   "go_back": {
-    "message": "Go back"
+    "message": "Вернуться"
   },
   "good_afternoon": {
-    "message": "Good afternoon"
+    "message": "Добрый день"
   },
   "good_evening": {
-    "message": "Good evening"
+    "message": "Добрый вечер"
   },
   "good_morning": {
-    "message": "Good morning"
+    "message": "Доброе утро"
   },
   "good_night": {
-    "message": "Good night"
+    "message": "Спокойной ночи"
   },
   "gradient": {
-    "message": "Gradient"
+    "message": "Градиент"
   },
   "greeting": {
-    "message": "Greeting"
+    "message": "Приветствие"
   },
   "greeting_description_1": {
-    "message": "What should we call you?"
+    "message": "Как мы должны вас называть?"
   },
   "hide_items": {
-    "message": "Hide items"
+    "message": "Скрыть предметы"
   },
   "hide_message": {
-    "message": "Hide message"
+    "message": "Скрыть сообщение"
   },
   "hide_settings": {
-    "message": "Hide settings button"
+    "message": "Скрыть кнопку настроек"
   },
   "hide_settings_description": {
-    "message": "Hide the settings button except on hover"
+    "message": "Скрыть кнопку настроек, кроме как при наведении"
   },
   "icon": {
-    "message": "Icon"
+    "message": "Икона"
   },
   "image": {
-    "message": "Image"
+    "message": "Изображение"
   },
   "imperial": {
     "message": "Imperial"
   },
   "invalid_file_type": {
-    "message": "Invalid file type. Please upload an image file."
+    "message": "Неверный тип файла. Пожалуйста, загрузите файл изображения."
   },
   "join_the_community": {
-    "message": "Join the community"
+    "message": "Присоединяйтесь к сообществу"
   },
   "latitude": {
-    "message": "Latitude"
+    "message": "Широта"
   },
   "layout": {
-    "message": "Layout"
+    "message": "Макет"
   },
   "leave_blank_to_disable": {
-    "message": "Leave blank to disable."
+    "message": "Оставьте пустым, чтобы отключить."
   },
   "light": {
-    "message": "Light"
+    "message": "Свет"
   },
   "local_file": {
-    "message": "Local file"
+    "message": "Локальный файл"
   },
   "location": {
-    "message": "Location"
+    "message": "Расположение"
   },
   "longitude": {
-    "message": "Longitude"
+    "message": "Долгота"
   },
   "lowercase": {
-    "message": "Lowercase"
+    "message": "Нижний регистр"
   },
   "mantra_1": {
-    "message": "Every day is a chance to grow."
+    "message": "Каждый день - это шанс развиваться."
   },
   "mantra_10": {
-    "message": "Be here, in this moment."
+    "message": "Будьте здесь, в этот момент."
   },
   "mantra_11": {
-    "message": "Each breath is a fresh start."
+    "message": "Каждый вдох - это новое начало."
   },
   "mantra_12": {
-    "message": "The now is all we truly have."
+    "message": "Сейчас - это все, что у нас есть."
   },
   "mantra_13": {
-    "message": "Dream big, start small."
+    "message": "Мечтайте о большом, начинайте с малого."
   },
   "mantra_14": {
-    "message": "Focus on what you can control."
+    "message": "Сосредоточьтесь на том, что вы можете контролировать."
   },
   "mantra_15": {
-    "message": "Greatness begins with the first step."
+    "message": "Величие начинается с первого шага."
   },
   "mantra_2": {
-    "message": "Progress, not perfection."
+    "message": "Прогресс, а не совершенство."
   },
   "mantra_3": {
-    "message": "Small steps lead to big changes."
+    "message": "Маленькие шаги приводят к большим переменам."
   },
   "mantra_4": {
-    "message": "Setbacks are setups for comebacks."
+    "message": "Неудачи создают условия для возвращения."
   },
   "mantra_5": {
-    "message": "You are stronger than you think."
+    "message": "Вы сильнее, чем думаете."
   },
   "mantra_6": {
-    "message": "Challenges build your strength."
+    "message": "Трудности укрепляют вашу силу."
   },
   "mantra_7": {
-    "message": "Good things are coming your way."
+    "message": "Вас ждут хорошие события."
   },
   "mantra_8": {
-    "message": "See the good in every situation."
+    "message": "Видеть хорошее в любой ситуации."
   },
   "mantra_9": {
-    "message": "A hopeful heart sees endless possibilities."
+    "message": "Сердце, исполненное надежды, видит бесконечные возможности."
   },
   "mantras": {
-    "message": "Mantras"
+    "message": "Мантры"
   },
   "mantras_description": {
-    "message": "Inspirational mantras on every new tab."
+    "message": "Вдохновляющие мантры на каждой новой вкладке."
   },
   "metric": {
-    "message": "Metric"
+    "message": "Метрика"
   },
   "mode": {
-    "message": "Mode"
+    "message": "Режим"
   },
   "mono": {
-    "message": "Mono"
+    "message": "Моно"
   },
   "more": {
-    "message": "More"
+    "message": "Подробнее"
   },
   "nature": {
-    "message": "Nature"
+    "message": "Природа"
   },
   "nature_description": {
-    "message": "Listen to nature soundscapes with this widget."
+    "message": "Слушайте звуковые пейзажи природы с помощью этого виджета."
   },
   "nature_sounds": {
-    "message": "Nature Sounds"
+    "message": "Звуки природы"
   },
   "new_tab": {
-    "message": "New Tab"
+    "message": "Новая вкладка"
   },
   "new_task": {
-    "message": "New task"
+    "message": "Новое задание"
   },
   "new_wallpaper": {
-    "message": "New wallpaper"
+    "message": "Новые обои"
   },
   "next": {
-    "message": "Next"
+    "message": "Следующий"
   },
   "nightstand": {
-    "message": "Nightstand"
+    "message": "Тумбочка"
   },
   "no_bookmarks": {
-    "message": "No bookmarks"
+    "message": "Нет закладок"
   },
   "no_results": {
-    "message": "No results found"
+    "message": "Результаты не найдены"
   },
   "normal": {
-    "message": "Normal"
+    "message": "Нормальный"
   },
   "notepad": {
-    "message": "Notepad"
+    "message": "Блокнот"
   },
   "notepad_description": {
-    "message": "A simple notepad widget."
+    "message": "Простой виджет блокнота."
   },
   "notepad_disclaimer": {
-    "message": "Notes are stored in your browser's local storage, which may be unreliable and could result in data loss."
+    "message": "Заметки хранятся в локальном хранилище браузера, которое может быть ненадежным и привести к потере данных."
   },
   "opacity": {
-    "message": "Opacity"
+    "message": "Непрозрачность"
   },
   "page": {
-    "message": "Page title and icon"
+    "message": "Заголовок и значок страницы"
   },
   "page_title": {
-    "message": "Page title"
+    "message": "Название страницы"
   },
   "pause_background_changes": {
-    "message": "Pause background changes"
+    "message": "Приостановить изменение фона"
   },
   "pinned_bookmarks": {
-    "message": "Pinned bookmarks"
+    "message": "Закладки"
   },
   "plugins": {
-    "message": "Plugins"
+    "message": "Плагины"
   },
   "pomodoro": {
     "message": "Pomodoro"
   },
   "pomodoro_description": {
-    "message": "Use the pomodoro technique for an interval-based workflow."
+    "message": "Используйте технику pomodoro для интервального рабочего процесса."
   },
   "pomodoro_settings": {
-    "message": "Pomodoro Settings"
+    "message": "Настройки Pomodoro"
   },
   "pomodoro_timer": {
-    "message": "Pomodoro timer"
+    "message": "Таймер Pomodoro"
   },
   "reset": {
-    "message": "Reset"
+    "message": "Сброс"
   },
   "resources": {
-    "message": "Resources"
+    "message": "Ресурсы"
   },
   "sans": {
     "message": "Sans"
   },
   "save": {
-    "message": "Save"
+    "message": "Сохранить"
   },
   "saved": {
-    "message": "Saved"
+    "message": "Сохранено"
   },
   "search": {
-    "message": "Search"
+    "message": "Поиск"
   },
   "select_font": {
-    "message": "Select a font"
+    "message": "Выберите шрифт"
   },
   "serif": {
     "message": "Serif"
   },
   "set": {
-    "message": "Set"
+    "message": "Установите"
   },
   "set_greeting": {
-    "message": "Set greeting"
+    "message": "Установите приветствие"
   },
   "settings": {
-    "message": "Settings"
+    "message": "Настройки"
   },
   "share_flowtide": {
-    "message": "Share Flowtide with a friend!"
+    "message": "Share Blooft with a friend!"
   },
   "show_items": {
-    "message": "Show items"
+    "message": "Показать товары"
   },
   "skip": {
-    "message": "Skip"
+    "message": "Скип"
   },
   "solid_color": {
-    "message": "Solid color"
+    "message": "Сплошной цвет"
   },
   "sound_attribution": {
-    "message": "Sound attribution"
+    "message": "Атрибуция звука"
   },
   "soundscapes": {
-    "message": "Soundscapes"
+    "message": "Саундскейпы"
   },
   "speed_dial": {
-    "message": "Speed Dial"
+    "message": "Быстрый набор"
   },
   "square_widgets": {
-    "message": "Square widgets (very experimental)"
+    "message": "Квадратные виджеты (очень экспериментальный вариант)"
   },
   "square_widgets_description": {
-    "message": "Allow the clock and date widgets to be square"
+    "message": "Разрешите виджетам часов и даты быть квадратными"
   },
   "start": {
-    "message": "Start"
+    "message": "Начало"
   },
   "start_background_changes": {
-    "message": "Start background changes"
+    "message": "Начните изменение фона"
   },
   "start_using": {
-    "message": "Start using Flowtide"
+    "message": "Start using Blooft"
   },
   "stop": {
-    "message": "Stop"
+    "message": "Остановить"
   },
   "stopwatch": {
-    "message": "Stopwatch"
+    "message": "Секундомер"
   },
   "stopwatch_description": {
-    "message": "Add a stopwatch widget to your start page."
+    "message": "Добавьте виджет секундомера на стартовую страницу."
   },
   "tasks": {
-    "message": "Tasks"
+    "message": "Задачи"
   },
   "text_style": {
-    "message": "Text style"
+    "message": "Стиль текста"
   },
   "thanks": {
-    "message": "Thank you for using Flowtide!"
+    "message": "Thank you for using Blooft!"
   },
   "theme": {
-    "message": "Theme"
+    "message": "Тема"
   },
   "todo_list": {
-    "message": "To-do list"
+    "message": "Список дел"
   },
   "todo_list_description": {
-    "message": "Track your todos with an easy widget."
+    "message": "Отслеживайте свои дела с помощью удобного виджета."
   },
   "toggle_theme": {
-    "message": "Toggle theme"
+    "message": "Переключить тему"
   },
   "top": {
-    "message": "Top"
+    "message": "Топ"
   },
   "top_left": {
-    "message": "Top left"
+    "message": "Слева вверху"
   },
   "top_right": {
-    "message": "Top right"
+    "message": "Справа вверху"
   },
   "type_command": {
-    "message": "Type a command"
+    "message": "Введите команду"
   },
   "unit": {
-    "message": "Unit"
+    "message": "Единица"
   },
   "uppercase": {
-    "message": "Uppercase"
+    "message": "Прописные буквы"
   },
   "wallpaper_blur": {
-    "message": "Wallpaper blur"
+    "message": "Размытие обоев"
   },
   "weather": {
-    "message": "Weather"
+    "message": "Погода"
   },
   "weatherDisclaimer": {
-    "message": "<a href=\"$1\">Weather data by Open-Meteo.com</a>. Weather data is provided 'as-is' without any warranty or guarantee of accuracy. Location data is handled by Open-Meteo and subject to their privacy policy."
+    "message": "<a href=\"$1\">Данные о погоде предоставлены Open-Meteo.com</a>. Погодные данные предоставляются \"как есть\", без каких-либо гарантий или подтверждения точности. Данные о местоположении обрабатываются компанией Open-Meteo и регулируются ее политикой конфиденциальности."
   },
   "welcome_message": {
-    "message": "Welcome to Flowtide"
+    "message": "Welcome to Blooft"
   },
   "widgets": {
-    "message": "Widgets"
+    "message": "Виджеты"
   },
   "work": {
-    "message": "Work"
+    "message": "Работа"
   },
   "work_minutes": {
-    "message": "Work minutes"
+    "message": "Рабочие минуты"
   },
   "you_may_need_to_refresh": {
-    "message": "You may need to refresh the page to see the changes."
+    "message": "Возможно, вам придется обновить страницу, чтобы увидеть изменения."
   }
 }

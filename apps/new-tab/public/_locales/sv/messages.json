@@ -1,477 +1,477 @@
 {
   "actions": {
-    "message": "Actions"
+    "message": "Åtgärder"
   },
   "add": {
-    "message": "Add"
+    "message": "Lägg till"
   },
   "add_task": {
-    "message": "Add task"
+    "message": "Lägg till uppgift"
   },
   "add_widget": {
-    "message": "Add widget"
+    "message": "Lägg till widget"
   },
   "added": {
-    "message": "Added"
+    "message": "Tillagd"
   },
   "advanced": {
-    "message": "Advanced"
+    "message": "Avancerad"
   },
   "ambience": {
-    "message": "Ambience"
+    "message": "Atmosfär"
   },
   "ambience_sounds": {
-    "message": "Ambience Sounds"
+    "message": "Ljud från omgivningen"
   },
   "ambience_sounds_description": {
-    "message": "Ambient soundscapes to help you relax."
+    "message": "Ambienta ljudlandskap som hjälper dig att slappna av."
   },
   "appearance": {
-    "message": "Appearance"
+    "message": "Utseende"
   },
   "available_bookmarks": {
-    "message": "Available bookmarks"
+    "message": "Tillgängliga bokmärken"
   },
   "background": {
-    "message": "Background"
+    "message": "Bakgrund"
   },
   "blank": {
     "message": "Blank"
   },
   "blocks": {
-    "message": "Blocks"
+    "message": "Block"
   },
   "blocks_description": {
-    "message": "Supercharge your New Tab page with beautifully designed blocks created by Flowtide. You can add as many as you like to your start page."
+    "message": "Supercharge your New Tab page with beautifully designed blocks created by Blooft. You can add as many as you like to your start page."
   },
   "bookmark_folders": {
-    "message": "Bookmark Folders"
+    "message": "Mappar för bokmärken"
   },
   "bookmarks": {
-    "message": "Bookmarks"
+    "message": "Bokmärken"
   },
   "bookmarks_description": {
-    "message": "Easy access to your first 9 bookmarks with this widget."
+    "message": "Enkel åtkomst till dina 9 första bokmärken med den här widgeten."
   },
   "bottom_left": {
-    "message": "Bottom left"
+    "message": "Längst ner till vänster"
   },
   "bottom_right": {
-    "message": "Bottom right"
+    "message": "Längst ner till höger"
   },
   "break": {
-    "message": "Break"
+    "message": "Bryt"
   },
   "break_minutes": {
-    "message": "Break minutes"
+    "message": "Paus minuter"
   },
   "cancel": {
-    "message": "Cancel"
+    "message": "Avbryt"
   },
   "center": {
-    "message": "Center"
+    "message": "Centrum"
   },
   "choose_file": {
-    "message": "Choose file"
+    "message": "Välj fil"
   },
   "choose_mode": {
-    "message": "Choose a mode"
+    "message": "Välj ett läge"
   },
   "clear_data": {
-    "message": "Clear data"
+    "message": "Rensa data"
   },
   "clear_data_description": {
-    "message": "Clear all data from the extension. THIS CANNOT BE UNDONE."
+    "message": "Rensa alla data från förlängningen. DETTA KAN INTE GÖRAS OGJORT."
   },
   "clock": {
-    "message": "Clock"
+    "message": "Klocka"
   },
   "clock_description": {
-    "message": "Adds a clock widget to your start page."
+    "message": "Lägger till en klockwidget på startsidan."
   },
   "clock_format": {
-    "message": "Clock format"
+    "message": "Klockformat"
   },
   "close": {
-    "message": "Close"
+    "message": "Nära"
   },
   "comic_sans": {
     "message": "Comic Sans"
   },
   "community_desc": {
-    "message": "Join the Flowtide community on Discord to showcase your work, ask questions, test new features, and chat with the community."
+    "message": "Join the Blooft community on Discord to showcase your work, ask questions, test new features, and chat with the community."
   },
   "complete": {
-    "message": "Complete"
+    "message": "Komplett"
   },
   "compose_gmail_message": {
-    "message": "Compose Gmail Message"
+    "message": "Skriva Gmail-meddelande"
   },
   "coordinates": {
-    "message": "Coordinates"
+    "message": "Koordinater"
   },
   "copied_to_clipboard": {
-    "message": "Copied to clipboard"
+    "message": "Kopieras till urklipp"
   },
   "counter": {
-    "message": "Counter"
+    "message": "Räknare"
   },
   "counter_description": {
-    "message": "Count things easily."
+    "message": "Räkna saker enkelt."
   },
   "create_bitly_link": {
-    "message": "Create Bitly Link"
+    "message": "Skapa Bitly-länk"
   },
   "create_canva_design": {
-    "message": "Create Canva Design"
+    "message": "Skapa Canva Design"
   },
   "create_canva_video": {
-    "message": "Create Canva Video"
+    "message": "Skapa Canva-video"
   },
   "create_excel_workbook": {
-    "message": "Create Excel Workbook"
+    "message": "Skapa Excel-arbetsbok"
   },
   "create_figma_file": {
-    "message": "Create Figma File"
+    "message": "Skapa Figma-fil"
   },
   "create_github_gist": {
-    "message": "Create GitHub Gist"
+    "message": "Skapa GitHub Gist"
   },
   "create_github_repository": {
-    "message": "Create GitHub Repository"
+    "message": "Skapa GitHub-förvar"
   },
   "create_google_calendar_event": {
-    "message": "Create Google Calendar Event"
+    "message": "Skapa evenemang i Google Kalender"
   },
   "create_google_document": {
-    "message": "Create Google Document"
+    "message": "Skapa Google-dokument"
   },
   "create_google_sheet": {
-    "message": "Create Google Sheet"
+    "message": "Skapa Google Sheet"
   },
   "create_google_slide": {
-    "message": "Create Google Slide"
+    "message": "Skapa Google Slide"
   },
   "create_notion_page": {
-    "message": "Create Notion Page"
+    "message": "Skapa Notion-sida"
   },
   "create_paper_document": {
-    "message": "Create Paper Document"
+    "message": "Skapa pappersdokument"
   },
   "create_powerpoint_presentation": {
-    "message": "Create PowerPoint Presentation"
+    "message": "Skapa PowerPoint-presentation"
   },
   "create_todoist_task": {
-    "message": "Create Todoist Task"
+    "message": "Skapa Todoist-uppgift"
   },
   "create_vercel_project": {
-    "message": "Create Vercel Project"
+    "message": "Skapa Vercel-projekt"
   },
   "create_word_document": {
-    "message": "Create Word Document"
+    "message": "Skapa Word-dokument"
   },
   "create_zoom_meeting": {
-    "message": "Create Zoom Meeting"
+    "message": "Skapa Zoom-möte"
   },
   "custom_color": {
-    "message": "Custom color"
+    "message": "Anpassad färg"
   },
   "custom_css": {
-    "message": "Custom CSS"
+    "message": "Anpassad CSS"
   },
   "custom_url": {
-    "message": "Custom URL"
+    "message": "Anpassad URL"
   },
   "customize": {
-    "message": "Customize your new tab"
+    "message": "Anpassa din nya flik"
   },
   "customize_desc": {
-    "message": "Give your New Tab a personal touch with a variety of customization options. These are just a few options; the possibilities are almost limitless."
+    "message": "Ge din New Tab en personlig touch med en mängd olika anpassningsalternativ. Det här är bara några få alternativ; möjligheterna är nästan obegränsade."
   },
   "dark": {
-    "message": "Dark"
+    "message": "Mörk"
   },
   "dashboard": {
-    "message": "Dashboard"
+    "message": "Instrumentpanel"
   },
   "date": {
-    "message": "Date"
+    "message": "Datum"
   },
   "date_description": {
-    "message": "A sleek date widget that shows you the current date."
+    "message": "En snygg datumwidget som visar det aktuella datumet."
   },
   "date_format": {
-    "message": "Date format"
+    "message": "Datumformat"
   },
   "default": {
-    "message": "Default"
+    "message": "Standard"
   },
   "discord": {
-    "message": "Join the Discord"
+    "message": "Gå med i Discord"
   },
   "display_name": {
-    "message": "Display name"
+    "message": "Visa namn"
   },
   "edit_the_pomodoro_settings": {
-    "message": "Edit the pomodoro settings."
+    "message": "Redigera inställningarna för pomodoro."
   },
   "enabled": {
-    "message": "Enabled"
+    "message": "Aktiverad"
   },
   "enter_greeting": {
-    "message": "Enter greeting"
+    "message": "Ange hälsning"
   },
   "enter_name": {
-    "message": "Enter your name"
+    "message": "Ange ditt namn"
   },
   "every_day": {
-    "message": "Every day"
+    "message": "Varje dag"
   },
   "every_hour": {
-    "message": "Every hour"
+    "message": "Varje timme"
   },
   "every_reload": {
-    "message": "Every reload"
+    "message": "Varje omladdning"
   },
   "every_week": {
-    "message": "Every week"
+    "message": "Varje vecka"
   },
   "feature_request": {
-    "message": "Feature request"
+    "message": "Begäran om funktion"
   },
   "feedback_callout": {
-    "message": "We need your feedback!"
+    "message": "Vi behöver din feedback!"
   },
   "feedback_callout_desc": {
-    "message": "Help us shape the future of Flowtide and tell us what you want to see next. We'd love to hear from you!"
+    "message": "Help us shape the future of Blooft and tell us what you want to see next. We'd love to hear from you!"
   },
   "file_read_error": {
-    "message": "We couldn't read the file. Please try again."
+    "message": "Vi kunde inte läsa filen. Vänligen försök igen."
   },
   "file_too_large": {
-    "message": "File too large (max size is ~2.5 MB)"
+    "message": "Filen är för stor (maxstorlek är ~2,5 MB)"
   },
   "finish": {
-    "message": "Finish"
+    "message": "Avsluta"
   },
   "focus": {
-    "message": "Focus"
+    "message": "Fokus"
   },
   "focus_sounds": {
-    "message": "Focus Sounds"
+    "message": "Fokusera på ljud"
   },
   "focus_sounds_description": {
-    "message": "Soundscapes to help you focus."
+    "message": "Ljudlandskap som hjälper dig att fokusera."
   },
   "font": {
-    "message": "Font"
+    "message": "Typsnitt"
   },
   "forum": {
     "message": "Forum"
   },
   "general": {
-    "message": "General"
+    "message": "Allmänt"
   },
   "get_started": {
-    "message": "Get started"
+    "message": "Kom igång med arbetet"
   },
   "give_feedback": {
-    "message": "Give feedback"
+    "message": "Ge feedback"
   },
   "go_back": {
-    "message": "Go back"
+    "message": "Gå tillbaka"
   },
   "good_afternoon": {
-    "message": "Good afternoon"
+    "message": "God eftermiddag"
   },
   "good_evening": {
-    "message": "Good evening"
+    "message": "God kväll"
   },
   "good_morning": {
-    "message": "Good morning"
+    "message": "God morgon."
   },
   "good_night": {
-    "message": "Good night"
+    "message": "God natt."
   },
   "gradient": {
     "message": "Gradient"
   },
   "greeting": {
-    "message": "Greeting"
+    "message": "Hälsning"
   },
   "greeting_description_1": {
-    "message": "What should we call you?"
+    "message": "Vad ska vi kalla dig?"
   },
   "hide_items": {
-    "message": "Hide items"
+    "message": "Dölj objekt"
   },
   "hide_message": {
-    "message": "Hide message"
+    "message": "Dölj meddelande"
   },
   "hide_settings": {
-    "message": "Hide settings button"
+    "message": "Dölj inställningsknappen"
   },
   "hide_settings_description": {
-    "message": "Hide the settings button except on hover"
+    "message": "Dölj inställningsknappen utom vid hover"
   },
   "icon": {
-    "message": "Icon"
+    "message": "Ikon"
   },
   "image": {
-    "message": "Image"
+    "message": "Bild"
   },
   "imperial": {
     "message": "Imperial"
   },
   "invalid_file_type": {
-    "message": "Invalid file type. Please upload an image file."
+    "message": "Ogiltig filtyp. Vänligen ladda upp en bildfil."
   },
   "join_the_community": {
-    "message": "Join the community"
+    "message": "Gå med i gemenskapen"
   },
   "latitude": {
-    "message": "Latitude"
+    "message": "Latitud"
   },
   "layout": {
     "message": "Layout"
   },
   "leave_blank_to_disable": {
-    "message": "Leave blank to disable."
+    "message": "Lämna tomt för att avaktivera."
   },
   "light": {
-    "message": "Light"
+    "message": "Ljus"
   },
   "local_file": {
-    "message": "Local file"
+    "message": "Lokal fil"
   },
   "location": {
-    "message": "Location"
+    "message": "Plats"
   },
   "longitude": {
-    "message": "Longitude"
+    "message": "Longitud"
   },
   "lowercase": {
-    "message": "Lowercase"
+    "message": "Låga bokstäver"
   },
   "mantra_1": {
-    "message": "Every day is a chance to grow."
+    "message": "Varje dag är en chans att växa."
   },
   "mantra_10": {
-    "message": "Be here, in this moment."
+    "message": "Var här, i detta ögonblick."
   },
   "mantra_11": {
-    "message": "Each breath is a fresh start."
+    "message": "Varje andetag är en ny start."
   },
   "mantra_12": {
-    "message": "The now is all we truly have."
+    "message": "Nuet är allt vi verkligen har."
   },
   "mantra_13": {
-    "message": "Dream big, start small."
+    "message": "Dröm stort, börja smått."
   },
   "mantra_14": {
-    "message": "Focus on what you can control."
+    "message": "Fokusera på det du kan kontrollera."
   },
   "mantra_15": {
-    "message": "Greatness begins with the first step."
+    "message": "Storhet börjar med det första steget."
   },
   "mantra_2": {
-    "message": "Progress, not perfection."
+    "message": "Framsteg, inte perfektion."
   },
   "mantra_3": {
-    "message": "Small steps lead to big changes."
+    "message": "Små steg leder till stora förändringar."
   },
   "mantra_4": {
-    "message": "Setbacks are setups for comebacks."
+    "message": "Motgångar är upplägg för comebacks."
   },
   "mantra_5": {
-    "message": "You are stronger than you think."
+    "message": "Du är starkare än du tror."
   },
   "mantra_6": {
-    "message": "Challenges build your strength."
+    "message": "Utmaningar bygger upp din styrka."
   },
   "mantra_7": {
-    "message": "Good things are coming your way."
+    "message": "Bra saker är på väg åt ditt håll."
   },
   "mantra_8": {
-    "message": "See the good in every situation."
+    "message": "Se det positiva i varje situation."
   },
   "mantra_9": {
-    "message": "A hopeful heart sees endless possibilities."
+    "message": "Ett hoppfullt hjärta ser oändliga möjligheter."
   },
   "mantras": {
-    "message": "Mantras"
+    "message": "Mantran"
   },
   "mantras_description": {
-    "message": "Inspirational mantras on every new tab."
+    "message": "Inspirerande mantran på varje ny flik."
   },
   "metric": {
-    "message": "Metric"
+    "message": "Metrisk"
   },
   "mode": {
-    "message": "Mode"
+    "message": "Läge"
   },
   "mono": {
     "message": "Mono"
   },
   "more": {
-    "message": "More"
+    "message": "Mer om"
   },
   "nature": {
-    "message": "Nature"
+    "message": "Natur"
   },
   "nature_description": {
-    "message": "Listen to nature soundscapes with this widget."
+    "message": "Lyssna på ljudlandskap från naturen med den här widgeten."
   },
   "nature_sounds": {
-    "message": "Nature Sounds"
+    "message": "Ljud från naturen"
   },
   "new_tab": {
-    "message": "New Tab"
+    "message": "Ny flik"
   },
   "new_task": {
-    "message": "New task"
+    "message": "Ny uppgift"
   },
   "new_wallpaper": {
-    "message": "New wallpaper"
+    "message": "Ny tapet"
   },
   "next": {
-    "message": "Next"
+    "message": "Nästa"
   },
   "nightstand": {
-    "message": "Nightstand"
+    "message": "Nattduksbord"
   },
   "no_bookmarks": {
-    "message": "No bookmarks"
+    "message": "Inga bokmärken"
   },
   "no_results": {
-    "message": "No results found"
+    "message": "Inga resultat hittades"
   },
   "normal": {
     "message": "Normal"
   },
   "notepad": {
-    "message": "Notepad"
+    "message": "Anteckningsblock"
   },
   "notepad_description": {
-    "message": "A simple notepad widget."
+    "message": "En enkel widget för anteckningsblock."
   },
   "notepad_disclaimer": {
-    "message": "Notes are stored in your browser's local storage, which may be unreliable and could result in data loss."
+    "message": "Anteckningar lagras i webbläsarens lokala lagringsutrymme, vilket kan vara otillförlitligt och leda till dataförlust."
   },
   "opacity": {
-    "message": "Opacity"
+    "message": "Opacitet"
   },
   "page": {
-    "message": "Page title and icon"
+    "message": "Sidtitel och ikon"
   },
   "page_title": {
-    "message": "Page title"
+    "message": "Sidans titel"
   },
   "pause_background_changes": {
-    "message": "Pause background changes"
+    "message": "Pausa bakgrundsändringar"
   },
   "pinned_bookmarks": {
-    "message": "Pinned bookmarks"
+    "message": "Pinnade bokmärken"
   },
   "plugins": {
     "message": "Plugins"
@@ -480,153 +480,153 @@
     "message": "Pomodoro"
   },
   "pomodoro_description": {
-    "message": "Use the pomodoro technique for an interval-based workflow."
+    "message": "Använd pomodoro-tekniken för ett intervallbaserat arbetsflöde."
   },
   "pomodoro_settings": {
-    "message": "Pomodoro Settings"
+    "message": "Pomodoro-inställningar"
   },
   "pomodoro_timer": {
-    "message": "Pomodoro timer"
+    "message": "Pomodoro-timer"
   },
   "reset": {
-    "message": "Reset"
+    "message": "Återställning"
   },
   "resources": {
-    "message": "Resources"
+    "message": "Resurser"
   },
   "sans": {
     "message": "Sans"
   },
   "save": {
-    "message": "Save"
+    "message": "Spara"
   },
   "saved": {
-    "message": "Saved"
+    "message": "Sparade"
   },
   "search": {
-    "message": "Search"
+    "message": "Sök"
   },
   "select_font": {
-    "message": "Select a font"
+    "message": "Välj ett teckensnitt"
   },
   "serif": {
     "message": "Serif"
   },
   "set": {
-    "message": "Set"
+    "message": "Ställ in"
   },
   "set_greeting": {
-    "message": "Set greeting"
+    "message": "Ställ in hälsning"
   },
   "settings": {
-    "message": "Settings"
+    "message": "Inställningar"
   },
   "share_flowtide": {
-    "message": "Share Flowtide with a friend!"
+    "message": "Share Blooft with a friend!"
   },
   "show_items": {
-    "message": "Show items"
+    "message": "Visa artiklar"
   },
   "skip": {
-    "message": "Skip"
+    "message": "Hoppa över"
   },
   "solid_color": {
-    "message": "Solid color"
+    "message": "Enfärgad"
   },
   "sound_attribution": {
-    "message": "Sound attribution"
+    "message": "Tilldelning av ljud"
   },
   "soundscapes": {
-    "message": "Soundscapes"
+    "message": "Ljudlandskap"
   },
   "speed_dial": {
-    "message": "Speed Dial"
+    "message": "Snabbval"
   },
   "square_widgets": {
-    "message": "Square widgets (very experimental)"
+    "message": "Kvadratiska widgetar (mycket experimentella)"
   },
   "square_widgets_description": {
-    "message": "Allow the clock and date widgets to be square"
+    "message": "Tillåt att widgetarna för klocka och datum är fyrkantiga"
   },
   "start": {
     "message": "Start"
   },
   "start_background_changes": {
-    "message": "Start background changes"
+    "message": "Starta bakgrundsändringar"
   },
   "start_using": {
-    "message": "Start using Flowtide"
+    "message": "Start using Blooft"
   },
   "stop": {
-    "message": "Stop"
+    "message": "Stopp"
   },
   "stopwatch": {
-    "message": "Stopwatch"
+    "message": "Stoppur"
   },
   "stopwatch_description": {
-    "message": "Add a stopwatch widget to your start page."
+    "message": "Lägg till en widget för stoppur på startsidan."
   },
   "tasks": {
-    "message": "Tasks"
+    "message": "Uppgifter"
   },
   "text_style": {
-    "message": "Text style"
+    "message": "Stil på texten"
   },
   "thanks": {
-    "message": "Thank you for using Flowtide!"
+    "message": "Thank you for using Blooft!"
   },
   "theme": {
-    "message": "Theme"
+    "message": "Tema"
   },
   "todo_list": {
-    "message": "To-do list"
+    "message": "Att göra-lista"
   },
   "todo_list_description": {
-    "message": "Track your todos with an easy widget."
+    "message": "Håll koll på dina uppgifter med en enkel widget."
   },
   "toggle_theme": {
-    "message": "Toggle theme"
+    "message": "Växla tema"
   },
   "top": {
-    "message": "Top"
+    "message": "Topp"
   },
   "top_left": {
-    "message": "Top left"
+    "message": "Överst till vänster"
   },
   "top_right": {
-    "message": "Top right"
+    "message": "Överst till höger"
   },
   "type_command": {
-    "message": "Type a command"
+    "message": "Skriv ett kommando"
   },
   "unit": {
-    "message": "Unit"
+    "message": "Enhet"
   },
   "uppercase": {
-    "message": "Uppercase"
+    "message": "Versaler"
   },
   "wallpaper_blur": {
-    "message": "Wallpaper blur"
+    "message": "Bakgrund oskärpa"
   },
   "weather": {
-    "message": "Weather"
+    "message": "Väder"
   },
   "weatherDisclaimer": {
-    "message": "<a href=\"$1\">Weather data by Open-Meteo.com</a>. Weather data is provided 'as-is' without any warranty or guarantee of accuracy. Location data is handled by Open-Meteo and subject to their privacy policy."
+    "message": "<a href=\"$1\">Väderdata från Open-Meteo.com.</a> Väderdata tillhandahålls \"i befintligt skick\" utan någon garanti eller garanti för noggrannhet. Platsdata hanteras av Open-Meteo och omfattas av deras sekretesspolicy."
   },
   "welcome_message": {
-    "message": "Welcome to Flowtide"
+    "message": "Welcome to Blooft"
   },
   "widgets": {
-    "message": "Widgets"
+    "message": "Widgetar"
   },
   "work": {
-    "message": "Work"
+    "message": "Arbete"
   },
   "work_minutes": {
-    "message": "Work minutes"
+    "message": "Arbeta minuter"
   },
   "you_may_need_to_refresh": {
-    "message": "You may need to refresh the page to see the changes."
+    "message": "Du kan behöva uppdatera sidan för att se ändringarna."
   }
 }

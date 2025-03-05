@@ -1,477 +1,477 @@
 {
   "actions": {
-    "message": "Actions"
+    "message": "Handlinger"
   },
   "add": {
-    "message": "Add"
+    "message": "Tilføj"
   },
   "add_task": {
-    "message": "Add task"
+    "message": "Tilføj opgave"
   },
   "add_widget": {
-    "message": "Add widget"
+    "message": "Tilføj widget"
   },
   "added": {
-    "message": "Added"
+    "message": "Tilføjet"
   },
   "advanced": {
-    "message": "Advanced"
+    "message": "Avanceret"
   },
   "ambience": {
-    "message": "Ambience"
+    "message": "Atmosfære"
   },
   "ambience_sounds": {
-    "message": "Ambience Sounds"
+    "message": "Stemningsfulde lyde"
   },
   "ambience_sounds_description": {
-    "message": "Ambient soundscapes to help you relax."
+    "message": "Omgivende lydbilleder, der hjælper dig med at slappe af."
   },
   "appearance": {
-    "message": "Appearance"
+    "message": "Udseende"
   },
   "available_bookmarks": {
-    "message": "Available bookmarks"
+    "message": "Tilgængelige bogmærker"
   },
   "background": {
-    "message": "Background"
+    "message": "Baggrund"
   },
   "blank": {
     "message": "Blank"
   },
   "blocks": {
-    "message": "Blocks"
+    "message": "Blokke"
   },
   "blocks_description": {
-    "message": "Supercharge your New Tab page with beautifully designed blocks created by Flowtide. You can add as many as you like to your start page."
+    "message": "Supercharge your New Tab page with beautifully designed blocks created by Blooft. You can add as many as you like to your start page."
   },
   "bookmark_folders": {
-    "message": "Bookmark Folders"
+    "message": "Mapper med bogmærker"
   },
   "bookmarks": {
-    "message": "Bookmarks"
+    "message": "Bogmærker"
   },
   "bookmarks_description": {
-    "message": "Easy access to your first 9 bookmarks with this widget."
+    "message": "Nem adgang til dine første 9 bogmærker med denne widget."
   },
   "bottom_left": {
-    "message": "Bottom left"
+    "message": "Nederst til venstre"
   },
   "bottom_right": {
-    "message": "Bottom right"
+    "message": "Nederst til højre"
   },
   "break": {
-    "message": "Break"
+    "message": "Pause"
   },
   "break_minutes": {
-    "message": "Break minutes"
+    "message": "Pause minutter"
   },
   "cancel": {
-    "message": "Cancel"
+    "message": "Annuller"
   },
   "center": {
     "message": "Center"
   },
   "choose_file": {
-    "message": "Choose file"
+    "message": "Vælg fil"
   },
   "choose_mode": {
-    "message": "Choose a mode"
+    "message": "Vælg en tilstand"
   },
   "clear_data": {
-    "message": "Clear data"
+    "message": "Ryd data"
   },
   "clear_data_description": {
-    "message": "Clear all data from the extension. THIS CANNOT BE UNDONE."
+    "message": "Slet alle data fra udvidelsen. DETTE KAN IKKE FORTRYDES."
   },
   "clock": {
-    "message": "Clock"
+    "message": "Ur"
   },
   "clock_description": {
-    "message": "Adds a clock widget to your start page."
+    "message": "Tilføjer en ur-widget til din startside."
   },
   "clock_format": {
-    "message": "Clock format"
+    "message": "Urets format"
   },
   "close": {
-    "message": "Close"
+    "message": "Luk"
   },
   "comic_sans": {
     "message": "Comic Sans"
   },
   "community_desc": {
-    "message": "Join the Flowtide community on Discord to showcase your work, ask questions, test new features, and chat with the community."
+    "message": "Join the Blooft community on Discord to showcase your work, ask questions, test new features, and chat with the community."
   },
   "complete": {
-    "message": "Complete"
+    "message": "Komplet"
   },
   "compose_gmail_message": {
-    "message": "Compose Gmail Message"
+    "message": "Skriv en Gmail-besked"
   },
   "coordinates": {
-    "message": "Coordinates"
+    "message": "Koordinater"
   },
   "copied_to_clipboard": {
-    "message": "Copied to clipboard"
+    "message": "Kopieret til udklipsholder"
   },
   "counter": {
-    "message": "Counter"
+    "message": "Tæller"
   },
   "counter_description": {
-    "message": "Count things easily."
+    "message": "Det er nemt at tælle ting."
   },
   "create_bitly_link": {
-    "message": "Create Bitly Link"
+    "message": "Opret Bitly-link"
   },
   "create_canva_design": {
-    "message": "Create Canva Design"
+    "message": "Opret Canva-design"
   },
   "create_canva_video": {
-    "message": "Create Canva Video"
+    "message": "Opret Canva-video"
   },
   "create_excel_workbook": {
-    "message": "Create Excel Workbook"
+    "message": "Opret Excel-projektmappe"
   },
   "create_figma_file": {
-    "message": "Create Figma File"
+    "message": "Opret Figma-fil"
   },
   "create_github_gist": {
-    "message": "Create GitHub Gist"
+    "message": "Opret GitHub Gist"
   },
   "create_github_repository": {
-    "message": "Create GitHub Repository"
+    "message": "Opret GitHub Repository"
   },
   "create_google_calendar_event": {
-    "message": "Create Google Calendar Event"
+    "message": "Opret begivenhed i Google Kalender"
   },
   "create_google_document": {
-    "message": "Create Google Document"
+    "message": "Opret Google-dokument"
   },
   "create_google_sheet": {
-    "message": "Create Google Sheet"
+    "message": "Opret Google-ark"
   },
   "create_google_slide": {
-    "message": "Create Google Slide"
+    "message": "Opret Google Slide"
   },
   "create_notion_page": {
-    "message": "Create Notion Page"
+    "message": "Opret forestillingsside"
   },
   "create_paper_document": {
-    "message": "Create Paper Document"
+    "message": "Opret papirdokument"
   },
   "create_powerpoint_presentation": {
-    "message": "Create PowerPoint Presentation"
+    "message": "Opret PowerPoint-præsentation"
   },
   "create_todoist_task": {
-    "message": "Create Todoist Task"
+    "message": "Opret Todoist-opgave"
   },
   "create_vercel_project": {
-    "message": "Create Vercel Project"
+    "message": "Opret Vercel-projekt"
   },
   "create_word_document": {
-    "message": "Create Word Document"
+    "message": "Opret Word-dokument"
   },
   "create_zoom_meeting": {
-    "message": "Create Zoom Meeting"
+    "message": "Opret et Zoom-møde"
   },
   "custom_color": {
-    "message": "Custom color"
+    "message": "Brugerdefineret farve"
   },
   "custom_css": {
-    "message": "Custom CSS"
+    "message": "Brugerdefineret CSS"
   },
   "custom_url": {
-    "message": "Custom URL"
+    "message": "Brugerdefineret URL"
   },
   "customize": {
-    "message": "Customize your new tab"
+    "message": "Tilpas din nye fane"
   },
   "customize_desc": {
-    "message": "Give your New Tab a personal touch with a variety of customization options. These are just a few options; the possibilities are almost limitless."
+    "message": "Giv din New Tab et personligt præg med en række forskellige tilpasningsmuligheder. Dette er blot nogle få muligheder; mulighederne er næsten ubegrænsede."
   },
   "dark": {
-    "message": "Dark"
+    "message": "Mørk"
   },
   "dashboard": {
     "message": "Dashboard"
   },
   "date": {
-    "message": "Date"
+    "message": "Dato"
   },
   "date_description": {
-    "message": "A sleek date widget that shows you the current date."
+    "message": "En elegant datowidget, der viser dig den aktuelle dato."
   },
   "date_format": {
-    "message": "Date format"
+    "message": "Datoformat"
   },
   "default": {
-    "message": "Default"
+    "message": "Standard"
   },
   "discord": {
-    "message": "Join the Discord"
+    "message": "Bliv medlem af Discord"
   },
   "display_name": {
-    "message": "Display name"
+    "message": "Vis navn"
   },
   "edit_the_pomodoro_settings": {
-    "message": "Edit the pomodoro settings."
+    "message": "Rediger pomodoro-indstillingerne."
   },
   "enabled": {
-    "message": "Enabled"
+    "message": "Aktiveret"
   },
   "enter_greeting": {
-    "message": "Enter greeting"
+    "message": "Indtast hilsen"
   },
   "enter_name": {
-    "message": "Enter your name"
+    "message": "Indtast dit navn"
   },
   "every_day": {
-    "message": "Every day"
+    "message": "Hver dag"
   },
   "every_hour": {
-    "message": "Every hour"
+    "message": "Hver time"
   },
   "every_reload": {
-    "message": "Every reload"
+    "message": "Hver genindlæsning"
   },
   "every_week": {
-    "message": "Every week"
+    "message": "Hver uge"
   },
   "feature_request": {
-    "message": "Feature request"
+    "message": "Anmodning om funktion"
   },
   "feedback_callout": {
-    "message": "We need your feedback!"
+    "message": "Vi har brug for din feedback!"
   },
   "feedback_callout_desc": {
-    "message": "Help us shape the future of Flowtide and tell us what you want to see next. We'd love to hear from you!"
+    "message": "Help us shape the future of Blooft and tell us what you want to see next. We'd love to hear from you!"
   },
   "file_read_error": {
-    "message": "We couldn't read the file. Please try again."
+    "message": "Vi kunne ikke læse filen. Prøv venligst igen."
   },
   "file_too_large": {
-    "message": "File too large (max size is ~2.5 MB)"
+    "message": "Filen er for stor (maks. størrelse er ~2,5 MB)"
   },
   "finish": {
-    "message": "Finish"
+    "message": "Færdiggør"
   },
   "focus": {
-    "message": "Focus"
+    "message": "Fokus"
   },
   "focus_sounds": {
-    "message": "Focus Sounds"
+    "message": "Fokus på lyde"
   },
   "focus_sounds_description": {
-    "message": "Soundscapes to help you focus."
+    "message": "Lydlandskaber, der hjælper dig med at fokusere."
   },
   "font": {
-    "message": "Font"
+    "message": "Skrifttype"
   },
   "forum": {
     "message": "Forum"
   },
   "general": {
-    "message": "General"
+    "message": "Generelt"
   },
   "get_started": {
-    "message": "Get started"
+    "message": "Kom godt i gang"
   },
   "give_feedback": {
-    "message": "Give feedback"
+    "message": "Giv feedback"
   },
   "go_back": {
-    "message": "Go back"
+    "message": "Gå tilbage"
   },
   "good_afternoon": {
-    "message": "Good afternoon"
+    "message": "God eftermiddag"
   },
   "good_evening": {
-    "message": "Good evening"
+    "message": "God aften"
   },
   "good_morning": {
-    "message": "Good morning"
+    "message": "Godmorgen"
   },
   "good_night": {
-    "message": "Good night"
+    "message": "Godnat"
   },
   "gradient": {
     "message": "Gradient"
   },
   "greeting": {
-    "message": "Greeting"
+    "message": "Hilsen"
   },
   "greeting_description_1": {
-    "message": "What should we call you?"
+    "message": "Hvad skal vi kalde dig?"
   },
   "hide_items": {
-    "message": "Hide items"
+    "message": "Skjul genstande"
   },
   "hide_message": {
-    "message": "Hide message"
+    "message": "Skjul besked"
   },
   "hide_settings": {
-    "message": "Hide settings button"
+    "message": "Skjul knappen Indstillinger"
   },
   "hide_settings_description": {
-    "message": "Hide the settings button except on hover"
+    "message": "Skjul indstillingsknappen undtagen ved hover"
   },
   "icon": {
-    "message": "Icon"
+    "message": "Ikon"
   },
   "image": {
-    "message": "Image"
+    "message": "Billede"
   },
   "imperial": {
     "message": "Imperial"
   },
   "invalid_file_type": {
-    "message": "Invalid file type. Please upload an image file."
+    "message": "Ugyldig filtype. Upload venligst en billedfil."
   },
   "join_the_community": {
-    "message": "Join the community"
+    "message": "Bliv en del af fællesskabet"
   },
   "latitude": {
-    "message": "Latitude"
+    "message": "Breddegrad"
   },
   "layout": {
     "message": "Layout"
   },
   "leave_blank_to_disable": {
-    "message": "Leave blank to disable."
+    "message": "Lad det være tomt for at deaktivere."
   },
   "light": {
-    "message": "Light"
+    "message": "Lys"
   },
   "local_file": {
-    "message": "Local file"
+    "message": "Lokal fil"
   },
   "location": {
-    "message": "Location"
+    "message": "Beliggenhed"
   },
   "longitude": {
-    "message": "Longitude"
+    "message": "Længdegrad"
   },
   "lowercase": {
-    "message": "Lowercase"
+    "message": "Små bogstaver"
   },
   "mantra_1": {
-    "message": "Every day is a chance to grow."
+    "message": "Hver dag er en chance for at vokse."
   },
   "mantra_10": {
-    "message": "Be here, in this moment."
+    "message": "Vær her, i dette øjeblik."
   },
   "mantra_11": {
-    "message": "Each breath is a fresh start."
+    "message": "Hvert åndedrag er en ny start."
   },
   "mantra_12": {
-    "message": "The now is all we truly have."
+    "message": "Nuet er alt, hvad vi virkelig har."
   },
   "mantra_13": {
-    "message": "Dream big, start small."
+    "message": "Drøm stort, start småt."
   },
   "mantra_14": {
-    "message": "Focus on what you can control."
+    "message": "Fokuser på det, du kan kontrollere."
   },
   "mantra_15": {
-    "message": "Greatness begins with the first step."
+    "message": "Storhed begynder med det første skridt."
   },
   "mantra_2": {
-    "message": "Progress, not perfection."
+    "message": "Fremskridt, ikke perfektion."
   },
   "mantra_3": {
-    "message": "Small steps lead to big changes."
+    "message": "Små skridt fører til store forandringer."
   },
   "mantra_4": {
-    "message": "Setbacks are setups for comebacks."
+    "message": "Tilbageslag er forudsætninger for comebacks."
   },
   "mantra_5": {
-    "message": "You are stronger than you think."
+    "message": "Du er stærkere, end du tror."
   },
   "mantra_6": {
-    "message": "Challenges build your strength."
+    "message": "Udfordringer opbygger din styrke."
   },
   "mantra_7": {
-    "message": "Good things are coming your way."
+    "message": "Der er gode ting på vej til dig."
   },
   "mantra_8": {
-    "message": "See the good in every situation."
+    "message": "Se det gode i enhver situation."
   },
   "mantra_9": {
-    "message": "A hopeful heart sees endless possibilities."
+    "message": "Et håbefuldt hjerte ser uendelige muligheder."
   },
   "mantras": {
-    "message": "Mantras"
+    "message": "Mantraer"
   },
   "mantras_description": {
-    "message": "Inspirational mantras on every new tab."
+    "message": "Inspirerende mantraer på hver ny fane."
   },
   "metric": {
-    "message": "Metric"
+    "message": "Metrisk"
   },
   "mode": {
-    "message": "Mode"
+    "message": "Tilstand"
   },
   "mono": {
     "message": "Mono"
   },
   "more": {
-    "message": "More"
+    "message": "Mere om det"
   },
   "nature": {
-    "message": "Nature"
+    "message": "Naturen"
   },
   "nature_description": {
-    "message": "Listen to nature soundscapes with this widget."
+    "message": "Lyt til naturens lydbilleder med denne widget."
   },
   "nature_sounds": {
-    "message": "Nature Sounds"
+    "message": "Naturens lyde"
   },
   "new_tab": {
-    "message": "New Tab"
+    "message": "Ny fane"
   },
   "new_task": {
-    "message": "New task"
+    "message": "Ny opgave"
   },
   "new_wallpaper": {
-    "message": "New wallpaper"
+    "message": "Nyt tapet"
   },
   "next": {
-    "message": "Next"
+    "message": "Næste"
   },
   "nightstand": {
-    "message": "Nightstand"
+    "message": "Natbord"
   },
   "no_bookmarks": {
-    "message": "No bookmarks"
+    "message": "Ingen bogmærker"
   },
   "no_results": {
-    "message": "No results found"
+    "message": "Ingen resultater fundet"
   },
   "normal": {
     "message": "Normal"
   },
   "notepad": {
-    "message": "Notepad"
+    "message": "Notesblok"
   },
   "notepad_description": {
-    "message": "A simple notepad widget."
+    "message": "En simpel notesblok-widget."
   },
   "notepad_disclaimer": {
-    "message": "Notes are stored in your browser's local storage, which may be unreliable and could result in data loss."
+    "message": "Noter gemmes i din browsers lokale lager, hvilket kan være upålideligt og resultere i tab af data."
   },
   "opacity": {
-    "message": "Opacity"
+    "message": "Opacitet"
   },
   "page": {
-    "message": "Page title and icon"
+    "message": "Sidetitel og ikon"
   },
   "page_title": {
-    "message": "Page title"
+    "message": "Sidens titel"
   },
   "pause_background_changes": {
-    "message": "Pause background changes"
+    "message": "Sæt baggrundsændringer på pause"
   },
   "pinned_bookmarks": {
-    "message": "Pinned bookmarks"
+    "message": "Fastgjorte bogmærker"
   },
   "plugins": {
     "message": "Plugins"
@@ -480,153 +480,153 @@
     "message": "Pomodoro"
   },
   "pomodoro_description": {
-    "message": "Use the pomodoro technique for an interval-based workflow."
+    "message": "Brug pomodoro-teknikken til et intervalbaseret workflow."
   },
   "pomodoro_settings": {
-    "message": "Pomodoro Settings"
+    "message": "Pomodoro-indstillinger"
   },
   "pomodoro_timer": {
-    "message": "Pomodoro timer"
+    "message": "Pomodoro-timer"
   },
   "reset": {
-    "message": "Reset"
+    "message": "Nulstil"
   },
   "resources": {
-    "message": "Resources"
+    "message": "Ressourcer"
   },
   "sans": {
     "message": "Sans"
   },
   "save": {
-    "message": "Save"
+    "message": "Gemme"
   },
   "saved": {
-    "message": "Saved"
+    "message": "Gemt"
   },
   "search": {
-    "message": "Search"
+    "message": "Søg efter"
   },
   "select_font": {
-    "message": "Select a font"
+    "message": "Vælg en skrifttype"
   },
   "serif": {
     "message": "Serif"
   },
   "set": {
-    "message": "Set"
+    "message": "Sæt"
   },
   "set_greeting": {
-    "message": "Set greeting"
+    "message": "Indstil hilsen"
   },
   "settings": {
-    "message": "Settings"
+    "message": "Indstillinger"
   },
   "share_flowtide": {
-    "message": "Share Flowtide with a friend!"
+    "message": "Share Blooft with a friend!"
   },
   "show_items": {
-    "message": "Show items"
+    "message": "Vis genstande"
   },
   "skip": {
-    "message": "Skip"
+    "message": "Spring over"
   },
   "solid_color": {
-    "message": "Solid color"
+    "message": "Ensfarvet"
   },
   "sound_attribution": {
-    "message": "Sound attribution"
+    "message": "Tilskrivning af lyd"
   },
   "soundscapes": {
-    "message": "Soundscapes"
+    "message": "Lydlandskaber"
   },
   "speed_dial": {
-    "message": "Speed Dial"
+    "message": "Hurtigopkald"
   },
   "square_widgets": {
-    "message": "Square widgets (very experimental)"
+    "message": "Firkantede widgets (meget eksperimenterende)"
   },
   "square_widgets_description": {
-    "message": "Allow the clock and date widgets to be square"
+    "message": "Lad ur- og datowidgets være firkantede"
   },
   "start": {
     "message": "Start"
   },
   "start_background_changes": {
-    "message": "Start background changes"
+    "message": "Start baggrundsændringer"
   },
   "start_using": {
-    "message": "Start using Flowtide"
+    "message": "Start using Blooft"
   },
   "stop": {
     "message": "Stop"
   },
   "stopwatch": {
-    "message": "Stopwatch"
+    "message": "Stopur"
   },
   "stopwatch_description": {
-    "message": "Add a stopwatch widget to your start page."
+    "message": "Tilføj en stopur-widget til din startside."
   },
   "tasks": {
-    "message": "Tasks"
+    "message": "Opgaver"
   },
   "text_style": {
-    "message": "Text style"
+    "message": "Tekststil"
   },
   "thanks": {
-    "message": "Thank you for using Flowtide!"
+    "message": "Thank you for using Blooft!"
   },
   "theme": {
-    "message": "Theme"
+    "message": "Tema"
   },
   "todo_list": {
-    "message": "To-do list"
+    "message": "To-do liste"
   },
   "todo_list_description": {
-    "message": "Track your todos with an easy widget."
+    "message": "Hold styr på dine opgaver med en nem widget."
   },
   "toggle_theme": {
-    "message": "Toggle theme"
+    "message": "Skift tema"
   },
   "top": {
-    "message": "Top"
+    "message": "Til toppen"
   },
   "top_left": {
-    "message": "Top left"
+    "message": "Øverst til venstre"
   },
   "top_right": {
-    "message": "Top right"
+    "message": "Øverst til højre"
   },
   "type_command": {
-    "message": "Type a command"
+    "message": "Skriv en kommando"
   },
   "unit": {
-    "message": "Unit"
+    "message": "Enhed"
   },
   "uppercase": {
-    "message": "Uppercase"
+    "message": "Store bogstaver"
   },
   "wallpaper_blur": {
-    "message": "Wallpaper blur"
+    "message": "Sløret baggrund"
   },
   "weather": {
-    "message": "Weather"
+    "message": "Vejret"
   },
   "weatherDisclaimer": {
-    "message": "<a href=\"$1\">Weather data by Open-Meteo.com</a>. Weather data is provided 'as-is' without any warranty or guarantee of accuracy. Location data is handled by Open-Meteo and subject to their privacy policy."
+    "message": "<a href=\"$1\">Vejrdata fra Open-Meteo.com.</a> Vejrdata leveres \"som de er\" uden nogen form for garanti for nøjagtighed. Lokaliseringsdata håndteres af Open-Meteo og er underlagt deres privatlivspolitik."
   },
   "welcome_message": {
-    "message": "Welcome to Flowtide"
+    "message": "Welcome to Blooft"
   },
   "widgets": {
     "message": "Widgets"
   },
   "work": {
-    "message": "Work"
+    "message": "Arbejde"
   },
   "work_minutes": {
-    "message": "Work minutes"
+    "message": "Arbejdsminutter"
   },
   "you_may_need_to_refresh": {
-    "message": "You may need to refresh the page to see the changes."
+    "message": "Det kan være nødvendigt at opdatere siden for at se ændringerne."
   }
 }

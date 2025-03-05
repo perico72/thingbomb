@@ -1,477 +1,477 @@
 {
   "actions": {
-    "message": "Actions"
+    "message": "Acties"
   },
   "add": {
-    "message": "Add"
+    "message": "Voeg  toe"
   },
   "add_task": {
-    "message": "Add task"
+    "message": "Taak toevoegen"
   },
   "add_widget": {
-    "message": "Add widget"
+    "message": "Widget toevoegen"
   },
   "added": {
-    "message": "Added"
+    "message": "Toegevoegd"
   },
   "advanced": {
-    "message": "Advanced"
+    "message": "Geavanceerd"
   },
   "ambience": {
-    "message": "Ambience"
+    "message": "Ambiance"
   },
   "ambience_sounds": {
-    "message": "Ambience Sounds"
+    "message": "Sfeergeluiden"
   },
   "ambience_sounds_description": {
-    "message": "Ambient soundscapes to help you relax."
+    "message": "Omgevingsgeluiden om je te helpen ontspannen."
   },
   "appearance": {
-    "message": "Appearance"
+    "message": "Uiterlijk"
   },
   "available_bookmarks": {
-    "message": "Available bookmarks"
+    "message": "Beschikbare bladwijzers"
   },
   "background": {
-    "message": "Background"
+    "message": "Achtergrond"
   },
   "blank": {
-    "message": "Blank"
+    "message": "Blanco"
   },
   "blocks": {
-    "message": "Blocks"
+    "message": "Blokken"
   },
   "blocks_description": {
-    "message": "Supercharge your New Tab page with beautifully designed blocks created by Flowtide. You can add as many as you like to your start page."
+    "message": "Supercharge your New Tab page with beautifully designed blocks created by Blooft. You can add as many as you like to your start page."
   },
   "bookmark_folders": {
-    "message": "Bookmark Folders"
+    "message": "Bladwijzer Mappen"
   },
   "bookmarks": {
-    "message": "Bookmarks"
+    "message": "Bladwijzers"
   },
   "bookmarks_description": {
-    "message": "Easy access to your first 9 bookmarks with this widget."
+    "message": "Gemakkelijke toegang tot je eerste 9 bladwijzers met deze widget."
   },
   "bottom_left": {
-    "message": "Bottom left"
+    "message": "Linksonder"
   },
   "bottom_right": {
-    "message": "Bottom right"
+    "message": "Rechtsonder"
   },
   "break": {
-    "message": "Break"
+    "message": "Pauze"
   },
   "break_minutes": {
-    "message": "Break minutes"
+    "message": "Pauze minuten"
   },
   "cancel": {
-    "message": "Cancel"
+    "message": "Annuleren"
   },
   "center": {
-    "message": "Center"
+    "message": "Midden"
   },
   "choose_file": {
-    "message": "Choose file"
+    "message": "Kies bestand"
   },
   "choose_mode": {
-    "message": "Choose a mode"
+    "message": "Kies een modus"
   },
   "clear_data": {
-    "message": "Clear data"
+    "message": "Gegevens wissen"
   },
   "clear_data_description": {
-    "message": "Clear all data from the extension. THIS CANNOT BE UNDONE."
+    "message": "Alle gegevens van de extensie wissen. DIT KAN NIET ONGEDAAN WORDEN GEMAAKT."
   },
   "clock": {
-    "message": "Clock"
+    "message": "Klok"
   },
   "clock_description": {
-    "message": "Adds a clock widget to your start page."
+    "message": "Voegt een klokwidget toe aan je startpagina."
   },
   "clock_format": {
-    "message": "Clock format"
+    "message": "Klokformaat"
   },
   "close": {
-    "message": "Close"
+    "message": "Sluit"
   },
   "comic_sans": {
     "message": "Comic Sans"
   },
   "community_desc": {
-    "message": "Join the Flowtide community on Discord to showcase your work, ask questions, test new features, and chat with the community."
+    "message": "Join the Blooft community on Discord to showcase your work, ask questions, test new features, and chat with the community."
   },
   "complete": {
-    "message": "Complete"
+    "message": "Compleet"
   },
   "compose_gmail_message": {
-    "message": "Compose Gmail Message"
+    "message": "Gmail-bericht opstellen"
   },
   "coordinates": {
-    "message": "Coordinates"
+    "message": "Coördinaten"
   },
   "copied_to_clipboard": {
-    "message": "Copied to clipboard"
+    "message": "Gekopieerd naar klembord"
   },
   "counter": {
-    "message": "Counter"
+    "message": "Tegen"
   },
   "counter_description": {
-    "message": "Count things easily."
+    "message": "Tel dingen gemakkelijk."
   },
   "create_bitly_link": {
-    "message": "Create Bitly Link"
+    "message": "Bitly-link maken"
   },
   "create_canva_design": {
-    "message": "Create Canva Design"
+    "message": "Canva-ontwerp maken"
   },
   "create_canva_video": {
-    "message": "Create Canva Video"
+    "message": "Canva-video maken"
   },
   "create_excel_workbook": {
-    "message": "Create Excel Workbook"
+    "message": "Excel-werkmap maken"
   },
   "create_figma_file": {
-    "message": "Create Figma File"
+    "message": "Figma-bestand maken"
   },
   "create_github_gist": {
-    "message": "Create GitHub Gist"
+    "message": "GitHub Gist maken"
   },
   "create_github_repository": {
-    "message": "Create GitHub Repository"
+    "message": "GitHub-repository aanmaken"
   },
   "create_google_calendar_event": {
-    "message": "Create Google Calendar Event"
+    "message": "Google Agenda-evenement maken"
   },
   "create_google_document": {
-    "message": "Create Google Document"
+    "message": "Google-document maken"
   },
   "create_google_sheet": {
-    "message": "Create Google Sheet"
+    "message": "Google-blad maken"
   },
   "create_google_slide": {
-    "message": "Create Google Slide"
+    "message": "Google dia maken"
   },
   "create_notion_page": {
-    "message": "Create Notion Page"
+    "message": "Pagina maken"
   },
   "create_paper_document": {
-    "message": "Create Paper Document"
+    "message": "Papieren document maken"
   },
   "create_powerpoint_presentation": {
-    "message": "Create PowerPoint Presentation"
+    "message": "PowerPoint-presentatie maken"
   },
   "create_todoist_task": {
-    "message": "Create Todoist Task"
+    "message": "Todoist-taak maken"
   },
   "create_vercel_project": {
-    "message": "Create Vercel Project"
+    "message": "Vercel-project maken"
   },
   "create_word_document": {
-    "message": "Create Word Document"
+    "message": "Word-document maken"
   },
   "create_zoom_meeting": {
-    "message": "Create Zoom Meeting"
+    "message": "Zoom-bijeenkomst maken"
   },
   "custom_color": {
-    "message": "Custom color"
+    "message": "Aangepaste kleur"
   },
   "custom_css": {
-    "message": "Custom CSS"
+    "message": "Aangepaste CSS"
   },
   "custom_url": {
-    "message": "Custom URL"
+    "message": "Aangepaste URL"
   },
   "customize": {
-    "message": "Customize your new tab"
+    "message": "Je nieuwe tabblad aanpassen"
   },
   "customize_desc": {
-    "message": "Give your New Tab a personal touch with a variety of customization options. These are just a few options; the possibilities are almost limitless."
+    "message": "Geef uw Nieuw Tabblad een persoonlijk tintje met verschillende aanpassingsopties. Dit zijn maar een paar opties; de mogelijkheden zijn bijna onbeperkt."
   },
   "dark": {
-    "message": "Dark"
+    "message": "Donker"
   },
   "dashboard": {
     "message": "Dashboard"
   },
   "date": {
-    "message": "Date"
+    "message": "Datum"
   },
   "date_description": {
-    "message": "A sleek date widget that shows you the current date."
+    "message": "Een strakke datumwidget die je de huidige datum toont."
   },
   "date_format": {
-    "message": "Date format"
+    "message": "Datum formaat"
   },
   "default": {
-    "message": "Default"
+    "message": "Standaard"
   },
   "discord": {
-    "message": "Join the Discord"
+    "message": "Word lid van de Discord"
   },
   "display_name": {
-    "message": "Display name"
+    "message": "Naam weergeven"
   },
   "edit_the_pomodoro_settings": {
-    "message": "Edit the pomodoro settings."
+    "message": "Bewerk de pomodoro-instellingen."
   },
   "enabled": {
-    "message": "Enabled"
+    "message": "Ingeschakeld"
   },
   "enter_greeting": {
-    "message": "Enter greeting"
+    "message": "Begroeting invoeren"
   },
   "enter_name": {
-    "message": "Enter your name"
+    "message": "Voer je naam in"
   },
   "every_day": {
-    "message": "Every day"
+    "message": "Elke dag"
   },
   "every_hour": {
-    "message": "Every hour"
+    "message": "Elk uur"
   },
   "every_reload": {
-    "message": "Every reload"
+    "message": "Elke herlaadbeurt"
   },
   "every_week": {
-    "message": "Every week"
+    "message": "Elke week"
   },
   "feature_request": {
-    "message": "Feature request"
+    "message": "Functieverzoek"
   },
   "feedback_callout": {
-    "message": "We need your feedback!"
+    "message": "We hebben jullie feedback nodig!"
   },
   "feedback_callout_desc": {
-    "message": "Help us shape the future of Flowtide and tell us what you want to see next. We'd love to hear from you!"
+    "message": "Help us shape the future of Blooft and tell us what you want to see next. We'd love to hear from you!"
   },
   "file_read_error": {
-    "message": "We couldn't read the file. Please try again."
+    "message": "We konden het bestand niet lezen. Probeer het opnieuw."
   },
   "file_too_large": {
-    "message": "File too large (max size is ~2.5 MB)"
+    "message": "Bestand te groot (maximale grootte is ~2,5 MB)"
   },
   "finish": {
-    "message": "Finish"
+    "message": "Afwerking"
   },
   "focus": {
     "message": "Focus"
   },
   "focus_sounds": {
-    "message": "Focus Sounds"
+    "message": "Focus Geluiden"
   },
   "focus_sounds_description": {
-    "message": "Soundscapes to help you focus."
+    "message": "Soundscapes om je te helpen focussen."
   },
   "font": {
-    "message": "Font"
+    "message": "Lettertype"
   },
   "forum": {
     "message": "Forum"
   },
   "general": {
-    "message": "General"
+    "message": "Algemeen"
   },
   "get_started": {
-    "message": "Get started"
+    "message": "Aan de slag"
   },
   "give_feedback": {
-    "message": "Give feedback"
+    "message": "Feedback geven"
   },
   "go_back": {
-    "message": "Go back"
+    "message": "Ga terug"
   },
   "good_afternoon": {
-    "message": "Good afternoon"
+    "message": "Goedemiddag"
   },
   "good_evening": {
-    "message": "Good evening"
+    "message": "Goedenavond"
   },
   "good_morning": {
-    "message": "Good morning"
+    "message": "Goedemorgen"
   },
   "good_night": {
-    "message": "Good night"
+    "message": "Goedenacht"
   },
   "gradient": {
-    "message": "Gradient"
+    "message": "Verloop"
   },
   "greeting": {
-    "message": "Greeting"
+    "message": "Groet"
   },
   "greeting_description_1": {
-    "message": "What should we call you?"
+    "message": "Hoe moeten we je noemen?"
   },
   "hide_items": {
-    "message": "Hide items"
+    "message": "Verberg items"
   },
   "hide_message": {
-    "message": "Hide message"
+    "message": "Bericht verbergen"
   },
   "hide_settings": {
-    "message": "Hide settings button"
+    "message": "Verberg instellingen knop"
   },
   "hide_settings_description": {
-    "message": "Hide the settings button except on hover"
+    "message": "Verberg de instellingenknop behalve als je erboven hangt"
   },
   "icon": {
-    "message": "Icon"
+    "message": "Pictogram"
   },
   "image": {
-    "message": "Image"
+    "message": "Afbeelding"
   },
   "imperial": {
-    "message": "Imperial"
+    "message": "Keizerlijk"
   },
   "invalid_file_type": {
-    "message": "Invalid file type. Please upload an image file."
+    "message": "Ongeldig bestandstype. Upload een afbeeldingsbestand."
   },
   "join_the_community": {
-    "message": "Join the community"
+    "message": "Word lid van de gemeenschap"
   },
   "latitude": {
-    "message": "Latitude"
+    "message": "Breedte"
   },
   "layout": {
-    "message": "Layout"
+    "message": "Lay-out"
   },
   "leave_blank_to_disable": {
-    "message": "Leave blank to disable."
+    "message": "Laat leeg om uit te schakelen."
   },
   "light": {
-    "message": "Light"
+    "message": "Licht"
   },
   "local_file": {
-    "message": "Local file"
+    "message": "Lokaal bestand"
   },
   "location": {
-    "message": "Location"
+    "message": "Locatie"
   },
   "longitude": {
-    "message": "Longitude"
+    "message": "Lengte"
   },
   "lowercase": {
-    "message": "Lowercase"
+    "message": "Kleine letters"
   },
   "mantra_1": {
-    "message": "Every day is a chance to grow."
+    "message": "Elke dag is een kans om te groeien."
   },
   "mantra_10": {
-    "message": "Be here, in this moment."
+    "message": "Wees hier, op dit moment."
   },
   "mantra_11": {
-    "message": "Each breath is a fresh start."
+    "message": "Elke ademhaling is een nieuwe start."
   },
   "mantra_12": {
-    "message": "The now is all we truly have."
+    "message": "Het nu is alles wat we echt hebben."
   },
   "mantra_13": {
-    "message": "Dream big, start small."
+    "message": "Droom groot, begin klein."
   },
   "mantra_14": {
-    "message": "Focus on what you can control."
+    "message": "Richt je op wat je kunt beheersen."
   },
   "mantra_15": {
-    "message": "Greatness begins with the first step."
+    "message": "Grootheid begint met de eerste stap."
   },
   "mantra_2": {
-    "message": "Progress, not perfection."
+    "message": "Vooruitgang, geen perfectie."
   },
   "mantra_3": {
-    "message": "Small steps lead to big changes."
+    "message": "Kleine stappen leiden tot grote veranderingen."
   },
   "mantra_4": {
-    "message": "Setbacks are setups for comebacks."
+    "message": "Tegenslagen zijn opzetjes voor comebacks."
   },
   "mantra_5": {
-    "message": "You are stronger than you think."
+    "message": "Je bent sterker dan je denkt."
   },
   "mantra_6": {
-    "message": "Challenges build your strength."
+    "message": "Uitdagingen bouwen je kracht op."
   },
   "mantra_7": {
-    "message": "Good things are coming your way."
+    "message": "Er komen goede dingen op je pad."
   },
   "mantra_8": {
-    "message": "See the good in every situation."
+    "message": "Zie het goede in elke situatie."
   },
   "mantra_9": {
-    "message": "A hopeful heart sees endless possibilities."
+    "message": "Een hoopvol hart ziet eindeloze mogelijkheden."
   },
   "mantras": {
-    "message": "Mantras"
+    "message": "Mantra's"
   },
   "mantras_description": {
-    "message": "Inspirational mantras on every new tab."
+    "message": "Inspirerende mantra's op elk nieuw tabblad."
   },
   "metric": {
-    "message": "Metric"
+    "message": "Metrisch"
   },
   "mode": {
-    "message": "Mode"
+    "message": "Modus"
   },
   "mono": {
     "message": "Mono"
   },
   "more": {
-    "message": "More"
+    "message": "Meer"
   },
   "nature": {
-    "message": "Nature"
+    "message": "Natuur"
   },
   "nature_description": {
-    "message": "Listen to nature soundscapes with this widget."
+    "message": "Luister naar natuurgeluiden met deze widget."
   },
   "nature_sounds": {
-    "message": "Nature Sounds"
+    "message": "Natuurgeluiden"
   },
   "new_tab": {
-    "message": "New Tab"
+    "message": "Nieuw tabblad"
   },
   "new_task": {
-    "message": "New task"
+    "message": "Nieuwe taak"
   },
   "new_wallpaper": {
-    "message": "New wallpaper"
+    "message": "Nieuw behang"
   },
   "next": {
-    "message": "Next"
+    "message": "Volgende"
   },
   "nightstand": {
-    "message": "Nightstand"
+    "message": "Nachtkastje"
   },
   "no_bookmarks": {
-    "message": "No bookmarks"
+    "message": "Geen bladwijzers"
   },
   "no_results": {
-    "message": "No results found"
+    "message": "Geen resultaten gevonden"
   },
   "normal": {
-    "message": "Normal"
+    "message": "Normaal"
   },
   "notepad": {
-    "message": "Notepad"
+    "message": "Kladblok"
   },
   "notepad_description": {
-    "message": "A simple notepad widget."
+    "message": "Een eenvoudige notitie widget."
   },
   "notepad_disclaimer": {
-    "message": "Notes are stored in your browser's local storage, which may be unreliable and could result in data loss."
+    "message": "Notities worden opgeslagen in de lokale opslag van je browser, wat onbetrouwbaar kan zijn en kan leiden tot gegevensverlies."
   },
   "opacity": {
-    "message": "Opacity"
+    "message": "Opaciteit"
   },
   "page": {
-    "message": "Page title and icon"
+    "message": "Paginatitel en -pictogram"
   },
   "page_title": {
-    "message": "Page title"
+    "message": "Pagina titel"
   },
   "pause_background_changes": {
-    "message": "Pause background changes"
+    "message": "Achtergrondwijzigingen onderbreken"
   },
   "pinned_bookmarks": {
-    "message": "Pinned bookmarks"
+    "message": "Bladwijzers vastmaken"
   },
   "plugins": {
     "message": "Plugins"
@@ -480,10 +480,10 @@
     "message": "Pomodoro"
   },
   "pomodoro_description": {
-    "message": "Use the pomodoro technique for an interval-based workflow."
+    "message": "Gebruik de pomodoro techniek voor een op intervallen gebaseerde workflow."
   },
   "pomodoro_settings": {
-    "message": "Pomodoro Settings"
+    "message": "Pomodoro-instellingen"
   },
   "pomodoro_timer": {
     "message": "Pomodoro timer"
@@ -492,70 +492,70 @@
     "message": "Reset"
   },
   "resources": {
-    "message": "Resources"
+    "message": "Bronnen"
   },
   "sans": {
     "message": "Sans"
   },
   "save": {
-    "message": "Save"
+    "message": "Sla"
   },
   "saved": {
-    "message": "Saved"
+    "message": "Opgeslagen"
   },
   "search": {
-    "message": "Search"
+    "message": "Zoek op"
   },
   "select_font": {
-    "message": "Select a font"
+    "message": "Selecteer een lettertype"
   },
   "serif": {
     "message": "Serif"
   },
   "set": {
-    "message": "Set"
+    "message": "Stel in"
   },
   "set_greeting": {
-    "message": "Set greeting"
+    "message": "Begroeting instellen"
   },
   "settings": {
-    "message": "Settings"
+    "message": "Instellingen"
   },
   "share_flowtide": {
-    "message": "Share Flowtide with a friend!"
+    "message": "Share Blooft with a friend!"
   },
   "show_items": {
-    "message": "Show items"
+    "message": "Artikelen weergeven"
   },
   "skip": {
     "message": "Skip"
   },
   "solid_color": {
-    "message": "Solid color"
+    "message": "Effen kleur"
   },
   "sound_attribution": {
-    "message": "Sound attribution"
+    "message": "Toewijzing van geluid"
   },
   "soundscapes": {
     "message": "Soundscapes"
   },
   "speed_dial": {
-    "message": "Speed Dial"
+    "message": "Snelkiezen"
   },
   "square_widgets": {
-    "message": "Square widgets (very experimental)"
+    "message": "Vierkante widgets (zeer experimenteel)"
   },
   "square_widgets_description": {
-    "message": "Allow the clock and date widgets to be square"
+    "message": "Laat de klok en datum widgets vierkant zijn"
   },
   "start": {
     "message": "Start"
   },
   "start_background_changes": {
-    "message": "Start background changes"
+    "message": "Achtergrondwijzigingen starten"
   },
   "start_using": {
-    "message": "Start using Flowtide"
+    "message": "Start using Blooft"
   },
   "stop": {
     "message": "Stop"
@@ -564,69 +564,69 @@
     "message": "Stopwatch"
   },
   "stopwatch_description": {
-    "message": "Add a stopwatch widget to your start page."
+    "message": "Voeg een stopwatch-widget toe aan je startpagina."
   },
   "tasks": {
-    "message": "Tasks"
+    "message": "Taken"
   },
   "text_style": {
-    "message": "Text style"
+    "message": "Tekststijl"
   },
   "thanks": {
-    "message": "Thank you for using Flowtide!"
+    "message": "Thank you for using Blooft!"
   },
   "theme": {
-    "message": "Theme"
+    "message": "Thema"
   },
   "todo_list": {
-    "message": "To-do list"
+    "message": "Takenlijst"
   },
   "todo_list_description": {
-    "message": "Track your todos with an easy widget."
+    "message": "Houd je todo's bij met een eenvoudige widget."
   },
   "toggle_theme": {
-    "message": "Toggle theme"
+    "message": "Thema schakelen"
   },
   "top": {
     "message": "Top"
   },
   "top_left": {
-    "message": "Top left"
+    "message": "Linksboven"
   },
   "top_right": {
-    "message": "Top right"
+    "message": "Rechtsboven"
   },
   "type_command": {
-    "message": "Type a command"
+    "message": "Typ een opdracht"
   },
   "unit": {
-    "message": "Unit"
+    "message": "Eenheid"
   },
   "uppercase": {
-    "message": "Uppercase"
+    "message": "Hoofdletters"
   },
   "wallpaper_blur": {
-    "message": "Wallpaper blur"
+    "message": "Behang vervagen"
   },
   "weather": {
-    "message": "Weather"
+    "message": "Weer"
   },
   "weatherDisclaimer": {
-    "message": "<a href=\"$1\">Weather data by Open-Meteo.com</a>. Weather data is provided 'as-is' without any warranty or guarantee of accuracy. Location data is handled by Open-Meteo and subject to their privacy policy."
+    "message": "<a href=\"$1\">Weergegevens door Open-Meteo.com</a>. Weergegevens worden 'as-is' aangeboden zonder garantie of nauwkeurigheid. Locatiegegevens worden verwerkt door Open-Meteo en vallen onder hun privacybeleid."
   },
   "welcome_message": {
-    "message": "Welcome to Flowtide"
+    "message": "Welcome to Blooft"
   },
   "widgets": {
     "message": "Widgets"
   },
   "work": {
-    "message": "Work"
+    "message": "Werk"
   },
   "work_minutes": {
-    "message": "Work minutes"
+    "message": "Werkminuten"
   },
   "you_may_need_to_refresh": {
-    "message": "You may need to refresh the page to see the changes."
+    "message": "Mogelijk moet u de pagina vernieuwen om de wijzigingen te zien."
   }
 }
