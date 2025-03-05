@@ -15,7 +15,7 @@ Features:
 - Be greeted on every New Tab
 - Install CSS mods with one-click at [blooft.com/plugins](https://blooft.com/plugins/) and even make your own [here](https://github.com/blooft-app/plugins).
 
-<img src="https://github.com/user-attachments/assets/f47196ea-7c95-4ac4-ae19-8a894551c458" style="border-radius: 24px;">
+<img src="https://storage.blooft.com/hero.jpg" style="border-radius: 24px;">
 
 ## Install for your browser
 
