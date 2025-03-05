@@ -42,7 +42,7 @@
     "message": "Блоки"
   },
   "blocks_description": {
-    "message": "Supercharge your New Tab page with beautifully designed blocks created by Blooft. You can add as many as you like to your start page."
+    "message": "Дополните свою страницу \"Новая вкладка\" красиво оформленными блоками, созданными Blooft. Вы можете добавить на стартовую страницу столько блоков, сколько захотите."
   },
   "bookmark_folders": {
     "message": "Папки с закладками"
@@ -99,7 +99,7 @@
     "message": "Комикс Санс"
   },
   "community_desc": {
-    "message": "Join the Blooft community on Discord to showcase your work, ask questions, test new features, and chat with the community."
+    "message": "Присоединяйтесь к сообществу Blooft в Discord, чтобы демонстрировать свои работы, задавать вопросы, тестировать новые функции и общаться с сообществом."
   },
   "complete": {
     "message": "Полный"
@@ -243,7 +243,7 @@
     "message": "Нам нужны ваши отзывы!"
   },
   "feedback_callout_desc": {
-    "message": "Help us shape the future of Blooft and tell us what you want to see next. We'd love to hear from you!"
+    "message": "Помогите нам сформировать будущее Blooft и расскажите, что вы хотите видеть дальше. Мы будем рады услышать вас!"
   },
   "file_read_error": {
     "message": "Мы не смогли прочитать файл. Пожалуйста, попробуйте еще раз."
@@ -522,7 +522,7 @@
     "message": "Настройки"
   },
   "share_flowtide": {
-    "message": "Share Blooft with a friend!"
+    "message": "Поделись игрой Blooft с другом!"
   },
   "show_items": {
     "message": "Показать товары"
@@ -555,7 +555,7 @@
     "message": "Начните изменение фона"
   },
   "start_using": {
-    "message": "Start using Blooft"
+    "message": "Начните использовать Blooft"
   },
   "stop": {
     "message": "Остановить"
@@ -573,7 +573,7 @@
     "message": "Стиль текста"
   },
   "thanks": {
-    "message": "Thank you for using Blooft!"
+    "message": "Спасибо за использование Blooft!"
   },
   "theme": {
     "message": "Тема"
@@ -615,7 +615,7 @@
     "message": "<a href=\"$1\">Данные о погоде предоставлены Open-Meteo.com</a>. Погодные данные предоставляются \"как есть\", без каких-либо гарантий или подтверждения точности. Данные о местоположении обрабатываются компанией Open-Meteo и регулируются ее политикой конфиденциальности."
   },
   "welcome_message": {
-    "message": "Welcome to Blooft"
+    "message": "Добро пожаловать в Blooft"
   },
   "widgets": {
     "message": "Виджеты"
