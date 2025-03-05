@@ -1,0 +1,632 @@
+{
+  "actions": {
+    "message": "Actions"
+  },
+  "add": {
+    "message": "Add"
+  },
+  "add_task": {
+    "message": "Add task"
+  },
+  "add_widget": {
+    "message": "Add widget"
+  },
+  "added": {
+    "message": "Added"
+  },
+  "advanced": {
+    "message": "Advanced"
+  },
+  "ambience": {
+    "message": "Ambience"
+  },
+  "ambience_sounds": {
+    "message": "Ambience Sounds"
+  },
+  "ambience_sounds_description": {
+    "message": "Ambient soundscapes to help you relax."
+  },
+  "appearance": {
+    "message": "Appearance"
+  },
+  "available_bookmarks": {
+    "message": "Available bookmarks"
+  },
+  "background": {
+    "message": "Background"
+  },
+  "blank": {
+    "message": "Blank"
+  },
+  "blocks": {
+    "message": "Blocks"
+  },
+  "blocks_description": {
+    "message": "Supercharge your New Tab page with beautifully designed blocks created by Flowtide. You can add as many as you like to your start page."
+  },
+  "bookmark_folders": {
+    "message": "Bookmark Folders"
+  },
+  "bookmarks": {
+    "message": "Bookmarks"
+  },
+  "bookmarks_description": {
+    "message": "Easy access to your first 9 bookmarks with this widget."
+  },
+  "bottom_left": {
+    "message": "Bottom left"
+  },
+  "bottom_right": {
+    "message": "Bottom right"
+  },
+  "break": {
+    "message": "Break"
+  },
+  "break_minutes": {
+    "message": "Break minutes"
+  },
+  "cancel": {
+    "message": "Cancel"
+  },
+  "center": {
+    "message": "Center"
+  },
+  "choose_file": {
+    "message": "Choose file"
+  },
+  "choose_mode": {
+    "message": "Choose a mode"
+  },
+  "clear_data": {
+    "message": "Clear data"
+  },
+  "clear_data_description": {
+    "message": "Clear all data from the extension. THIS CANNOT BE UNDONE."
+  },
+  "clock": {
+    "message": "Clock"
+  },
+  "clock_description": {
+    "message": "Adds a clock widget to your start page."
+  },
+  "clock_format": {
+    "message": "Clock format"
+  },
+  "close": {
+    "message": "Close"
+  },
+  "comic_sans": {
+    "message": "Comic Sans"
+  },
+  "community_desc": {
+    "message": "Join the Flowtide community on Discord to showcase your work, ask questions, test new features, and chat with the community."
+  },
+  "complete": {
+    "message": "Complete"
+  },
+  "compose_gmail_message": {
+    "message": "Compose Gmail Message"
+  },
+  "coordinates": {
+    "message": "Coordinates"
+  },
+  "copied_to_clipboard": {
+    "message": "Copied to clipboard"
+  },
+  "counter": {
+    "message": "Counter"
+  },
+  "counter_description": {
+    "message": "Count things easily."
+  },
+  "create_bitly_link": {
+    "message": "Create Bitly Link"
+  },
+  "create_canva_design": {
+    "message": "Create Canva Design"
+  },
+  "create_canva_video": {
+    "message": "Create Canva Video"
+  },
+  "create_excel_workbook": {
+    "message": "Create Excel Workbook"
+  },
+  "create_figma_file": {
+    "message": "Create Figma File"
+  },
+  "create_github_gist": {
+    "message": "Create GitHub Gist"
+  },
+  "create_github_repository": {
+    "message": "Create GitHub Repository"
+  },
+  "create_google_calendar_event": {
+    "message": "Create Google Calendar Event"
+  },
+  "create_google_document": {
+    "message": "Create Google Document"
+  },
+  "create_google_sheet": {
+    "message": "Create Google Sheet"
+  },
+  "create_google_slide": {
+    "message": "Create Google Slide"
+  },
+  "create_notion_page": {
+    "message": "Create Notion Page"
+  },
+  "create_paper_document": {
+    "message": "Create Paper Document"
+  },
+  "create_powerpoint_presentation": {
+    "message": "Create PowerPoint Presentation"
+  },
+  "create_todoist_task": {
+    "message": "Create Todoist Task"
+  },
+  "create_vercel_project": {
+    "message": "Create Vercel Project"
+  },
+  "create_word_document": {
+    "message": "Create Word Document"
+  },
+  "create_zoom_meeting": {
+    "message": "Create Zoom Meeting"
+  },
+  "custom_color": {
+    "message": "Custom color"
+  },
+  "custom_css": {
+    "message": "Custom CSS"
+  },
+  "custom_url": {
+    "message": "Custom URL"
+  },
+  "customize": {
+    "message": "Customize your new tab"
+  },
+  "customize_desc": {
+    "message": "Give your New Tab a personal touch with a variety of customization options. These are just a few options; the possibilities are almost limitless."
+  },
+  "dark": {
+    "message": "Dark"
+  },
+  "dashboard": {
+    "message": "Dashboard"
+  },
+  "date": {
+    "message": "Date"
+  },
+  "date_description": {
+    "message": "A sleek date widget that shows you the current date."
+  },
+  "date_format": {
+    "message": "Date format"
+  },
+  "default": {
+    "message": "Default"
+  },
+  "discord": {
+    "message": "Join the Discord"
+  },
+  "display_name": {
+    "message": "Display name"
+  },
+  "edit_the_pomodoro_settings": {
+    "message": "Edit the pomodoro settings."
+  },
+  "enabled": {
+    "message": "Enabled"
+  },
+  "enter_greeting": {
+    "message": "Enter greeting"
+  },
+  "enter_name": {
+    "message": "Enter your name"
+  },
+  "every_day": {
+    "message": "Every day"
+  },
+  "every_hour": {
+    "message": "Every hour"
+  },
+  "every_reload": {
+    "message": "Every reload"
+  },
+  "every_week": {
+    "message": "Every week"
+  },
+  "feature_request": {
+    "message": "Feature request"
+  },
+  "feedback_callout": {
+    "message": "We need your feedback!"
+  },
+  "feedback_callout_desc": {
+    "message": "Help us shape the future of Flowtide and tell us what you want to see next. We'd love to hear from you!"
+  },
+  "file_read_error": {
+    "message": "We couldn't read the file. Please try again."
+  },
+  "file_too_large": {
+    "message": "File too large (max size is ~2.5 MB)"
+  },
+  "finish": {
+    "message": "Finish"
+  },
+  "focus": {
+    "message": "Focus"
+  },
+  "focus_sounds": {
+    "message": "Focus Sounds"
+  },
+  "focus_sounds_description": {
+    "message": "Soundscapes to help you focus."
+  },
+  "font": {
+    "message": "Font"
+  },
+  "forum": {
+    "message": "Forum"
+  },
+  "general": {
+    "message": "General"
+  },
+  "get_started": {
+    "message": "Get started"
+  },
+  "give_feedback": {
+    "message": "Give feedback"
+  },
+  "go_back": {
+    "message": "Go back"
+  },
+  "good_afternoon": {
+    "message": "Good afternoon"
+  },
+  "good_evening": {
+    "message": "Good evening"
+  },
+  "good_morning": {
+    "message": "Good morning"
+  },
+  "good_night": {
+    "message": "Good night"
+  },
+  "gradient": {
+    "message": "Gradient"
+  },
+  "greeting": {
+    "message": "Greeting"
+  },
+  "greeting_description_1": {
+    "message": "What should we call you?"
+  },
+  "hide_items": {
+    "message": "Hide items"
+  },
+  "hide_message": {
+    "message": "Hide message"
+  },
+  "hide_settings": {
+    "message": "Hide settings button"
+  },
+  "hide_settings_description": {
+    "message": "Hide the settings button except on hover"
+  },
+  "icon": {
+    "message": "Icon"
+  },
+  "image": {
+    "message": "Image"
+  },
+  "imperial": {
+    "message": "Imperial"
+  },
+  "invalid_file_type": {
+    "message": "Invalid file type. Please upload an image file."
+  },
+  "join_the_community": {
+    "message": "Join the community"
+  },
+  "latitude": {
+    "message": "Latitude"
+  },
+  "layout": {
+    "message": "Layout"
+  },
+  "leave_blank_to_disable": {
+    "message": "Leave blank to disable."
+  },
+  "light": {
+    "message": "Light"
+  },
+  "local_file": {
+    "message": "Local file"
+  },
+  "location": {
+    "message": "Location"
+  },
+  "longitude": {
+    "message": "Longitude"
+  },
+  "lowercase": {
+    "message": "Lowercase"
+  },
+  "mantra_1": {
+    "message": "Every day is a chance to grow."
+  },
+  "mantra_10": {
+    "message": "Be here, in this moment."
+  },
+  "mantra_11": {
+    "message": "Each breath is a fresh start."
+  },
+  "mantra_12": {
+    "message": "The now is all we truly have."
+  },
+  "mantra_13": {
+    "message": "Dream big, start small."
+  },
+  "mantra_14": {
+    "message": "Focus on what you can control."
+  },
+  "mantra_15": {
+    "message": "Greatness begins with the first step."
+  },
+  "mantra_2": {
+    "message": "Progress, not perfection."
+  },
+  "mantra_3": {
+    "message": "Small steps lead to big changes."
+  },
+  "mantra_4": {
+    "message": "Setbacks are setups for comebacks."
+  },
+  "mantra_5": {
+    "message": "You are stronger than you think."
+  },
+  "mantra_6": {
+    "message": "Challenges build your strength."
+  },
+  "mantra_7": {
+    "message": "Good things are coming your way."
+  },
+  "mantra_8": {
+    "message": "See the good in every situation."
+  },
+  "mantra_9": {
+    "message": "A hopeful heart sees endless possibilities."
+  },
+  "mantras": {
+    "message": "Mantras"
+  },
+  "mantras_description": {
+    "message": "Inspirational mantras on every new tab."
+  },
+  "metric": {
+    "message": "Metric"
+  },
+  "mode": {
+    "message": "Mode"
+  },
+  "mono": {
+    "message": "Mono"
+  },
+  "more": {
+    "message": "More"
+  },
+  "nature": {
+    "message": "Nature"
+  },
+  "nature_description": {
+    "message": "Listen to nature soundscapes with this widget."
+  },
+  "nature_sounds": {
+    "message": "Nature Sounds"
+  },
+  "new_tab": {
+    "message": "New Tab"
+  },
+  "new_task": {
+    "message": "New task"
+  },
+  "new_wallpaper": {
+    "message": "New wallpaper"
+  },
+  "next": {
+    "message": "Next"
+  },
+  "nightstand": {
+    "message": "Nightstand"
+  },
+  "no_bookmarks": {
+    "message": "No bookmarks"
+  },
+  "no_results": {
+    "message": "No results found"
+  },
+  "normal": {
+    "message": "Normal"
+  },
+  "notepad": {
+    "message": "Notepad"
+  },
+  "notepad_description": {
+    "message": "A simple notepad widget."
+  },
+  "notepad_disclaimer": {
+    "message": "Notes are stored in your browser's local storage, which may be unreliable and could result in data loss."
+  },
+  "opacity": {
+    "message": "Opacity"
+  },
+  "page": {
+    "message": "Page title and icon"
+  },
+  "page_title": {
+    "message": "Page title"
+  },
+  "pause_background_changes": {
+    "message": "Pause background changes"
+  },
+  "pinned_bookmarks": {
+    "message": "Pinned bookmarks"
+  },
+  "plugins": {
+    "message": "Plugins"
+  },
+  "pomodoro": {
+    "message": "Pomodoro"
+  },
+  "pomodoro_description": {
+    "message": "Use the pomodoro technique for an interval-based workflow."
+  },
+  "pomodoro_settings": {
+    "message": "Pomodoro Settings"
+  },
+  "pomodoro_timer": {
+    "message": "Pomodoro timer"
+  },
+  "reset": {
+    "message": "Reset"
+  },
+  "resources": {
+    "message": "Resources"
+  },
+  "sans": {
+    "message": "Sans"
+  },
+  "save": {
+    "message": "Save"
+  },
+  "saved": {
+    "message": "Saved"
+  },
+  "search": {
+    "message": "Search"
+  },
+  "select_font": {
+    "message": "Select a font"
+  },
+  "serif": {
+    "message": "Serif"
+  },
+  "set": {
+    "message": "Set"
+  },
+  "set_greeting": {
+    "message": "Set greeting"
+  },
+  "settings": {
+    "message": "Settings"
+  },
+  "share_flowtide": {
+    "message": "Share Flowtide with a friend!"
+  },
+  "show_items": {
+    "message": "Show items"
+  },
+  "skip": {
+    "message": "Skip"
+  },
+  "solid_color": {
+    "message": "Solid color"
+  },
+  "sound_attribution": {
+    "message": "Sound attribution"
+  },
+  "soundscapes": {
+    "message": "Soundscapes"
+  },
+  "speed_dial": {
+    "message": "Speed Dial"
+  },
+  "square_widgets": {
+    "message": "Square widgets (very experimental)"
+  },
+  "square_widgets_description": {
+    "message": "Allow the clock and date widgets to be square"
+  },
+  "start": {
+    "message": "Start"
+  },
+  "start_background_changes": {
+    "message": "Start background changes"
+  },
+  "start_using": {
+    "message": "Start using Flowtide"
+  },
+  "stop": {
+    "message": "Stop"
+  },
+  "stopwatch": {
+    "message": "Stopwatch"
+  },
+  "stopwatch_description": {
+    "message": "Add a stopwatch widget to your start page."
+  },
+  "tasks": {
+    "message": "Tasks"
+  },
+  "text_style": {
+    "message": "Text style"
+  },
+  "thanks": {
+    "message": "Thank you for using Flowtide!"
+  },
+  "theme": {
+    "message": "Theme"
+  },
+  "todo_list": {
+    "message": "To-do list"
+  },
+  "todo_list_description": {
+    "message": "Track your todos with an easy widget."
+  },
+  "toggle_theme": {
+    "message": "Toggle theme"
+  },
+  "top": {
+    "message": "Top"
+  },
+  "top_left": {
+    "message": "Top left"
+  },
+  "top_right": {
+    "message": "Top right"
+  },
+  "type_command": {
+    "message": "Type a command"
+  },
+  "unit": {
+    "message": "Unit"
+  },
+  "uppercase": {
+    "message": "Uppercase"
+  },
+  "wallpaper_blur": {
+    "message": "Wallpaper blur"
+  },
+  "weather": {
+    "message": "Weather"
+  },
+  "weatherDisclaimer": {
+    "message": "<a href=\"$1\">Weather data by Open-Meteo.com</a>. Weather data is provided 'as-is' without any warranty or guarantee of accuracy. Location data is handled by Open-Meteo and subject to their privacy policy."
+  },
+  "welcome_message": {
+    "message": "Welcome to Flowtide"
+  },
+  "widgets": {
+    "message": "Widgets"
+  },
+  "work": {
+    "message": "Work"
+  },
+  "work_minutes": {
+    "message": "Work minutes"
+  },
+  "you_may_need_to_refresh": {
+    "message": "You may need to refresh the page to see the changes."
+  }
+}
