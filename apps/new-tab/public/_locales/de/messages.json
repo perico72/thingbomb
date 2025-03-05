@@ -42,7 +42,7 @@
     "message": "Blöcke"
   },
   "blocks_description": {
-    "message": "Supercharge your New Tab page with beautifully designed blocks created by Blooft. You can add as many as you like to your start page."
+    "message": "Erweitern Sie Ihre New-Tab-Seite mit schön gestalteten Blöcken, die von Blooft erstellt wurden. Sie können so viele Blöcke zu Ihrer Startseite hinzufügen, wie Sie möchten."
   },
   "bookmark_folders": {
     "message": "Lesezeichen-Ordner"
@@ -99,7 +99,7 @@
     "message": "Comic Sans"
   },
   "community_desc": {
-    "message": "Join the Blooft community on Discord to showcase your work, ask questions, test new features, and chat with the community."
+    "message": "Treten Sie der Blooft-Community auf Discord bei, um Ihre Arbeit zu präsentieren, Fragen zu stellen, neue Funktionen zu testen und mit der Community zu chatten."
   },
   "complete": {
     "message": "Vollständig"
@@ -243,7 +243,7 @@
     "message": "Wir brauchen Ihr Feedback!"
   },
   "feedback_callout_desc": {
-    "message": "Help us shape the future of Blooft and tell us what you want to see next. We'd love to hear from you!"
+    "message": "Helfen Sie uns, die Zukunft von Blooft zu gestalten, und sagen Sie uns, was Sie als Nächstes sehen wollen. Wir würden uns freuen, von Ihnen zu hören!"
   },
   "file_read_error": {
     "message": "Wir konnten die Datei nicht lesen. Bitte versuchen Sie es erneut."
@@ -522,7 +522,7 @@
     "message": "Einstellungen"
   },
   "share_flowtide": {
-    "message": "Share Blooft with a friend!"
+    "message": "Teilen Sie Blooft mit einem Freund!"
   },
   "show_items": {
     "message": "Artikel anzeigen"
@@ -555,7 +555,7 @@
     "message": "Hintergrundänderungen starten"
   },
   "start_using": {
-    "message": "Start using Blooft"
+    "message": "Mit Blooft beginnen"
   },
   "stop": {
     "message": "Stopp"
@@ -573,7 +573,7 @@
     "message": "Textstil"
   },
   "thanks": {
-    "message": "Thank you for using Blooft!"
+    "message": "Danke, dass Sie Blooft benutzen!"
   },
   "theme": {
     "message": "Thema"
@@ -615,7 +615,7 @@
     "message": "<a href=\"$1\">Wetterdaten von Open-Meteo.com</a>. Die Wetterdaten werden ohne Gewähr und ohne Garantie für die Richtigkeit zur Verfügung gestellt. Standortdaten werden von Open-Meteo verarbeitet und unterliegen deren Datenschutzbestimmungen."
   },
   "welcome_message": {
-    "message": "Welcome to Blooft"
+    "message": "Willkommen bei Blooft"
   },
   "widgets": {
     "message": "Widgets"
