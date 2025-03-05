@@ -42,7 +42,7 @@
     "message": "Blokken"
   },
   "blocks_description": {
-    "message": "Supercharge your New Tab page with beautifully designed blocks created by Blooft. You can add as many as you like to your start page."
+    "message": "Maak je Nieuw Tabblad-pagina superieur met prachtig ontworpen blokken gemaakt door Blooft. Je kunt er zoveel aan je startpagina toevoegen als je wilt."
   },
   "bookmark_folders": {
     "message": "Bladwijzer Mappen"
@@ -99,7 +99,7 @@
     "message": "Comic Sans"
   },
   "community_desc": {
-    "message": "Join the Blooft community on Discord to showcase your work, ask questions, test new features, and chat with the community."
+    "message": "Sluit je aan bij de Blooft-community op Discord om je werk te laten zien, vragen te stellen, nieuwe functies te testen en te chatten met de community."
   },
   "complete": {
     "message": "Compleet"
@@ -243,7 +243,7 @@
     "message": "We hebben jullie feedback nodig!"
   },
   "feedback_callout_desc": {
-    "message": "Help us shape the future of Blooft and tell us what you want to see next. We'd love to hear from you!"
+    "message": "Help ons de toekomst van Blooft vorm te geven en vertel ons wat jij als volgende wilt zien. We horen graag van je!"
   },
   "file_read_error": {
     "message": "We konden het bestand niet lezen. Probeer het opnieuw."
@@ -522,7 +522,7 @@
     "message": "Instellingen"
   },
   "share_flowtide": {
-    "message": "Share Blooft with a friend!"
+    "message": "Deel Blooft met een vriend!"
   },
   "show_items": {
     "message": "Artikelen weergeven"
@@ -555,7 +555,7 @@
     "message": "Achtergrondwijzigingen starten"
   },
   "start_using": {
-    "message": "Start using Blooft"
+    "message": "Blooft gebruiken"
   },
   "stop": {
     "message": "Stop"
@@ -573,7 +573,7 @@
     "message": "Tekststijl"
   },
   "thanks": {
-    "message": "Thank you for using Blooft!"
+    "message": "Bedankt voor het gebruik van Blooft!"
   },
   "theme": {
     "message": "Thema"
@@ -615,7 +615,7 @@
     "message": "<a href=\"$1\">Weergegevens door Open-Meteo.com</a>. Weergegevens worden 'as-is' aangeboden zonder garantie of nauwkeurigheid. Locatiegegevens worden verwerkt door Open-Meteo en vallen onder hun privacybeleid."
   },
   "welcome_message": {
-    "message": "Welcome to Blooft"
+    "message": "Welkom bij Blooft"
   },
   "widgets": {
     "message": "Widgets"
