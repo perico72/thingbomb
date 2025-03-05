@@ -1,7 +1,0 @@
-{
-  "name": "@flowtide/docs",
-  "private": true,
-  "scripts": {
-    "dev": "pnpm dlx mintlify dev"
-  }
-}

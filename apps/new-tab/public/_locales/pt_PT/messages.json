@@ -42,7 +42,7 @@
     "message": "Blocos"
   },
   "blocks_description": {
-    "message": "Melhore a sua página Novo separador com blocos com um design fantástico criados pela Flowtide. Pode adicionar tantos quantos quiser à sua página inicial."
+    "message": "Melhore a sua página Novo separador com blocos com um design fantástico criados pela Blooft. Pode adicionar tantos quantos quiser à sua página inicial."
   },
   "bookmark_folders": {
     "message": "Pastas de marcadores"
@@ -99,7 +99,7 @@
     "message": "Comic Sans"
   },
   "community_desc": {
-    "message": "Junte-se à comunidade Flowtide no Discord para mostrar o seu trabalho, fazer perguntas, testar novas funcionalidades e conversar com a comunidade."
+    "message": "Junte-se à comunidade Blooft no Discord para mostrar o seu trabalho, fazer perguntas, testar novas funcionalidades e conversar com a comunidade."
   },
   "complete": {
     "message": "Completo"
@@ -243,7 +243,7 @@
     "message": "Precisamos dos vossos comentários!"
   },
   "feedback_callout_desc": {
-    "message": "Ajude-nos a moldar o futuro da Flowtide e diga-nos o que quer ver a seguir. Gostaríamos muito de o ouvir!"
+    "message": "Ajude-nos a moldar o futuro da Blooft e diga-nos o que quer ver a seguir. Gostaríamos muito de o ouvir!"
   },
   "file_read_error": {
     "message": "Não foi possível ler o ficheiro. Por favor, tente novamente."
@@ -522,7 +522,7 @@
     "message": "Definições"
   },
   "share_flowtide": {
-    "message": "Partilhar Flowtide com um amigo!"
+    "message": "Partilhar Blooft com um amigo!"
   },
   "show_items": {
     "message": "Mostrar itens"
@@ -555,7 +555,7 @@
     "message": "Iniciar alterações de fundo"
   },
   "start_using": {
-    "message": "Começar a utilizar Flowtide"
+    "message": "Começar a utilizar Blooft"
   },
   "stop": {
     "message": "Parar"
@@ -573,7 +573,7 @@
     "message": "Estilo de texto"
   },
   "thanks": {
-    "message": "Obrigado por utilizar Flowtide!"
+    "message": "Obrigado por utilizar Blooft!"
   },
   "theme": {
     "message": "Tema"
@@ -615,7 +615,7 @@
     "message": "<a href=\"$1\">Dados meteorológicos fornecidos por Open-Meteo.com</a>. Os dados meteorológicos são fornecidos \"tal como estão\", sem qualquer garantia de exatidão. Os dados de localização são geridos pela Open-Meteo e estão sujeitos à sua política de privacidade."
   },
   "welcome_message": {
-    "message": "Bem-vindo à Flowtide"
+    "message": "Bem-vindo à Blooft"
   },
   "widgets": {
     "message": "Widgets"

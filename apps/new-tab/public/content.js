@@ -1,5 +1,5 @@
 /*
-    Flowtide
+    Blooft
     Copyright (C) 2024-present George Stone
 
     This program is free software: you can redistribute it and/or modify
@@ -15,7 +15,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see {http://www.gnu.org/licenses/}.
 
-    https://github.com/thingbomb/flowtide
+    https://github.com/blooft-app/blooft
 */
 
 async function checkIfUrlIsAlreadySaved(url) {
@@ -51,8 +51,8 @@ const saveDataUrl = () => {
     if (dataUrl.startsWith("data:text/css;base64,")) {
       button.disabled = false;
       button.innerHTML = isUrlAlreadySaved
-        ? "Remove from Flowtide"
-        : "Add to Flowtide";
+        ? "Remove from Blooft"
+        : "Add to Blooft";
     }
 
     button.addEventListener("click", async () => {
@@ -62,10 +62,10 @@ const saveDataUrl = () => {
 
         if (isSaved) {
           dataUrls = dataUrls.filter((item) => !item.includes(dataUrl));
-          button.innerHTML = "Add to Flowtide";
+          button.innerHTML = "Add to Blooft";
         } else {
           dataUrls.push(storageEntry);
-          button.innerHTML = "Remove from Flowtide";
+          button.innerHTML = "Remove from Blooft";
         }
 
         chrome.storage.local.set({ dataUrls });

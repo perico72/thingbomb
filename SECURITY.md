@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-Flowtide only maintains the latest version with security updates. Due to limitations in extension updates, older versions cannot receive fixes.
+Blooft only maintains the latest version with security updates. Due to limitations in extension updates, older versions cannot receive fixes.
 
 Additionally, if you find a problem inside an unreleased version, please report it.
 

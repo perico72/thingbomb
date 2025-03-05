@@ -1,5 +1,5 @@
 /*
-    Flowtide
+    Blooft
     Copyright (C) 2024-present George Stone
 
     This program is free software: you can redistribute it and/or modify
@@ -15,7 +15,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see {http://www.gnu.org/licenses/}.
 
-    https://github.com/thingbomb/flowtide
+    https://github.com/blooft-app/blooft
 */
 
 interface Image {
@@ -30,7 +30,7 @@ interface Image {
 
 const images: Image[] = [
   {
-    url: "https://storage.flowtide.app/jonatan-pie-OPOg0fz5uIs-unsplash.jpg",
+    url: "https://storage.blooft.com/jonatan-pie-OPOg0fz5uIs-unsplash.jpg",
     author: {
       name: "Jonatan Pie",
       url: "https://unsplash.com/@r3dmax",
@@ -40,7 +40,7 @@ const images: Image[] = [
       "https://unsplash.com/photos/time-lapse-photography-of-flowing-multi-tier-waterfall-OPOg0fz5uIs",
   },
   {
-    url: "https://storage.flowtide.app/frans-ruiter-b3ptpP5fmqQ-unsplash.jpg",
+    url: "https://storage.blooft.com/frans-ruiter-b3ptpP5fmqQ-unsplash.jpg",
     author: {
       name: "Frans Ruiter",
       url: "https://unsplash.com/@frns",
@@ -50,7 +50,7 @@ const images: Image[] = [
     location: "Plitvice Lakes National Park, Plitvička Jezera, Croatia",
   },
   {
-    url: "https://storage.flowtide.app/stephen-walker-onIXxjH56AA-unsplash.jpg",
+    url: "https://storage.blooft.com/stephen-walker-onIXxjH56AA-unsplash.jpg",
     author: {
       name: "Stephen Walker",
       url: "https://unsplash.com/@stephenwalker",
@@ -60,7 +60,7 @@ const images: Image[] = [
     location: "Snoqualmie Falls, Snoqualmie, United States",
   },
   {
-    url: "https://storage.flowtide.app/samuel-ferrara-npwjNTG_SQA-unsplash.jpg",
+    url: "https://storage.blooft.com/samuel-ferrara-npwjNTG_SQA-unsplash.jpg",
     author: {
       name: "Samuel Ferrara",
       url: "https://unsplash.com/@samferrara",
@@ -69,7 +69,7 @@ const images: Image[] = [
       "https://unsplash.com/photos/waterfall-near-trees-at-daytime-timelapse-photo-npwjNTG_SQA",
   },
   {
-    url: "https://storage.flowtide.app/willian-justen-de-vasconcellos-JuhxRDzAHok-unsplash.jpg",
+    url: "https://storage.blooft.com/willian-justen-de-vasconcellos-JuhxRDzAHok-unsplash.jpg",
     author: {
       name: "Willian Justen de Vasconcellos",
       url: "https://unsplash.com/@willianjusten",
@@ -79,7 +79,7 @@ const images: Image[] = [
     location: "Skógafoss, Iceland",
   },
   {
-    url: "https://storage.flowtide.app/khamkeo-LWjZTc3fA4c-unsplash.jpg",
+    url: "https://storage.blooft.com/khamkeo-LWjZTc3fA4c-unsplash.jpg",
     author: {
       name: "Khamkéo",
       url: "https://unsplash.com/@mahkeo",
@@ -89,7 +89,7 @@ const images: Image[] = [
       "https://unsplash.com/photos/waterfalls-on-rock-formation-under-cloudy-sky-during-daytime-LWjZTc3fA4c",
   },
   {
-    url: "https://storage.flowtide.app/marie-rouilly-DA3_xqEqolc-unsplash.jpg",
+    url: "https://storage.blooft.com/marie-rouilly-DA3_xqEqolc-unsplash.jpg",
     author: {
       name: "Marie Rouilly",
       url: "https://unsplash.com/@marie_rouilly",
@@ -99,7 +99,7 @@ const images: Image[] = [
       "https://unsplash.com/photos/waterfalls-in-the-middle-of-the-forest-during-daytime-DA3_xqEqolc",
   },
   {
-    url: "https://storage.flowtide.app/sebastian-unrau-sp-p7uuT0tw-unsplash.jpg",
+    url: "https://storage.blooft.com/sebastian-unrau-sp-p7uuT0tw-unsplash.jpg",
     author: {
       name: "Sebastian Unrau",
       url: "https://unsplash.com/@sebastian_unrau",
@@ -109,7 +109,7 @@ const images: Image[] = [
       "https://unsplash.com/photos/trees-on-forest-with-sun-rays-sp-p7uuT0tw",
   },
   {
-    url: "https://storage.flowtide.app/irina-iriser-2Y4dE8sdhlc-unsplash.jpg",
+    url: "https://storage.blooft.com/irina-iriser-2Y4dE8sdhlc-unsplash.jpg",
     author: {
       name: "Irina Iriser",
       url: "https://unsplash.com/@iriser",
@@ -117,7 +117,7 @@ const images: Image[] = [
     directLink: "https://unsplash.com/photos/green-leafed-trees-2Y4dE8sdhlc",
   },
   {
-    url: "https://storage.flowtide.app/juan-davila-P8PlK2nGwqA-unsplash.jpg",
+    url: "https://storage.blooft.com/juan-davila-P8PlK2nGwqA-unsplash.jpg",
     author: {
       name: "Juan Davila",
       url: "https://unsplash.com/@juanster",
@@ -126,7 +126,7 @@ const images: Image[] = [
       "https://unsplash.com/photos/lake-under-blue-sky-during-daytime-P8PlK2nGwqA",
   },
   {
-    url: "https://storage.flowtide.app/derek-thomson-TWoL-QCZubY-unsplash.jpg",
+    url: "https://storage.blooft.com/derek-thomson-TWoL-QCZubY-unsplash.jpg",
     author: {
       name: "Derek Thomson",
       url: "https://unsplash.com/@derekthomson",
@@ -136,7 +136,7 @@ const images: Image[] = [
     location: "McWay Falls, United States",
   },
   {
-    url: "https://storage.flowtide.app/world-wanderer-lIM-S3NS1uk-unsplash.jpg",
+    url: "https://storage.blooft.com/world-wanderer-lIM-S3NS1uk-unsplash.jpg",
     author: {
       name: "World Wanderer",
       url: "https://unsplash.com/@worldwanderer2024",
@@ -146,7 +146,7 @@ const images: Image[] = [
     location: "Maldives",
   },
   {
-    url: "https://storage.flowtide.app/ryan-schroeder-Gg7uKdHFb_c-unsplash.jpg",
+    url: "https://storage.blooft.com/ryan-schroeder-Gg7uKdHFb_c-unsplash.jpg",
     author: {
       name: "Ryan Schroeder",
       url: "https://unsplash.com/@ryanschroeder",
@@ -155,7 +155,7 @@ const images: Image[] = [
       "https://unsplash.com/photos/landscape-photography-mountain-range-with-snow-Gg7uKdHFb_c",
   },
   {
-    url: "https://storage.flowtide.app/ex1213-iC90w8MCbAo-unsplash.jpg",
+    url: "https://storage.blooft.com/ex1213-iC90w8MCbAo-unsplash.jpg",
     author: {
       name: "kodex1213",
       url: "https://unsplash.com/@kodex1213",
@@ -165,7 +165,7 @@ const images: Image[] = [
     location: "Engelberg, Switzerland",
   },
   {
-    url: "https://storage.flowtide.app/pascal-debrunner-1WQ5RZuH9xo-unsplash.jpg",
+    url: "https://storage.blooft.com/pascal-debrunner-1WQ5RZuH9xo-unsplash.jpg",
     author: {
       name: "Pascal Debrunner",
       url: "https://unsplash.com/@debrupas",
@@ -175,7 +175,7 @@ const images: Image[] = [
     location: "Andenes, Norway",
   },
   {
-    url: "https://storage.flowtide.app/kym-ellis-RPT3AjdXlZc-unsplash.jpg",
+    url: "https://storage.blooft.com/kym-ellis-RPT3AjdXlZc-unsplash.jpg",
     author: {
       name: "Kym Ellis",
       url: "https://unsplash.com/@kymellis",
@@ -185,7 +185,7 @@ const images: Image[] = [
     location: "Ryten, Norway",
   },
   {
-    url: "https://storage.flowtide.app/hendrik-cornelissen--qrcOR33ErA-unsplash.jpg",
+    url: "https://storage.blooft.com/hendrik-cornelissen--qrcOR33ErA-unsplash.jpg",
     author: {
       name: "Hendrik Cornelissen",
       url: "https://unsplash.com/@the_bracketeer",
@@ -195,7 +195,7 @@ const images: Image[] = [
     location: "Yoho National Park, Field, Canada",
   },
   {
-    url: "https://storage.flowtide.app/jess-barnett-9O3_JJOT3As-unsplash.jpg",
+    url: "https://storage.blooft.com/jess-barnett-9O3_JJOT3As-unsplash.jpg",
     author: {
       name: "Jess Barnett",
       url: "https://unsplash.com/@jessbarnett_",
@@ -205,7 +205,7 @@ const images: Image[] = [
     location: "Yoho National Park, Field, BC, Canada",
   },
   {
-    url: "https://storage.flowtide.app/peter-robbins-gQ5lVwz4RrY-unsplash.jpg",
+    url: "https://storage.blooft.com/peter-robbins-gQ5lVwz4RrY-unsplash.jpg",
     author: {
       name: "Peter Robbins",
       url: "https://unsplash.com/@prphotography262",
@@ -215,7 +215,7 @@ const images: Image[] = [
     location: "Yoho National Park, Field, BC, Canada",
   },
   {
-    url: "https://storage.flowtide.app/christian-joudrey-DuD5D3lWC3c-unsplash.jpg",
+    url: "https://storage.blooft.com/christian-joudrey-DuD5D3lWC3c-unsplash.jpg",
     author: {
       name: "Christian Joudrey",
       url: "https://unsplash.com/@cjoudrey",
@@ -225,7 +225,7 @@ const images: Image[] = [
     location: "Kihei, United States",
   },
   {
-    url: "https://storage.flowtide.app/ganapathy-kumar-7782WXBriyM-unsplash.jpg",
+    url: "https://storage.blooft.com/ganapathy-kumar-7782WXBriyM-unsplash.jpg",
     author: {
       name: "Ganapathy Kumar",
       url: "https://unsplash.com/@gkumar2175",
@@ -234,7 +234,7 @@ const images: Image[] = [
     location: "Secret Cove Beach, Kihei, United States",
   },
   {
-    url: "https://storage.flowtide.app/ales-krivec-okzxVsJNxXc-unsplash.jpg",
+    url: "https://storage.blooft.com/ales-krivec-okzxVsJNxXc-unsplash.jpg",
     author: {
       name: "Ales Krivec",
       url: "https://unsplash.com/@aleskrivec",
@@ -243,7 +243,7 @@ const images: Image[] = [
       "https://unsplash.com/photos/brown-hut-surrounded-by-flowers-okzxVsJNxXc",
   },
   {
-    url: "https://storage.flowtide.app/mohammad-alizade-uVfl6v3sjhc-unsplash.jpg",
+    url: "https://storage.blooft.com/mohammad-alizade-uVfl6v3sjhc-unsplash.jpg",
     author: {
       name: "Mohammad Alizade",
       url: "https://unsplash.com/@mohamadaz",
@@ -252,7 +252,7 @@ const images: Image[] = [
       "https://unsplash.com/photos/yellow-flower-field-near-green-mountain-under-white-clouds-during-daytime-uVfl6v3sjhc",
   },
   {
-    url: "https://storage.flowtide.app/paul-summers-CqBjlUs6t50-unsplash.jpg",
+    url: "https://storage.blooft.com/paul-summers-CqBjlUs6t50-unsplash.jpg",
     author: {
       name: "Paul Summers",
       url: "https://unsplash.com/@somonesummers",
@@ -262,7 +262,7 @@ const images: Image[] = [
     location: "Piute Lake, United States",
   },
   {
-    url: "https://storage.flowtide.app/clarissa-bock-nqJwKcnfyqU-unsplash.jpg",
+    url: "https://storage.blooft.com/clarissa-bock-nqJwKcnfyqU-unsplash.jpg",
     author: {
       name: "Clarissa Bock",
       url: "https://unsplash.com/@clarissa_felicia",
@@ -272,7 +272,7 @@ const images: Image[] = [
     location: "Lake Isabelle, United States",
   },
   {
-    url: "https://storage.flowtide.app/derek-baumgartner-SRPi28IvPCM-unsplash.jpg",
+    url: "https://storage.blooft.com/derek-baumgartner-SRPi28IvPCM-unsplash.jpg",
     author: {
       name: "Derek Baumgartner",
       url: "https://unsplash.com/@dbaumgartner",
@@ -282,7 +282,7 @@ const images: Image[] = [
     location: "Lost Lake, United States",
   },
   {
-    url: "https://storage.flowtide.app/a-c-63RnGWHVIXs-unsplash.jpg",
+    url: "https://storage.blooft.com/a-c-63RnGWHVIXs-unsplash.jpg",
     author: {
       name: "A C",
       url: "https://unsplash.com/@achidu",
@@ -292,7 +292,7 @@ const images: Image[] = [
     location: "Jenny Lake, United States",
   },
   {
-    url: "https://storage.flowtide.app/cristina-thompson-wxKfyEzRjVs-unsplash.jpg",
+    url: "https://storage.blooft.com/cristina-thompson-wxKfyEzRjVs-unsplash.jpg",
     author: {
       name: "Cristina Thompson",
       url: "https://unsplash.com/@tinafaye12",
@@ -302,7 +302,7 @@ const images: Image[] = [
     location: "Jenny Lake, United States",
   },
   {
-    url: "https://storage.flowtide.app/kyle-richards-qAWCH8w8jtc-unsplash.jpg",
+    url: "https://storage.blooft.com/kyle-richards-qAWCH8w8jtc-unsplash.jpg",
     author: {
       name: "Kyle Richards",
       url: "https://unsplash.com/@kyleclaydotcom",
@@ -312,7 +312,7 @@ const images: Image[] = [
     location: "Jenny Lake, United States",
   },
   {
-    url: "https://storage.flowtide.app/bryn-gibson-qXUPDCo8-64-unsplash.jpg",
+    url: "https://storage.blooft.com/bryn-gibson-qXUPDCo8-64-unsplash.jpg",
     author: {
       name: "Bryn Gibson",
       url: "https://unsplash.com/@nomadicnorthco",
@@ -322,7 +322,7 @@ const images: Image[] = [
     location: "Grand Teton, Wyoming, USA",
   },
   {
-    url: "https://storage.flowtide.app/aishwarya-gunde-U0i_By5IeG0-unsplash.jpg",
+    url: "https://storage.blooft.com/aishwarya-gunde-U0i_By5IeG0-unsplash.jpg",
     author: {
       name: "Aishwarya Gunde",
       url: "https://unsplash.com/@aishwaryagunde",
@@ -332,7 +332,7 @@ const images: Image[] = [
     location: "Grand Teton National Park, Wyoming, USA",
   },
   {
-    url: "https://storage.flowtide.app/ryan-hutton-Jztmx9yqjBw-unsplash.jpg",
+    url: "https://storage.blooft.com/ryan-hutton-Jztmx9yqjBw-unsplash.jpg",
     author: {
       name: "Ryan Hutton",
       url: "https://unsplash.com/@ryan_hutton_",
@@ -341,7 +341,7 @@ const images: Image[] = [
       "https://unsplash.com/photos/worms-eye-view-of-trees-during-night-time-Jztmx9yqjBw",
   },
   {
-    url: "https://storage.flowtide.app/benjamin-davies-Zm2n2O7Fph4-unsplash.jpg",
+    url: "https://storage.blooft.com/benjamin-davies-Zm2n2O7Fph4-unsplash.jpg",
     author: {
       name: "Benjamin Davies",
       url: "https://unsplash.com/@bendavisual",
@@ -351,7 +351,7 @@ const images: Image[] = [
     location: "Wooburn Green, United Kingdom",
   },
   {
-    url: "https://storage.flowtide.app/toan-chu-YKN_G9L9nMA-unsplash.jpg",
+    url: "https://storage.blooft.com/toan-chu-YKN_G9L9nMA-unsplash.jpg",
     author: {
       name: "Toan Chu",
       url: "https://unsplash.com/@toanchu",
@@ -361,7 +361,7 @@ const images: Image[] = [
     location: "Mount Baker, Washington, USA",
   },
   {
-    url: "https://storage.flowtide.app/thomas-ciszewski-VcpMPsf_Ex0-unsplash.jpg",
+    url: "https://storage.blooft.com/thomas-ciszewski-VcpMPsf_Ex0-unsplash.jpg",
     author: {
       name: "Thomas Ciszewski",
       url: "https://unsplash.com/@coc6",
@@ -371,7 +371,7 @@ const images: Image[] = [
     location: "Mount Bromo, Indonesia",
   },
   {
-    url: "https://storage.flowtide.app/marek-piwnicki-DgdJ_0us5SE-unsplash.jpg",
+    url: "https://storage.blooft.com/marek-piwnicki-DgdJ_0us5SE-unsplash.jpg",
     author: {
       name: "Marek Piwnicki",
       url: "https://unsplash.com/@marekpiwnicki",
@@ -381,7 +381,7 @@ const images: Image[] = [
     location: "Lanzada, Prowincja Sondrio, Włochy",
   },
   {
-    url: "https://storage.flowtide.app/christian-joudrey-mWRR1xj95hg-unsplash.jpg",
+    url: "https://storage.blooft.com/christian-joudrey-mWRR1xj95hg-unsplash.jpg",
     author: {
       name: "Christian Joudrey",
       url: "https://unsplash.com/@cjoudrey",
@@ -391,7 +391,7 @@ const images: Image[] = [
     location: "Yosemite National Park, United States",
   },
   {
-    url: "https://storage.flowtide.app/daniel-olah-5_eRcisHc2c-unsplash.jpg",
+    url: "https://storage.blooft.com/daniel-olah-5_eRcisHc2c-unsplash.jpg",
     author: {
       name: "Daniel Olah",
       url: "https://unsplash.com/@danesduet",
@@ -401,7 +401,7 @@ const images: Image[] = [
     location: "Zion National Park, United States",
   },
   {
-    url: "https://storage.flowtide.app/tevin-trinh-nNx3EVUcWMo-unsplash.jpg",
+    url: "https://storage.blooft.com/tevin-trinh-nNx3EVUcWMo-unsplash.jpg",
     author: {
       name: "Tevin Trinh",
       url: "https://unsplash.com/@tevintrinh",
@@ -411,7 +411,7 @@ const images: Image[] = [
     location: "Glacier National Park, United States",
   },
   {
-    url: "https://storage.flowtide.app/urban-vintage-oyrtK2hJqBY-unsplash.jpg",
+    url: "https://storage.blooft.com/urban-vintage-oyrtK2hJqBY-unsplash.jpg",
     author: {
       name: "Urban Vintage",
       url: "https://unsplash.com/@urban_vintage",
@@ -420,7 +420,7 @@ const images: Image[] = [
       "https://unsplash.com/photos/green-grass-field-near-sea-under-white-clouds-at-daytime-oyrtK2hJqBY",
   },
   {
-    url: "https://storage.flowtide.app/kyle-cleveland-VDPFEyIrAn0-unsplash.jpg",
+    url: "https://storage.blooft.com/kyle-cleveland-VDPFEyIrAn0-unsplash.jpg",
     author: {
       name: "Kyle Cleveland",
       url: "https://unsplash.com/@kyleclevelandphoto",
@@ -429,7 +429,7 @@ const images: Image[] = [
       "https://unsplash.com/photos/green-plants-and-trees-near-water-falls-VDPFEyIrAn0",
   },
   {
-    url: "https://storage.flowtide.app/tom-winckels-I7oLRdM9YIw-unsplash.jpg",
+    url: "https://storage.blooft.com/tom-winckels-I7oLRdM9YIw-unsplash.jpg",
     author: {
       name: "Tom Winckels",
       url: "https://unsplash.com/@twinckels",
@@ -438,7 +438,7 @@ const images: Image[] = [
     location: "Gulf of Thailand, Thailand",
   },
   {
-    url: "https://storage.flowtide.app/fajruddin-mudzakkir-TG50QzQzZm0-unsplash.jpg",
+    url: "https://storage.blooft.com/fajruddin-mudzakkir-TG50QzQzZm0-unsplash.jpg",
     author: {
       name: "Fajruddin Mudzakkir",
       url: "https://unsplash.com/@fnhaven",
@@ -448,7 +448,7 @@ const images: Image[] = [
     location: "Padar Island",
   },
   {
-    url: "https://storage.flowtide.app/kurt-cotoaga-CW6J55DqTWU-unsplash.jpg",
+    url: "https://storage.blooft.com/kurt-cotoaga-CW6J55DqTWU-unsplash.jpg",
     author: {
       name: "Kurt Cotoaga",
       url: "https://unsplash.com/@kydroon",
@@ -456,7 +456,7 @@ const images: Image[] = [
     directLink: "https://unsplash.com/photos/gray-and-green-island-CW6J55DqTWU",
   },
   {
-    url: "https://storage.flowtide.app/jackie-dilorenzo-RyLsRzy9jIA-unsplash.jpg",
+    url: "https://storage.blooft.com/jackie-dilorenzo-RyLsRzy9jIA-unsplash.jpg",
     author: {
       name: "Jackie Dilorenzo",
       url: "https://unsplash.com/@jcdilorenzo",
@@ -465,7 +465,7 @@ const images: Image[] = [
       "https://unsplash.com/photos/green-and-white-leaf-plant-RyLsRzy9jIA",
   },
   {
-    url: "https://storage.flowtide.app/johannes-plenio-RwHv7LgeC7s-unsplash.jpg",
+    url: "https://storage.blooft.com/johannes-plenio-RwHv7LgeC7s-unsplash.jpg",
     author: {
       name: "Johannes Plenio",
       url: "https://unsplash.com/@jplenio",
@@ -474,7 +474,7 @@ const images: Image[] = [
       "https://unsplash.com/photos/yellow-lights-between-trees-hvrpOmuMrAI",
   },
   {
-    url: "https://storage.flowtide.app/taylor-smith-it0Pkba02FM-unsplash.jpg",
+    url: "https://storage.blooft.com/taylor-smith-it0Pkba02FM-unsplash.jpg",
     author: {
       name: "Taylor Smith",
       url: "https://unsplash.com/@taylor_smith",
@@ -484,7 +484,7 @@ const images: Image[] = [
     location: "Bald Rock Heritage Preserve",
   },
   {
-    url: "https://storage.flowtide.app/aleksandr-eremin-QfHmrIUN9G0-unsplash.jpg",
+    url: "https://storage.blooft.com/aleksandr-eremin-QfHmrIUN9G0-unsplash.jpg",
     author: {
       name: "Aleksandr Eremin",
       url: "https://unsplash.com/@notevilbird",
@@ -494,7 +494,7 @@ const images: Image[] = [
     location: "Donetsk, Ukraine",
   },
   {
-    url: "https://storage.flowtide.app/jon-flobrant-rB7-LCa_diU-unsplash.jpg",
+    url: "https://storage.blooft.com/jon-flobrant-rB7-LCa_diU-unsplash.jpg",
     author: {
       name: "Jon Flobrant",
       url: "https://unsplash.com/@jonflobrant",
@@ -504,7 +504,7 @@ const images: Image[] = [
     location: "Gäddede, Sweden",
   },
   {
-    url: "https://storage.flowtide.app/jeremy-bishop-iftBhUFfecE-unsplash.jpg",
+    url: "https://storage.blooft.com/jeremy-bishop-iftBhUFfecE-unsplash.jpg",
     author: {
       name: "Jeremy Bishop",
       url: "https://unsplash.com/@jeremybishop",
@@ -514,7 +514,7 @@ const images: Image[] = [
     location: "Newport Beach, United States",
   },
   {
-    url: "https://storage.flowtide.app/robert-zunikoff-ko7Tp_LyAt4-unsplash.jpg",
+    url: "https://storage.blooft.com/robert-zunikoff-ko7Tp_LyAt4-unsplash.jpg",
     author: {
       name: "Robert Zunikoff",
       url: "https://unsplash.com/@rzunikoff",
@@ -524,7 +524,7 @@ const images: Image[] = [
       "https://unsplash.com/photos/macro-photography-of-water-and-stones-ko7Tp_LyAt4",
   },
   {
-    url: "https://storage.flowtide.app/petr-vysohlid-9fqwGqGLUxc-unsplash.jpg",
+    url: "https://storage.blooft.com/petr-vysohlid-9fqwGqGLUxc-unsplash.jpg",
     author: {
       name: "Petr Vyšohlíd",
       url: "https://unsplash.com/@pvysohlid",
@@ -533,7 +533,7 @@ const images: Image[] = [
     location: "Port Waikato, Tuakau, Auckland, New Zealand",
   },
   {
-    url: "https://storage.flowtide.app/tim-marshall-bh75y-7eYVo-unsplash.jpg",
+    url: "https://storage.blooft.com/tim-marshall-bh75y-7eYVo-unsplash.jpg",
     author: {
       name: "Tim Marshall",
       url: "https://unsplash.com/@timmarshall",
@@ -543,7 +543,7 @@ const images: Image[] = [
     location: "Kohimarama, Auckland, New Zealand",
   },
   {
-    url: "https://storage.flowtide.app/spencer-watson-p0Yupww_SNM-unsplash.jpg",
+    url: "https://storage.blooft.com/spencer-watson-p0Yupww_SNM-unsplash.jpg",
     author: {
       name: "Spencer Watson",
       url: "https://unsplash.com/@thebrownspy",
@@ -553,7 +553,7 @@ const images: Image[] = [
     location: "Princeton, Canada",
   },
   {
-    url: "https://storage.flowtide.app/andy-sanchez-jDIuEh7aKqs-unsplash.jpg",
+    url: "https://storage.blooft.com/andy-sanchez-jDIuEh7aKqs-unsplash.jpg",
     author: {
       name: "Andy Sanchez",
       url: "https://unsplash.com/@andyasmarketing",
@@ -563,7 +563,7 @@ const images: Image[] = [
     location: "Estes Park, CO, USA",
   },
   {
-    url: "https://storage.flowtide.app/andy-sanchez-VyFu0Oc0pm0-unsplash.jpg",
+    url: "https://storage.blooft.com/andy-sanchez-VyFu0Oc0pm0-unsplash.jpg",
     author: {
       name: "Andy Sanchez",
       url: "https://unsplash.com/@andyasmarketing",
@@ -573,7 +573,7 @@ const images: Image[] = [
     location: "Bear Lake Trailhead",
   },
   {
-    url: "https://storage.flowtide.app/andy-sanchez-POdt8Bfc7Ds-unsplash.jpg",
+    url: "https://storage.blooft.com/andy-sanchez-POdt8Bfc7Ds-unsplash.jpg",
     author: {
       name: "Andy Sanchez",
       url: "https://unsplash.com/@andyasmarketing",
@@ -582,7 +582,7 @@ const images: Image[] = [
     location: "Villanueva State Park",
   },
   {
-    url: "https://storage.flowtide.app/andy-sanchez-mABWXpR_hpA-unsplash.jpg",
+    url: "https://storage.blooft.com/andy-sanchez-mABWXpR_hpA-unsplash.jpg",
     author: {
       name: "Andy Sanchez",
       url: "https://unsplash.com/@andyasmarketing",
@@ -590,7 +590,7 @@ const images: Image[] = [
     directLink: "https://unsplash.com/photos/mABWXpR_hpA",
   },
   {
-    url: "https://storage.flowtide.app/thula-na-ddJ9PNYjric-unsplash.jpg",
+    url: "https://storage.blooft.com/thula-na-ddJ9PNYjric-unsplash.jpg",
     author: {
       name: "Thula Na",
       url: "https://unsplash.com/@thula25",
@@ -599,7 +599,7 @@ const images: Image[] = [
       "https://unsplash.com/photos/full-moon-over-city-skyline-during-night-time-ddJ9PNYjric",
   },
   {
-    url: "https://storage.flowtide.app/alin-andersen-f0SgAs27BYI-unsplash.jpg",
+    url: "https://storage.blooft.com/alin-andersen-f0SgAs27BYI-unsplash.jpg",
     author: {
       name: "Alin Andersen",
       url: "https://unsplash.com/@onixion",
@@ -609,7 +609,7 @@ const images: Image[] = [
     location: "Saile, Austria",
   },
   {
-    url: "https://storage.flowtide.app/colby-thomas-r6TLRDY4Ll0-unsplash.jpg",
+    url: "https://storage.blooft.com/colby-thomas-r6TLRDY4Ll0-unsplash.jpg",
     author: {
       name: "Colby Thomas",
       url: "https://unsplash.com/@jrnxf",
@@ -619,7 +619,7 @@ const images: Image[] = [
       "https://unsplash.com/photos/snow-covered-tree-near-body-of-water-r6TLRDY4Ll0",
   },
   {
-    url: "https://storage.flowtide.app/artur-pokusin-9wociMvaquU-unsplash.jpg",
+    url: "https://storage.blooft.com/artur-pokusin-9wociMvaquU-unsplash.jpg",
     author: {
       name: "Artur Pokusin",
       url: "https://unsplash.com/@arturpokusin",
@@ -628,7 +628,7 @@ const images: Image[] = [
       "https://unsplash.com/photos/person-view-of-cliff-at-daytime-9wociMvaquU",
   },
   {
-    url: "https://storage.flowtide.app/roman-kim-xQ60mA3lSRI-unsplash.jpg",
+    url: "https://storage.blooft.com/roman-kim-xQ60mA3lSRI-unsplash.jpg",
     author: {
       name: "Roman Kim",
       url: "https://unsplash.com/@eastern",
@@ -638,7 +638,7 @@ const images: Image[] = [
       "https://unsplash.com/photos/rocky-mountain-on-seashore-during-daytime-xQ60mA3lSRI",
   },
   {
-    url: "https://storage.flowtide.app/krzysztof-kowalik-PkXThkFaGzo-unsplash.jpg",
+    url: "https://storage.blooft.com/krzysztof-kowalik-PkXThkFaGzo-unsplash.jpg",
     author: {
       name: "Krzysztof Kowalik",
       url: "https://unsplash.com/@kowalikus",
@@ -648,7 +648,7 @@ const images: Image[] = [
     location: "Chamonix, France",
   },
   {
-    url: "https://storage.flowtide.app/jean-woloszczyk-GEwFw1tU47w-unsplash.jpg",
+    url: "https://storage.blooft.com/jean-woloszczyk-GEwFw1tU47w-unsplash.jpg",
     author: {
       name: "Jean Woloszczyk",
       url: "https://unsplash.com/@jeanwolo",
@@ -658,7 +658,7 @@ const images: Image[] = [
     location: "Argentière, Chamonix-Mont-Blanc, France",
   },
   {
-    url: "https://storage.flowtide.app/johannes-plenio-hvrpOmuMrAI-unsplash.jpg",
+    url: "https://storage.blooft.com/johannes-plenio-hvrpOmuMrAI-unsplash.jpg",
     author: {
       name: "Johannes Plenio",
       url: "https://unsplash.com/@jplenio",
@@ -667,7 +667,7 @@ const images: Image[] = [
       "https://unsplash.com/photos/yellow-lights-between-trees-hvrpOmuMrAI",
   },
   {
-    url: "https://storage.flowtide.app/ivars-utinans-vkQgb1lZZPQ-unsplash.jpg",
+    url: "https://storage.blooft.com/ivars-utinans-vkQgb1lZZPQ-unsplash.jpg",
     author: {
       name: "Ivars Utināns",
       url: "https://unsplash.com/@ivoprod",
@@ -676,7 +676,7 @@ const images: Image[] = [
       "https://unsplash.com/photos/aerial-view-of-green-trees-and-river-during-daytime-vkQgb1lZZPQ",
   },
   {
-    url: "https://storage.flowtide.app/edan-cohen-IyjhDTTQitM-unsplash.jpg",
+    url: "https://storage.blooft.com/edan-cohen-IyjhDTTQitM-unsplash.jpg",
     author: {
       name: "Edan Cohen",
       url: "https://unsplash.com/@edan",
@@ -685,7 +685,7 @@ const images: Image[] = [
       "https://unsplash.com/photos/mountains-covered-by-trees-at-under-gray-sky-during-daytime-IyjhDTTQitM",
   },
   {
-    url: "https://storage.flowtide.app/daniel-ribar-50B9vMs8cr0-unsplash.jpg",
+    url: "https://storage.blooft.com/daniel-ribar-50B9vMs8cr0-unsplash.jpg",
     author: {
       name: "Daniel Ribar",
       url: "https://unsplash.com/@bigdanribar",
@@ -695,7 +695,7 @@ const images: Image[] = [
     location: "Bear Mountain, United States",
   },
   {
-    url: "https://storage.flowtide.app/josh-carter-v6bd9TEoAd8-unsplash.jpg",
+    url: "https://storage.blooft.com/josh-carter-v6bd9TEoAd8-unsplash.jpg",
     author: {
       name: "Josh Carter",
       url: "https://unsplash.com/@midwestiscool",
@@ -705,7 +705,7 @@ const images: Image[] = [
     location: "Yosemite Valley, United States",
   },
   {
-    url: "https://storage.flowtide.app/artak-petrosyan-5-ooQQ2LH10-unsplash.jpg",
+    url: "https://storage.blooft.com/artak-petrosyan-5-ooQQ2LH10-unsplash.jpg",
     author: {
       name: "Artak Petrosyan",
       url: "https://unsplash.com/@artakpetrosyan",
@@ -715,7 +715,7 @@ const images: Image[] = [
     location: "Yosemite Valley, United States",
   },
   {
-    url: "https://storage.flowtide.app/danny-froese-JXkCLZhhRJg-unsplash.jpg",
+    url: "https://storage.blooft.com/danny-froese-JXkCLZhhRJg-unsplash.jpg",
     author: {
       name: "Danny Froese",
       url: "https://unsplash.com/@dannyfroese",
@@ -724,7 +724,7 @@ const images: Image[] = [
       "https://unsplash.com/photos/landscape-photography-of-mountain-JXkCLZhhRJg",
   },
   {
-    url: "https://storage.flowtide.app/erik-ringsmuth-xd3y6RxXl_o-unsplash.jpg",
+    url: "https://storage.blooft.com/erik-ringsmuth-xd3y6RxXl_o-unsplash.jpg",
     author: {
       name: "Erik Ringsmuth",
       url: "https://unsplash.com/@erikringsmuth",
@@ -734,7 +734,7 @@ const images: Image[] = [
     location: "Pyramid Mountain, United States",
   },
   {
-    url: "https://storage.flowtide.app/morgan-rovang-nKpoNQx2R5g-unsplash.jpg",
+    url: "https://storage.blooft.com/morgan-rovang-nKpoNQx2R5g-unsplash.jpg",
     author: {
       name: "Morgan Rovang",
       url: "https://unsplash.com/@morganrovang",

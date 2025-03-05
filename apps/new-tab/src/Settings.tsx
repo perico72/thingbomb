@@ -1,5 +1,5 @@
 /*
-    Flowtide
+    Blooft
     Copyright (C) 2024-present George Stone
 
     This program is free software: you can redistribute it and/or modify
@@ -15,7 +15,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see {http://www.gnu.org/licenses/}.
 
-    https://github.com/thingbomb/flowtide
+    https://github.com/blooft-app/blooft
 */
 
 import {
@@ -2052,7 +2052,7 @@ function SettingsTrigger({
               {chrome.i18n.getMessage("feedback_callout_desc")}
             </p>
             <div class="flex items-center gap-2">
-              <a href="https://feedback.flowtide.app">
+              <a href="https://feedback.blooft.com">
                 <Button>{chrome.i18n.getMessage("give_feedback")}</Button>
               </a>
               <Button
@@ -2071,11 +2071,11 @@ function SettingsTrigger({
             <div class="text-md py-2 flex items-center justify-between gap-2">
               <span class="font-medium flex gap-2 items-center">
                 <img src="assets/icon-128.png" height="24px" width="24px" />{" "}
-                Flowtide
+                Blooft
               </span>
               <div class="socials transition-all flex gap-2 items-center">
                 <a
-                  href="https://github.com/thingbomb/flowtide"
+                  href="https://github.com/blooft-app/blooft"
                   target="_blank"
                   class="text-black dark:text-white"
                 >
@@ -2112,7 +2112,7 @@ function SettingsTrigger({
                   </svg>
                 </a>
                 <a
-                  href="https://bsky.app/profile/flowtide.app"
+                  href="https://bsky.app/profile/blooft.com"
                   target="_blank"
                   class="text-black dark:text-white"
                 >
@@ -2134,7 +2134,7 @@ function SettingsTrigger({
             <button
               class="flex gap-2 items-center select-none cursor-pointer"
               onclick={() => {
-                navigator.clipboard.writeText("https://flowtide.app");
+                navigator.clipboard.writeText("https://blooft.com");
                 setCopyMessage(true);
                 setTimeout(() => {
                   setCopyMessage(false);

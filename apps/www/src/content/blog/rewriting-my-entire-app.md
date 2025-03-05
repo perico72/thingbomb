@@ -1,20 +1,20 @@
 ---
 title: "Why I chose SolidJS to rewrite my app"
 pubDate: 2024-12-28
-description: "This article goes over the reasons why I rewrote, technical decisions, and the future of Flowtide."
+description: "This article goes over the reasons why I rewrote, technical decisions, and the future of Blooft."
 heroImage: "/rewriting.jpg"
 author: "George"
 ---
 
 > Most of this article is outdated. I have changed the approach yet again from a block-based widget approach into a more traditional New Tab approach (which is not drag-and-drop) in the latest update (v4). I have also determined that making a JavaScript-based plugin system is not technically feasible within a browser extension. This article is being preserved for historical purposes; it may no longer be accurate.
 
-I decided to rewrite Flowtide entirely using SolidJS. This article will explain the reasons, technical decisions, and the future of Flowtide.
+I decided to rewrite Blooft entirely using SolidJS. This article will explain the reasons, technical decisions, and the future of Blooft.
 
-For context, Flowtide is a New Tab page for Chrome and Firefox that aims to be beautiful and customizable. It is free and open-source software.
+For context, Blooft is a New Tab page for Chrome and Firefox that aims to be beautiful and customizable. It is free and open-source software.
 
 ## New goals
 
-I ultimately realized that Flowtide wasn't doing anything different. It worked like every other New Tab page; clock in the middle, a bookmarks menu, and some sort of background.
+I ultimately realized that Blooft wasn't doing anything different. It worked like every other New Tab page; clock in the middle, a bookmarks menu, and some sort of background.
 
 I wanted to make it stand out from the crowd, taking a modular approach while keeping the customizability.
 
@@ -24,11 +24,11 @@ With more iteration, I decided the app should be 'block-based.' Think of it as a
 
 If you don't like the widget-based approach, I've left in some other options. You can choose nightstand mode, which puts the clock and date front and center. If you like easy access to your most commonly visited websites, you can enable Speed Dial, which puts your first 12 bookmarks front and center for quick access.
 
-After planning out the new details and iterating, I decided that if I am rewriting Flowtide, I must design the application to be future-proofed, really fast, and bug-free. These goals ultimately meant I'd have to switch frameworks.
+After planning out the new details and iterating, I decided that if I am rewriting Blooft, I must design the application to be future-proofed, really fast, and bug-free. These goals ultimately meant I'd have to switch frameworks.
 
 ## Why not just use React?
 
-Before v3, Flowtide used React. React provided a good developer experience and a vast ecosystem but also had many drawbacks.
+Before v3, Blooft used React. React provided a good developer experience and a vast ecosystem but also had many drawbacks.
 
 I had to research and test different options, but eventually, I landed on SolidJS. If you don't know what it is, it is simple and performant reactivity for building user interfaces (from their website.)
 
@@ -42,9 +42,9 @@ React re-renders the entire component and its children whenever you change a sta
 
 This behavior can get messy fast, especially if you accidentally wrote a recursive re-render, where changing a state creates an event that changes the state again, and so on.
 
-About a month ago, I decided to benchmark Flowtide by checking how many times the app re-renders in a given moment. I was shocked to find hundreds of re-renders per second, eating away at users' system resources.
+About a month ago, I decided to benchmark Blooft by checking how many times the app re-renders in a given moment. I was shocked to find hundreds of re-renders per second, eating away at users' system resources.
 
-It's not just Flowtide. Many popular websites also accidentally re-render too often without their engineers or users noticing anything.
+It's not just Blooft. Many popular websites also accidentally re-render too often without their engineers or users noticing anything.
 
 The main point of Solid is fine-grained reactivity, which means it only updates elements where it is relevant.
 
@@ -70,7 +70,7 @@ SSR means the server will render the page and send you back the code whenever yo
 
 If you are building a full-stack app, SvelteKit is an excellent option that does this exceptionally well.
 
-**Vue**: If I had to rewrite Flowtide again without Solid, this would probably be my choice. Vue uses a template-based approach with special directives, making development slightly more complicated rather than using a more HTML-like syntax. Its usage of the Virtual DOM can make it slower than other alternatives.
+**Vue**: If I had to rewrite Blooft again without Solid, this would probably be my choice. Vue uses a template-based approach with special directives, making development slightly more complicated rather than using a more HTML-like syntax. Its usage of the Virtual DOM can make it slower than other alternatives.
 
 **Angular**: Angular is a complex, fully-featured framework with heavy tooling. It is built for large teams and used by Google. I'm just not an Angular person.
 
@@ -88,14 +88,14 @@ Unlike other frameworks, Solid lacks frequent updates and contributions. As of D
 
 Unlike more widely adopted frameworks, Solid's ecosystem hasn't matured yet. You'll find incompatible libraries, [uncaught internal errors](https://github.com/solidjs/solid/issues/97), and less documentation and blogs compared to other options.
 
-## The Future for Flowtide
+## The Future for Blooft
 
-In a future update, I plan on making an API that lets anybody with web development skills extend Flowtide to include new features and capabilities that weren't otherwise possible.
+In a future update, I plan on making an API that lets anybody with web development skills extend Blooft to include new features and capabilities that weren't otherwise possible.
 
-The idea is to use a fully typed JavaScript library as a wrapper for an API that works like `window.flowtide.function()` for different actions.
+The idea is to use a fully typed JavaScript library as a wrapper for an API that works like `window.blooft.function()` for different actions.
 
-Once you compile your code using a build tool like Webpack, you can upload the file to Flowtide, and it will run on every New Tab. If you want it to be public, you can file a PR on a dedicated repository that hosts community plugins. All submissions will be examined for malicious code before being made public.
+Once you compile your code using a build tool like Webpack, you can upload the file to Blooft, and it will run on every New Tab. If you want it to be public, you can file a PR on a dedicated repository that hosts community plugins. All submissions will be examined for malicious code before being made public.
 
 ## Conclusion
 
-This update makes Flowtide faster, more customizable, and more feature-rich. Stay tuned for more exciting changes.
+This update makes Blooft faster, more customizable, and more feature-rich. Stay tuned for more exciting changes.

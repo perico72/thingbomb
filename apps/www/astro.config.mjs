@@ -6,6 +6,6 @@ import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
-  site: "https://www.flowtide.app/",
+  site: "https://www.blooft.com/",
   integrations: [mdx(), sitemap(), tailwind()],
 });

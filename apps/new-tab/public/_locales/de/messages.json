@@ -42,7 +42,7 @@
     "message": "Blöcke"
   },
   "blocks_description": {
-    "message": "Erweitern Sie Ihre neue Registerkarte mit wunderschön gestalteten Blöcken, die von Flowtide erstellt wurden. Sie können so viele Blöcke zu Ihrer Startseite hinzufügen, wie Sie möchten."
+    "message": "Erweitern Sie Ihre neue Registerkarte mit wunderschön gestalteten Blöcken, die von Blooft erstellt wurden. Sie können so viele Blöcke zu Ihrer Startseite hinzufügen, wie Sie möchten."
   },
   "bookmark_folders": {
     "message": "Lesezeichen-Ordner"
@@ -99,7 +99,7 @@
     "message": "Comic Sans"
   },
   "community_desc": {
-    "message": "Treten Sie der Flowtide-Community auf Discord bei, um Ihre Arbeit zu präsentieren, Fragen zu stellen, neue Funktionen zu testen und mit der Community zu chatten."
+    "message": "Treten Sie der Blooft-Community auf Discord bei, um Ihre Arbeit zu präsentieren, Fragen zu stellen, neue Funktionen zu testen und mit der Community zu chatten."
   },
   "complete": {
     "message": "Vollständig"
@@ -243,7 +243,7 @@
     "message": "Wir brauchen Ihr Feedback!"
   },
   "feedback_callout_desc": {
-    "message": "Helfen Sie uns, die Zukunft von Flowtide zu gestalten, und sagen Sie uns, was Sie als Nächstes sehen wollen. Wir würden uns freuen, von Ihnen zu hören!"
+    "message": "Helfen Sie uns, die Zukunft von Blooft zu gestalten, und sagen Sie uns, was Sie als Nächstes sehen wollen. Wir würden uns freuen, von Ihnen zu hören!"
   },
   "file_read_error": {
     "message": "Wir konnten die Datei nicht lesen. Bitte versuchen Sie es erneut."
@@ -522,7 +522,7 @@
     "message": "Einstellungen"
   },
   "share_flowtide": {
-    "message": "Teilen Sie Flowtide mit einem Freund!"
+    "message": "Teilen Sie Blooft mit einem Freund!"
   },
   "show_items": {
     "message": "Artikel anzeigen"
@@ -555,7 +555,7 @@
     "message": "Hintergrundänderungen starten"
   },
   "start_using": {
-    "message": "Beginn der Nutzung von Flowtide"
+    "message": "Beginn der Nutzung von Blooft"
   },
   "stop": {
     "message": "Stopp"
@@ -573,7 +573,7 @@
     "message": "Textstil"
   },
   "thanks": {
-    "message": "Danke, dass Sie Flowtide nutzen!"
+    "message": "Danke, dass Sie Blooft nutzen!"
   },
   "theme": {
     "message": "Thema"
@@ -615,7 +615,7 @@
     "message": "<a href=\"$1\">Wetterdaten von Open-Meteo.com</a>. Die Wetterdaten werden ohne Gewähr und ohne Garantie für die Richtigkeit zur Verfügung gestellt. Standortdaten werden von Open-Meteo verarbeitet und unterliegen deren Datenschutzbestimmungen."
   },
   "welcome_message": {
-    "message": "Willkommen bei Flowtide"
+    "message": "Willkommen bei Blooft"
   },
   "widgets": {
     "message": "Widgets"

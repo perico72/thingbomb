@@ -12,19 +12,19 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://www.flowtide.app/plugins/*"],
+      "matches": ["https://www.blooft.com/plugins/*"],
       "js": ["content.js"]
     }
   ],
   "default_locale": "en",
-  "description": "Flowtide is a beautiful and modern new tab page for your browser. Dark customization, modern design, tools, and more.",
-  "host_permissions": ["https://www.flowtide.app/*"],
+  "description": "Blooft is a beautiful and modern new tab page for your browser. Dark customization, modern design, tools, and more.",
+  "host_permissions": ["https://www.blooft.com/*"],
   "icons": {
     "128": "assets/icon-128.png",
     "256": "assets/icon-256.png"
   },
   "manifest_version": 3,
-  "name": "Flowtide - Beautiful New Tab",
+  "name": "Blooft - Beautiful New Tab",
   "permissions": ["bookmarks", "storage"],
   "version": "4.0.0"
 }

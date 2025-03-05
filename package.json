@@ -1,14 +1,14 @@
 {
-  "name": "flowtide",
+  "name": "blooft",
   "private": true,
   "scripts": {
     "dev": "turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md,html,json,css,yml}\"",
-    "build:firefox": "turbo build:firefox --filter=@flowtide/new-tab",
-    "build:chrome": "turbo build:chrome --filter=@flowtide/new-tab",
-    "build:web": "turbo build:web --filter=@flowtide/new-tab",
-    "build:lander": "turbo build:lander --filter=@flowtide/www"
+    "build:firefox": "turbo build:firefox --filter=@blooft/new-tab",
+    "build:chrome": "turbo build:chrome --filter=@blooft/new-tab",
+    "build:web": "turbo build:web --filter=@blooft/new-tab",
+    "build:lander": "turbo build:lander --filter=@blooft/www"
   },
   "devDependencies": {
     "prettier": "^3.3.3",

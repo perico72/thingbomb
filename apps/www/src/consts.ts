@@ -1,3 +1,3 @@
-export const SITE_TITLE = "Flowtide";
+export const SITE_TITLE = "Blooft";
 export const SITE_DESCRIPTION =
-  "Flowtide is a modern, customizable start page for your browser. Flowtide helps you be more productive with features like Magic Search.";
+  "Blooft is a modern, customizable start page for your browser. Blooft helps you be more productive with features like Magic Search.";
