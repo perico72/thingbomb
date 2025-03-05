@@ -1,99 +1,99 @@
 {
   "actions": {
-    "message": "Actions"
+    "message": "行动"
   },
   "add": {
-    "message": "Add"
+    "message": "添加"
   },
   "add_task": {
-    "message": "Add task"
+    "message": "添加任务"
   },
   "add_widget": {
-    "message": "Add widget"
+    "message": "添加小工具"
   },
   "added": {
-    "message": "Added"
+    "message": "已添加"
   },
   "advanced": {
-    "message": "Advanced"
+    "message": "高级"
   },
   "ambience": {
-    "message": "Ambience"
+    "message": "氛围"
   },
   "ambience_sounds": {
-    "message": "Ambience Sounds"
+    "message": "环境音"
   },
   "ambience_sounds_description": {
-    "message": "Ambient soundscapes to help you relax."
+    "message": "帮助您放松的环境音效。"
   },
   "appearance": {
-    "message": "Appearance"
+    "message": "外观"
   },
   "available_bookmarks": {
-    "message": "Available bookmarks"
+    "message": "可用书签"
   },
   "background": {
-    "message": "二. 背景"
+    "message": "背景介绍"
   },
   "blank": {
-    "message": "Blank"
+    "message": "空白"
   },
   "blocks": {
-    "message": "Blocks"
+    "message": "块"
   },
   "blocks_description": {
     "message": "Supercharge your New Tab page with beautifully designed blocks created by Blooft. You can add as many as you like to your start page."
   },
   "bookmark_folders": {
-    "message": "Bookmark Folders"
+    "message": "书签文件夹"
   },
   "bookmarks": {
-    "message": "Bookmarks"
+    "message": "书签"
   },
   "bookmarks_description": {
-    "message": "Easy access to your first 9 bookmarks with this widget."
+    "message": "使用此部件可轻松访问您的前 9 个书签。"
   },
   "bottom_left": {
-    "message": "Bottom left"
+    "message": "左下角"
   },
   "bottom_right": {
-    "message": "Bottom right"
+    "message": "右下角"
   },
   "break": {
-    "message": "Break"
+    "message": "休息"
   },
   "break_minutes": {
-    "message": "Break minutes"
+    "message": "休息时间"
   },
   "cancel": {
-    "message": "Cancel"
+    "message": "取消"
   },
   "center": {
-    "message": "Center"
+    "message": "中心"
   },
   "choose_file": {
-    "message": "Choose file"
+    "message": "选择文件"
   },
   "choose_mode": {
-    "message": "Choose a mode"
+    "message": "选择模式"
   },
   "clear_data": {
-    "message": "Clear data"
+    "message": "清除数据"
   },
   "clear_data_description": {
-    "message": "Clear all data from the extension. THIS CANNOT BE UNDONE."
+    "message": "清除扩展名中的所有数据。此操作无法撤销。"
   },
   "clock": {
-    "message": "Clock"
+    "message": "时钟"
   },
   "clock_description": {
-    "message": "Adds a clock widget to your start page."
+    "message": "为开始页面添加时钟部件。"
   },
   "clock_format": {
     "message": "时钟格式"
   },
   "close": {
-    "message": "Close"
+    "message": "关闭"
   },
   "comic_sans": {
     "message": "Comic Sans"
@@ -102,421 +102,421 @@
     "message": "Join the Blooft community on Discord to showcase your work, ask questions, test new features, and chat with the community."
   },
   "complete": {
-    "message": "Complete"
+    "message": "完整"
   },
   "compose_gmail_message": {
-    "message": "Compose Gmail Message"
+    "message": "撰写 Gmail 邮件"
   },
   "coordinates": {
-    "message": "Coordinates"
+    "message": "坐标"
   },
   "copied_to_clipboard": {
-    "message": "Copied to clipboard"
+    "message": "复制到剪贴板"
   },
   "counter": {
-    "message": "Counter"
+    "message": "计数器"
   },
   "counter_description": {
-    "message": "Count things easily."
+    "message": "轻松计数"
   },
   "create_bitly_link": {
-    "message": "Create Bitly Link"
+    "message": "创建 Bitly 链接"
   },
   "create_canva_design": {
-    "message": "Create Canva Design"
+    "message": "创建 Canva 设计"
   },
   "create_canva_video": {
-    "message": "Create Canva Video"
+    "message": "创建 Canva 视频"
   },
   "create_excel_workbook": {
-    "message": "Create Excel Workbook"
+    "message": "创建 Excel 工作簿"
   },
   "create_figma_file": {
-    "message": "Create Figma File"
+    "message": "创建 Figma 文件"
   },
   "create_github_gist": {
-    "message": "Create GitHub Gist"
+    "message": "创建 GitHub Gist"
   },
   "create_github_repository": {
-    "message": "Create GitHub Repository"
+    "message": "创建 GitHub 仓库"
   },
   "create_google_calendar_event": {
-    "message": "Create Google Calendar Event"
+    "message": "创建 Google 日历事件"
   },
   "create_google_document": {
-    "message": "Create Google Document"
+    "message": "创建 Google 文档"
   },
   "create_google_sheet": {
-    "message": "Create Google Sheet"
+    "message": "创建谷歌工作表"
   },
   "create_google_slide": {
-    "message": "Create Google Slide"
+    "message": "创建 Google 幻灯片"
   },
   "create_notion_page": {
-    "message": "Create Notion Page"
+    "message": "创建概念页面"
   },
   "create_paper_document": {
-    "message": "Create Paper Document"
+    "message": "创建纸质文件"
   },
   "create_powerpoint_presentation": {
-    "message": "Create PowerPoint Presentation"
+    "message": "创建 PowerPoint 演示文稿"
   },
   "create_todoist_task": {
-    "message": "Create Todoist Task"
+    "message": "创建 Todoist 任务"
   },
   "create_vercel_project": {
-    "message": "Create Vercel Project"
+    "message": "创建 Vercel 项目"
   },
   "create_word_document": {
-    "message": "Create Word Document"
+    "message": "创建 Word 文档"
   },
   "create_zoom_meeting": {
-    "message": "Create Zoom Meeting"
+    "message": "创建 Zoom 会议"
   },
   "custom_color": {
-    "message": "Custom color"
+    "message": "自定义颜色"
   },
   "custom_css": {
-    "message": "Custom CSS"
+    "message": "自定义 CSS"
   },
   "custom_url": {
-    "message": "Custom URL"
+    "message": "自定义 URL"
   },
   "customize": {
-    "message": "Customize your new tab"
+    "message": "自定义新标签页"
   },
   "customize_desc": {
-    "message": "Give your New Tab a personal touch with a variety of customization options. These are just a few options; the possibilities are almost limitless."
+    "message": "通过各种定制选项为你的 New Tab 赋予个性。这些只是其中的几个选项；可能性几乎是无限的。"
   },
   "dark": {
-    "message": "Dark"
+    "message": "黑暗"
   },
   "dashboard": {
-    "message": "Dashboard"
+    "message": "仪表板"
   },
   "date": {
-    "message": "Date"
+    "message": "日期"
   },
   "date_description": {
-    "message": "A sleek date widget that shows you the current date."
+    "message": "一款时尚的日期小工具，可显示当前日期。"
   },
   "date_format": {
-    "message": "Date format"
+    "message": "日期格式"
   },
   "default": {
-    "message": "Default"
+    "message": "默认值"
   },
   "discord": {
-    "message": "Join the Discord"
+    "message": "加入讨论组"
   },
   "display_name": {
-    "message": "Display name"
+    "message": "显示名称"
   },
   "edit_the_pomodoro_settings": {
-    "message": "Edit the pomodoro settings."
+    "message": "编辑 pomodoro 设置。"
   },
   "enabled": {
-    "message": "Enabled"
+    "message": "已启用"
   },
   "enter_greeting": {
-    "message": "Enter greeting"
+    "message": "输入问候语"
   },
   "enter_name": {
-    "message": "Enter your name"
+    "message": "输入您的姓名"
   },
   "every_day": {
-    "message": "每天一次"
+    "message": "每天"
   },
   "every_hour": {
     "message": "每小时"
   },
   "every_reload": {
-    "message": "Every reload"
+    "message": "每次重新加载"
   },
   "every_week": {
-    "message": "Every week"
+    "message": "每周"
   },
   "feature_request": {
-    "message": "Feature request"
+    "message": "功能请求"
   },
   "feedback_callout": {
-    "message": "We need your feedback!"
+    "message": "我们需要您的反馈！"
   },
   "feedback_callout_desc": {
     "message": "Help us shape the future of Blooft and tell us what you want to see next. We'd love to hear from you!"
   },
   "file_read_error": {
-    "message": "We couldn't read the file. Please try again."
+    "message": "我们无法读取文件。请重试。"
   },
   "file_too_large": {
-    "message": "File too large (max size is ~2.5 MB)"
+    "message": "文件过大（最大约 2.5 MB）"
   },
   "finish": {
-    "message": "Finish"
+    "message": "完成"
   },
   "focus": {
-    "message": "Focus"
+    "message": "聚焦"
   },
   "focus_sounds": {
-    "message": "Focus Sounds"
+    "message": "聚焦声音"
   },
   "focus_sounds_description": {
-    "message": "Soundscapes to help you focus."
+    "message": "帮助您集中注意力的音效"
   },
   "font": {
-    "message": "Font"
+    "message": "字体"
   },
   "forum": {
-    "message": "Forum"
+    "message": "论坛"
   },
   "general": {
-    "message": "General"
+    "message": "一般情况"
   },
   "get_started": {
-    "message": "Get started"
+    "message": "开始"
   },
   "give_feedback": {
-    "message": "Give feedback"
+    "message": "提供反馈"
   },
   "go_back": {
-    "message": "Go back"
+    "message": "返回"
   },
   "good_afternoon": {
-    "message": "Good afternoon"
+    "message": "下午好"
   },
   "good_evening": {
-    "message": "Good evening"
+    "message": "晚上好"
   },
   "good_morning": {
-    "message": "Good morning"
+    "message": "早上好"
   },
   "good_night": {
-    "message": "Good night"
+    "message": "晚安"
   },
   "gradient": {
-    "message": "渐变"
+    "message": "梯度"
   },
   "greeting": {
-    "message": "Set up a greeting"
+    "message": "致辞"
   },
   "greeting_description_1": {
-    "message": "What should we call you?"
+    "message": "我们该怎么称呼你？"
   },
   "hide_items": {
-    "message": "Hide items"
+    "message": "隐藏项目"
   },
   "hide_message": {
-    "message": "Hide message"
+    "message": "隐藏信息"
   },
   "hide_settings": {
-    "message": "Hide settings button"
+    "message": "隐藏设置按钮"
   },
   "hide_settings_description": {
-    "message": "Hide the settings button except on hover"
+    "message": "隐藏设置按钮（悬停时除外"
   },
   "icon": {
-    "message": "Icon"
+    "message": "图标"
   },
   "image": {
-    "message": "Image"
+    "message": "图片"
   },
   "imperial": {
-    "message": "Imperial"
+    "message": "帝国"
   },
   "invalid_file_type": {
-    "message": "Invalid file type. Please upload an image file."
+    "message": "文件类型无效。请上传图像文件。"
   },
   "join_the_community": {
-    "message": "Join the community"
+    "message": "加入社区"
   },
   "latitude": {
-    "message": "Latitude"
+    "message": "纬度"
   },
   "layout": {
-    "message": "Layout"
+    "message": "布局"
   },
   "leave_blank_to_disable": {
-    "message": "Leave blank to disable."
+    "message": "留空表示禁用。"
   },
   "light": {
-    "message": "Light"
+    "message": "灯光"
   },
   "local_file": {
-    "message": "Local file"
+    "message": "本地文件"
   },
   "location": {
-    "message": "Location"
+    "message": "地点"
   },
   "longitude": {
-    "message": "Longitude"
+    "message": "经度"
   },
   "lowercase": {
-    "message": "Lowercase"
+    "message": "小写"
   },
   "mantra_1": {
-    "message": "Every day is a chance to grow."
+    "message": "每一天都是成长的机会。"
   },
   "mantra_10": {
-    "message": "Be here, in this moment."
+    "message": "在这里，在这一刻。"
   },
   "mantra_11": {
-    "message": "Each breath is a fresh start."
+    "message": "每一次呼吸都是一个新的开始。"
   },
   "mantra_12": {
-    "message": "The now is all we truly have."
+    "message": "现在是我们真正拥有的一切。"
   },
   "mantra_13": {
-    "message": "Dream big, start small."
+    "message": "梦想远大，从小事做起。"
   },
   "mantra_14": {
-    "message": "Focus on what you can control."
+    "message": "专注于你能控制的事情。"
   },
   "mantra_15": {
-    "message": "Greatness begins with the first step."
+    "message": "伟大始于第一步。"
   },
   "mantra_2": {
-    "message": "Progress, not perfection."
+    "message": "是进步，不是完美。"
   },
   "mantra_3": {
-    "message": "Small steps lead to big changes."
+    "message": "小步骤带来大变化。"
   },
   "mantra_4": {
-    "message": "Setbacks are setups for comebacks."
+    "message": "挫折是东山再起的准备。"
   },
   "mantra_5": {
-    "message": "You are stronger than you think."
+    "message": "你比自己想象的要坚强。"
   },
   "mantra_6": {
-    "message": "Challenges build your strength."
+    "message": "挑战能增强你的力量。"
   },
   "mantra_7": {
-    "message": "Good things are coming your way."
+    "message": "好事即将降临"
   },
   "mantra_8": {
-    "message": "See the good in every situation."
+    "message": "见贤思齐。"
   },
   "mantra_9": {
-    "message": "A hopeful heart sees endless possibilities."
+    "message": "一颗充满希望的心能看到无限的可能性。"
   },
   "mantras": {
-    "message": "Mantras"
+    "message": "咒语"
   },
   "mantras_description": {
-    "message": "Inspirational mantras on every new tab."
+    "message": "每个新标签上都有激励人心的咒语。"
   },
   "metric": {
-    "message": "Metric"
+    "message": "公制"
   },
   "mode": {
-    "message": "Mode"
+    "message": "模式"
   },
   "mono": {
-    "message": "Mono"
+    "message": "单声道"
   },
   "more": {
-    "message": "更多"
+    "message": "更多信息"
   },
   "nature": {
-    "message": "Nature"
+    "message": "自然"
   },
   "nature_description": {
-    "message": "Listen to nature soundscapes with this widget."
+    "message": "用这个小工具聆听大自然的声音。"
   },
   "nature_sounds": {
-    "message": "Nature Sounds"
+    "message": "自然之声"
   },
   "new_tab": {
-    "message": "New Tab"
+    "message": "新标签"
   },
   "new_task": {
-    "message": "New task"
+    "message": "新任务"
   },
   "new_wallpaper": {
-    "message": "New wallpaper"
+    "message": "新墙纸"
   },
   "next": {
-    "message": "Next"
+    "message": "下一页"
   },
   "nightstand": {
-    "message": "Nightstand"
+    "message": "床头柜"
   },
   "no_bookmarks": {
-    "message": "No bookmarks"
+    "message": "无书签"
   },
   "no_results": {
-    "message": "No results found"
+    "message": "未找到结果"
   },
   "normal": {
-    "message": "Normal"
+    "message": "正常"
   },
   "notepad": {
-    "message": "Notepad"
+    "message": "记事本"
   },
   "notepad_description": {
-    "message": "A simple notepad widget."
+    "message": "一个简单的记事本小工具。"
   },
   "notepad_disclaimer": {
-    "message": "Notes are stored in your browser's local storage, which may be unreliable and could result in data loss."
+    "message": "笔记存储在浏览器的本地存储中，这可能不可靠，并可能导致数据丢失。"
   },
   "opacity": {
-    "message": "Opacity"
+    "message": "不透明度"
   },
   "page": {
-    "message": "Page title and icon"
+    "message": "页面标题和图标"
   },
   "page_title": {
-    "message": "Page title"
+    "message": "页面标题"
   },
   "pause_background_changes": {
-    "message": "Pause background changes"
+    "message": "暂停背景变化"
   },
   "pinned_bookmarks": {
-    "message": "Pinned bookmarks"
+    "message": "固定书签"
   },
   "plugins": {
-    "message": "Plugins"
+    "message": "插件"
   },
   "pomodoro": {
     "message": "Pomodoro"
   },
   "pomodoro_description": {
-    "message": "Use the pomodoro technique for an interval-based workflow."
+    "message": "使用 \"pomodoro \"技术，实现基于时间间隔的工作流程。"
   },
   "pomodoro_settings": {
-    "message": "Pomodoro Settings"
+    "message": "番茄酱设置"
   },
   "pomodoro_timer": {
-    "message": "Pomodoro timer"
+    "message": "Pomodoro 计时器"
   },
   "reset": {
-    "message": "Reset"
+    "message": "重置"
   },
   "resources": {
-    "message": "Resources"
+    "message": "资源"
   },
   "sans": {
-    "message": "桑斯"
+    "message": "无"
   },
   "save": {
-    "message": "Save"
+    "message": "节省"
   },
   "saved": {
-    "message": "Saved"
+    "message": "已保存"
   },
   "search": {
-    "message": "Search"
+    "message": "搜索"
   },
   "select_font": {
-    "message": "Select a font"
+    "message": "选择字体"
   },
   "serif": {
-    "message": "序列号"
+    "message": "衬线"
   },
   "set": {
-    "message": "Set"
+    "message": "设置"
   },
   "set_greeting": {
-    "message": "Set greeting"
+    "message": "设置问候语"
   },
   "settings": {
     "message": "设置"
@@ -525,108 +525,108 @@
     "message": "Share Blooft with a friend!"
   },
   "show_items": {
-    "message": "Show items"
+    "message": "显示项目"
   },
   "skip": {
-    "message": "Skip"
+    "message": "跳过"
   },
   "solid_color": {
-    "message": "Solid color"
+    "message": "纯色"
   },
   "sound_attribution": {
-    "message": "Sound attribution"
+    "message": "声音归属"
   },
   "soundscapes": {
-    "message": "音效"
+    "message": "声音景观"
   },
   "speed_dial": {
-    "message": "Speed Dial"
+    "message": "快速拨号"
   },
   "square_widgets": {
-    "message": "Square widgets (very experimental)"
+    "message": "方形小部件（非常试验性）"
   },
   "square_widgets_description": {
-    "message": "Allow the clock and date widgets to be square"
+    "message": "允许时钟和日期部件为正方形"
   },
   "start": {
-    "message": "Start"
+    "message": "开始"
   },
   "start_background_changes": {
-    "message": "Start background changes"
+    "message": "开始更改背景"
   },
   "start_using": {
     "message": "Start using Blooft"
   },
   "stop": {
-    "message": "Stop"
+    "message": "停止"
   },
   "stopwatch": {
-    "message": "Stopwatch"
+    "message": "秒表"
   },
   "stopwatch_description": {
-    "message": "Add a stopwatch widget to your start page."
+    "message": "在开始页面添加秒表部件。"
   },
   "tasks": {
-    "message": "Tasks"
+    "message": "任务"
   },
   "text_style": {
-    "message": "Text style"
+    "message": "文本样式"
   },
   "thanks": {
     "message": "Thank you for using Blooft!"
   },
   "theme": {
-    "message": "Theme"
+    "message": "主题"
   },
   "todo_list": {
-    "message": "待办事项列表"
+    "message": "待办事项清单"
   },
   "todo_list_description": {
-    "message": "Track your todos with an easy widget."
+    "message": "使用简单的小工具跟踪你的待办事项。"
   },
   "toggle_theme": {
-    "message": "Toggle theme"
+    "message": "切换主题"
   },
   "top": {
-    "message": "Top"
+    "message": "返回顶部"
   },
   "top_left": {
-    "message": "Top left"
+    "message": "左上角"
   },
   "top_right": {
-    "message": "Top right"
+    "message": "右上角"
   },
   "type_command": {
-    "message": "Type a command"
+    "message": "键入命令"
   },
   "unit": {
-    "message": "Unit"
+    "message": "单位"
   },
   "uppercase": {
-    "message": "Uppercase"
+    "message": "大写"
   },
   "wallpaper_blur": {
-    "message": "Wallpaper blur"
+    "message": "壁纸模糊"
   },
   "weather": {
-    "message": "Weather"
+    "message": "天气"
   },
   "weatherDisclaimer": {
-    "message": "<a href=\"$1\">Weather data by Open-Meteo.com</a>. Weather data is provided 'as-is' without any warranty or guarantee of accuracy. Location data is handled by Open-Meteo and subject to their privacy policy."
+    "message": "<a href=\"$1\">天气数据由 Open-Meteo.com 提供</a>。天气数据按 \"现况 \"提供，不保证或担保其准确性。位置数据由 Open-Meteo 处理，受其隐私政策约束。"
   },
   "welcome_message": {
     "message": "Welcome to Blooft"
   },
   "widgets": {
-    "message": "Widgets"
+    "message": "小工具"
   },
   "work": {
-    "message": "Work"
+    "message": "工作"
   },
   "work_minutes": {
-    "message": "Work minutes"
+    "message": "工作分钟"
   },
   "you_may_need_to_refresh": {
-    "message": "You may need to refresh the page to see the changes."
+    "message": "您可能需要刷新页面才能看到更改。"
   }
 }
