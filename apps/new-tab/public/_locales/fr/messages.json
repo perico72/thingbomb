@@ -42,7 +42,7 @@
     "message": "Blocs"
   },
   "blocks_description": {
-    "message": "Supercharge your New Tab page with beautifully designed blocks created by Blooft. You can add as many as you like to your start page."
+    "message": "Améliorez votre page Nouvel onglet avec des blocs magnifiquement conçus par Blooft. Vous pouvez en ajouter autant que vous le souhaitez à votre page d'accueil."
   },
   "bookmark_folders": {
     "message": "Dossiers de signets"
@@ -99,7 +99,7 @@
     "message": "Comic Sans"
   },
   "community_desc": {
-    "message": "Join the Blooft community on Discord to showcase your work, ask questions, test new features, and chat with the community."
+    "message": "Rejoignez la communauté Blooft sur Discord pour présenter votre travail, poser des questions, tester de nouvelles fonctionnalités et discuter avec la communauté."
   },
   "complete": {
     "message": "Compléter"
@@ -243,7 +243,7 @@
     "message": "Nous avons besoin de votre avis !"
   },
   "feedback_callout_desc": {
-    "message": "Help us shape the future of Blooft and tell us what you want to see next. We'd love to hear from you!"
+    "message": "Aidez-nous à façonner l'avenir de Blooft et dites-nous ce que vous attendez de lui. Nous serions ravis d'avoir de vos nouvelles !"
   },
   "file_read_error": {
     "message": "Nous n'avons pas pu lire le fichier. Veuillez réessayer."
@@ -522,7 +522,7 @@
     "message": "Paramètres"
   },
   "share_flowtide": {
-    "message": "Share Blooft with a friend!"
+    "message": "Partagez Blooft avec un ami !"
   },
   "show_items": {
     "message": "Afficher les articles"
@@ -555,7 +555,7 @@
     "message": "Commencer les changements d'arrière-plan"
   },
   "start_using": {
-    "message": "Start using Blooft"
+    "message": "Commencer à utiliser Blooft"
   },
   "stop": {
     "message": "Arrêter"
@@ -573,7 +573,7 @@
     "message": "Style de texte"
   },
   "thanks": {
-    "message": "Thank you for using Blooft!"
+    "message": "Merci d'utiliser Blooft !"
   },
   "theme": {
     "message": "Thème"
@@ -615,7 +615,7 @@
     "message": "<a href=\"$1\">Données météorologiques par Open-Meteo.com</a>. Les données météorologiques sont fournies \"en l'état\" sans aucune garantie d'exactitude. Les données de localisation sont traitées par Open-Meteo et soumises à leur politique de confidentialité."
   },
   "welcome_message": {
-    "message": "Welcome to Blooft"
+    "message": "Bienvenue à Blooft"
   },
   "widgets": {
     "message": "Widgets"
