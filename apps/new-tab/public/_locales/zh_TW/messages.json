@@ -42,7 +42,7 @@
     "message": "區塊"
   },
   "blocks_description": {
-    "message": "Supercharge your New Tab page with beautifully designed blocks created by Blooft. You can add as many as you like to your start page."
+    "message": "使用由 Blooft 創作、設計精美的區塊，為您的新標籤頁面增色不少。您可以在開始頁面中隨意添加。"
   },
   "bookmark_folders": {
     "message": "書籤資料夾"
@@ -99,7 +99,7 @@
     "message": "Comic Sans"
   },
   "community_desc": {
-    "message": "Join the Blooft community on Discord to showcase your work, ask questions, test new features, and chat with the community."
+    "message": "加入 Discord 上的 Blooft 社群，展示您的作品、提出問題、測試新功能，並與社群聊天。"
   },
   "complete": {
     "message": "完成"
@@ -243,7 +243,7 @@
     "message": "我們需要您的回饋！"
   },
   "feedback_callout_desc": {
-    "message": "Help us shape the future of Blooft and tell us what you want to see next. We'd love to hear from you!"
+    "message": "幫助我們塑造 Blooft 的未來，並告訴我們您想看到的下一步。我們樂意聽取您的意見！"
   },
   "file_read_error": {
     "message": "我們無法讀取檔案。請再試一次。"
@@ -522,7 +522,7 @@
     "message": "設定"
   },
   "share_flowtide": {
-    "message": "Share Blooft with a friend!"
+    "message": "與朋友分享 Blooft！"
   },
   "show_items": {
     "message": "顯示項目"
@@ -555,7 +555,7 @@
     "message": "開始背景變更"
   },
   "start_using": {
-    "message": "Start using Blooft"
+    "message": "開始使用 Blooft"
   },
   "stop": {
     "message": "停止"
@@ -573,7 +573,7 @@
     "message": "文字樣式"
   },
   "thanks": {
-    "message": "Thank you for using Blooft!"
+    "message": "感謝您使用 Blooft！"
   },
   "theme": {
     "message": "主題"
@@ -615,7 +615,7 @@
     "message": "<a href=\"$1\">天氣資料由 Open-Meteo.com 提供</a>。天氣資料係依現狀提供，不保證其正確性。位置資料由 Open-Meteo 處理，並受其隱私權政策約束。"
   },
   "welcome_message": {
-    "message": "Welcome to Blooft"
+    "message": "歡迎來到 Blooft"
   },
   "widgets": {
     "message": "小工具"
