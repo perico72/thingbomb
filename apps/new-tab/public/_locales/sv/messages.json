@@ -42,7 +42,7 @@
     "message": "Block"
   },
   "blocks_description": {
-    "message": "Supercharge your New Tab page with beautifully designed blocks created by Blooft. You can add as many as you like to your start page."
+    "message": "Komplettera din New Tab-sida med vackert designade block skapade av Blooft. Du kan lägga till så många du vill på din startsida."
   },
   "bookmark_folders": {
     "message": "Mappar för bokmärken"
@@ -99,7 +99,7 @@
     "message": "Comic Sans"
   },
   "community_desc": {
-    "message": "Join the Blooft community on Discord to showcase your work, ask questions, test new features, and chat with the community."
+    "message": "Gå med i Blooft-communityn på Discord för att visa upp ditt arbete, ställa frågor, testa nya funktioner och chatta med communityn."
   },
   "complete": {
     "message": "Komplett"
@@ -243,7 +243,7 @@
     "message": "Vi behöver din feedback!"
   },
   "feedback_callout_desc": {
-    "message": "Help us shape the future of Blooft and tell us what you want to see next. We'd love to hear from you!"
+    "message": "Hjälp oss att forma Bloofts framtid och berätta vad du vill se härnäst. Vi vill gärna höra från dig!"
   },
   "file_read_error": {
     "message": "Vi kunde inte läsa filen. Vänligen försök igen."
@@ -522,7 +522,7 @@
     "message": "Inställningar"
   },
   "share_flowtide": {
-    "message": "Share Blooft with a friend!"
+    "message": "Dela Blooft med en vän!"
   },
   "show_items": {
     "message": "Visa artiklar"
@@ -555,7 +555,7 @@
     "message": "Starta bakgrundsändringar"
   },
   "start_using": {
-    "message": "Start using Blooft"
+    "message": "Börja använda Blooft"
   },
   "stop": {
     "message": "Stopp"
@@ -573,7 +573,7 @@
     "message": "Stil på texten"
   },
   "thanks": {
-    "message": "Thank you for using Blooft!"
+    "message": "Tack för att du använder Blooft!"
   },
   "theme": {
     "message": "Tema"
@@ -615,7 +615,7 @@
     "message": "<a href=\"$1\">Väderdata från Open-Meteo.com.</a> Väderdata tillhandahålls \"i befintligt skick\" utan någon garanti eller garanti för noggrannhet. Platsdata hanteras av Open-Meteo och omfattas av deras sekretesspolicy."
   },
   "welcome_message": {
-    "message": "Welcome to Blooft"
+    "message": "Välkommen till Blooft"
   },
   "widgets": {
     "message": "Widgetar"
