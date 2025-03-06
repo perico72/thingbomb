@@ -336,7 +336,7 @@
     "message": "Макет"
   },
   "learn_more": {
-    "message": "Learn more"
+    "message": "Дізнайтеся більше"
   },
   "leave_blank_to_disable": {
     "message": "Залиште порожнє поле, щоб вимкнути."
@@ -408,7 +408,7 @@
     "message": "Надихаючі мантри на кожній новій вкладці."
   },
   "mathDisclaimer": {
-    "message": "Calculations may be inaccurate due to technical limitations. Use this tool at your own risk and not for important calculations."
+    "message": "Розрахунки можуть бути неточними через технічні обмеження. Використовуйте цей інструмент на власний ризик і не для важливих розрахунків."
   },
   "metric": {
     "message": "Метрика"
