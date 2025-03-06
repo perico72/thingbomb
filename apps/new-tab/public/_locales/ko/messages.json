@@ -335,6 +335,9 @@
   "layout": {
     "message": "레이아웃"
   },
+  "learn_more": {
+    "message": "Learn more"
+  },
   "leave_blank_to_disable": {
     "message": "비활성화하려면 비워둡니다."
   },
@@ -403,6 +406,9 @@
   },
   "mantras_description": {
     "message": "새 탭마다 영감을 주는 만트라가 표시됩니다."
+  },
+  "mathDisclaimer": {
+    "message": "Calculations may be inaccurate due to technical limitations. Use this tool at your own risk and not for important calculations."
   },
   "metric": {
     "message": "Metric"
