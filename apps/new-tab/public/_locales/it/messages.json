@@ -336,7 +336,7 @@
     "message": "Layout"
   },
   "learn_more": {
-    "message": "Learn more"
+    "message": "Per saperne di più"
   },
   "leave_blank_to_disable": {
     "message": "Lasciare vuoto per disabilitare."
@@ -408,7 +408,7 @@
     "message": "Mantra ispiratori su ogni nuova scheda."
   },
   "mathDisclaimer": {
-    "message": "Calculations may be inaccurate due to technical limitations. Use this tool at your own risk and not for important calculations."
+    "message": "I calcoli possono essere imprecisi a causa di limitazioni tecniche. Utilizzare questo strumento a proprio rischio e pericolo e non per calcoli importanti."
   },
   "metric": {
     "message": "Metrico"
