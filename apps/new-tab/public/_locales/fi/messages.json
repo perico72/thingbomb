@@ -336,7 +336,7 @@
     "message": "Asettelu"
   },
   "learn_more": {
-    "message": "Learn more"
+    "message": "Lue lisää"
   },
   "leave_blank_to_disable": {
     "message": "Jätä tyhjäksi, jos haluat poistaa sen käytöstä."
@@ -408,7 +408,7 @@
     "message": "Inspiroivia mantroja jokaisella uudella välilehdellä."
   },
   "mathDisclaimer": {
-    "message": "Calculations may be inaccurate due to technical limitations. Use this tool at your own risk and not for important calculations."
+    "message": "Laskelmat voivat olla epätarkkoja teknisten rajoitusten vuoksi. Käytä tätä työkalua omalla vastuullasi eikä tärkeisiin laskelmiin."
   },
   "metric": {
     "message": "Metrinen"
