@@ -336,7 +336,7 @@
     "message": "布局"
   },
   "learn_more": {
-    "message": "Learn more"
+    "message": "了解更多"
   },
   "leave_blank_to_disable": {
     "message": "留空表示禁用。"
@@ -408,7 +408,7 @@
     "message": "每个新标签上都有激励人心的咒语。"
   },
   "mathDisclaimer": {
-    "message": "Calculations may be inaccurate due to technical limitations. Use this tool at your own risk and not for important calculations."
+    "message": "由于技术限制，计算结果可能不准确。请自行承担使用本工具的风险，不要将其用于重要计算。"
   },
   "metric": {
     "message": "公制"
