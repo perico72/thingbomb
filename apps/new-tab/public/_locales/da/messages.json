@@ -335,6 +335,9 @@
   "layout": {
     "message": "Layout"
   },
+  "learn_more": {
+    "message": "Learn more"
+  },
   "leave_blank_to_disable": {
     "message": "Lad det være tomt for at deaktivere."
   },
@@ -403,6 +406,9 @@
   },
   "mantras_description": {
     "message": "Inspirerende mantraer på hver ny fane."
+  },
+  "mathDisclaimer": {
+    "message": "Calculations may be inaccurate due to technical limitations. Use this tool at your own risk and not for important calculations."
   },
   "metric": {
     "message": "Metrisk"
