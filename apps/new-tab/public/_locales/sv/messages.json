@@ -336,7 +336,7 @@
     "message": "Layout"
   },
   "learn_more": {
-    "message": "Learn more"
+    "message": "Läs mer om detta"
   },
   "leave_blank_to_disable": {
     "message": "Lämna tomt för att avaktivera."
@@ -408,7 +408,7 @@
     "message": "Inspirerande mantran på varje ny flik."
   },
   "mathDisclaimer": {
-    "message": "Calculations may be inaccurate due to technical limitations. Use this tool at your own risk and not for important calculations."
+    "message": "Beräkningarna kan vara felaktiga på grund av tekniska begränsningar. Använd detta verktyg på egen risk och inte för viktiga beräkningar."
   },
   "metric": {
     "message": "Metrisk"
