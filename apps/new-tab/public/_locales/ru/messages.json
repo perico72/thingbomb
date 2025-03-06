@@ -336,7 +336,7 @@
     "message": "Макет"
   },
   "learn_more": {
-    "message": "Learn more"
+    "message": "Узнать больше"
   },
   "leave_blank_to_disable": {
     "message": "Оставьте пустым, чтобы отключить."
@@ -408,7 +408,7 @@
     "message": "Вдохновляющие мантры на каждой новой вкладке."
   },
   "mathDisclaimer": {
-    "message": "Calculations may be inaccurate due to technical limitations. Use this tool at your own risk and not for important calculations."
+    "message": "Расчеты могут быть неточными из-за технических ограничений. Используйте этот инструмент на свой страх и риск и не применяйте его для важных расчетов."
   },
   "metric": {
     "message": "Метрика"
