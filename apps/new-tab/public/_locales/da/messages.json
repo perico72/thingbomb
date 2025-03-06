@@ -42,7 +42,7 @@
     "message": "Blokke"
   },
   "blocks_description": {
-    "message": "Supercharge your New Tab page with beautifully designed blocks created by Blooft. You can add as many as you like to your start page."
+    "message": "Giv din New Tab-side et løft med smukt designede blokke skabt af Blooft. Du kan tilføje så mange, som du vil, til din startside."
   },
   "bookmark_folders": {
     "message": "Mapper med bogmærker"
@@ -99,7 +99,7 @@
     "message": "Comic Sans"
   },
   "community_desc": {
-    "message": "Join the Blooft community on Discord to showcase your work, ask questions, test new features, and chat with the community."
+    "message": "Deltag i Blooft-fællesskabet på Discord for at fremvise dit arbejde, stille spørgsmål, teste nye funktioner og chatte med fællesskabet."
   },
   "complete": {
     "message": "Komplet"
@@ -243,7 +243,7 @@
     "message": "Vi har brug for din feedback!"
   },
   "feedback_callout_desc": {
-    "message": "Help us shape the future of Blooft and tell us what you want to see next. We'd love to hear from you!"
+    "message": "Hjælp os med at forme Bloofts fremtid, og fortæl os, hvad du gerne vil se som det næste. Vi vil meget gerne høre fra dig!"
   },
   "file_read_error": {
     "message": "Vi kunne ikke læse filen. Prøv venligst igen."
@@ -335,6 +335,9 @@
   "layout": {
     "message": "Layout"
   },
+  "learn_more": {
+    "message": "Få mere at vide"
+  },
   "leave_blank_to_disable": {
     "message": "Lad det være tomt for at deaktivere."
   },
@@ -403,6 +406,9 @@
   },
   "mantras_description": {
     "message": "Inspirerende mantraer på hver ny fane."
+  },
+  "mathDisclaimer": {
+    "message": "Beregningerne kan være unøjagtige på grund af tekniske begrænsninger. Brug dette værktøj på egen risiko og ikke til vigtige beregninger."
   },
   "metric": {
     "message": "Metrisk"
@@ -522,7 +528,7 @@
     "message": "Indstillinger"
   },
   "share_flowtide": {
-    "message": "Share Blooft with a friend!"
+    "message": "Del Blooft med en ven!"
   },
   "show_items": {
     "message": "Vis genstande"
@@ -555,7 +561,7 @@
     "message": "Start baggrundsændringer"
   },
   "start_using": {
-    "message": "Start using Blooft"
+    "message": "Begynd at bruge Blooft"
   },
   "stop": {
     "message": "Stop"
@@ -573,7 +579,7 @@
     "message": "Tekststil"
   },
   "thanks": {
-    "message": "Thank you for using Blooft!"
+    "message": "Tak, fordi du bruger Blooft!"
   },
   "theme": {
     "message": "Tema"
@@ -615,7 +621,7 @@
     "message": "<a href=\"$1\">Vejrdata fra Open-Meteo.com.</a> Vejrdata leveres \"som de er\" uden nogen form for garanti for nøjagtighed. Lokaliseringsdata håndteres af Open-Meteo og er underlagt deres privatlivspolitik."
   },
   "welcome_message": {
-    "message": "Welcome to Blooft"
+    "message": "Velkommen til Blooft"
   },
   "widgets": {
     "message": "Widgets"

@@ -42,7 +42,7 @@
     "message": "Lohkot"
   },
   "blocks_description": {
-    "message": "Supercharge your New Tab page with beautifully designed blocks created by Blooft. You can add as many as you like to your start page."
+    "message": "Lataa Uusi välilehti -sivusi Blooftin luomilla kauniisti suunnitelluilla lohkoilla. Voit lisätä aloitussivullesi niin monta kuin haluat."
   },
   "bookmark_folders": {
     "message": "Kirjanmerkkikansiot"
@@ -99,7 +99,7 @@
     "message": "Comic Sans"
   },
   "community_desc": {
-    "message": "Join the Blooft community on Discord to showcase your work, ask questions, test new features, and chat with the community."
+    "message": "Liity Blooft-yhteisöön Discordissa esitelläksesi työsi, kysyäksesi kysymyksiä, testataksesi uusia ominaisuuksia ja keskustellaksesi yhteisön kanssa."
   },
   "complete": {
     "message": "Täydellinen"
@@ -243,7 +243,7 @@
     "message": "Tarvitsemme palautetta!"
   },
   "feedback_callout_desc": {
-    "message": "Help us shape the future of Blooft and tell us what you want to see next. We'd love to hear from you!"
+    "message": "Auta meitä muokkaamaan Blooftin tulevaisuutta ja kerro meille, mitä haluat nähdä seuraavaksi. Kuulemme mielellämme sinusta!"
   },
   "file_read_error": {
     "message": "Emme voineet lukea tiedostoa. Yritä uudelleen."
@@ -335,6 +335,9 @@
   "layout": {
     "message": "Asettelu"
   },
+  "learn_more": {
+    "message": "Lue lisää"
+  },
   "leave_blank_to_disable": {
     "message": "Jätä tyhjäksi, jos haluat poistaa sen käytöstä."
   },
@@ -403,6 +406,9 @@
   },
   "mantras_description": {
     "message": "Inspiroivia mantroja jokaisella uudella välilehdellä."
+  },
+  "mathDisclaimer": {
+    "message": "Laskelmat voivat olla epätarkkoja teknisten rajoitusten vuoksi. Käytä tätä työkalua omalla vastuullasi eikä tärkeisiin laskelmiin."
   },
   "metric": {
     "message": "Metrinen"
@@ -522,7 +528,7 @@
     "message": "Asetukset"
   },
   "share_flowtide": {
-    "message": "Share Blooft with a friend!"
+    "message": "Jaa Blooft ystävän kanssa!"
   },
   "show_items": {
     "message": "Näytä kohteet"
@@ -555,7 +561,7 @@
     "message": "Aloita taustan muutokset"
   },
   "start_using": {
-    "message": "Start using Blooft"
+    "message": "Aloita Blooftin käyttö"
   },
   "stop": {
     "message": "Stop"
@@ -573,7 +579,7 @@
     "message": "Tekstityyli"
   },
   "thanks": {
-    "message": "Thank you for using Blooft!"
+    "message": "Kiitos, että käytät Blooftia!"
   },
   "theme": {
     "message": "Teema"
@@ -615,7 +621,7 @@
     "message": "<a href=\"$1\">Open-Meteo.comin säätiedot</a>. Säätiedot toimitetaan sellaisena kuin ne ovat ilman mitään takuuta tai takuuta tarkkuudesta. Sijaintitietoja käsittelee Open-Meteo ja niihin sovelletaan heidän tietosuojakäytäntöään."
   },
   "welcome_message": {
-    "message": "Welcome to Blooft"
+    "message": "Tervetuloa Blooft"
   },
   "widgets": {
     "message": "Widgetit"

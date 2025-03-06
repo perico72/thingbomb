@@ -42,7 +42,7 @@
     "message": "블록"
   },
   "blocks_description": {
-    "message": "Supercharge your New Tab page with beautifully designed blocks created by Blooft. You can add as many as you like to your start page."
+    "message": "Blooft에서 만든 아름다운 디자인의 블록으로 새 탭 페이지를 더욱 멋지게 꾸며보세요. 시작 페이지에 원하는 만큼 추가할 수 있습니다."
   },
   "bookmark_folders": {
     "message": "북마크 폴더"
@@ -99,7 +99,7 @@
     "message": "코믹 산스"
   },
   "community_desc": {
-    "message": "Join the Blooft community on Discord to showcase your work, ask questions, test new features, and chat with the community."
+    "message": "디스코드에서 블룸프트 커뮤니티에 가입하여 작품을 선보이고, 질문하고, 새로운 기능을 테스트하고, 커뮤니티와 채팅하세요."
   },
   "complete": {
     "message": "완료"
@@ -243,7 +243,7 @@
     "message": "여러분의 피드백이 필요합니다!"
   },
   "feedback_callout_desc": {
-    "message": "Help us shape the future of Blooft and tell us what you want to see next. We'd love to hear from you!"
+    "message": "Blooft의 미래를 설계하는 데 도움을 주시고 다음에 보고 싶은 것이 무엇인지 알려주세요. 여러분의 의견을 듣고 싶습니다!"
   },
   "file_read_error": {
     "message": "파일을 읽을 수 없습니다. 다시 시도해 주세요."
@@ -335,6 +335,9 @@
   "layout": {
     "message": "레이아웃"
   },
+  "learn_more": {
+    "message": "자세히 알아보기"
+  },
   "leave_blank_to_disable": {
     "message": "비활성화하려면 비워둡니다."
   },
@@ -403,6 +406,9 @@
   },
   "mantras_description": {
     "message": "새 탭마다 영감을 주는 만트라가 표시됩니다."
+  },
+  "mathDisclaimer": {
+    "message": "기술적 한계로 인해 계산이 부정확할 수 있습니다. 이 도구는 중요한 계산이 아닌 본인의 책임 하에 사용하세요."
   },
   "metric": {
     "message": "Metric"
@@ -522,7 +528,7 @@
     "message": "설정"
   },
   "share_flowtide": {
-    "message": "Share Blooft with a friend!"
+    "message": "Blooft를 친구와 공유하세요!"
   },
   "show_items": {
     "message": "항목 표시"
@@ -555,7 +561,7 @@
     "message": "배경 변경 시작"
   },
   "start_using": {
-    "message": "Start using Blooft"
+    "message": "Blooft 사용 시작"
   },
   "stop": {
     "message": "중지"
@@ -573,7 +579,7 @@
     "message": "텍스트 스타일"
   },
   "thanks": {
-    "message": "Thank you for using Blooft!"
+    "message": "Blooft를 이용해 주셔서 감사합니다!"
   },
   "theme": {
     "message": "테마"
@@ -615,7 +621,7 @@
     "message": "<a href=\"$1\">Open-Meteo.com의 날씨 데이터</a>. 날씨 데이터는 정확성에 대한 어떠한 보증이나 보장 없이 '있는 그대로' 제공됩니다. 위치 데이터는 Open-Meteo에서 처리하며 해당 업체의 개인정보 처리방침을 따릅니다."
   },
   "welcome_message": {
-    "message": "Welcome to Blooft"
+    "message": "Blooft에 오신 것을 환영합니다."
   },
   "widgets": {
     "message": "위젯"
