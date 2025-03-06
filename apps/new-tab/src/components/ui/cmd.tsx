@@ -263,7 +263,7 @@ export function CommandPalette(props: any) {
     setInputValue(value);
     try {
       const mexp = new Mexp();
-      const mathResult = mexp.eval(value);
+      const mathResult = mexp.eval(value.replaceAll("sqrt(", "root("));
       if (typeof mathResult === "number") {
         setResult({
           expression: value,
