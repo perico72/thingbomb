@@ -296,17 +296,31 @@ export function CommandPalette(props: any) {
       />
       <CommandList class="scrollbar">
         {result().result != null && (
-          <CommandItem
-            class="flex m-2 items-center"
-            onSelect={() => {
-              const copiedResult = result().result;
-              navigator.clipboard.writeText(String(copiedResult));
-              setOpen(false);
-            }}
-            keywords={[`${result().expression}`]}
-          >
-            <span class="text-primary">{result().result}</span>
-          </CommandItem>
+          <>
+            <CommandItem
+              class="flex m-2 items-center"
+              onSelect={() => {
+                const copiedResult = result().result;
+                navigator.clipboard.writeText(String(copiedResult));
+                setOpen(false);
+              }}
+              keywords={[`${result().expression}`]}
+            >
+              <span class="text-primary">
+                {Number(Number(result().result).toFixed(12))}
+              </span>
+            </CommandItem>
+            <span class="text-gray-600 dark:text-gray-300 text-sm select-none font-medium px-2 block">
+              {chrome.i18n.getMessage("mathDisclaimer")}{" "}
+              <a
+                href="https://help.blooft.com/articles/9906936-math"
+                class="text-gray-800 dark:text-gray-100 hover:underline"
+              >
+                {chrome.i18n.getMessage("learn_more")}
+              </a>
+            </span>
+            <br />
+          </>
         )}
         <CommandGroup heading={chrome.i18n.getMessage("bookmarks")}>
           {loadedBookmarks() ? (
