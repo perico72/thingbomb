@@ -335,6 +335,9 @@
   "layout": {
     "message": "Asettelu"
   },
+  "learn_more": {
+    "message": "Learn more"
+  },
   "leave_blank_to_disable": {
     "message": "Jätä tyhjäksi, jos haluat poistaa sen käytöstä."
   },
@@ -403,6 +406,9 @@
   },
   "mantras_description": {
     "message": "Inspiroivia mantroja jokaisella uudella välilehdellä."
+  },
+  "mathDisclaimer": {
+    "message": "Calculations may be inaccurate due to technical limitations. Use this tool at your own risk and not for important calculations."
   },
   "metric": {
     "message": "Metrinen"
