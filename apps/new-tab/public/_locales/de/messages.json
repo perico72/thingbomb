@@ -336,7 +336,7 @@
     "message": "Layout"
   },
   "learn_more": {
-    "message": "Learn more"
+    "message": "Mehr erfahren"
   },
   "leave_blank_to_disable": {
     "message": "Zum Deaktivieren leer lassen."
@@ -408,7 +408,7 @@
     "message": "Inspirierende Mantras auf jeder neuen Registerkarte."
   },
   "mathDisclaimer": {
-    "message": "Calculations may be inaccurate due to technical limitations. Use this tool at your own risk and not for important calculations."
+    "message": "Die Berechnungen können aufgrund technischer Beschränkungen ungenau sein. Verwenden Sie dieses Tool auf eigene Gefahr und nicht für wichtige Berechnungen."
   },
   "metric": {
     "message": "Metrisch"
