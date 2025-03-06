@@ -336,7 +336,7 @@
     "message": "Diseño"
   },
   "learn_more": {
-    "message": "Learn more"
+    "message": "Más información"
   },
   "leave_blank_to_disable": {
     "message": "Dejar en blanco para desactivar."
@@ -408,7 +408,7 @@
     "message": "Mantras inspiradores en cada nueva pestaña."
   },
   "mathDisclaimer": {
-    "message": "Calculations may be inaccurate due to technical limitations. Use this tool at your own risk and not for important calculations."
+    "message": "Los cálculos pueden ser inexactos debido a limitaciones técnicas. Utilice esta herramienta bajo su propia responsabilidad y no para cálculos importantes."
   },
   "metric": {
     "message": "Métrica"
