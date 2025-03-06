@@ -335,6 +335,9 @@
   "layout": {
     "message": "Макет"
   },
+  "learn_more": {
+    "message": "Learn more"
+  },
   "leave_blank_to_disable": {
     "message": "Оставьте пустым, чтобы отключить."
   },
@@ -403,6 +406,9 @@
   },
   "mantras_description": {
     "message": "Вдохновляющие мантры на каждой новой вкладке."
+  },
+  "mathDisclaimer": {
+    "message": "Calculations may be inaccurate due to technical limitations. Use this tool at your own risk and not for important calculations."
   },
   "metric": {
     "message": "Метрика"
