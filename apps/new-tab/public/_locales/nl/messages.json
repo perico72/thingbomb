@@ -335,6 +335,9 @@
   "layout": {
     "message": "Lay-out"
   },
+  "learn_more": {
+    "message": "Learn more"
+  },
   "leave_blank_to_disable": {
     "message": "Laat leeg om uit te schakelen."
   },
@@ -403,6 +406,9 @@
   },
   "mantras_description": {
     "message": "Inspirerende mantra's op elk nieuw tabblad."
+  },
+  "mathDisclaimer": {
+    "message": "Calculations may be inaccurate due to technical limitations. Use this tool at your own risk and not for important calculations."
   },
   "metric": {
     "message": "Metrisch"
