@@ -335,6 +335,9 @@
   "layout": {
     "message": "Mise en page"
   },
+  "learn_more": {
+    "message": "Learn more"
+  },
   "leave_blank_to_disable": {
     "message": "Laisser en blanc pour désactiver."
   },
@@ -403,6 +406,9 @@
   },
   "mantras_description": {
     "message": "Des mantras inspirants dans chaque nouvel onglet."
+  },
+  "mathDisclaimer": {
+    "message": "Calculations may be inaccurate due to technical limitations. Use this tool at your own risk and not for important calculations."
   },
   "metric": {
     "message": "Métrique"
