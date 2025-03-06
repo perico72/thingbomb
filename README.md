@@ -19,7 +19,7 @@ Features:
 
 ## Install for your browser
 
-- [Firefox](https://addons.mozilla.org/en-US/firefox/addon/flowtide-new-tab/)
+- [Firefox](https://addons.mozilla.org/en-US/firefox/addon/blooft-new-tab/)
 - [Chrome](https://chromewebstore.google.com/detail/blooft/fpdjjjmglibdjocjpcchgkbakeelaghm)
 - [Vivaldi](https://help.blooft.com/help/articles/0376600-use-flowtide-as-your-new-tab-page-in-vivaldi)
 
