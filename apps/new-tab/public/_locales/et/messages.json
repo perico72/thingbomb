@@ -336,7 +336,7 @@
     "message": "Paigutus"
   },
   "learn_more": {
-    "message": "Learn more"
+    "message": "Lisateave"
   },
   "leave_blank_to_disable": {
     "message": "Deaktiveerimiseks jätke tühjaks."
@@ -408,7 +408,7 @@
     "message": "Inspireerivad mantrad igal uuel vahekaardil."
   },
   "mathDisclaimer": {
-    "message": "Calculations may be inaccurate due to technical limitations. Use this tool at your own risk and not for important calculations."
+    "message": "Arvutused võivad tehniliste piirangute tõttu olla ebatäpsed. Kasutage seda tööriista omal vastutusel ja mitte oluliste arvutuste tegemiseks."
   },
   "metric": {
     "message": "Metriline"
