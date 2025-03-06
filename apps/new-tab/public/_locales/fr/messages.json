@@ -336,7 +336,7 @@
     "message": "Mise en page"
   },
   "learn_more": {
-    "message": "Learn more"
+    "message": "En savoir plus"
   },
   "leave_blank_to_disable": {
     "message": "Laisser en blanc pour désactiver."
@@ -408,7 +408,7 @@
     "message": "Des mantras inspirants dans chaque nouvel onglet."
   },
   "mathDisclaimer": {
-    "message": "Calculations may be inaccurate due to technical limitations. Use this tool at your own risk and not for important calculations."
+    "message": "Les calculs peuvent être inexacts en raison de limitations techniques. Utilisez cet outil à vos risques et périls et non pour des calculs importants."
   },
   "metric": {
     "message": "Métrique"
