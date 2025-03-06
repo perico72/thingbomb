@@ -336,7 +336,7 @@
     "message": "佈局"
   },
   "learn_more": {
-    "message": "Learn more"
+    "message": "瞭解更多"
   },
   "leave_blank_to_disable": {
     "message": "留空表示停用。"
@@ -408,7 +408,7 @@
     "message": "每個新標籤上都有鼓舞人心的咒語。"
   },
   "mathDisclaimer": {
-    "message": "Calculations may be inaccurate due to technical limitations. Use this tool at your own risk and not for important calculations."
+    "message": "由於技術限制，計算結果可能不準確。使用本工具風險自負，且不可用於重要計算。"
   },
   "metric": {
     "message": "公制"
