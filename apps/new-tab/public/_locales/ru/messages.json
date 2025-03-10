@@ -611,6 +611,9 @@
   "uppercase": {
     "message": "Прописные буквы"
   },
+  "view_sound_credits": {
+    "message": "View sound credits"
+  },
   "wallpaper_blur": {
     "message": "Размытие обоев"
   },
