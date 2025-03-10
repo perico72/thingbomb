@@ -1097,7 +1097,7 @@ const App: Component = () => {
                             );
                           }}
                         >
-                          View sound credits
+                            {chrome.i18n.getMessage("view_sound_credits")}
                         </DropdownMenuItem>
                         <br />
                         <Show when={actuallyBoolean(natureSounds())}>
