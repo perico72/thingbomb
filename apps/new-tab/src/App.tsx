@@ -770,7 +770,7 @@ const App: Component = () => {
           </Select>
           <br />
         </div>
-        <div class="flex items-center gap-2 bg-[#18191B] pt-2">
+        <div class="flex items-center gap-2 bg-white dark:bg-[#18191B] pt-2">
           <Button
             variant={"outline"}
             class="px-2.5"
