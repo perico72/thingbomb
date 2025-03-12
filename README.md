@@ -13,7 +13,7 @@ Features:
 - Beautiful background images, solid colors, gradients, all up to you
 - Change the font, layout, theme, and more
 - Be greeted on every New Tab
-- Install CSS mods with one-click at [blooft.com/plugins](https://blooft.com/plugins/) and even make your own [here](https://github.com/blooft-app/plugins).
+- Install CSS mods with one-click at [blooft.com/plugins](https://blooft.com/plugins/)
 
 <img src="https://storage.blooft.com/hero.jpg" style="border-radius: 24px;">
 
