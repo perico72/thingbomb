@@ -2,7 +2,7 @@
 title: "Blooft's new website"
 pubDate: 2024-12-05
 description: "This is our brand new website, built with Astro."
-heroImage: "/post-1.jpeg"
+heroImage: "/post-1.svg"
 author: "George"
 ---
 
