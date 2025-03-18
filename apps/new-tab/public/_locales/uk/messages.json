@@ -611,6 +611,9 @@
   "uppercase": {
     "message": "Верхній регістр"
   },
+  "view_sound_credits": {
+    "message": "View sound credits"
+  },
   "wallpaper_blur": {
     "message": "Розмиття шпалер"
   },
