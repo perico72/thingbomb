@@ -104,9 +104,6 @@
   "complete": {
     "message": "Complete"
   },
-  "compose_gmail_message": {
-    "message": "Compose Gmail Message"
-  },
   "coordinates": {
     "message": "Coordinates"
   },
@@ -118,60 +115,6 @@
   },
   "counter_description": {
     "message": "Count things easily."
-  },
-  "create_bitly_link": {
-    "message": "Create Bitly Link"
-  },
-  "create_canva_design": {
-    "message": "Create Canva Design"
-  },
-  "create_canva_video": {
-    "message": "Create Canva Video"
-  },
-  "create_excel_workbook": {
-    "message": "Create Excel Workbook"
-  },
-  "create_figma_file": {
-    "message": "Create Figma File"
-  },
-  "create_github_gist": {
-    "message": "Create GitHub Gist"
-  },
-  "create_github_repository": {
-    "message": "Create GitHub Repository"
-  },
-  "create_google_calendar_event": {
-    "message": "Create Google Calendar Event"
-  },
-  "create_google_document": {
-    "message": "Create Google Document"
-  },
-  "create_google_sheet": {
-    "message": "Create Google Sheet"
-  },
-  "create_google_slide": {
-    "message": "Create Google Slide"
-  },
-  "create_notion_page": {
-    "message": "Create Notion Page"
-  },
-  "create_paper_document": {
-    "message": "Create Paper Document"
-  },
-  "create_powerpoint_presentation": {
-    "message": "Create PowerPoint Presentation"
-  },
-  "create_todoist_task": {
-    "message": "Create Todoist Task"
-  },
-  "create_vercel_project": {
-    "message": "Create Vercel Project"
-  },
-  "create_word_document": {
-    "message": "Create Word Document"
-  },
-  "create_zoom_meeting": {
-    "message": "Create Zoom Meeting"
   },
   "custom_color": {
     "message": "Custom color"
