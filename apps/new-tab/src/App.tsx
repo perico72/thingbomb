@@ -1097,7 +1097,7 @@ const App: Component = () => {
                             );
                           }}
                         >
-                            {chrome.i18n.getMessage("view_sound_credits")}
+                          {chrome.i18n.getMessage("view_sound_credits")}
                         </DropdownMenuItem>
                         <br />
                         <Show when={actuallyBoolean(natureSounds())}>
@@ -1519,7 +1519,7 @@ const App: Component = () => {
                       </Button>
                     )}
                   />
-                  <PopoverContent class="max-h-96 w-56 overflow-y-auto">
+                  <PopoverContent class="max-h-96 w-56 overflow-y-auto bg-black">
                     <TodoPopover />
                   </PopoverContent>
                 </Popover>

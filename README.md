@@ -1,8 +1,9 @@
 # Blooft
 
-<div 
-<a href="https://chromewebstore.google.com/detail/blooft/fpdjjjmglibdjocjpcchgkbakeelaghm"><img alt="Chrome Web Store Users" src="https://img.shields.io/chrome-web-store/users/fpdjjjmglibdjocjpcchgkbakeelaghm?color=red"></a> <a href="https://crowdin.com/project/blooft"><img src="https://badges.crowdin.net/blooft/localized.svg" alt="Crowdin"></a><br />
-Blooft is a heavily customizable, beautiful, and modular New Tab page. Blooft lets you build your New Tab page, customizing it every step of the way, using a sleek modular system. Get stuff done with todos and the pomodoro technique, relax with soundscapes, and move faster with Magic Search.
+<div>
+  <a href="https://chromewebstore.google.com/detail/blooft/fpdjjjmglibdjocjpcchgkbakeelaghm"><img alt="Chrome Web Store Users" src="https://img.shields.io/chrome-web-store/users/fpdjjjmglibdjocjpcchgkbakeelaghm?color=red"></a> <a href="https://crowdin.com/project/blooft"><img src="https://badges.crowdin.net/blooft/localized.svg" alt="Crowdin"></a><br />
+</div>
+Blooft is a heavily customizable, beautiful, and modular New Tab page. Blooft lets you build your New Tab page, customizing it every step of the way, using a sleek modular system. Get stuff done with todos and the pomodoro technique, relax with soundscapes, and move faster with our command palette.
 
 Features:
 

@@ -51,86 +51,6 @@ export function CommandPalette(props: any) {
     copied: false,
   });
 
-  const initialActions = [
-    {
-      name: chrome.i18n.getMessage("create_google_document"),
-      url: "https://docs.new",
-    },
-    {
-      name: chrome.i18n.getMessage("create_word_document"),
-      url: "https://word.new",
-    },
-    {
-      name: chrome.i18n.getMessage("create_notion_page"),
-      url: "https://notion.new",
-    },
-    {
-      name: chrome.i18n.getMessage("create_google_sheet"),
-      url: "https://sheets.new",
-    },
-    {
-      name: chrome.i18n.getMessage("compose_gmail_message"),
-      url: "https://mail.google.com/mail/u/0/#inbox?compose=new",
-    },
-    {
-      name: chrome.i18n.getMessage("create_google_slide"),
-      url: "https://slides.new",
-    },
-    {
-      name: chrome.i18n.getMessage("create_google_calendar_event"),
-      url: "https://cal.new",
-    },
-    {
-      name: chrome.i18n.getMessage("create_excel_workbook"),
-      url: "https://excel.new",
-    },
-    {
-      name: chrome.i18n.getMessage("create_powerpoint_presentation"),
-      url: "https://powerpoint.new",
-    },
-    {
-      name: chrome.i18n.getMessage("create_paper_document"),
-      url: "https://paper.dropbox.com/new",
-    },
-    {
-      name: chrome.i18n.getMessage("create_todoist_task"),
-      url: "https://todoist.new",
-    },
-    {
-      name: chrome.i18n.getMessage("create_github_repository"),
-      url: "https://github.com/new",
-    },
-    {
-      name: chrome.i18n.getMessage("create_github_gist"),
-      url: "https://gist.github.com/new",
-    },
-    {
-      name: chrome.i18n.getMessage("create_figma_file"),
-      url: "https://www.figma.com/file/new",
-    },
-    {
-      name: chrome.i18n.getMessage("create_zoom_meeting"),
-      url: "https://zoom.us/start/videomeeting",
-    },
-    {
-      name: chrome.i18n.getMessage("create_bitly_link"),
-      url: "https://bitly.new",
-    },
-    {
-      name: chrome.i18n.getMessage("create_canva_design"),
-      url: "https://canva.new",
-    },
-    {
-      name: chrome.i18n.getMessage("create_canva_video"),
-      url: "https://canva.new/video",
-    },
-    {
-      name: chrome.i18n.getMessage("create_vercel_project"),
-      url: "https://deploy.new",
-    },
-  ];
-
-  const [actions, setActions] = createSignal(initialActions);
   const [bookmarks, setBookmarks] = createSignal<Bookmark[]>([]);
   const [loadedBookmarks, setLoadedBookmarks] = createSignal(false);
   const [bookmarkFolders, setBookmarkFolders] = createSignal<BookmarkFolder[]>(
@@ -180,14 +100,10 @@ export function CommandPalette(props: any) {
               });
               displayBookmarks(bookmark.children);
             } else {
-              if (
-                !initialActions.some((action) => action.name === bookmark.title)
-              ) {
-                newBookmarks.push({
-                  name: bookmark.title,
-                  url: bookmark.url,
-                });
-              }
+              newBookmarks.push({
+                name: bookmark.title,
+                url: bookmark.url,
+              });
             }
           });
         };
@@ -335,16 +251,6 @@ export function CommandPalette(props: any) {
               ))}
             </div>
           ) : null}
-        </CommandGroup>
-        <CommandGroup heading={chrome.i18n.getMessage("actions")}>
-          {actions().map((action, index) => (
-            <CommandItem
-              onSelect={() => handleCommand(action)}
-              class="flex items-center"
-            >
-              <span class="text-primary">{action.name}</span>
-            </CommandItem>
-          ))}
         </CommandGroup>
         <CommandGroup heading={chrome.i18n.getMessage("bookmark_folders")}>
           {bookmarkFolders().map((folder) => (

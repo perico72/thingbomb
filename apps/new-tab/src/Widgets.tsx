@@ -133,7 +133,7 @@ function TodoPopover() {
           <div class="scrollbar-track-transparent max-h-16 overflow-auto">
             {tasks()
               .filter((task: Task) => !task.completed)
-              .map((task: Task, index: number) => (
+              .map((task: Task) => (
                 <div
                   draggable="true"
                   onDragStart={(e) => handleDragStart(e, task.id)}
