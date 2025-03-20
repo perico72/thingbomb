@@ -104,9 +104,6 @@
   "complete": {
     "message": "Komplet"
   },
-  "compose_gmail_message": {
-    "message": "Skriv en Gmail-besked"
-  },
   "coordinates": {
     "message": "Koordinater"
   },
@@ -118,60 +115,6 @@
   },
   "counter_description": {
     "message": "Det er nemt at tælle ting."
-  },
-  "create_bitly_link": {
-    "message": "Opret Bitly-link"
-  },
-  "create_canva_design": {
-    "message": "Opret Canva-design"
-  },
-  "create_canva_video": {
-    "message": "Opret Canva-video"
-  },
-  "create_excel_workbook": {
-    "message": "Opret Excel-projektmappe"
-  },
-  "create_figma_file": {
-    "message": "Opret Figma-fil"
-  },
-  "create_github_gist": {
-    "message": "Opret GitHub Gist"
-  },
-  "create_github_repository": {
-    "message": "Opret GitHub Repository"
-  },
-  "create_google_calendar_event": {
-    "message": "Opret begivenhed i Google Kalender"
-  },
-  "create_google_document": {
-    "message": "Opret Google-dokument"
-  },
-  "create_google_sheet": {
-    "message": "Opret Google-ark"
-  },
-  "create_google_slide": {
-    "message": "Opret Google Slide"
-  },
-  "create_notion_page": {
-    "message": "Opret forestillingsside"
-  },
-  "create_paper_document": {
-    "message": "Opret papirdokument"
-  },
-  "create_powerpoint_presentation": {
-    "message": "Opret PowerPoint-præsentation"
-  },
-  "create_todoist_task": {
-    "message": "Opret Todoist-opgave"
-  },
-  "create_vercel_project": {
-    "message": "Opret Vercel-projekt"
-  },
-  "create_word_document": {
-    "message": "Opret Word-dokument"
-  },
-  "create_zoom_meeting": {
-    "message": "Opret et Zoom-møde"
   },
   "custom_color": {
     "message": "Brugerdefineret farve"

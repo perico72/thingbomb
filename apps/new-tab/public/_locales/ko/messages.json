@@ -104,9 +104,6 @@
   "complete": {
     "message": "완료"
   },
-  "compose_gmail_message": {
-    "message": "Gmail 메시지 작성"
-  },
   "coordinates": {
     "message": "좌표"
   },
@@ -118,60 +115,6 @@
   },
   "counter_description": {
     "message": "쉽게 계산하세요."
-  },
-  "create_bitly_link": {
-    "message": "비틀리 링크 만들기"
-  },
-  "create_canva_design": {
-    "message": "캔버스 디자인 만들기"
-  },
-  "create_canva_video": {
-    "message": "Canva 동영상 만들기"
-  },
-  "create_excel_workbook": {
-    "message": "Excel 통합 문서 만들기"
-  },
-  "create_figma_file": {
-    "message": "피그마 파일 만들기"
-  },
-  "create_github_gist": {
-    "message": "GitHub 요점 만들기"
-  },
-  "create_github_repository": {
-    "message": "GitHub 리포지토리 만들기"
-  },
-  "create_google_calendar_event": {
-    "message": "Google 캘린더 이벤트 만들기"
-  },
-  "create_google_document": {
-    "message": "Google 문서 만들기"
-  },
-  "create_google_sheet": {
-    "message": "Google 스프레드시트 만들기"
-  },
-  "create_google_slide": {
-    "message": "Google 슬라이드 만들기"
-  },
-  "create_notion_page": {
-    "message": "개념 페이지 만들기"
-  },
-  "create_paper_document": {
-    "message": "종이 문서 만들기"
-  },
-  "create_powerpoint_presentation": {
-    "message": "파워포인트 프레젠테이션 만들기"
-  },
-  "create_todoist_task": {
-    "message": "Todoist 작업 만들기"
-  },
-  "create_vercel_project": {
-    "message": "버셀 프로젝트 만들기"
-  },
-  "create_word_document": {
-    "message": "Word 문서 만들기"
-  },
-  "create_zoom_meeting": {
-    "message": "Zoom 미팅 만들기"
   },
   "custom_color": {
     "message": "사용자 지정 색상"

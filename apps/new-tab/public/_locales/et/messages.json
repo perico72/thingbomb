@@ -104,9 +104,6 @@
   "complete": {
     "message": "Täielik"
   },
-  "compose_gmail_message": {
-    "message": "Gmaili sõnumi koostamine"
-  },
   "coordinates": {
     "message": "Koordinaadid"
   },
@@ -118,60 +115,6 @@
   },
   "counter_description": {
     "message": "Lugege asju lihtsalt."
-  },
-  "create_bitly_link": {
-    "message": "Bitly lingi loomine"
-  },
-  "create_canva_design": {
-    "message": "Loo Canva disain"
-  },
-  "create_canva_video": {
-    "message": "Canva video loomine"
-  },
-  "create_excel_workbook": {
-    "message": "Exceli töövihiku loomine"
-  },
-  "create_figma_file": {
-    "message": "Figma faili loomine"
-  },
-  "create_github_gist": {
-    "message": "Loo GitHub Gist"
-  },
-  "create_github_repository": {
-    "message": "GitHubi repositooriumi loomine"
-  },
-  "create_google_calendar_event": {
-    "message": "Google kalendri sündmuse loomine"
-  },
-  "create_google_document": {
-    "message": "Google'i dokumendi loomine"
-  },
-  "create_google_sheet": {
-    "message": "Google'i lehe loomine"
-  },
-  "create_google_slide": {
-    "message": "Google Slide'i loomine"
-  },
-  "create_notion_page": {
-    "message": "Loo mõiste lehekülg"
-  },
-  "create_paper_document": {
-    "message": "Paberdokumendi loomine"
-  },
-  "create_powerpoint_presentation": {
-    "message": "PowerPoint esitluse loomine"
-  },
-  "create_todoist_task": {
-    "message": "Todoist ülesande loomine"
-  },
-  "create_vercel_project": {
-    "message": "Luua Vercel projekt"
-  },
-  "create_word_document": {
-    "message": "Wordi dokumendi loomine"
-  },
-  "create_zoom_meeting": {
-    "message": "Zoomi koosoleku loomine"
   },
   "custom_color": {
     "message": "Kohandatud värv"

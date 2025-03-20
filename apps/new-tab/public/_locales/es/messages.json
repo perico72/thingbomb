@@ -104,9 +104,6 @@
   "complete": {
     "message": "Complete"
   },
-  "compose_gmail_message": {
-    "message": "Redactar un mensaje de Gmail"
-  },
   "coordinates": {
     "message": "Coordenadas"
   },
@@ -118,60 +115,6 @@
   },
   "counter_description": {
     "message": "Cuenta las cosas con facilidad."
-  },
-  "create_bitly_link": {
-    "message": "Crear enlace Bitly"
-  },
-  "create_canva_design": {
-    "message": "Crear diseño Canva"
-  },
-  "create_canva_video": {
-    "message": "Crear un vídeo de Canva"
-  },
-  "create_excel_workbook": {
-    "message": "Crear libro Excel"
-  },
-  "create_figma_file": {
-    "message": "Crear archivo Figma"
-  },
-  "create_github_gist": {
-    "message": "Crear Gist de GitHub"
-  },
-  "create_github_repository": {
-    "message": "Crear repositorio GitHub"
-  },
-  "create_google_calendar_event": {
-    "message": "Crear evento de Google Calendar"
-  },
-  "create_google_document": {
-    "message": "Crear un documento de Google"
-  },
-  "create_google_sheet": {
-    "message": "Crear una hoja de Google"
-  },
-  "create_google_slide": {
-    "message": "Crear Google Slide"
-  },
-  "create_notion_page": {
-    "message": "Crear página de nociones"
-  },
-  "create_paper_document": {
-    "message": "Crear documento en papel"
-  },
-  "create_powerpoint_presentation": {
-    "message": "Crear presentación de PowerPoint"
-  },
-  "create_todoist_task": {
-    "message": "Crear tarea Todoist"
-  },
-  "create_vercel_project": {
-    "message": "Crear proyecto Vercel"
-  },
-  "create_word_document": {
-    "message": "Crear documento Word"
-  },
-  "create_zoom_meeting": {
-    "message": "Crear reunión de Zoom"
   },
   "custom_color": {
     "message": "Color personalizado"

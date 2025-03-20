@@ -104,9 +104,6 @@
   "complete": {
     "message": "Komplett"
   },
-  "compose_gmail_message": {
-    "message": "Skriva Gmail-meddelande"
-  },
   "coordinates": {
     "message": "Koordinater"
   },
@@ -118,60 +115,6 @@
   },
   "counter_description": {
     "message": "Räkna saker enkelt."
-  },
-  "create_bitly_link": {
-    "message": "Skapa Bitly-länk"
-  },
-  "create_canva_design": {
-    "message": "Skapa Canva Design"
-  },
-  "create_canva_video": {
-    "message": "Skapa Canva-video"
-  },
-  "create_excel_workbook": {
-    "message": "Skapa Excel-arbetsbok"
-  },
-  "create_figma_file": {
-    "message": "Skapa Figma-fil"
-  },
-  "create_github_gist": {
-    "message": "Skapa GitHub Gist"
-  },
-  "create_github_repository": {
-    "message": "Skapa GitHub-förvar"
-  },
-  "create_google_calendar_event": {
-    "message": "Skapa evenemang i Google Kalender"
-  },
-  "create_google_document": {
-    "message": "Skapa Google-dokument"
-  },
-  "create_google_sheet": {
-    "message": "Skapa Google Sheet"
-  },
-  "create_google_slide": {
-    "message": "Skapa Google Slide"
-  },
-  "create_notion_page": {
-    "message": "Skapa Notion-sida"
-  },
-  "create_paper_document": {
-    "message": "Skapa pappersdokument"
-  },
-  "create_powerpoint_presentation": {
-    "message": "Skapa PowerPoint-presentation"
-  },
-  "create_todoist_task": {
-    "message": "Skapa Todoist-uppgift"
-  },
-  "create_vercel_project": {
-    "message": "Skapa Vercel-projekt"
-  },
-  "create_word_document": {
-    "message": "Skapa Word-dokument"
-  },
-  "create_zoom_meeting": {
-    "message": "Skapa Zoom-möte"
   },
   "custom_color": {
     "message": "Anpassad färg"
