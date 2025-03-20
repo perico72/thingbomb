@@ -104,9 +104,6 @@
   "complete": {
     "message": "Vollständig"
   },
-  "compose_gmail_message": {
-    "message": "Gmail-Nachricht verfassen"
-  },
   "coordinates": {
     "message": "Koordinaten"
   },
@@ -118,60 +115,6 @@
   },
   "counter_description": {
     "message": "Zählen Sie die Dinge einfach."
-  },
-  "create_bitly_link": {
-    "message": "Bitly Link erstellen"
-  },
-  "create_canva_design": {
-    "message": "Canva-Design erstellen"
-  },
-  "create_canva_video": {
-    "message": "Canva-Video erstellen"
-  },
-  "create_excel_workbook": {
-    "message": "Excel-Arbeitsmappe erstellen"
-  },
-  "create_figma_file": {
-    "message": "Figma-Datei erstellen"
-  },
-  "create_github_gist": {
-    "message": "GitHub Gist erstellen"
-  },
-  "create_github_repository": {
-    "message": "GitHub-Repository erstellen"
-  },
-  "create_google_calendar_event": {
-    "message": "Google Kalender Event erstellen"
-  },
-  "create_google_document": {
-    "message": "Google-Dokument erstellen"
-  },
-  "create_google_sheet": {
-    "message": "Google Sheet erstellen"
-  },
-  "create_google_slide": {
-    "message": "Google-Folie erstellen"
-  },
-  "create_notion_page": {
-    "message": "Begriffsseite erstellen"
-  },
-  "create_paper_document": {
-    "message": "Papierdokument erstellen"
-  },
-  "create_powerpoint_presentation": {
-    "message": "PowerPoint-Präsentation erstellen"
-  },
-  "create_todoist_task": {
-    "message": "Todoist-Aufgabe erstellen"
-  },
-  "create_vercel_project": {
-    "message": "Vercel Projekt erstellen"
-  },
-  "create_word_document": {
-    "message": "Word-Dokument erstellen"
-  },
-  "create_zoom_meeting": {
-    "message": "Zoom-Meeting erstellen"
   },
   "custom_color": {
     "message": "Benutzerdefinierte Farbe"
