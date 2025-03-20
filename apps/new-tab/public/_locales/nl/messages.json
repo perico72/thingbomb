@@ -104,9 +104,6 @@
   "complete": {
     "message": "Compleet"
   },
-  "compose_gmail_message": {
-    "message": "Gmail-bericht opstellen"
-  },
   "coordinates": {
     "message": "Coördinaten"
   },
@@ -118,60 +115,6 @@
   },
   "counter_description": {
     "message": "Tel dingen gemakkelijk."
-  },
-  "create_bitly_link": {
-    "message": "Bitly-link maken"
-  },
-  "create_canva_design": {
-    "message": "Canva-ontwerp maken"
-  },
-  "create_canva_video": {
-    "message": "Canva-video maken"
-  },
-  "create_excel_workbook": {
-    "message": "Excel-werkmap maken"
-  },
-  "create_figma_file": {
-    "message": "Figma-bestand maken"
-  },
-  "create_github_gist": {
-    "message": "GitHub Gist maken"
-  },
-  "create_github_repository": {
-    "message": "GitHub-repository aanmaken"
-  },
-  "create_google_calendar_event": {
-    "message": "Google Agenda-evenement maken"
-  },
-  "create_google_document": {
-    "message": "Google-document maken"
-  },
-  "create_google_sheet": {
-    "message": "Google-blad maken"
-  },
-  "create_google_slide": {
-    "message": "Google dia maken"
-  },
-  "create_notion_page": {
-    "message": "Pagina maken"
-  },
-  "create_paper_document": {
-    "message": "Papieren document maken"
-  },
-  "create_powerpoint_presentation": {
-    "message": "PowerPoint-presentatie maken"
-  },
-  "create_todoist_task": {
-    "message": "Todoist-taak maken"
-  },
-  "create_vercel_project": {
-    "message": "Vercel-project maken"
-  },
-  "create_word_document": {
-    "message": "Word-document maken"
-  },
-  "create_zoom_meeting": {
-    "message": "Zoom-bijeenkomst maken"
   },
   "custom_color": {
     "message": "Aangepaste kleur"
