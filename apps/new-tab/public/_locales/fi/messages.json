@@ -104,9 +104,6 @@
   "complete": {
     "message": "Täydellinen"
   },
-  "compose_gmail_message": {
-    "message": "Gmail-viestin laatiminen"
-  },
   "coordinates": {
     "message": "Koordinaatit"
   },
@@ -118,60 +115,6 @@
   },
   "counter_description": {
     "message": "Laske asiat helposti."
-  },
-  "create_bitly_link": {
-    "message": "Luo Bitly-linkki"
-  },
-  "create_canva_design": {
-    "message": "Luo Canva Design"
-  },
-  "create_canva_video": {
-    "message": "Luo Canva-video"
-  },
-  "create_excel_workbook": {
-    "message": "Luo Excel-työkirja"
-  },
-  "create_figma_file": {
-    "message": "Luo Figma-tiedosto"
-  },
-  "create_github_gist": {
-    "message": "Luo GitHub Gist"
-  },
-  "create_github_repository": {
-    "message": "Luo GitHub-repositori"
-  },
-  "create_google_calendar_event": {
-    "message": "Luo Google-kalenteritapahtuma"
-  },
-  "create_google_document": {
-    "message": "Luo Google-dokumentti"
-  },
-  "create_google_sheet": {
-    "message": "Luo Google Sheet"
-  },
-  "create_google_slide": {
-    "message": "Luo Google Dia"
-  },
-  "create_notion_page": {
-    "message": "Luo käsitteellinen sivu"
-  },
-  "create_paper_document": {
-    "message": "Luo paperiasiakirja"
-  },
-  "create_powerpoint_presentation": {
-    "message": "Luo PowerPoint-esitys"
-  },
-  "create_todoist_task": {
-    "message": "Luo Todoist-tehtävä"
-  },
-  "create_vercel_project": {
-    "message": "Luo Vercel-projekti"
-  },
-  "create_word_document": {
-    "message": "Luo Word-asiakirja"
-  },
-  "create_zoom_meeting": {
-    "message": "Luo Zoom-kokous"
   },
   "custom_color": {
     "message": "Mukautettu väri"
