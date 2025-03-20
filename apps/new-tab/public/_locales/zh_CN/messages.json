@@ -104,9 +104,6 @@
   "complete": {
     "message": "完整"
   },
-  "compose_gmail_message": {
-    "message": "撰写 Gmail 邮件"
-  },
   "coordinates": {
     "message": "坐标"
   },
@@ -118,60 +115,6 @@
   },
   "counter_description": {
     "message": "轻松计数"
-  },
-  "create_bitly_link": {
-    "message": "创建 Bitly 链接"
-  },
-  "create_canva_design": {
-    "message": "创建 Canva 设计"
-  },
-  "create_canva_video": {
-    "message": "创建 Canva 视频"
-  },
-  "create_excel_workbook": {
-    "message": "创建 Excel 工作簿"
-  },
-  "create_figma_file": {
-    "message": "创建 Figma 文件"
-  },
-  "create_github_gist": {
-    "message": "创建 GitHub Gist"
-  },
-  "create_github_repository": {
-    "message": "创建 GitHub 仓库"
-  },
-  "create_google_calendar_event": {
-    "message": "创建 Google 日历事件"
-  },
-  "create_google_document": {
-    "message": "创建 Google 文档"
-  },
-  "create_google_sheet": {
-    "message": "创建谷歌工作表"
-  },
-  "create_google_slide": {
-    "message": "创建 Google 幻灯片"
-  },
-  "create_notion_page": {
-    "message": "创建概念页面"
-  },
-  "create_paper_document": {
-    "message": "创建纸质文件"
-  },
-  "create_powerpoint_presentation": {
-    "message": "创建 PowerPoint 演示文稿"
-  },
-  "create_todoist_task": {
-    "message": "创建 Todoist 任务"
-  },
-  "create_vercel_project": {
-    "message": "创建 Vercel 项目"
-  },
-  "create_word_document": {
-    "message": "创建 Word 文档"
-  },
-  "create_zoom_meeting": {
-    "message": "创建 Zoom 会议"
   },
   "custom_color": {
     "message": "自定义颜色"
