@@ -216,8 +216,9 @@ export function CommandPalette(props: any) {
             <CommandItem
               class="flex m-2 items-center"
               onSelect={() => {
-                const copiedResult = result().result;
-                navigator.clipboard.writeText(String(copiedResult));
+                navigator.clipboard.writeText(
+                  String(Number(result().result).toFixed(12))
+                );
                 setOpen(false);
               }}
               keywords={[`${result().expression}`]}
