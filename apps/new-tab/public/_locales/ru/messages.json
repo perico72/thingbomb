@@ -104,9 +104,6 @@
   "complete": {
     "message": "Полный"
   },
-  "compose_gmail_message": {
-    "message": "Составить сообщение Gmail"
-  },
   "coordinates": {
     "message": "Координаты"
   },
@@ -118,60 +115,6 @@
   },
   "counter_description": {
     "message": "Легко пересчитывайте предметы."
-  },
-  "create_bitly_link": {
-    "message": "Создание ссылки Bitly"
-  },
-  "create_canva_design": {
-    "message": "Создание дизайна Canva"
-  },
-  "create_canva_video": {
-    "message": "Создание видео в Canva"
-  },
-  "create_excel_workbook": {
-    "message": "Создание рабочей книги Excel"
-  },
-  "create_figma_file": {
-    "message": "Создайте файл Figma"
-  },
-  "create_github_gist": {
-    "message": "Создайте Gist на GitHub"
-  },
-  "create_github_repository": {
-    "message": "Создайте репозиторий GitHub"
-  },
-  "create_google_calendar_event": {
-    "message": "Создание события в календаре Google"
-  },
-  "create_google_document": {
-    "message": "Создать документ Google"
-  },
-  "create_google_sheet": {
-    "message": "Создайте лист Google"
-  },
-  "create_google_slide": {
-    "message": "Создайте слайд Google"
-  },
-  "create_notion_page": {
-    "message": "Создать страницу понятий"
-  },
-  "create_paper_document": {
-    "message": "Создание бумажного документа"
-  },
-  "create_powerpoint_presentation": {
-    "message": "Создание презентации PowerPoint"
-  },
-  "create_todoist_task": {
-    "message": "Создание задачи Todoist"
-  },
-  "create_vercel_project": {
-    "message": "Создание проекта Vercel"
-  },
-  "create_word_document": {
-    "message": "Создать документ Word"
-  },
-  "create_zoom_meeting": {
-    "message": "Создание собрания Zoom"
   },
   "custom_color": {
     "message": "Пользовательский цвет"
