@@ -104,9 +104,6 @@
   "complete": {
     "message": "完成"
   },
-  "compose_gmail_message": {
-    "message": "撰寫 Gmail 訊息"
-  },
   "coordinates": {
     "message": "座標"
   },
@@ -118,60 +115,6 @@
   },
   "counter_description": {
     "message": "數東西很容易。"
-  },
-  "create_bitly_link": {
-    "message": "建立 Bitly 連結"
-  },
-  "create_canva_design": {
-    "message": "建立 Canva 設計"
-  },
-  "create_canva_video": {
-    "message": "建立 Canva 影片"
-  },
-  "create_excel_workbook": {
-    "message": "建立 Excel 工作簿"
-  },
-  "create_figma_file": {
-    "message": "建立 Figma 檔案"
-  },
-  "create_github_gist": {
-    "message": "建立 GitHub Gist"
-  },
-  "create_github_repository": {
-    "message": "建立 GitHub 儲存庫"
-  },
-  "create_google_calendar_event": {
-    "message": "建立 Google 行事曆活動"
-  },
-  "create_google_document": {
-    "message": "建立 Google 文件"
-  },
-  "create_google_sheet": {
-    "message": "建立 Google 工作表"
-  },
-  "create_google_slide": {
-    "message": "建立 Google Slide"
-  },
-  "create_notion_page": {
-    "message": "建立概念頁"
-  },
-  "create_paper_document": {
-    "message": "建立紙本文件"
-  },
-  "create_powerpoint_presentation": {
-    "message": "建立 PowerPoint 簡報"
-  },
-  "create_todoist_task": {
-    "message": "建立 Todoist 任務"
-  },
-  "create_vercel_project": {
-    "message": "建立 Vercel 專案"
-  },
-  "create_word_document": {
-    "message": "建立 Word 文件"
-  },
-  "create_zoom_meeting": {
-    "message": "建立 Zoom 會議"
   },
   "custom_color": {
     "message": "自訂顏色"
