@@ -217,14 +217,14 @@ export function CommandPalette(props: any) {
               class="flex m-2 items-center"
               onSelect={() => {
                 navigator.clipboard.writeText(
-                  String(Number(result().result).toFixed(12))
+                  String(Number(result().result).toFixed(11))
                 );
                 setOpen(false);
               }}
               keywords={[`${result().expression}`]}
             >
               <span class="text-primary">
-                {Number(Number(result().result).toFixed(12))}
+                {Number(Number(result().result).toFixed(11))}
               </span>
             </CommandItem>
             <span class="text-gray-600 dark:text-gray-300 text-sm select-none font-medium px-2 block">
