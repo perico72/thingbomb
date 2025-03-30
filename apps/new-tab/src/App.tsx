@@ -1519,7 +1519,7 @@ const App: Component = () => {
                       </Button>
                     )}
                   />
-                  <PopoverContent class="max-h-96 w-56 overflow-y-auto bg-black">
+                  <PopoverContent class="max-h-96 w-56 overflow-y-auto bg-white dark:bg-black">
                     <TodoPopover />
                   </PopoverContent>
                 </Popover>

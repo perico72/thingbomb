@@ -207,7 +207,8 @@ function TodoPopover() {
                   addTask();
                 }
               }}
-              class="text-xs !outline-white placeholder:text-white"
+              class="text-xs outline-black dark:outline-white placeholder:text-black
+                dark:placeholder:text-white"
             />
           </TextFieldRoot>
         </div>
