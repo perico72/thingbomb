@@ -560,12 +560,6 @@
   "wallpaper_blur": {
     "message": "Papier peint flou"
   },
-  "weather": {
-    "message": "Météo"
-  },
-  "weatherDisclaimer": {
-    "message": "<a href=\"$1\">Données météorologiques par Open-Meteo.com</a>. Les données météorologiques sont fournies \"en l'état\" sans aucune garantie d'exactitude. Les données de localisation sont traitées par Open-Meteo et soumises à leur politique de confidentialité."
-  },
   "welcome_message": {
     "message": "Bienvenue à Blooft"
   },
