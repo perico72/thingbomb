@@ -560,12 +560,6 @@
   "wallpaper_blur": {
     "message": "Wallpaper blur"
   },
-  "weather": {
-    "message": "Weather"
-  },
-  "weatherDisclaimer": {
-    "message": "<a href=\"$1\">Weather data by Open-Meteo.com</a>. Weather data is provided 'as-is' without any warranty or guarantee of accuracy. Location data is handled by Open-Meteo and subject to their privacy policy."
-  },
   "welcome_message": {
     "message": "Welcome to Blooft"
   },
