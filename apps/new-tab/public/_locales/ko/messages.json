@@ -560,12 +560,6 @@
   "wallpaper_blur": {
     "message": "배경 화면 흐림"
   },
-  "weather": {
-    "message": "날씨"
-  },
-  "weatherDisclaimer": {
-    "message": "<a href=\"$1\">Open-Meteo.com의 날씨 데이터</a>. 날씨 데이터는 정확성에 대한 어떠한 보증이나 보장 없이 '있는 그대로' 제공됩니다. 위치 데이터는 Open-Meteo에서 처리하며 해당 업체의 개인정보 처리방침을 따릅니다."
-  },
   "welcome_message": {
     "message": "Blooft에 오신 것을 환영합니다."
   },
