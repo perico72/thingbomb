@@ -560,12 +560,6 @@
   "wallpaper_blur": {
     "message": "Bakgrund oskärpa"
   },
-  "weather": {
-    "message": "Väder"
-  },
-  "weatherDisclaimer": {
-    "message": "<a href=\"$1\">Väderdata från Open-Meteo.com.</a> Väderdata tillhandahålls \"i befintligt skick\" utan någon garanti eller garanti för noggrannhet. Platsdata hanteras av Open-Meteo och omfattas av deras sekretesspolicy."
-  },
   "welcome_message": {
     "message": "Välkommen till Blooft"
   },
