@@ -560,12 +560,6 @@
   "wallpaper_blur": {
     "message": "Behang vervagen"
   },
-  "weather": {
-    "message": "Weer"
-  },
-  "weatherDisclaimer": {
-    "message": "<a href=\"$1\">Weergegevens door Open-Meteo.com</a>. Weergegevens worden 'as-is' aangeboden zonder garantie of nauwkeurigheid. Locatiegegevens worden verwerkt door Open-Meteo en vallen onder hun privacybeleid."
-  },
   "welcome_message": {
     "message": "Welkom bij Blooft"
   },
