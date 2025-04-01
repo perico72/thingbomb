@@ -608,12 +608,6 @@
   "wallpaper_blur": {
     "message": "Borrão do papel de parede"
   },
-  "weather": {
-    "message": "Tempo"
-  },
-  "weatherDisclaimer": {
-    "message": "<a href=\"$1\">Dados meteorológicos fornecidos por Open-Meteo.com</a>. Os dados meteorológicos são fornecidos \"tal como estão\", sem qualquer garantia de exatidão. Os dados de localização são geridos pela Open-Meteo e estão sujeitos à sua política de privacidade."
-  },
   "welcome_message": {
     "message": "Bem-vindo à Blooft"
   },
