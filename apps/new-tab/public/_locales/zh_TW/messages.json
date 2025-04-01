@@ -560,12 +560,6 @@
   "wallpaper_blur": {
     "message": "壁紙模糊"
   },
-  "weather": {
-    "message": "天氣"
-  },
-  "weatherDisclaimer": {
-    "message": "<a href=\"$1\">天氣資料由 Open-Meteo.com 提供</a>。天氣資料係依現狀提供，不保證其正確性。位置資料由 Open-Meteo 處理，並受其隱私權政策約束。"
-  },
   "welcome_message": {
     "message": "歡迎來到 Blooft"
   },
