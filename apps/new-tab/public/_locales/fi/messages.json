@@ -560,12 +560,6 @@
   "wallpaper_blur": {
     "message": "Taustakuvan sumeus"
   },
-  "weather": {
-    "message": "Sää"
-  },
-  "weatherDisclaimer": {
-    "message": "<a href=\"$1\">Open-Meteo.comin säätiedot</a>. Säätiedot toimitetaan sellaisena kuin ne ovat ilman mitään takuuta tai takuuta tarkkuudesta. Sijaintitietoja käsittelee Open-Meteo ja niihin sovelletaan heidän tietosuojakäytäntöään."
-  },
   "welcome_message": {
     "message": "Tervetuloa Blooft"
   },
