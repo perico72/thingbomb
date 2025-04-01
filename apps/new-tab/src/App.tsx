@@ -78,7 +78,6 @@ import {
 import { PopoverTriggerProps } from "@kobalte/core/popover";
 import soundscapes, { Soundscape } from "@/libs/soundscapes";
 import { actuallyBoolean } from "@/libs/boolean";
-import { useWeather } from "@/hooks/weather";
 import {
   Select,
   SelectContent,
@@ -377,13 +376,6 @@ const App: Component = () => {
     "itemsHidden",
     "false"
   );
-  const [formattedWeather, setFormattedWeather] = createSignal("--");
-  const [imperial] = createStoredSignal("imperial", false);
-  const [location] = createStoredSignal<Array<any>>("location", [null, null]);
-  const [weather] = useWeather(
-    safeParse(location(), location())[0],
-    safeParse(location(), location())[1]
-  );
   const [todosContained, setTodosContained] = createStoredSignal(
     "todosContained",
     true
@@ -404,7 +396,6 @@ const App: Component = () => {
   const [stopwatchTime, setStopwatchTime] = createSignal(0);
   const [stopwatchRunning, setStopwatchRunning] = createSignal(false);
   const [counter, setCounter] = createStoredSignal("counter", 0);
-  const [city] = createStoredSignal("locationCity", "");
 
   function formatTime(time: number) {
     const minutes = Math.floor(time / 60);
@@ -415,16 +406,6 @@ const App: Component = () => {
       .toString()
       .padStart(2, "0")}`;
   }
-
-  createEffect(() => {
-    if (weather) {
-      setFormattedWeather(
-        Number(weather()?.temperature)
-          ? `${imperial() ? Math.round((Number(weather()?.temperature) * 9) / 5 + 32) : Math.round(Number(weather()?.temperature))}°`
-          : "--"
-      );
-    }
-  });
 
   onMount(() => {
     if (chrome.bookmarks !== undefined) {
@@ -1284,17 +1265,6 @@ const App: Component = () => {
                       <Play class="h-5 w-5" fill="currentColor" />
                     )}
                   </button>
-                </div>
-              </Show>
-              <Show when={actuallyBoolean(weatherContained())}>
-                <div
-                  id="weather-widget"
-                  class="flex items-center gap-2 px-3 py-1 w-full select-none !text-white"
-                >
-                  <span>
-                    {city() != "" && `${city()} • `}
-                    {formattedWeather()}
-                  </span>
                 </div>
               </Show>
             </div>

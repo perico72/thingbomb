@@ -72,3 +72,8 @@ ol {
 img {
   @apply mt-4 rounded-md shadow-md;
 }
+
+body {
+  letter-spacing: 0.2px;
+  font-weight: 400;
+}
