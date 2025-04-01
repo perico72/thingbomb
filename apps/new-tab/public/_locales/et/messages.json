@@ -560,12 +560,6 @@
   "wallpaper_blur": {
     "message": "Taustapildi hägusus"
   },
-  "weather": {
-    "message": "Ilm"
-  },
-  "weatherDisclaimer": {
-    "message": "<a href=\"$1\">Open-Meteo.com ilmaandmed</a>. Ilmaandmed on esitatud ilma igasuguse garantiita või täpsuse tagamiseta. Asukohaandmeid haldab Open-Meteo ja nende privaatsuspoliitikale alluvad."
-  },
   "welcome_message": {
     "message": "Tere tulemast Blooft'ile"
   },
