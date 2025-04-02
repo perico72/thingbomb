@@ -406,7 +406,6 @@ const App: Component = () => {
       .toString()
       .padStart(2, "0")}`;
   }
-
   onMount(() => {
     if (chrome.bookmarks !== undefined) {
       chrome.bookmarks.getTree((bookmarkTreeNodes: BookmarkTreeNode[]) => {
@@ -965,7 +964,7 @@ const App: Component = () => {
       <div
         class={cn(
           "fixed inset-0 overflow-hidden p-4 !bg-cover",
-          imageLoaded() ? "" : "bg-white dark:bg-[#1f1f1f]"
+          imageLoaded() ? "" : "bg-[#1f1f1f]"
         )}
         id="background-container"
         style={{
