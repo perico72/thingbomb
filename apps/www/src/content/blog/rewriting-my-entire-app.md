@@ -82,7 +82,7 @@ While Solid is great for most use cases, there are definitely drawbacks compared
 
 ### Infrequent updates
 
-Unlike other frameworks, Solid lacks frequent updates and contributions. As of December 28, 2024, the last commit was a month ago. While this isn't necessarily bad, Solid might not improve as rapidly as a more mature framework.
+Unlike other frameworks, Solid lacks frequent updates and contributions. As of December 28, 2024, the last commit on `main` was over a month ago. While this isn't necessarily bad, Solid might not improve as rapidly as a more mature framework.
 
 ### Lack of a mature ecosystem
 
