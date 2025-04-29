@@ -1,18 +1,18 @@
 /*
   Copyright © 2023 shadcn Copyright © 2023 hngngn
 
-  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated 
+  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
   documentation files (the “Software”), to deal in the Software without restriction, including without limitation the
   rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to
   permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
   The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-  THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
-  INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR 
-  PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE 
-  LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR 
-  OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+  THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+  INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+  PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+  LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+  OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
   DEALINGS IN THE SOFTWARE.
 */
 
@@ -26,21 +26,23 @@ import type { ValidComponent } from "solid-js";
 import { splitProps } from "solid-js";
 
 export const buttonVariants = cva(
-  "inline-flex !select-none	items-center justify-center rounded-md text-sm font-medium transition-[color,background-color,box-shadow] focus-visible:outline-none focus-visible:ring-[1.5px] focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50",
+  "inline-flex !select-none	items-center justify-center rounded-md text-[13px] font-medium transition-[color,background-color,box-shadow] focus-visible:outline-none focus-visible:ring-[1.5px] focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {
-        default: "button",
+        default:
+          "rounded-md text-white bg-preference shadow-inner shadow-white/10 border-[0.5px] border-preference-hover hover:bg-preference-hover",
         destructive:
-          "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
-        outline: "button-outline",
+          "bg-red-900 text-destructive-foreground shadow-sm hover:bg-red-800/90",
+        outline:
+          "bg-zinc-100 text-black dark:text-white dark:bg-zinc-800 border-1 border-zinc-200 dark:border-zinc-700 shadow-inner shadow-white/5 hover:bg-zinc-200 dark:hover:bg-zinc-700",
         secondary:
           "bg-black text-secondary-foreground shadow-sm hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
+        ghost: "hover:bg-white/20 hover:backdrop-blur-lg flex gap-1.5",
         link: "text-primary underline-offset-4 hover:underline",
       },
       size: {
-        default: "h-9 px-4 py-2",
+        default: "h-8 px-3.5 py-0",
         sm: "h-8 rounded-md px-3 text-xs",
         lg: "h-10 rounded-md px-8",
         icon: "h-9 w-9",

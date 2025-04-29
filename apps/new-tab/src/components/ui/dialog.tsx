@@ -34,6 +34,7 @@ type dialogContentProps<T extends ValidComponent = "div"> = ParentProps<
   DialogContentProps<T> & {
     class?: string;
     overlayClass?: string;
+    hideCloseButton?: boolean;
   }
 >;
 
@@ -44,6 +45,7 @@ export const DialogContent = <T extends ValidComponent = "div">(
     "class",
     "children",
     "overlayClass",
+    "hideCloseButton",
   ]);
 
   return (
@@ -51,8 +53,7 @@ export const DialogContent = <T extends ValidComponent = "div">(
       <DialogPrimitive.Overlay
         class={cn(
           `data-[expanded]:animate-in data-[closed]:animate-out data-[closed]:fade-out-0
-          data-[expanded]:fade-in-0 fixed inset-0 z-50 bg-white/10 dark:bg-black/80
-          backdrop-blur-xl`,
+          data-[expanded]:fade-in-0 fixed inset-0 z-50 bg-transparent`,
           local.overlayClass
         )}
         {...rest}
@@ -61,35 +62,37 @@ export const DialogContent = <T extends ValidComponent = "div">(
         <DialogPrimitive.Content
           class={cn(
             `data-[closed]:transform-[scale(95%)] z-50 grid max-h-[60vh] h-full w-full
-            max-w-md overflow-y-auto rounded-xl bg-white dark:bg-[#18191B] border-[#C0C0B8]
-            dark:border-[#2E3235] border-1 p-6 backdrop-blur-2xl duration-300 ease-out
+            max-w-md overflow-y-auto rounded-xl bg-black/60 border-[#C0C0B8]
+            dark:border-[#565656] border-1 p-6 backdrop-blur-2xl duration-300 ease-out
             data-[closed]:opacity-0`,
             local.class
           )}
           {...rest}
         >
           {local.children}
-          <DialogPrimitive.CloseButton
-            class="ring-offset-background focus:ring-ring absolute right-4 top-4 rounded-sm
-              opacity-70 transition-[opacity,box-shadow] hover:opacity-100 focus:outline-none
-              focus:ring-[1.5px] focus:ring-offset-2 disabled:pointer-events-none mr-2"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              class="h-4 w-4"
+          {!local.hideCloseButton && (
+            <DialogPrimitive.CloseButton
+              class="ring-offset-background focus:ring-ring absolute right-4 top-4 rounded-sm
+                opacity-70 transition-[opacity,box-shadow] hover:opacity-100 focus:outline-none
+                focus:ring-[1.5px] focus:ring-offset-2 disabled:pointer-events-none mr-2"
             >
-              <path
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M18 6L6 18M6 6l12 12"
-              />
-              <title>{chrome.i18n.getMessage("close")}</title>
-            </svg>
-          </DialogPrimitive.CloseButton>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                class="h-4 w-4"
+              >
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M18 6L6 18M6 6l12 12"
+                />
+                <title>{chrome.i18n.getMessage("close")}</title>
+              </svg>
+            </DialogPrimitive.CloseButton>
+          )}
         </DialogPrimitive.Content>
       </div>
     </DialogPrimitive.Portal>

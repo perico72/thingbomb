@@ -144,9 +144,13 @@ export const TextField = <T extends ValidComponent = "input">(
   return (
     <TextFieldPrimitive.Input
       class={cn(
-        `bg-[#EDECEB] dark:bg-[#121314] text-[15px] placeholder-#787C84 rounded-[8px] h-9
-        border-1 border-[#C0C0B8] dark:border-zinc-700 ring-2 ring-transparent
-        focus:ring-black dark:focus:ring-white`,
+        `focus-visible:ring-ring inline-flex h-8 items-center justify-center rounded-md
+        border-1 border-zinc-200 bg-zinc-100 px-3.5 py-0 text-[13px] font-medium
+        shadow-inner shadow-white/5 transition-[color,background-color,box-shadow]
+        !select-none hover:bg-zinc-200 focus:bg-zinc-200 focus-visible:ring-[1.5px]
+        focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50
+        dark:border-zinc-700 dark:bg-zinc-800 dark:hover:bg-zinc-700
+        dark:focus:bg-zinc-700 dark:placeholder:text-zinc-400 text-black dark:text-white`,
         local.class
       )}
       {...rest}

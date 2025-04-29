@@ -55,7 +55,7 @@ export const SwitchControl = <T extends ValidComponent = "input">(
           `inline-flex h-5 w-9 shrink-0 cursor-pointer items-center rounded-full border-2
           border-transparent bg-gray-600/30 backdrop-blur-3xl shadow-sm
           transition-[color,background-color,box-shadow]
-          data-[disabled]:cursor-not-allowed data-[checked]:bg-primary
+          data-[disabled]:cursor-not-allowed data-[checked]:bg-preference
           data-[disabled]:opacity-50`,
           local.class
         )}
@@ -79,8 +79,8 @@ export const SwitchThumb = <T extends ValidComponent = "div">(
   return (
     <SwitchPrimitive.Thumb
       class={cn(
-        `pointer-events-none block h-4 w-4 translate-x-0 rounded-full bg-background
-        shadow-lg ring-0 transition-transform data-[checked]:translate-x-4`,
+        `pointer-events-none block h-4 w-4 translate-x-0 rounded-full bg-white shadow-lg
+        ring-0 transition-transform data-[checked]:translate-x-4`,
         local.class
       )}
       {...rest}

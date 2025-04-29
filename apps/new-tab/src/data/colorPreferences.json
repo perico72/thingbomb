@@ -1,0 +1,82 @@
+{
+  "red": {
+    "light": {
+      "normal": "var(--color-red-500)",
+      "hover": "var(--color-red-600)"
+    },
+    "dark": {
+      "normal": "var(--color-red-700)",
+      "hover": "var(--color-red-600)"
+    }
+  },
+  "orange": {
+    "light": {
+      "normal": "var(--color-orange-500)",
+      "hover": "var(--color-orange-600)"
+    },
+    "dark": {
+      "normal": "var(--color-orange-700)",
+      "hover": "var(--color-orange-600)"
+    }
+  },
+  "green": {
+    "light": {
+      "normal": "var(--color-green-500)",
+      "hover": "var(--color-green-600)"
+    },
+    "dark": {
+      "normal": "var(--color-green-700)",
+      "hover": "var(--color-green-600)"
+    }
+  },
+  "teal": {
+    "light": {
+      "normal": "var(--color-teal-500)",
+      "hover": "var(--color-teal-600)"
+    },
+    "dark": {
+      "normal": "var(--color-teal-700)",
+      "hover": "var(--color-teal-600)"
+    }
+  },
+  "cyan": {
+    "light": {
+      "normal": "var(--color-cyan-500)",
+      "hover": "var(--color-cyan-600)"
+    },
+    "dark": {
+      "normal": "var(--color-cyan-700)",
+      "hover": "var(--color-cyan-600)"
+    }
+  },
+  "indigo": {
+    "light": {
+      "normal": "var(--color-indigo-500)",
+      "hover": "var(--color-indigo-600)"
+    },
+    "dark": {
+      "normal": "var(--color-indigo-700)",
+      "hover": "var(--color-indigo-600)"
+    }
+  },
+  "purple": {
+    "light": {
+      "normal": "var(--color-purple-500)",
+      "hover": "var(--color-purple-600)"
+    },
+    "dark": {
+      "normal": "var(--color-purple-700)",
+      "hover": "var(--color-purple-600)"
+    }
+  },
+  "pink": {
+    "light": {
+      "normal": "var(--color-pink-500)",
+      "hover": "var(--color-pink-600)"
+    },
+    "dark": {
+      "normal": "var(--color-pink-700)",
+      "hover": "var(--color-pink-600)"
+    }
+  }
+}

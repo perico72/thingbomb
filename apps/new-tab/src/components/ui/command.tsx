@@ -37,7 +37,8 @@ export const Command = (props: CommandRootProps) => {
   return (
     <CommandPrimitive
       class={cn(
-        "text-popover-foreground flex size-full flex-col overflow-hidden bg-white/5",
+        `text-popover-foreground flex size-full flex-col overflow-hidden bg-black/60
+        shadow-inner shadow-white/10 rounded-lg`,
         local.class
       )}
       {...rest}
@@ -131,7 +132,7 @@ export const CommandDialog = (props: CommandDialogProps) => {
 
   return (
     <Dialog {...rest}>
-      <DialogContent class="overflow-hidden p-0 max-h-[40vh] h-fit">
+      <DialogContent class="overflow-hidden p-0 max-h-[40vh] h-fit !border-none">
         <Command
           class="[&_[cmdk-group-heading]]:text-muted-foreground [&_[cmdk-group-heading]]:px-2
             [&_[cmdk-group-heading]]:font-medium

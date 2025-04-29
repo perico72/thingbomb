@@ -1,33 +1,18 @@
-/*
-    Blooft
-    Copyright (C) 2024-present George Stone
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see {http://www.gnu.org/licenses/}.
-
-    https://github.com/blooft-app/blooft
-*/
-
 import { createSignal, onCleanup, Signal } from "solid-js";
 
 const subscribers: Record<string, Array<(value: any) => void>> = {};
 
 function safeParse<T>(data: any, fallback: T): T {
   try {
-    return (data && typeof data === "string" && data.startsWith("{")) ||
-      data.startsWith("[")
-      ? JSON.parse(data)
-      : (data ?? fallback);
+    if (typeof data === "string") {
+      if (data === "true") return true as T;
+      if (data === "false") return false as T;
+      if (data === "null") return null as T;
+      if (data.startsWith("{") || data.startsWith("[")) {
+        return JSON.parse(data);
+      }
+    }
+    return data ?? fallback;
   } catch {
     return fallback;
   }
@@ -39,12 +24,13 @@ function createStoredSignal<T>(key: string, defaultValue: T): Signal<T> {
 
   const getFromStorage = (): T | null => {
     let storedValue = localStorage.getItem(key);
-    if (storedValue !== null) {
-      return safeParse(storedValue, defaultValue);
+    if (storedValue !== "null") {
+      const parsed = safeParse(storedValue, defaultValue);
+      return parsed;
     }
 
     if (useChromeStorage !== undefined) {
-      chrome.storage.local.get(key, (result) => {
+      chrome.storage.local.get(key, (result: any) => {
         storedValue = result[key];
         if (storedValue !== undefined) {
           const stringifiedValue: string =
@@ -67,9 +53,9 @@ function createStoredSignal<T>(key: string, defaultValue: T): Signal<T> {
 
   const setToStorage = (newValue: T) => {
     const stringifiedValue: string =
-      typeof newValue == "object"
+      typeof newValue === "object" && newValue !== null
         ? JSON.stringify(newValue)
-        : (newValue as string);
+        : String(newValue);
     localStorage.setItem(key, stringifiedValue);
 
     if (useChromeStorage) {

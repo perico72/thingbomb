@@ -130,7 +130,7 @@ function TodoPopover() {
           <span class="text-sm font-semibold">
             {chrome.i18n.getMessage("tasks")}
           </span>
-          <div class="scrollbar-track-transparent max-h-16 overflow-auto">
+          <div class="max-h-16 overflow-auto">
             {tasks()
               .filter((task: Task) => !task.completed)
               .map((task: Task) => (
@@ -195,7 +195,7 @@ function TodoPopover() {
           </div>
         </div>
         <div class="pl-1">
-          <TextFieldRoot class="flex-1">
+          <TextFieldRoot class="flex-1 w-full">
             <TextField
               placeholder={chrome.i18n.getMessage("new_task")}
               value={taskInputValue()}
@@ -208,7 +208,7 @@ function TodoPopover() {
                 }
               }}
               class="text-xs outline-black dark:outline-white placeholder:text-black
-                dark:placeholder:text-white"
+                dark:placeholder:text-white w-full"
             />
           </TextFieldRoot>
         </div>

@@ -86,6 +86,14 @@ export function CommandPalette(props: any) {
   });
 
   createEffect(() => {
+    if (open()) {
+      document.body.classList.add("dialogOpen");
+    } else {
+      document.body.classList.remove("dialogOpen");
+    }
+  });
+
+  createEffect(() => {
     const fetchBookmarks = () => {
       if (!chrome.bookmarks) return;
       chrome.bookmarks.getTree((bookmarks: BookmarkTreeNode[]) => {
@@ -333,11 +341,6 @@ export function CommandPalette(props: any) {
           </CommandItem>
           <CommandItem onSelect={() => settingsHandler("todos")}>
             <span class="text-primary">{chrome.i18n.getMessage("tasks")}</span>
-          </CommandItem>
-          <CommandItem onSelect={() => settingsHandler("weather")}>
-            <span class="text-primary">
-              {chrome.i18n.getMessage("weather")}
-            </span>
           </CommandItem>
           <CommandItem
             onSelect={() => {
