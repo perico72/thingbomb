@@ -73,7 +73,7 @@ export const FontSelector: Component = () => {
           </SelectItem>
         )}
       >
-        <SelectTrigger class="w-[180px] bg-[#DFDEDC] dark:bg-[#111113]">
+        <SelectTrigger class="w-[180px]">
           <SelectValue<string>>
             {(state: any) =>
               chrome.i18n.getMessage(

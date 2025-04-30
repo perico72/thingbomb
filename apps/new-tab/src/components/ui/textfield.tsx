@@ -1,18 +1,18 @@
 /*
   Copyright © 2023 shadcn Copyright © 2023 hngngn
 
-  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated 
+  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
   documentation files (the “Software”), to deal in the Software without restriction, including without limitation the
   rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to
   permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
   The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-  THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
-  INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR 
-  PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE 
-  LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR 
-  OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+  THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+  INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+  PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+  LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+  OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
   DEALINGS IN THE SOFTWARE.
 */
 
@@ -144,13 +144,12 @@ export const TextField = <T extends ValidComponent = "input">(
   return (
     <TextFieldPrimitive.Input
       class={cn(
-        `focus-visible:ring-ring inline-flex h-8 items-center justify-center rounded-md
-        border-1 border-zinc-200 bg-zinc-100 px-3.5 py-0 text-[13px] font-medium
-        shadow-inner shadow-white/5 transition-[color,background-color,box-shadow]
-        !select-none hover:bg-zinc-200 focus:bg-zinc-200 focus-visible:ring-[1.5px]
-        focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50
-        dark:border-zinc-700 dark:bg-zinc-800 dark:hover:bg-zinc-700
-        dark:focus:bg-zinc-700 dark:placeholder:text-zinc-400 text-black dark:text-white`,
+        `focus-visible:ring-ring relative isolate inline-flex h-8 items-center
+        justify-center rounded-lg border border-black/10 dark:border-white/10
+        bg-zinc-100 px-3.5 py-0 text-[13px] font-normal
+        transition-[color,background-color,box-shadow] duration-100 !select-none
+        hover:bg-zinc-200 focus:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700/50
+        dark:focus:bg-zinc-700/50 dark:placeholder-neutral-400`,
         local.class
       )}
       {...rest}

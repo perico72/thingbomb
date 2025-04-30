@@ -1,18 +1,18 @@
 /*
   Copyright © 2023 shadcn Copyright © 2023 hngngn
 
-  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated 
+  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
   documentation files (the “Software”), to deal in the Software without restriction, including without limitation the
   rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to
   permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
   The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-  THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
-  INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR 
-  PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE 
-  LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR 
-  OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+  THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+  INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+  PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+  LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+  OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
   DEALINGS IN THE SOFTWARE.
 */
 
@@ -50,11 +50,13 @@ export const SelectTrigger = <T extends ValidComponent = "button">(
   return (
     <SelectPrimitive.Trigger
       class={cn(
-        `flex h-9 w-full items-center justify-between rounded-md border border-input
-        bg-transparent px-3 py-2 text-sm shadow-sm ring-offset-background
-        transition-shadow placeholder:text-muted-foreground focus:outline-none
-        focus-visible:ring-[1.5px] focus-visible:ring-ring disabled:cursor-not-allowed
-        disabled:opacity-50`,
+        `flex h-9 w-full items-center justify-between rounded-md border border-black/10
+        dark:border-white/10 dark:bg-zinc-800 dark:hover:bg-zinc-700/50 place/10
+        bg-zinc-100 px-3 py-2 text-sm ring-offset-background
+        placeholder:text-muted-foreground focus:outline-none focus-visible:ring-[1.5px]
+        focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50
+        hover:bg-zinc-200 dark:focus:bg-zinc-700/50 focus:bg-zinc-200
+        transition-[color,background-color,box-shadow]`,
         local.class
       )}
       {...rest}
@@ -95,10 +97,10 @@ export const SelectContent = <T extends ValidComponent = "div">(
     <SelectPrimitive.Portal>
       <SelectPrimitive.Content
         class={cn(
-          `relative z-50 min-w-[8rem] overflow-hidden rounded-md border bg-popover
-          text-popover-foreground shadow-md data-[expanded]:animate-in
-          data-[closed]:animate-out data-[closed]:fade-out-0 data-[expanded]:fade-in-0
-          data-[closed]:zoom-out-95 data-[expanded]:zoom-in-95`,
+          `relative z-50 min-w-[8rem] overflow-hidden rounded-md border border-black/10
+          dark:border-white/10 !bg-zinc-800 text-popover-foreground shadow-md
+          data-[expanded]:animate-in data-[closed]:animate-out data-[closed]:fade-out-0
+          data-[expanded]:fade-in-0 data-[closed]:zoom-out-95 data-[expanded]:zoom-in-95`,
           local.class
         )}
         {...rest}
@@ -125,8 +127,9 @@ export const SelectItem = <T extends ValidComponent = "li">(
     <SelectPrimitive.Item
       class={cn(
         `relative flex w-full cursor-default select-none items-center rounded-sm py-1.5
-        pl-2 pr-8 text-sm outline-none focus:bg-accent focus:text-accent-foreground
-        data-[disabled]:pointer-events-none data-[disabled]:opacity-50`,
+        pl-2 pr-8 text-sm outline-none hover:!bg-zinc-700/50
+        focus:text-accent-foreground data-[disabled]:pointer-events-none
+        data-[disabled]:opacity-50`,
         local.class
       )}
       {...rest}

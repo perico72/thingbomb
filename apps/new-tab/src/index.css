@@ -61,8 +61,8 @@
     "Inter Variable", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Noto Sans, Ubuntu, sans-serif;
   --container-2xl: 1400px;
-  --container-p
   --font-comic-sans: "Comic Sans MS, Comic Sans, cursive";
+  --shadow-raised: inset 0 0.5px --theme(--color-white/30%);
   --color-background: 0 0% 100%;
   --color-foreground: 240 10% 3.9%;
 

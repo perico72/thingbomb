@@ -81,7 +81,7 @@ export const OnboardingScreen2: Component = () => {
       </p>
       <br />
 
-      <div class="flex gap-2 flex-wrap">
+      <div class="flex gap-2 flex-wrap rounded-2xl w-fit bg-white/5 border border-white/10 p-2">
         {colors.map((color) => {
           const colorValue = isDarkTheme()
             ? typedColorData[color].dark.normal
@@ -95,8 +95,8 @@ export const OnboardingScreen2: Component = () => {
             >
               <div
                 class={cn(
-                  `w-8 h-8 border-2 border-black/20 dark:border-white/20 rounded-full shadow-md
-                  transition-all`,
+                  `w-8 h-8 border-2 border-black/20 dark:border-white/20
+                  rounded-[calc(var(--radius-2xl)-0.5rem)] transhadow-md transition-all`,
                   {
                     "border-black dark:border-white": accentColor() === color,
                   }

@@ -26,16 +26,16 @@ import type { ValidComponent } from "solid-js";
 import { splitProps } from "solid-js";
 
 export const buttonVariants = cva(
-  "inline-flex !select-none	items-center justify-center rounded-md text-[13px] font-medium transition-[color,background-color,box-shadow] focus-visible:outline-none focus-visible:ring-[1.5px] focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50",
+  "relative isolate inline-flex !select-none items-center justify-center rounded-[10px] text-[13px] font-medium transition-[color,background-color,box-shadow] focus-visible:outline-none focus-visible:ring-[1.5px] focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {
         default:
-          "rounded-md text-white bg-preference shadow-inner shadow-white/10 border-[0.5px] border-preference-hover hover:bg-preference-hover",
+          "text-white bg-preference shadow-inner shadow-white/10 dark:border border-white/5 hover:bg-preference-hover after:absolute after:inset-0 dark:after:-inset-px after:rounded-[10px] after:shadow-raised",
         destructive:
           "bg-red-900 text-destructive-foreground shadow-sm hover:bg-red-800/90",
         outline:
-          "bg-zinc-100 text-black dark:text-white dark:bg-zinc-800 border-1 border-zinc-200 dark:border-zinc-700 shadow-inner shadow-white/5 hover:bg-zinc-200 dark:hover:bg-zinc-700",
+          "text-foreground bg-transparent hover:bg-zinc-300 border border-zinc-300 dark:border-zinc-700 dark:hover:bg-zinc-800",
         secondary:
           "bg-black text-secondary-foreground shadow-sm hover:bg-secondary/80",
         ghost: "hover:bg-white/20 hover:backdrop-blur-lg flex gap-1.5",

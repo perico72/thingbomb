@@ -55,7 +55,7 @@ export const ClockFormatSelector: Component = () => {
           <SelectItem item={props.item}>{props.item.rawValue}</SelectItem>
         )}
       >
-        <SelectTrigger class="w-[180px] bg-[#DFDEDC] dark:bg-[#111113]">
+        <SelectTrigger class="w-[180px]">
           <SelectValue<string>>
             {(state: any) => state.selectedOption()}
           </SelectValue>
