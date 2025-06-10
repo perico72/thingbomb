@@ -37,11 +37,7 @@ export const OnboardingScreen4: Component = () => {
         {chrome.i18n.getMessage("community_desc")}
       </p>
       <br />
-      <a
-        href="https://discord.gg/hhPuurkvua"
-        target="_blank"
-        class="text-white"
-      >
+      <a href="https://discord.gg/hhPuurkvua" target="_blank">
         <Button
           variant={"outline"}
           class="px-2.5"
