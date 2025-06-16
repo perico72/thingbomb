@@ -71,6 +71,12 @@
   "center": {
     "message": "Midden"
   },
+  "choose_color": {
+    "message": "Kies je lievelingskleur"
+  },
+  "choose_color_desc": {
+    "message": "Kies je favoriete accentkleur"
+  },
   "choose_file": {
     "message": "Kies bestand"
   },
@@ -79,6 +85,9 @@
   },
   "clear_data": {
     "message": "Gegevens wissen"
+  },
+  "clear_data_confirmation": {
+    "message": "Weet je zeker dat je alle gegevens wilt wissen? Dit kan niet ongedaan worden gemaakt."
   },
   "clear_data_description": {
     "message": "Alle gegevens van de extensie wissen. DIT KAN NIET ONGEDAAN WORDEN GEMAAKT."
@@ -111,7 +120,7 @@
     "message": "Gekopieerd naar klembord"
   },
   "counter": {
-    "message": "Tegen"
+    "message": "Teller"
   },
   "counter_description": {
     "message": "Tel dingen gemakkelijk."
@@ -180,7 +189,7 @@
     "message": "Elke week"
   },
   "feature_request": {
-    "message": "Functieverzoek"
+    "message": "Functionaliteitsverzoek"
   },
   "feedback_callout": {
     "message": "We hebben jullie feedback nodig!"
@@ -195,7 +204,10 @@
     "message": "Bestand te groot (maximale grootte is ~2,5 MB)"
   },
   "finish": {
-    "message": "Afwerking"
+    "message": "Afronden"
+  },
+  "first": {
+    "message": "Begin bij het begin."
   },
   "focus": {
     "message": "Focus"
@@ -237,7 +249,7 @@
     "message": "Goedenacht"
   },
   "gradient": {
-    "message": "Verloop"
+    "message": "Kleurverloop"
   },
   "greeting": {
     "message": "Groet"
@@ -255,7 +267,7 @@
     "message": "Verberg instellingen knop"
   },
   "hide_settings_description": {
-    "message": "Verberg de instellingenknop behalve als je erboven hangt"
+    "message": "Verberg de instellingenknop behalve als je je muis eroverheen beweegt"
   },
   "icon": {
     "message": "Pictogram"
@@ -264,7 +276,7 @@
     "message": "Afbeelding"
   },
   "imperial": {
-    "message": "Keizerlijk"
+    "message": "Imperiaal"
   },
   "invalid_file_type": {
     "message": "Ongeldig bestandstype. Upload een afbeeldingsbestand."
@@ -273,7 +285,7 @@
     "message": "Word lid van de gemeenschap"
   },
   "latitude": {
-    "message": "Breedte"
+    "message": "Breedtegraad"
   },
   "layout": {
     "message": "Lay-out"
@@ -294,7 +306,7 @@
     "message": "Locatie"
   },
   "longitude": {
-    "message": "Lengte"
+    "message": "Lengtegraad"
   },
   "lowercase": {
     "message": "Kleine letters"
@@ -413,6 +425,9 @@
   "page": {
     "message": "Paginatitel en -pictogram"
   },
+  "page_icon": {
+    "message": "Pagina-pictogram"
+  },
   "page_title": {
     "message": "Pagina titel"
   },
@@ -437,6 +452,9 @@
   "pomodoro_timer": {
     "message": "Pomodoro timer"
   },
+  "privacy_policy": {
+    "message": "Privacybeleid"
+  },
   "reset": {
     "message": "Reset"
   },
@@ -447,7 +465,7 @@
     "message": "Sans"
   },
   "save": {
-    "message": "Sla"
+    "message": "Opslaan"
   },
   "saved": {
     "message": "Opgeslagen"
@@ -477,16 +495,19 @@
     "message": "Artikelen weergeven"
   },
   "skip": {
-    "message": "Skip"
+    "message": "Overslaan"
   },
   "solid_color": {
     "message": "Effen kleur"
   },
   "sound_attribution": {
-    "message": "Toewijzing van geluid"
+    "message": "Toeschrijving van geluid"
   },
   "soundscapes": {
     "message": "Soundscapes"
+  },
+  "soundscapes_desc": {
+    "message": "Soundscapes van Noisefill.com. Pin je favoriete categorieën vast."
   },
   "speed_dial": {
     "message": "Snelkiezen"
@@ -504,7 +525,7 @@
     "message": "Achtergrondwijzigingen starten"
   },
   "start_using": {
-    "message": "Blooft gebruiken"
+    "message": "Beginnen met Blooft gebruiken"
   },
   "stop": {
     "message": "Stop"
@@ -558,7 +579,7 @@
     "message": "View sound credits"
   },
   "wallpaper_blur": {
-    "message": "Behang vervagen"
+    "message": "Achtergrond vervagen"
   },
   "welcome_message": {
     "message": "Welkom bij Blooft"
