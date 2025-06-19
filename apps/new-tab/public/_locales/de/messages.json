@@ -71,6 +71,12 @@
   "center": {
     "message": "Zentrum"
   },
+  "choose_color": {
+    "message": "Choose your favorite color"
+  },
+  "choose_color_desc": {
+    "message": "Select your favorite accent color."
+  },
   "choose_file": {
     "message": "Datei auswählen"
   },
@@ -79,6 +85,9 @@
   },
   "clear_data": {
     "message": "Daten löschen"
+  },
+  "clear_data_confirmation": {
+    "message": "Are you sure you want to clear all data? This cannot be undone."
   },
   "clear_data_description": {
     "message": "Löscht alle Daten aus der Nebenstelle. DIES KANN NICHT RÜCKGÄNGIG GEMACHT WERDEN."
@@ -97,6 +106,9 @@
   },
   "comic_sans": {
     "message": "Comic Sans"
+  },
+  "command_palette": {
+    "message": "Command palette"
   },
   "community_desc": {
     "message": "Treten Sie der Blooft-Community auf Discord bei, um Ihre Arbeit zu präsentieren, Fragen zu stellen, neue Funktionen zu testen und mit der Community zu chatten."
@@ -196,6 +208,9 @@
   },
   "finish": {
     "message": "Oberfläche"
+  },
+  "first": {
+    "message": "First things first."
   },
   "focus": {
     "message": "Schwerpunkt"
@@ -413,6 +428,9 @@
   "page": {
     "message": "Seitentitel und Symbol"
   },
+  "page_icon": {
+    "message": "Page icon"
+  },
   "page_title": {
     "message": "Titel der Seite"
   },
@@ -436,6 +454,9 @@
   },
   "pomodoro_timer": {
     "message": "Pomodoro-Timer"
+  },
+  "privacy_policy": {
+    "message": "Privacy Policy"
   },
   "reset": {
     "message": "Zurücksetzen"
@@ -487,6 +508,9 @@
   },
   "soundscapes": {
     "message": "Klangwelten"
+  },
+  "soundscapes_desc": {
+    "message": "Soundscapes from Noisefill.com. Pin your favorite categories."
   },
   "speed_dial": {
     "message": "Kurzwahl"

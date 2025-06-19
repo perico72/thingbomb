@@ -71,6 +71,12 @@
   "center": {
     "message": "Keskus"
   },
+  "choose_color": {
+    "message": "Choose your favorite color"
+  },
+  "choose_color_desc": {
+    "message": "Select your favorite accent color."
+  },
   "choose_file": {
     "message": "Vali fail"
   },
@@ -79,6 +85,9 @@
   },
   "clear_data": {
     "message": "Selged andmed"
+  },
+  "clear_data_confirmation": {
+    "message": "Are you sure you want to clear all data? This cannot be undone."
   },
   "clear_data_description": {
     "message": "Tühjendage kõik andmed laiendusest. SEDA EI SAA TÜHISTADA."
@@ -97,6 +106,9 @@
   },
   "comic_sans": {
     "message": "Comic Sans"
+  },
+  "command_palette": {
+    "message": "Command palette"
   },
   "community_desc": {
     "message": "Liitu Bloofti kogukonnaga Discordis, et tutvustada oma tööd, esitada küsimusi, testida uusi funktsioone ja vestelda kogukonnaga."
@@ -196,6 +208,9 @@
   },
   "finish": {
     "message": "Lõpeta"
+  },
+  "first": {
+    "message": "First things first."
   },
   "focus": {
     "message": "Fookus"
@@ -413,6 +428,9 @@
   "page": {
     "message": "Lehe pealkiri ja ikoon"
   },
+  "page_icon": {
+    "message": "Page icon"
+  },
   "page_title": {
     "message": "Lehekülje pealkiri"
   },
@@ -436,6 +454,9 @@
   },
   "pomodoro_timer": {
     "message": "Pomodoro taimer"
+  },
+  "privacy_policy": {
+    "message": "Privacy Policy"
   },
   "reset": {
     "message": "Reset"
@@ -487,6 +508,9 @@
   },
   "soundscapes": {
     "message": "Soundscapes"
+  },
+  "soundscapes_desc": {
+    "message": "Soundscapes from Noisefill.com. Pin your favorite categories."
   },
   "speed_dial": {
     "message": "Kiirvalimine"

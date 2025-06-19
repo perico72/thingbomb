@@ -71,6 +71,12 @@
   "center": {
     "message": "Центр"
   },
+  "choose_color": {
+    "message": "Choose your favorite color"
+  },
+  "choose_color_desc": {
+    "message": "Select your favorite accent color."
+  },
   "choose_file": {
     "message": "Виберіть файл"
   },
@@ -79,6 +85,9 @@
   },
   "clear_data": {
     "message": "Чіткі дані"
+  },
+  "clear_data_confirmation": {
+    "message": "Are you sure you want to clear all data? This cannot be undone."
   },
   "clear_data_description": {
     "message": "Очистити всі дані з розширення. ЦЕ НЕ МОЖНА СКАСУВАТИ."
@@ -97,6 +106,9 @@
   },
   "comic_sans": {
     "message": "Comic Sans"
+  },
+  "command_palette": {
+    "message": "Command palette"
   },
   "community_desc": {
     "message": "Приєднуйтесь до спільноти Blooft на Discord, щоб продемонструвати свої роботи, поставити запитання, протестувати нові функції та поспілкуватися зі спільнотою."
@@ -196,6 +208,9 @@
   },
   "finish": {
     "message": "Фініш."
+  },
+  "first": {
+    "message": "First things first."
   },
   "focus": {
     "message": "Фокус"
@@ -413,6 +428,9 @@
   "page": {
     "message": "Назва сторінки та іконка"
   },
+  "page_icon": {
+    "message": "Page icon"
+  },
   "page_title": {
     "message": "Назва сторінки"
   },
@@ -436,6 +454,9 @@
   },
   "pomodoro_timer": {
     "message": "Таймер Pomodoro"
+  },
+  "privacy_policy": {
+    "message": "Privacy Policy"
   },
   "reset": {
     "message": "Перезавантаження"
@@ -487,6 +508,9 @@
   },
   "soundscapes": {
     "message": "Звукові пейзажі"
+  },
+  "soundscapes_desc": {
+    "message": "Soundscapes from Noisefill.com. Pin your favorite categories."
   },
   "speed_dial": {
     "message": "Швидкий набір"

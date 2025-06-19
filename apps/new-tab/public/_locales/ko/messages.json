@@ -71,6 +71,12 @@
   "center": {
     "message": "센터"
   },
+  "choose_color": {
+    "message": "Choose your favorite color"
+  },
+  "choose_color_desc": {
+    "message": "Select your favorite accent color."
+  },
   "choose_file": {
     "message": "파일 선택"
   },
@@ -79,6 +85,9 @@
   },
   "clear_data": {
     "message": "데이터 지우기"
+  },
+  "clear_data_confirmation": {
+    "message": "Are you sure you want to clear all data? This cannot be undone."
   },
   "clear_data_description": {
     "message": "확장 프로그램에서 모든 데이터를 지웁니다. 이 작업은 되돌릴 수 없습니다."
@@ -97,6 +106,9 @@
   },
   "comic_sans": {
     "message": "코믹 산스"
+  },
+  "command_palette": {
+    "message": "Command palette"
   },
   "community_desc": {
     "message": "디스코드에서 블룸프트 커뮤니티에 가입하여 작품을 선보이고, 질문하고, 새로운 기능을 테스트하고, 커뮤니티와 채팅하세요."
@@ -196,6 +208,9 @@
   },
   "finish": {
     "message": "완료"
+  },
+  "first": {
+    "message": "First things first."
   },
   "focus": {
     "message": "초점"
@@ -413,6 +428,9 @@
   "page": {
     "message": "페이지 제목 및 아이콘"
   },
+  "page_icon": {
+    "message": "Page icon"
+  },
   "page_title": {
     "message": "페이지 제목"
   },
@@ -436,6 +454,9 @@
   },
   "pomodoro_timer": {
     "message": "포모도로 타이머"
+  },
+  "privacy_policy": {
+    "message": "Privacy Policy"
   },
   "reset": {
     "message": "초기화"
@@ -487,6 +508,9 @@
   },
   "soundscapes": {
     "message": "사운드스케이프"
+  },
+  "soundscapes_desc": {
+    "message": "Soundscapes from Noisefill.com. Pin your favorite categories."
   },
   "speed_dial": {
     "message": "단축 다이얼"

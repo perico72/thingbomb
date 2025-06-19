@@ -71,6 +71,12 @@
   "center": {
     "message": "Центр"
   },
+  "choose_color": {
+    "message": "Choose your favorite color"
+  },
+  "choose_color_desc": {
+    "message": "Select your favorite accent color."
+  },
   "choose_file": {
     "message": "Выберите файл"
   },
@@ -79,6 +85,9 @@
   },
   "clear_data": {
     "message": "Очистить данные"
+  },
+  "clear_data_confirmation": {
+    "message": "Are you sure you want to clear all data? This cannot be undone."
   },
   "clear_data_description": {
     "message": "Очистите все данные из расширения. ЭТО НЕЛЬЗЯ ОТМЕНИТЬ."
@@ -97,6 +106,9 @@
   },
   "comic_sans": {
     "message": "Комикс Санс"
+  },
+  "command_palette": {
+    "message": "Command palette"
   },
   "community_desc": {
     "message": "Присоединяйтесь к сообществу Blooft в Discord, чтобы демонстрировать свои работы, задавать вопросы, тестировать новые функции и общаться с сообществом."
@@ -196,6 +208,9 @@
   },
   "finish": {
     "message": "Отделка"
+  },
+  "first": {
+    "message": "First things first."
   },
   "focus": {
     "message": "Фокус"
@@ -413,6 +428,9 @@
   "page": {
     "message": "Заголовок и значок страницы"
   },
+  "page_icon": {
+    "message": "Page icon"
+  },
   "page_title": {
     "message": "Название страницы"
   },
@@ -436,6 +454,9 @@
   },
   "pomodoro_timer": {
     "message": "Таймер Pomodoro"
+  },
+  "privacy_policy": {
+    "message": "Privacy Policy"
   },
   "reset": {
     "message": "Сброс"
@@ -487,6 +508,9 @@
   },
   "soundscapes": {
     "message": "Саундскейпы"
+  },
+  "soundscapes_desc": {
+    "message": "Soundscapes from Noisefill.com. Pin your favorite categories."
   },
   "speed_dial": {
     "message": "Быстрый набор"

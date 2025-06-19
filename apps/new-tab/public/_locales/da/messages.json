@@ -71,6 +71,12 @@
   "center": {
     "message": "Center"
   },
+  "choose_color": {
+    "message": "Choose your favorite color"
+  },
+  "choose_color_desc": {
+    "message": "Select your favorite accent color."
+  },
   "choose_file": {
     "message": "Vælg fil"
   },
@@ -79,6 +85,9 @@
   },
   "clear_data": {
     "message": "Ryd data"
+  },
+  "clear_data_confirmation": {
+    "message": "Are you sure you want to clear all data? This cannot be undone."
   },
   "clear_data_description": {
     "message": "Slet alle data fra udvidelsen. DETTE KAN IKKE FORTRYDES."
@@ -97,6 +106,9 @@
   },
   "comic_sans": {
     "message": "Comic Sans"
+  },
+  "command_palette": {
+    "message": "Command palette"
   },
   "community_desc": {
     "message": "Deltag i Blooft-fællesskabet på Discord for at fremvise dit arbejde, stille spørgsmål, teste nye funktioner og chatte med fællesskabet."
@@ -196,6 +208,9 @@
   },
   "finish": {
     "message": "Færdiggør"
+  },
+  "first": {
+    "message": "First things first."
   },
   "focus": {
     "message": "Fokus"
@@ -413,6 +428,9 @@
   "page": {
     "message": "Sidetitel og ikon"
   },
+  "page_icon": {
+    "message": "Page icon"
+  },
   "page_title": {
     "message": "Sidens titel"
   },
@@ -436,6 +454,9 @@
   },
   "pomodoro_timer": {
     "message": "Pomodoro-timer"
+  },
+  "privacy_policy": {
+    "message": "Privacy Policy"
   },
   "reset": {
     "message": "Nulstil"
@@ -487,6 +508,9 @@
   },
   "soundscapes": {
     "message": "Lydlandskaber"
+  },
+  "soundscapes_desc": {
+    "message": "Soundscapes from Noisefill.com. Pin your favorite categories."
   },
   "speed_dial": {
     "message": "Hurtigopkald"

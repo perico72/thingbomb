@@ -71,6 +71,12 @@
   "center": {
     "message": "中心"
   },
+  "choose_color": {
+    "message": "Choose your favorite color"
+  },
+  "choose_color_desc": {
+    "message": "Select your favorite accent color."
+  },
   "choose_file": {
     "message": "選擇檔案"
   },
@@ -79,6 +85,9 @@
   },
   "clear_data": {
     "message": "清除資料"
+  },
+  "clear_data_confirmation": {
+    "message": "Are you sure you want to clear all data? This cannot be undone."
   },
   "clear_data_description": {
     "message": "清除擴展區中的所有資料。無法撤銷。"
@@ -97,6 +106,9 @@
   },
   "comic_sans": {
     "message": "Comic Sans"
+  },
+  "command_palette": {
+    "message": "Command palette"
   },
   "community_desc": {
     "message": "加入 Discord 上的 Blooft 社群，展示您的作品、提出問題、測試新功能，並與社群聊天。"
@@ -196,6 +208,9 @@
   },
   "finish": {
     "message": "完成"
+  },
+  "first": {
+    "message": "First things first."
   },
   "focus": {
     "message": "焦點"
@@ -413,6 +428,9 @@
   "page": {
     "message": "頁面標題和圖示"
   },
+  "page_icon": {
+    "message": "Page icon"
+  },
   "page_title": {
     "message": "頁面標題"
   },
@@ -436,6 +454,9 @@
   },
   "pomodoro_timer": {
     "message": "Pomodoro 計時器"
+  },
+  "privacy_policy": {
+    "message": "Privacy Policy"
   },
   "reset": {
     "message": "重設"
@@ -487,6 +508,9 @@
   },
   "soundscapes": {
     "message": "音效"
+  },
+  "soundscapes_desc": {
+    "message": "Soundscapes from Noisefill.com. Pin your favorite categories."
   },
   "speed_dial": {
     "message": "快速撥號"

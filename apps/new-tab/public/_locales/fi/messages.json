@@ -71,6 +71,12 @@
   "center": {
     "message": "Keskusta"
   },
+  "choose_color": {
+    "message": "Choose your favorite color"
+  },
+  "choose_color_desc": {
+    "message": "Select your favorite accent color."
+  },
   "choose_file": {
     "message": "Valitse tiedosto"
   },
@@ -79,6 +85,9 @@
   },
   "clear_data": {
     "message": "Tyhjennä tiedot"
+  },
+  "clear_data_confirmation": {
+    "message": "Are you sure you want to clear all data? This cannot be undone."
   },
   "clear_data_description": {
     "message": "Tyhjennä kaikki tiedot laajennuksesta. TÄTÄ EI VOI PERUA."
@@ -97,6 +106,9 @@
   },
   "comic_sans": {
     "message": "Comic Sans"
+  },
+  "command_palette": {
+    "message": "Command palette"
   },
   "community_desc": {
     "message": "Liity Blooft-yhteisöön Discordissa esitelläksesi työsi, kysyäksesi kysymyksiä, testataksesi uusia ominaisuuksia ja keskustellaksesi yhteisön kanssa."
@@ -196,6 +208,9 @@
   },
   "finish": {
     "message": "Viimeistely"
+  },
+  "first": {
+    "message": "First things first."
   },
   "focus": {
     "message": "Focus"
@@ -413,6 +428,9 @@
   "page": {
     "message": "Sivun otsikko ja kuvake"
   },
+  "page_icon": {
+    "message": "Page icon"
+  },
   "page_title": {
     "message": "Sivun otsikko"
   },
@@ -436,6 +454,9 @@
   },
   "pomodoro_timer": {
     "message": "Pomodoron ajastin"
+  },
+  "privacy_policy": {
+    "message": "Privacy Policy"
   },
   "reset": {
     "message": "Nollaa"
@@ -487,6 +508,9 @@
   },
   "soundscapes": {
     "message": "Soundscapes"
+  },
+  "soundscapes_desc": {
+    "message": "Soundscapes from Noisefill.com. Pin your favorite categories."
   },
   "speed_dial": {
     "message": "Pikavalinta"
