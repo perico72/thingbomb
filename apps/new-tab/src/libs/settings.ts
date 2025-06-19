@@ -319,6 +319,14 @@ export const appearanceSettings = {
     storedValue: "hideSettings",
     defaultValue: false,
   },
+  commandPaletteEnabled: {
+    id: "commandPaletteEnabled",
+    title: "command_palette",
+    description: "command_palette_description",
+    type: "toggle",
+    storedValue: "commandPaletteEnabled",
+    defaultValue: true,
+  },
 };
 
 export const backgroundSettings = {

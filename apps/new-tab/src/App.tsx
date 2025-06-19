@@ -217,6 +217,10 @@ const App: Component = () => {
   const clock = formattedClock();
   const [localFileImage] = createStoredSignal("localFile", "");
   const [pomodoroDialogOpen, setPomodoroDialogOpen] = createSignal(false);
+  const [commandPaletteEnabled, setCommandPaletteEnabled] = createStoredSignal(
+    "commandPaletteEnabled",
+    true
+  );
   function getInitialSelectedImage() {
     try {
       const storedItem = localStorage.getItem("selectedImage");
@@ -569,7 +573,9 @@ const App: Component = () => {
         autoplay
         loop
       ></audio>
-      <CommandPalette />
+      <Show when={commandPaletteEnabled()}>
+        <CommandPalette />
+      </Show>
     </main>
   );
 };

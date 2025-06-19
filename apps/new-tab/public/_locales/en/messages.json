@@ -107,6 +107,9 @@
   "comic_sans": {
     "message": "Comic Sans"
   },
+  "command_palette": {
+    "message": "Command palette"
+  },
   "community_desc": {
     "message": "Join the Blooft community on Discord to showcase your work, ask questions, test new features, and chat with the community."
   },

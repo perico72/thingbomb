@@ -58,12 +58,15 @@ export function CommandPalette(props: any) {
   );
 
   const down = (e: KeyboardEvent) => {
-    if (
-      ((e.ctrlKey || e.metaKey) && e.key === "k") ||
-      (e.key === "/" && (e.target as HTMLElement).tagName !== "INPUT")
-    ) {
-      e.preventDefault();
-      setOpen(!open());
+    const enabled = localStorage.getItem("commandPaletteEnabled");
+    if (enabled === null || enabled === "true") {
+      if (
+        ((e.ctrlKey || e.metaKey) && e.key === "k") ||
+        (e.key === "/" && (e.target as HTMLElement).tagName !== "INPUT")
+      ) {
+        e.preventDefault();
+        setOpen(!open());
+      }
     }
 
     if (e.key == "Enter") {

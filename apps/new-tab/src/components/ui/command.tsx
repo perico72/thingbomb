@@ -65,7 +65,7 @@ export const CommandInput = (props: VoidProps<CommandInputProps>) => {
 
   return (
     <div
-      class="flex items-center border-b border-white/10 px-3"
+      class="flex items-center border-b border-white/10 px-3 text-white"
       cmdk-input-wrapper=""
     >
       <svg
@@ -104,7 +104,7 @@ export const CommandItem = (props: CommandItemProps) => {
         `aria-selected:text-accent-foreground relative flex cursor-default select-none
         items-center rounded-sm px-2 py-1.5 text-sm outline-none
         aria-disabled:pointer-events-none aria-disabled:opacity-50
-        aria-selected:bg-black/10 dark:aria-selected:bg-white/10`,
+        aria-selected:bg-white/10 dark:aria-selected:bg-white/10 text-white`,
         local.class
       )}
       data-type="command-item"
@@ -152,7 +152,7 @@ export const CommandEmpty = (props: CommandEmptyProps) => {
 
   return (
     <CommandPrimitive.Empty
-      class={cn("py-6 text-center text-sm", local.class)}
+      class={cn("py-6 text-center text-sm text-white", local.class)}
       {...rest}
     />
   );
@@ -164,8 +164,8 @@ export const CommandGroup = (props: CommandGroupProps) => {
   return (
     <CommandPrimitive.Group
       class={cn(
-        `text-foreground [&_[cmdk-group-heading]]:text-muted-foreground overflow-hidden
-        p-1 [&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5
+        `text-white [&_[cmdk-group-heading]]:text-muted-foreground overflow-hidden p-1
+        [&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5
         [&_[cmdk-group-heading]]:text-xs [&_[cmdk-group-heading]]:font-medium`,
         local.class
       )}

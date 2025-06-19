@@ -340,6 +340,8 @@ function SettingsTrigger({
               <SettingItem id="pageIcon" />
               <br />
               <SettingItem id="pageTitle" />
+              <br />
+              <SettingItem id="commandPaletteEnabled" />
             </>
           )}
           {settingsMenu() === "appearance" && (
