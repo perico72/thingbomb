@@ -20,7 +20,7 @@
 
 export type Bookmark = {
   name: string;
-  url: string;
+  url?: string;
 };
 
 export interface BookmarkTreeNode {

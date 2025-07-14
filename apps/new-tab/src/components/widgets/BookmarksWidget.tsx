@@ -15,7 +15,6 @@ export const BookmarksWidget = () => {
   const [bookmarks, setBookmarks] = createSignal<Bookmark[]>([
     {
       name: "No Bookmarks",
-      url: "https://blooft.io",
     },
   ]);
 
@@ -41,17 +40,11 @@ export const BookmarksWidget = () => {
       <DropdownMenuContent class="max-h-96 w-56 overflow-y-auto">
         {bookmarks().length > 0 ? (
           <>
-            {bookmarks().map(
-              (bookmark: { name: string; url: string }, index: number) => (
-                <DropdownMenuItem
-                  onSelect={() => {
-                    window.location.href = bookmark.url;
-                  }}
-                >
-                  {bookmark.name}
-                </DropdownMenuItem>
-              )
-            )}
+            {bookmarks().map((bookmark: Bookmark, index: number) => (
+              <DropdownMenuItem>
+                <a href={bookmark.url!}>{bookmark.name}</a>
+              </DropdownMenuItem>
+            ))}
           </>
         ) : (
           <span class="p-4 text-sm font-medium">
