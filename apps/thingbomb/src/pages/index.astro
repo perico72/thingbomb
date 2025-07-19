@@ -1,0 +1,57 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="Thingbomb - fast and simple tools"
+  description="Thingbomb makes high-quality, free tools. Start using them today."
+  shortTitle="Thingbomb"
+>
+  <div class="tools flex space-x-6 space-y-2 flex-wrap mt-3 justify-center">
+    <div class="text-left">
+      <span class="text-foreground font-bold select-none">Colors</span>
+      <div
+        class="flex text-left flex-col *:!text-zinc-800 dark:*:!text-zinc-200 select-none"
+      >
+        <a href="/color">Color converter</a>
+        <a href="/color-mixer">Color mixer</a>
+        <a href="/color-inverter">Color inverter</a>
+        <a href="/random-color">Random color</a>
+      </div>
+    </div>
+    <div class="text-left">
+      <span class="text-foreground font-bold select-none">Images</span>
+      <div
+        class="flex text-left flex-col *:!text-zinc-800 dark:*:!text-zinc-200 select-none"
+      >
+        <a href="/png-to-webp">PNG to WEBP</a>
+        <a href="/webp-to-png">WEBP to PNG</a>
+        <a href="/svg-to-png">SVG to PNG</a>
+        <a href="/square-image-generator">Square Image Generator</a>
+      </div>
+    </div>
+    <div class="text-left">
+      <span class="text-foreground font-bold select-none">Text</span>
+      <div
+        class="flex text-left flex-col *:!text-zinc-800 dark:*:!text-zinc-200 select-none"
+      >
+        <a href="/character-counter">Character counter</a>
+        <a href="/word-counter">Word counter</a>
+        <a href="/case-changer">Case changer</a>
+        <a href="/reverse">Text reverser</a>
+        <a href="/json-formatter">JSON formatter</a>
+      </div>
+    </div>
+    <div class="text-left">
+      <span class="text-foreground font-bold select-none">Special</span>
+      <div
+        class="flex text-left flex-col *:!text-zinc-800 dark:*:!text-zinc-200 select-none"
+      >
+        <a href="/base64">Base64 encode</a>
+        <a href="/base64">Base64 decode</a>
+        <a href="/uuid">UUID generator</a>
+        <a href="/qr-code">QR code generator</a>
+      </div>
+    </div>
+  </div>
+</Layout>

@@ -1,0 +1,27 @@
+---
+import Input from "@/components/ui/input.astro";
+import Textarea from "../../components/ui/textarea.astro";
+import ToolLayout from "../../layouts/ToolLayout.astro";
+---
+
+<ToolLayout
+  title="Remove line breaks - Thingbomb"
+  shortTitle="Remove line breaks"
+  description="Remove line breaks quickly with this free online tool."
+>
+  <Textarea id="text" placeholder="Enter text" className="mt-2" />
+  <Input id="result" type="text" placeholder="Result" className="mt-2" />
+</ToolLayout>
+
+<script is:inline>
+  const text = document.getElementById("text");
+  const result = document.getElementById("result");
+
+  text.addEventListener("input", () => {
+    result.value = text.value.split("\n").join("");
+  });
+
+  result.addEventListener("input", () => {
+    text.value = result.value.split("\n").join("");
+  });
+</script>

@@ -1,0 +1,46 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description: string;
+  shortTitle: string;
+}
+
+const { title, description, shortTitle } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} />
+  </head>
+  <body class="font-sans dark">
+    <div class="wrapper h-screen w-screen">
+      <article
+        class="p-6 bg-zinc-950 h-fit text-white max-w-2xl text-center m-auto pt-12"
+      >
+        <p class="text-[16px] font-normal tracking-tight !mb-1">
+          {description}
+        </p>
+        <slot class="h-fit" />
+        <footer class="p-6 text-[15px] flex flex-wrap gap-6 justify-center">
+          <a href="/" class="text-[16px] !text-zinc-100 tracking-tight">Home</a>
+          <a href="/privacy" class="text-[16px] !text-zinc-100 tracking-tight"
+            >Privacy Policy</a
+          >
+        </footer>
+      </article>
+    </div>
+  </body>
+</html>
+
+<style>
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>

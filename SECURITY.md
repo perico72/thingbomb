@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-Blooft only maintains the latest version with security updates. Due to limitations in extension updates, older versions cannot receive fixes.
+Thingbomb only maintains the latest version with security updates. Our websites can typically be set to the latest version by just refreshing. As for our extensions, due to limitations in extension updates, older versions cannot receive fixes.
 
 Additionally, if you find a problem inside an unreleased version, please report it.
 
