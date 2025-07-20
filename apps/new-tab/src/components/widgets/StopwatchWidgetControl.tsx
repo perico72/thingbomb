@@ -5,7 +5,7 @@ import { formatTime } from "../../utils/helpers";
 export const StopwatchWidgetControl = () => {
   const [stopwatchTime, setStopwatchTime] = createSignal(0);
   const [stopwatchRunning, setStopwatchRunning] = createSignal(false);
-  
+
   onMount(() => {
     setInterval(() => {
       if (stopwatchRunning()) {

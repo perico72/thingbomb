@@ -9,6 +9,7 @@ We are moving to a single monorepo for all our projects to better share code and
 - [Blooft](./apps/new-tab)
 - [Blooft Web](./apps/blooft-www)
 - [Thingbomb](./apps/thingbomb)
+- [Linksquash](./apps/linksquash)
 
 ## License
 
