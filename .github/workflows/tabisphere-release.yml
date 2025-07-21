@@ -37,6 +37,11 @@ jobs:
         id: version
         uses: fregante/daily-version-action@v2
 
+      - name: Debug: Show version outputs
+        run: |
+          echo "Created: '${{ steps.version.outputs.created }}'"
+          echo "Version: '${{ steps.version.outputs.version }}'"
+
       - name: Update manifest.json with version
         if: steps.version.outputs.created == 'true'
         run: npx dot-json@1 "$DIRECTORY/manifest.json" version "${{ steps.version.outputs.version }}"
