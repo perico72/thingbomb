@@ -21,5 +21,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: npm ci
-      - run: npx prettier --check "**/*.{js,jsx,ts,tsx,json,css,md}"
+      - name: Setup pnpm
+        run: npm install -g pnpm@10.13.1
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Run prettier check
+        run: pnpm exec prettier --check "**/*.{js,jsx,ts,tsx,json,css,md}"
