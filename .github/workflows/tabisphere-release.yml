@@ -72,6 +72,8 @@ jobs:
     needs: Version
     name: Submit (Chrome)
     environment: Chrome
+    permissions:
+      contents: read
     runs-on: ubuntu-latest
     steps:
       - uses: actions/download-artifact@v4
