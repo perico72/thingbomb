@@ -1,5 +1,5 @@
 blank_issues_enabled: true
 contact_links:
-  - name: Feature Request
-    url: https://feedback.blooft.com
-    about: Find and create feature requests together on our board.
+  - name: Email the owner
+    url: mailto:george@thingbomb.com
+    about: Have a question or concern? Email me
