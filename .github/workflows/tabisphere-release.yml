@@ -20,7 +20,8 @@ on:
 jobs:
   Version:
     outputs:
-      created: ${{ env.DAILY_VERSION_CREATED }}
+      created: ${{ steps.version.outputs.created }}
+      version: ${{ steps.version.outputs.version }}
     permissions:
       contents: write
     runs-on: ubuntu-latest
@@ -67,7 +68,7 @@ jobs:
           gh release create "${{ steps.version.outputs.version }}" --generate-notes "$FILENAME"
 
   Chrome:
-    if: steps.version.outputs.created
+    if: needs.Version.outputs.created
     needs: Version
     name: Submit (Chrome)
     environment: Chrome
