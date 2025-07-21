@@ -13,8 +13,10 @@ env:
   PROJECT_NAME: tabisphere
 
 name: "Tabisphere: Release"
+
 on:
   workflow_dispatch: null
+
 jobs:
   Version:
     outputs:
@@ -24,40 +26,54 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
           node-version-file: package.json
           cache: npm
-      - run: npm ci
-      - name: Build
-        run: npm run build
+
+      - name: Install dependencies from monorepo root
+        run: npm ci
+
+      - name: Build Tabisphere app from monorepo root
+        run: npm run build --workspace=tabisphere
+
       - name: Create tag if necessary
         uses: fregante/daily-version-action@v2
-      - name: Update manifest.json with version ${{ env.DAILY_VERSION}}
-        if: env.DAILY_VERSION_CREATED
+
+      - name: Update manifest.json with version ${{ env.DAILY_VERSION }}
+        if: env.DAILY_VERSION_CREATED == 'true'
         run: npx dot-json@1 "$DIRECTORY/manifest.json" version "$DAILY_VERSION"
-      - name: Ready for "submit" jobs
-        if: env.DAILY_VERSION_CREATED
+
+      - name: Upload built dist folder as artifact
+        if: env.DAILY_VERSION_CREATED == 'true'
         uses: actions/upload-artifact@v4
         with:
+          name: ${{ env.PROJECT_NAME }}-dist
           path: ${{ env.DIRECTORY }}
-      - name: Create release
-        if: env.DAILY_VERSION_CREATED
+
+      - name: Create GitHub release
+        if: env.DAILY_VERSION_CREATED == 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         working-directory: ${{ env.DIRECTORY }}
         run: |
-          FILENAME="$PROJECT_NAME-$DAILY_VERSION.zip"
+          FILENAME="${PROJECT_NAME}-${DAILY_VERSION}.zip"
           zip -r "$FILENAME" ./*
           gh release create "$DAILY_VERSION" --generate-notes "$FILENAME"
+
   Chrome:
-    if: needs.Version.outputs.created
+    if: needs.Version.outputs.created == 'true'
     needs: Version
     name: Submit (Chrome)
     environment: Chrome
     runs-on: ubuntu-latest
     steps:
       - uses: actions/download-artifact@v4
+        with:
+          name: tabisphere-dist
+          path: artifact
+
       - run: npx chrome-webstore-upload-cli@3
         working-directory: artifact
         env:
