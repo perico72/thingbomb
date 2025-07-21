@@ -11,6 +11,7 @@ We are moving to a single monorepo for all our projects to better share code and
 - [Thingbomb](./apps/thingbomb)
 - [Linksquash](./apps/linksquash)
 - [Noisefill](./apps/noisefill)
+- [Tabisphere](./apps/tabisphere)
 
 ## License
 
