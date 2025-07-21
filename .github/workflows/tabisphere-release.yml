@@ -9,10 +9,10 @@
 # THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 env:
-  DIRECTORY: dist
+  DIRECTORY: apps/tabisphere/dist
   PROJECT_NAME: tabisphere
 
-name: Release
+name: "Tabisphere: Release"
 on:
   workflow_dispatch: null
 jobs:
@@ -30,7 +30,7 @@ jobs:
           cache: npm
       - run: npm ci
       - name: Build
-        run: cd apps/tabisphere && npm run build
+        run: npm run build
       - name: Create tag if necessary
         uses: fregante/daily-version-action@v2
       - name: Update manifest.json with version ${{ env.DAILY_VERSION}}
