@@ -22,6 +22,7 @@ const BookmarkPicker: Component<BookmarkPickerProps> = (props) => {
       try {
         setSelectedBookmarks(JSON.parse(parsed) as Array<Bookmark>);
       } catch (e) {
+        console.error(e);
         setSelectedBookmarks([]);
       }
     } else {
@@ -62,7 +63,7 @@ const BookmarkPicker: Component<BookmarkPickerProps> = (props) => {
         {chrome.i18n.getMessage("pinned_bookmarks")}
       </span>
       <div class="flex gap-2 flex-wrap mb-4">
-        {selectedBookmarks().map((bookmark, index) => (
+        {selectedBookmarks().map((bookmark) => (
           <button
             onClick={() => toggleBookmark(bookmark)}
             class="font-medium text-black rounded-lg dark:text-white text-sm p-4 bg-[#EDECEB]
@@ -81,7 +82,7 @@ const BookmarkPicker: Component<BookmarkPickerProps> = (props) => {
       <div class="flex gap-2 flex-wrap">
         {props.bookmarks
           .filter((bookmark: Bookmark) => !isBookmarkSelected(bookmark))
-          .map((bookmark, index) => (
+          .map((bookmark) => (
             <button
               onClick={() => toggleBookmark(bookmark)}
               class="font-medium text-black rounded-lg dark:text-white text-sm p-4 bg-[#EDECEB]

@@ -27,7 +27,7 @@ if (typeof chrome !== "undefined" && chrome.storage?.local) {
       let fullHref;
 
       if (dataUrl.includes("{<>}")) {
-        const [title, pluginID, href] = dataUrl.split("{<>}");
+        const [_, __, href] = dataUrl.split("{<>}");
         fullHref = href;
       }
       const link = document.createElement("link");

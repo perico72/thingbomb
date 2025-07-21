@@ -3,14 +3,8 @@ import { days, months } from "@/libs/constants";
 import { createSignal, onCleanup, onMount, Show } from "solid-js";
 
 const DateWidget = () => {
-  const [dateContained, setDateContained] = createStoredSignal(
-    "dateContained",
-    false
-  );
-  const [dateFormat, setDateFormat] = createStoredSignal(
-    "dateFormat",
-    "normal"
-  );
+  const [dateContained] = createStoredSignal("dateContained", false);
+  const [dateFormat] = createStoredSignal("dateFormat", "normal");
   // @ts-ignore
   const initialDate = new Date();
   const [date, setDate] = createSignal(initialDate);

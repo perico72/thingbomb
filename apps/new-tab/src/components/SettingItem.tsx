@@ -1,11 +1,4 @@
-import {
-  Component,
-  JSX,
-  createEffect,
-  createSignal,
-  For,
-  Show,
-} from "solid-js";
+import { Component, JSX, createEffect, createSignal, For } from "solid-js";
 import { createStoredSignal } from "../hooks/localStorage";
 import {
   generalSettings,
@@ -13,7 +6,6 @@ import {
   backgroundSettings,
   advancedSettings,
   widgetSettings,
-  SettingItem as SettingItemType,
 } from "../libs/settings";
 
 interface ExtendedSettingItem {

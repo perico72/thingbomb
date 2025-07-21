@@ -1,4 +1,4 @@
-import { createSignal, onMount, Show } from "solid-js";
+import { createSignal, onMount } from "solid-js";
 import { Button } from "../../components/ui/button";
 import { Star } from "lucide-solid";
 import { BookmarkTreeNode, Bookmark } from "../../types";
@@ -40,7 +40,7 @@ export const BookmarksWidget = () => {
       <DropdownMenuContent class="max-h-96 w-56 overflow-y-auto">
         {bookmarks().length > 0 ? (
           <>
-            {bookmarks().map((bookmark: Bookmark, index: number) => (
+            {bookmarks().map((bookmark: Bookmark) => (
               <DropdownMenuItem>
                 <a href={bookmark.url!}>{bookmark.name}</a>
               </DropdownMenuItem>

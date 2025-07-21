@@ -19,15 +19,9 @@
 */
 
 import { Component } from "solid-js";
-import { createStoredSignal } from "@/hooks/localStorage";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Check } from "lucide-solid";
 
 export const OnboardingScreen4: Component = () => {
-  const [needsOnboarding, setNeedsOnboarding] = createStoredSignal(
-    "needsOnboarding",
-    true
-  );
   return (
     <div>
       <h1 class="text-[26px] font-semibold m-0 p-0">
@@ -37,7 +31,7 @@ export const OnboardingScreen4: Component = () => {
         {chrome.i18n.getMessage("community_desc")}
       </p>
       <br />
-      <a href="https://discord.gg/hhPuurkvua" target="_blank">
+      <a href="https://discord.gg/hhPuurkvua" target="_blank" rel="noreferrer">
         <Button
           variant={"outline"}
           class="px-2.5"

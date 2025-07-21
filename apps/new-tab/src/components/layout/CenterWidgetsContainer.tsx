@@ -1,7 +1,7 @@
-import { createSignal, Show } from "solid-js";
+import { Show } from "solid-js";
 import { formattedClock } from "@/hooks/clockFormatter";
-import { formatTime, safeParse } from "../../utils/helpers";
-import { Bookmark, Pomodoro } from "../../types";
+import { formatTime } from "../../utils/helpers";
+import { Pomodoro } from "../../types";
 import { PauseIcon, PlayIcon } from "lucide-solid";
 import { createStoredSignal } from "@/hooks/localStorage";
 import { PinnedBookmarks } from "../widgets/PinnedBookmarks";
@@ -10,35 +10,10 @@ import { DateWidget } from "../widgets/Date";
 
 export const CenterWidgetsContainer = () => {
   const clock = formattedClock();
-  const [dateContained, setDateContained] = createStoredSignal(
-    "dateContained",
-    false
-  );
-  const [bookmarksShown, setBookmarksShown] = createStoredSignal<
-    Array<Bookmark>
-  >("bookmarksShown", []);
-  const [bookmarksContained, setBookmarksContained] = createStoredSignal(
-    "bookmarksContained",
-    true
-  );
-  const [name, setName] = createStoredSignal("name", "");
-  const [dateFormat, setDateFormat] = createStoredSignal(
-    "dateFormat",
-    "normal"
-  );
-  const [itemsHidden, setItemsHidden] = createStoredSignal<boolean>(
-    "itemsHidden",
-    false
-  );
+  const [itemsHidden] = createStoredSignal<boolean>("itemsHidden", false);
   const [layout] = createStoredSignal("layout", "center");
-  const [pomodoroContained, setPomodoroContained] = createStoredSignal(
-    "pomodoroContained",
-    false
-  );
-  const [clockContained, setClockContained] = createStoredSignal(
-    "clockContained",
-    true
-  );
+  const [pomodoroContained] = createStoredSignal("pomodoroContained", false);
+  const [clockContained] = createStoredSignal("clockContained", true);
   const [pomodoro, setPomodoro] = createStoredSignal<Pomodoro>("pomodoro", {
     time: 0,
     session: "Work",

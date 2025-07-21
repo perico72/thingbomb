@@ -33,6 +33,14 @@ if (window.location.pathname === "/about/privacy") {
     Object.keys(parsedAliases).length > 0 &&
     parsedAliases[trimmedPathname.toLowerCase()]
   ) {
+    let visitsLog = localStorage.getItem("visits")
+      ? JSON.parse(localStorage.getItem("visits")!)
+      : [];
+    visitsLog.push({
+      path: trimmedPathname,
+      timestamp: new Date().toISOString(),
+    });
+    localStorage.setItem("visits", JSON.stringify(visitsLog));
     window.location.href = parsedAliases[trimmedPathname.toLowerCase()];
   } else {
     render(() => <NotFound />, root!);

@@ -1,0 +1,24 @@
+{
+  "overrides": [
+    {
+      "files": [
+        "apps/tabisphere/**/*.{js,jsx,ts,tsx}",
+        "apps/noisefill/**/*.{js,jsx,ts,tsx}"
+      ],
+      "rules": {
+        "react/jsx-key": "error"
+      }
+    },
+    {
+      "files": ["**/*.{js,jsx,ts,tsx}"],
+      "excludedFiles": [
+        "apps/tabisphere/**/*.{js,jsx,ts,tsx}",
+        "apps/noisefill/**/*.{js,jsx,ts,tsx}"
+      ],
+      "rules": {
+        "react/jsx-key": "off"
+      }
+    }
+  ],
+  "plugins": ["react"]
+}

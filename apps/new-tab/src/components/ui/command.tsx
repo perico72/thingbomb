@@ -28,7 +28,7 @@ import type {
 } from "cmdk-solid";
 import { Command as CommandPrimitive } from "cmdk-solid";
 import type { ComponentProps, VoidProps } from "solid-js";
-import { createUniqueId, splitProps } from "solid-js";
+import { splitProps } from "solid-js";
 import { Dialog, DialogContent } from "./dialog";
 
 export const Command = (props: CommandRootProps) => {

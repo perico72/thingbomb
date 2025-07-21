@@ -48,11 +48,6 @@ export const OnboardingScreen2: Component = () => {
   );
 
   createEffect(() => {
-    const colorChoice = accentColor();
-    const theme = isDarkTheme() ? "dark" : "light";
-  });
-
-  createEffect(() => {
     const callback = (mutations: MutationRecord[]) => {
       for (const mutation of mutations) {
         if (mutation.attributeName === "data-kb-theme") {

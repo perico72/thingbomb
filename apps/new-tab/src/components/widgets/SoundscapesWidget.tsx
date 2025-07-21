@@ -1,7 +1,7 @@
 import { createSignal, Show } from "solid-js";
 import { Button } from "../../components/ui/button";
 import { Volume2 } from "lucide-solid";
-import soundscapes, { Soundscape } from "@/libs/soundscapes";
+import soundscapes from "@/libs/soundscapes";
 import {
   DropdownMenu,
   DropdownMenuContent,

@@ -2,7 +2,7 @@ import { createStoredSignal } from "@/hooks/localStorage";
 import { Show } from "solid-js";
 
 const Greeting = () => {
-  const [name, setName] = createStoredSignal("name", "");
+  const [name] = createStoredSignal("name", "");
   return (
     <Show when={name() != ""}>
       <p class="mt-3 text-3xl font-medium text-white">

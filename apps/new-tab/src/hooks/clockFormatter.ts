@@ -3,7 +3,7 @@ import { createStoredSignal } from "./localStorage";
 import { onCleanup } from "solid-js";
 
 function formattedClock() {
-  const [clockFormat, setClockFormat] = createStoredSignal("clockFormat", "");
+  const [clockFormat] = createStoredSignal("clockFormat", "");
   const [currentClock, setCurrentClock] = createSignal(createClock(new Date()));
   function createClock(date: Date) {
     const hours = date.getHours();

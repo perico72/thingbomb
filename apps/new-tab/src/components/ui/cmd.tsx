@@ -1,17 +1,12 @@
 import { createEffect, createSignal, onCleanup } from "solid-js";
 import {
-  Command,
   CommandDialog,
-  CommandEmpty,
   CommandGroup,
   CommandInput,
   CommandItem,
   CommandList,
-  CommandSeparator,
-  CommandShortcut,
 } from "./command";
 import Mexp from "math-expression-evaluator";
-import { untrack } from "solid-js/web";
 
 interface Bookmark {
   name: string;
@@ -42,7 +37,7 @@ interface MathResult {
   copied: boolean;
 }
 
-export function CommandPalette(props: any) {
+export function CommandPalette() {
   const [open, setOpen] = createSignal(false);
   const [inputValue, setInputValue] = createSignal("");
   const [result, setResult] = createSignal<MathResult>({
@@ -163,8 +158,6 @@ export function CommandPalette(props: any) {
       document.getElementById("advancedButton")?.click();
     } else if (setting === "todos") {
       document.getElementById("todosButton")?.click();
-    } else if (setting === "weather") {
-      document.getElementById("weatherButton")?.click();
     } else if (setting === "notepad") {
       document.getElementById("notepadButton")?.click();
     } else if (setting === "date") {
@@ -205,6 +198,7 @@ export function CommandPalette(props: any) {
         });
       }
     } catch (error) {
+      console.error(error);
       setResult({
         result: null,
         expression: value,

@@ -21,7 +21,6 @@
 import { Component } from "solid-js";
 import { createStoredSignal } from "@/hooks/localStorage";
 import { TextField, TextFieldRoot } from "@/components/ui/textfield";
-import { ArrowLeft, ArrowRight } from "lucide-solid";
 
 export const OnboardingScreen1: Component = () => {
   const [name, setName] = createStoredSignal("name", "");

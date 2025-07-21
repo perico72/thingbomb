@@ -37,20 +37,6 @@ import { actuallyBoolean } from "./libs/boolean";
 import { cn } from "./libs/cn";
 import { settingsNavigation } from "./libs/settings";
 
-interface PomodoroConfig {
-  workMinutes: number;
-  breakMinutes: number;
-}
-
-function BigButton(props: any) {
-  return (
-    <button class="card-style" {...props}>
-      <div class="icon">{props.icon}</div>
-      <span class="text-xl">{props.title}</span>
-    </button>
-  );
-}
-
 interface BookmarkTreeNode {
   children?: BookmarkTreeNode[];
   dateAdded?: number;
@@ -76,166 +62,18 @@ function injectUserCSS(css: string) {
   document.head.appendChild(style);
 }
 
-function safeParse<T>(data: any, fallback: T): T {
-  try {
-    const parsed = JSON.parse(data);
-    console.log(parsed);
-    return parsed;
-  } catch {
-    return fallback;
-  }
-}
-
-function SettingsTrigger({
-  className,
-  triggerClass,
-}: {
-  className?: string;
-  triggerClass?: string;
-}) {
-  function textToImage(text: string) {
-    const canvas = document.createElement("canvas");
-    const ctx: any = canvas.getContext("2d");
-
-    canvas.width = 128;
-    canvas.height = 128;
-
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-    let fontSize = 128;
-    ctx.font = `bold ${fontSize}px system-ui`;
-    ctx.textAlign = "center";
-    ctx.textBaseline = "middle";
-
-    while (ctx.measureText(text).width > canvas.width - 10 && fontSize > 10) {
-      fontSize -= 2;
-      ctx.font = `bold ${fontSize}px system-ui`;
-    }
-
-    if (document.documentElement.style.colorScheme === "dark") {
-      ctx.fillStyle = "white";
-    } else {
-      ctx.fillStyle = "black";
-    }
-
-    ctx.fillText(text, canvas.width / 2, canvas.height / 2);
-
-    return canvas.toDataURL();
-  }
-
-  const [open, setOpen] = createSignal(false);
-  const [font, setFont] = createStoredSignal("font", "sans");
-  const [theme, setTheme] = createStoredSignal("kb-color-mode", "system");
-  const [background, setBackground] = createStoredSignal("background", "image");
+function SettingsTrigger({ triggerClass }: { triggerClass?: string }) {
+  const [_open, setOpen] = createSignal(false);
+  const [font] = createStoredSignal("font", "sans");
+  const [background] = createStoredSignal("background", "image");
   const [feedbackCalloutHidden, setFeedbackCalloutHidden] = createStoredSignal(
     "feedbackCalloutHidden",
     false
   );
-  const [layout, setLayout] = createStoredSignal("layout", "top");
-  const [clockFormat, setClockFormat] = createStoredSignal(
-    "clockFormat",
-    "12h"
-  );
-  const [name, setName] = createStoredSignal("name", "");
-  const [greetingNameValue, setGreetingNameValue] = createSignal(name());
-  const [pageTitle, setPageTitle] = createStoredSignal("pageTitle", "");
-  const [pageTitleValue, setPageTitleValue] = createSignal(pageTitle());
-  const [pageIcon, setPageIcon] = createStoredSignal("pageIcon", "");
-  const [color, setColor] = createStoredSignal("color", "unset");
-  const [pageIconValue, setPageIconValue] = createSignal(pageIcon());
-  const [opacity, setOpacity] = createStoredSignal<number>("opacity", 0.8);
   const [settingsMenu, setSettingsMenu] = createSignal<string>("general");
   const [dialogOpen, setDialogOpen] = createSignal(false);
-  const [imperial, setImperial] = createStoredSignal("imperial", false);
-  const [city, setCity] = createStoredSignal("locationCity", "");
-  const [bookmarksShown, setBookmarksShown] = createStoredSignal<
-    Array<Bookmark> | string
-  >("bookmarksShown", []);
-  const [clearDataDialogOpen, setClearDataDialogOpen] = createSignal(false);
-  const [pomodoroConfig, setPomodoroConfig] = createStoredSignal<
-    Function | PomodoroConfig | string
-  >("pomodoroConfig", {
-    workMinutes: 25,
-    breakMinutes: 5,
-  });
-  const [hideSettings, setHideSettings] = createStoredSignal(
-    "hideSettings",
-    false
-  );
-  const [weatherEnabled, setWeatherEnabled] = createStoredSignal(
-    "weatherEnabled",
-    false
-  );
-  const [dateContained, setDateContained] = createStoredSignal(
-    "dateContained",
-    false
-  );
-  const [clockContained, setClockContained] = createStoredSignal(
-    "clockContained",
-    true
-  );
-  const [counterContained, setCounterContained] = createStoredSignal(
-    "counterContained",
-    false
-  );
-  const [notepadContained, setNotepadContained] = createStoredSignal(
-    "notepadContained",
-    false
-  );
-  const [stopwatchContained, setStopwatchContained] = createStoredSignal(
-    "stopwatchContained",
-    false
-  );
-  const [mantrasContained, setMantrasContained] = createStoredSignal(
-    "mantrasContained",
-    true
-  );
-  const [bookmarksContained, setBookmarksContained] = createStoredSignal(
-    "bookmarksContained",
-    true
-  );
-  const [bookmarks, setBookmarks] = createSignal<Bookmark[]>([]);
-  const [natureSounds, setNatureSounds] = createStoredSignal(
-    "natureSounds",
-    false
-  );
-  const [focusSounds, setFocusSounds] = createStoredSignal(
-    "focusSounds",
-    false
-  );
-  const [todosContained, setTodosContained] = createStoredSignal(
-    "todosContained",
-    true
-  );
-  const [ambienceSounds, setAmbienceSounds] = createStoredSignal(
-    "ambienceSounds",
-    false
-  );
-  const [pomodoroContained, setPomodoroContained] = createStoredSignal(
-    "pomodoroContained",
-    false
-  );
+  const [_bookmarks, setBookmarks] = createSignal<Bookmark[]>([]);
   const [userCSS, setUserCSS] = createStoredSignal("userCSS", "");
-  const [wallpaperBlur, setWallpaperBlur] = createStoredSignal<number>(
-    "wallpaperBlur",
-    0
-  );
-  const [localFileImage, setLocalFileImage] = createStoredSignal(
-    "localFile",
-    ""
-  );
-  const [dateFormat, setDateFormat] = createStoredSignal(
-    "dateFormat",
-    "normal"
-  );
-  const [customUrl, setCustomUrl] = createStoredSignal("customUrl", "");
-  const [wallpaperChangeTime, setWallpaperChangeTime] =
-    createStoredSignal<number>("wallpaperChangeTime", 1000 * 60 * 60 * 24);
-  const [pageIconURL, setPageIconURL] = createStoredSignal(
-    "iconUrl",
-    "assets/icon-256.png"
-  );
-  const [textStyle, setTextStyle] = createStoredSignal("textStyle", "normal");
   onMount(() => {
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape") {
@@ -249,8 +87,6 @@ function SettingsTrigger({
   let editor: any;
 
   createEffect(() => {
-    const editorElement = document.getElementById("editor");
-
     const isDarkMode = document.documentElement.style.colorScheme === "dark";
 
     if (settingsMenu() === "advanced" && !editor) {

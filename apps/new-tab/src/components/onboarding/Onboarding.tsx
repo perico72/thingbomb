@@ -18,7 +18,7 @@
     https://github.com/blooft-app/blooft
 */
 
-import { Component, createSignal, JSX, Show } from "solid-js";
+import { Component, createSignal, Show } from "solid-js";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { cn } from "@/libs/cn";
 import { Button } from "@/components/ui/button";
@@ -32,12 +32,11 @@ import { OnboardingScreen4 } from "./OnboardingScreen4";
 export const Onboarding: Component = () => {
   const [onboardingScreen, setOnboardingScreen] = createSignal<number>(1);
   const [currentFont] = createStoredSignal("currentFont", "sans");
-  const [textStyle] = createStoredSignal("textStyle", "normal");
-  const [needsOnboarding, setNeedsOnboarding] = createStoredSignal(
+  const [_needsOnboarding, setNeedsOnboarding] = createStoredSignal(
     "needsOnboarding",
     true
   );
-  const [name, setName] = createStoredSignal("name", "");
+  const [name] = createStoredSignal("name", "");
 
   // Footer buttons configuration based on current screen
   const getFooterConfig = () => {
@@ -145,6 +144,7 @@ export const Onboarding: Component = () => {
                 href="https://www.blooft.com/privacy"
                 class="text-[14px] text-muted-foreground"
                 target="_blank"
+                rel="noreferrer"
               >
                 {chrome.i18n.getMessage("privacy_policy")}
               </a>

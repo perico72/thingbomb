@@ -19,19 +19,12 @@
 */
 
 import { Component } from "solid-js";
-import { createStoredSignal } from "@/hooks/localStorage";
-import { Button } from "@/components/ui/button";
-import { ArrowLeft, ArrowRight } from "lucide-solid";
 import { BackgroundSelector } from "@/components/selectors/BackgroundSelector";
 import { FontSelector } from "@/components/selectors/FontSelector";
 import { ClockFormatSelector } from "@/components/selectors/ClockFormatSelector";
 import { TextStyleSelector } from "@/components/selectors/TextStyleSelector";
 
 export const OnboardingScreen3: Component = () => {
-  const [currentFont, setFont] = createStoredSignal("currentFont", "inter");
-  const [background, setBackground] = createStoredSignal("background", "image");
-  const [clockFormat, setClockFormat] = createStoredSignal("clockFormat", "24");
-  const [textStyle, setTextStyle] = createStoredSignal("textStyle", "normal");
   return (
     <div class="h-full grid grid-rows-[calc(100%-38px)_38px]">
       <div class="overflow-y-auto">

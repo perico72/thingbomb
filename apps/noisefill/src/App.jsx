@@ -16,7 +16,6 @@ import {
   SidebarContent,
   SidebarGroup,
   SidebarHeader,
-  SidebarTrigger,
   SidebarProvider,
   SidebarGroupLabel,
   SidebarGroupContent,
@@ -28,7 +27,6 @@ import {
 } from "./components/ui/sidebar";
 import { LucideHome } from "lucide-react";
 import { Square } from "lucide-react";
-import { useIsMobile } from "./components/hooks/use-mobile";
 import { Link } from "react-router-dom";
 import NoisefillSvg from "./components/NoisefillSvg";
 import { SiteHeader } from "./components/SiteHeader";
@@ -37,12 +35,9 @@ import { useLocation } from "react-router-dom";
 import { soundscapes } from "./soundscapes";
 import { useState, useEffect, useRef } from "react";
 import audioRef from "./audioRef";
-import { SkipForward } from "lucide-react";
 import { Button } from "./components/ui/button";
-import { SkipBack } from "lucide-react";
 import { Rewind } from "lucide-react";
 import { Play } from "lucide-react";
-import { Forward } from "lucide-react";
 import { FastForward } from "lucide-react";
 import { Pause } from "lucide-react";
 import { Loader2 } from "lucide-react";
@@ -54,7 +49,6 @@ import { PencilIcon } from "lucide-react";
 import Changelog from "./pages/Changelog";
 
 function App() {
-  const isMobile = useIsMobile();
   const location = useLocation();
   const [currentURL, setCurrentURL] = useState(null);
   const pathname = location.pathname;

@@ -44,13 +44,13 @@ export const PomodoroWidget: Component<PomodoroWidgetProps> = () => {
     playing: false,
   });
 
-  const [pomodoroConfig, setPomodoroConfig] =
+  const [_pomodoroConfig, setPomodoroConfig] =
     createStoredSignal<PomodoroConfig>("pomodoroConfig", {
       workMinutes: 25,
       breakMinutes: 5,
     });
 
-  const [pomodoroContained, setPomodoroContained] = createStoredSignal(
+  const [_pomodoroContained, setPomodoroContained] = createStoredSignal(
     "pomodoroContained",
     false
   );

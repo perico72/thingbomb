@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import { Button } from "../components/ui/button";
 
 function Settings() {
@@ -33,9 +33,6 @@ function Settings() {
       console.log("PWA was installed");
     });
   });
-  const [currentValue, setCurrentValue] = React.useState(
-    localStorage.getItem("sortItems") || "true"
-  );
   return (
     <div className="settings-page px-6">
       <Button id="install-btn" style={{ display: "none" }}>

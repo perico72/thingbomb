@@ -14,7 +14,6 @@ import { Check } from "lucide-solid";
 import { TodoPopover } from "../../Widgets";
 import { MantraDisplay } from "../widgets/MantraDisplay";
 import images from "@/libs/images";
-import { mantras } from "@/libs/mantras";
 
 export const BottomWidgetsContainer = () => {
   const [wallpaperChangeTime] = createStoredSignal<number>(
@@ -29,22 +28,10 @@ export const BottomWidgetsContainer = () => {
     "itemsHidden",
     false
   );
-  const [hideSettings, setHideSettings] = createStoredSignal<boolean>(
-    "hideSettings",
-    false
-  );
-  const [todosContained, setTodosContained] = createStoredSignal(
-    "todosContained",
-    true
-  );
-  const [mantrasContained, setMantrasContained] = createStoredSignal(
-    "mantrasContained",
-    true
-  );
-  const [background, setBackground] = createStoredSignal<string>(
-    "background",
-    "image"
-  );
+  const [hideSettings] = createStoredSignal<boolean>("hideSettings", false);
+  const [todosContained] = createStoredSignal("todosContained", true);
+  const [mantrasContained] = createStoredSignal("mantrasContained", true);
+  const [background] = createStoredSignal<string>("background", "image");
   function getInitialSelectedImage() {
     try {
       const storedItem = localStorage.getItem("selectedImage");
@@ -57,6 +44,7 @@ export const BottomWidgetsContainer = () => {
         }
       }
     } catch (error) {
+      console.log(error);
       localStorage.removeItem("selectedImage");
       const randomImage = images[Math.floor(Math.random() * images.length)];
       return JSON.stringify({

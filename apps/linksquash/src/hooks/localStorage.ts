@@ -18,22 +18,25 @@ function safeParse<T>(data: any, fallback: T): T {
   }
 }
 
-function createStoredSignal<T>(key: string, defaultValue: T): Signal<T> {
-  const getFromStorage = (): T | null => {
+function createStoredSignal<T>(
+  key: string,
+  defaultValue: T | []
+): Signal<T | []> {
+  const getFromStorage = (): T | [] => {
     let storedValue = localStorage.getItem(key);
     if (storedValue !== "null") {
       const parsed = safeParse(storedValue, defaultValue);
       return parsed;
     }
 
-    return null;
+    return defaultValue;
   };
 
-  const initialValue = getFromStorage() ?? defaultValue;
+  const initialValue = getFromStorage();
 
-  const [value, setValue] = createSignal<T>(initialValue);
+  const [value, setValue] = createSignal<T | []>(initialValue);
 
-  const setToStorage = (newValue: T) => {
+  const setToStorage = (newValue: T | []) => {
     const stringifiedValue: string =
       typeof newValue === "object" && newValue !== null
         ? JSON.stringify(newValue)

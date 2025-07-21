@@ -25,7 +25,6 @@ import images from "./libs/images";
 import { cn } from "./libs/cn";
 import { createStoredSignal } from "@/hooks/localStorage";
 import { CommandPalette } from "@/components/ui/cmd";
-import { formattedClock } from "@/hooks/clockFormatter";
 import soundscapes, { Soundscape } from "@/libs/soundscapes";
 import { Onboarding } from "./components/onboarding/Onboarding";
 import { formatTime, injectUserCSS, flattenBookmarks } from "./utils/helpers";
@@ -41,6 +40,8 @@ type MessageKeys = keyof typeof data;
 try {
   chrome.i18n.getMessage("work");
 } catch (error) {
+  console.log("chrome not found, creating fake chrome object");
+  console.log(error);
   window.chrome = {} as any;
   chrome.i18n = {
     getMessage: (
@@ -116,55 +117,26 @@ type ColorData = {
 const typedColorData = colorData as ColorData;
 
 const App: Component = () => {
-  const [needsOnboarding, setNeedsOnboarding] = createStoredSignal(
-    "needsOnboarding",
-    true
-  );
-  const [accentColor, setAccentColor] = createStoredSignal(
-    "accentColor",
-    "teal"
-  );
-  const [onboardingScreen, setOnboardingScreen] = createSignal<number>(0);
-  const [greetingNameValue, setGreetingNameValue] = createSignal("");
+  const [needsOnboarding] = createStoredSignal("needsOnboarding", true);
+  const [accentColor] = createStoredSignal("accentColor", "teal");
   const [imageLoaded, setImageLoaded] = createSignal(false);
-  const [filteredWidgets, setFilteredWidgets] = createSignal<any[]>([]);
-  const [dialogOpen, setDialogOpen] = createSignal<boolean>(false);
-  const [weatherContained, setWeatherContained] = createStoredSignal(
-    "weatherEnabled",
-    false
-  );
-  const [customUrl, setCustomUrl] = createStoredSignal("customUrl", "");
-  const [hideSettings, setHideSettings] = createStoredSignal(
-    "hideSettings",
-    false
-  );
+  const [customUrl] = createStoredSignal("customUrl", "");
   const [userCSS] = createStoredSignal("userCSS", "");
-  const [currentlyPlaying, setCurrentlyPlaying] = createSignal<any>(null);
+  const [currentlyPlaying] = createSignal<any>(null);
   const [pageIconURL] = createStoredSignal("iconUrl", "assets/icon-256.png");
-  const [dateFormat] = createStoredSignal("dateFormat", "normal");
   const [selectedColor] = createSignal(
     colorPalette[Math.floor(Math.random() * colorPalette.length)]
   );
-  const [clockFormat, setClockFormat] = createStoredSignal(
-    "clockFormat",
-    "12h"
-  );
-  const [notepad, setNotepad] = createStoredSignal<string>("notepad", "");
   const [layout] = createStoredSignal("layout", "top");
-  const [currentFont, setFont] = createStoredSignal("font", "sans");
-  const [background, setBackground] = createStoredSignal("background", "image");
-  const [name, setName] = createStoredSignal("name", "");
-  const [bookmarks, setBookmarks] = createSignal<any[]>([]);
-  const [pageTitle, setPageTitle] = createStoredSignal("pageTitle", "");
-  const [textStyle, setTextStyle] = createStoredSignal("textStyle", "normal");
+  const [currentFont] = createStoredSignal("font", "sans");
+  const [background] = createStoredSignal("background", "image");
+  const [_bookmarks, setBookmarks] = createSignal<any[]>([]);
+  const [pageTitle] = createStoredSignal("pageTitle", "");
+  const [textStyle] = createStoredSignal("textStyle", "normal");
   const [color] = createStoredSignal("color", "unset");
   const [opacity] = createStoredSignal("opacity", "0.8");
   const [wallpaperBlur] = createStoredSignal<number>("wallpaperBlur", 0);
-  const [pomodoroContained, setPomodoroContained] = createStoredSignal(
-    "pomodoroContained",
-    false
-  );
-  const [pomodoroConfig, setPomodoroConfig] = createStoredSignal<
+  const [pomodoroConfig] = createStoredSignal<
     Function | PomodoroConfig | string
   >("pomodoroConfig", {
     workMinutes: 25,
@@ -178,46 +150,13 @@ const App: Component = () => {
     session: "Work",
     playing: false,
   });
-  const [dateContained, setDateContained] = createStoredSignal(
-    "dateContained",
-    false
-  );
-  const [clockContained, setClockContained] = createStoredSignal(
-    "clockContained",
-    true
-  );
-  const [counterContained, setCounterContained] = createStoredSignal(
-    "counterContained",
-    false
-  );
-  const [bookmarksShown, setBookmarksShown] = createStoredSignal(
-    "bookmarksShown",
-    []
-  );
-  const [notepadContained, setNotepadContained] = createStoredSignal(
-    "notepadContained",
-    false
-  );
-  const [stopwatchContained, setStopwatchContained] = createStoredSignal(
-    "stopwatchContained",
-    false
-  );
-  const [mantrasContained, setMantrasContained] = createStoredSignal(
-    "mantrasContained",
-    true
-  );
-  const [bookmarksContained, setBookmarksContained] = createStoredSignal(
-    "bookmarksContained",
-    true
-  );
+  const [stopwatchContained] = createStoredSignal("stopwatchContained", false);
   const [wallpaperChangeTime] = createStoredSignal<number>(
     "wallpaperChangeTime",
     1000 * 60 * 60 * 24 * 7
   );
-  const clock = formattedClock();
   const [localFileImage] = createStoredSignal("localFile", "");
-  const [pomodoroDialogOpen, setPomodoroDialogOpen] = createSignal(false);
-  const [commandPaletteEnabled, setCommandPaletteEnabled] = createStoredSignal(
+  const [commandPaletteEnabled] = createStoredSignal(
     "commandPaletteEnabled",
     true
   );
@@ -233,6 +172,7 @@ const App: Component = () => {
         }
       }
     } catch (error) {
+      console.log(error);
       localStorage.removeItem("selectedImage");
       const selectedImage = images[Math.floor(Math.random() * images.length)];
       return JSON.stringify({
@@ -259,34 +199,13 @@ const App: Component = () => {
     getInitialSelectedImage()
   );
 
-  const [backgroundPaused, setBackgroundPaused] = createStoredSignal<string>(
+  const [backgroundPaused] = createStoredSignal<string>(
     "backgroundPaused",
     "false"
   );
-  const [itemsHidden, setItemsHidden] = createStoredSignal<string>(
-    "itemsHidden",
-    "false"
-  );
-  const [todosContained, setTodosContained] = createStoredSignal(
-    "todosContained",
-    true
-  );
-  const [natureSounds, setNatureSounds] = createStoredSignal(
-    "natureSounds",
-    false
-  );
-  const [focusSounds, setFocusSounds] = createStoredSignal(
-    "focusSounds",
-    false
-  );
-  const [ambienceSounds, setAmbienceSounds] = createStoredSignal(
-    "ambienceSounds",
-    false
-  );
   let cursorHideTimeout: any;
   const [stopwatchTime, setStopwatchTime] = createSignal(0);
-  const [stopwatchRunning, setStopwatchRunning] = createSignal(false);
-  const [counter, setCounter] = createStoredSignal("counter", 0);
+  const [stopwatchRunning] = createSignal(false);
 
   onMount(() => {
     if (chrome.bookmarks !== undefined) {
@@ -463,7 +382,7 @@ const App: Component = () => {
           headers: {
             "Cache-Control": "public, max-age=315360000, immutable",
           },
-        }).then((response) => {
+        }).then((_response) => {
           localStorage.setItem("selectedImage", JSON.stringify(newImage));
         });
       } else {
@@ -473,17 +392,6 @@ const App: Component = () => {
       setSelectedImage(getInitialSelectedImage());
     }
   });
-
-  function getKeyForValue(obj: any, value: any) {
-    return Object.keys(obj).find((key) => obj[key] === value);
-  }
-
-  function getKeyByValue<T extends Record<string, any>>(
-    obj: T,
-    value: T[keyof T]
-  ): string | undefined {
-    return Object.keys(obj).find((key) => obj[key] === value);
-  }
 
   return (
     <main

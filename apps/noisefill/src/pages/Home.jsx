@@ -12,12 +12,7 @@ import {
 } from "../components/ui/dialog";
 import { Label } from "../components/ui/label";
 import { Input } from "../components/ui/input";
-import {
-  soundscapes,
-  savePlaylist,
-  getPlaylists,
-  deletePlaylist,
-} from "../soundscapes";
+import { soundscapes, getPlaylists } from "../soundscapes";
 import audioRef from "../audioRef";
 import { Link } from "react-router-dom";
 import { cn } from "../components/lib/utils";
@@ -148,8 +143,7 @@ function CreditsMenu() {
 
 function Home({ currentURL, setCurrentURL }) {
   const [playing, setPlaying] = useState(false);
-  const [message, setMessage] = useState("");
-  const [selectedSoundscapes, setSelectedSoundscapes] = useState([]);
+  const [_message, setMessage] = useState("");
   const [playlists, setPlaylists] = useState([]);
   const [showPlaylistDialog, setShowPlaylistDialog] = useState(false);
   const [playlistName, setPlaylistName] = useState("");
@@ -163,10 +157,351 @@ function Home({ currentURL, setCurrentURL }) {
   const [isOnline, setIsOnline] = useState(navigator.onLine);
   const [cachedSoundscapes, setCachedSoundscapes] = useState([]);
 
-  const [listeningPreferences, setListeningPreferences] = useState({});
+  const [_listeningPreferences, setListeningPreferences] = useState({});
 
   const [playedLofiSounds, setPlayedLofiSounds] = useState([]);
   const lofiQueueRef = useRef([]);
+
+  const playSound = useCallback(
+    async (url, volume, name, image, index) => {
+      const audio = audioRef.current || document.getElementById("player");
+
+      const currentSound = soundscapes[index];
+      const isLofi = currentSound?.type === "lofi";
+      if (isLofi) {
+        setPlayedLofiSounds((prev) => [...prev, index]);
+      }
+      audio.loop = !isLofi;
+
+      // Check if we are playing or pausing the same sound
+      const isSameSound = audio.src === url;
+      const isCurrentlyPlaying = !document.getElementById("player").paused;
+
+      // If clicking the currently playing sound, just pause it
+      if (isSameSound && isCurrentlyPlaying) {
+        audio.pause();
+        return;
+      }
+
+      // Extract the soundKey from the URL or name
+      const soundName = name.toLowerCase().replace(/\s+/g, "-");
+
+      // Increment the session count right when a new sound is selected to play
+      if (!isSameSound) {
+        window.incrementSessionCount?.(soundName);
+        console.log(
+          `Button clicked: incrementing session count for ${soundName}`
+        );
+      }
+
+      const soundscape = soundscapes.find((s) => s.url === url);
+      const soundscapeId = soundscape ? soundscape.index : index;
+
+      const playFromCache = async () => {
+        try {
+          const cachedDataUrl = await getAudioFromIndexedDB(soundscapeId);
+          if (cachedDataUrl) {
+            console.log(
+              `Playing from cache for soundscape ID: ${soundscapeId}`
+            );
+            audio.src = cachedDataUrl;
+            audio.title = name;
+            audio.setAttribute("image", image);
+            audio.setAttribute("index", soundscapeId);
+            setCurrentURL(cachedDataUrl);
+            audio.volume = soundscape
+              ? soundscape.volume || 1.0
+              : volume || 1.0;
+
+            return audio
+              .play()
+              .then(() => {
+                setMessage(`Playing cached version of: ${name}`);
+                return true;
+              })
+              .catch((err) => {
+                console.error("Error playing cached audio:", err);
+                setMessage("Failed to play cached audio");
+                return false;
+              });
+          }
+          return false;
+        } catch (error) {
+          console.error("Error accessing cached audio:", error);
+          return false;
+        }
+      };
+
+      const handleAudioError = async (e) => {
+        console.error(`Error loading audio from URL: ${url}`, e);
+        setMessage("Network error: Attempting to load from cache...");
+        audio.removeEventListener("error", handleAudioError);
+
+        const playedFromCache = await playFromCache();
+
+        if (!playedFromCache) {
+          setMessage(`Network error: No cached version available for ${name}`);
+        }
+      };
+
+      if (cachedSoundscapes.includes(soundscapeId)) {
+        const playedFromCache = await playFromCache();
+        if (playedFromCache) {
+          return;
+        }
+      }
+
+      audio.addEventListener("error", handleAudioError);
+
+      audio.src = url;
+      audio.title = name;
+      audio.setAttribute("image", image);
+      audio.setAttribute("index", soundscapeId);
+      setCurrentURL(url);
+
+      if (soundscape) {
+        audio.volume = soundscape.volume || 1.0;
+
+        if (isOnline) {
+          saveAudioToIndexedDB(soundscape.index, url)
+            .then(() => {
+              // Update cached soundscapes list if this is newly cached
+              if (!cachedSoundscapes.includes(soundscape.index)) {
+                setCachedSoundscapes((prev) => [...prev, soundscape.index]);
+              }
+            })
+            .catch((error) => {
+              console.error("Error saving audio data URL to IndexedDB:", error);
+            });
+        }
+      } else {
+        // Fallback volume
+        audio.volume = volume || 1.0;
+      }
+
+      // Play the audio
+      audio.play().catch((error) => {
+        console.error("Error playing audio:", error);
+      });
+    },
+    [cachedSoundscapes, isOnline, setCurrentURL]
+  );
+
+  const playPlaylistItem = useCallback(
+    async (playlist, index) => {
+      if (index >= playlist.items.length) {
+        playPlaylistItem(playlist, 0);
+        return;
+      }
+
+      const item = playlist.items[index];
+      const soundscapeIndex = item.index;
+      const soundscape = soundscapes[soundscapeIndex];
+
+      if (!soundscape) {
+        console.error(`Soundscape with index ${soundscapeIndex} not found`);
+        setTimeout(() => {
+          playPlaylistItem(playlist, index + 1);
+        }, 1000);
+        return;
+      }
+
+      const audio = audioRef.current || document.getElementById("player");
+
+      const playFromCache = async () => {
+        try {
+          const cachedDataUrl = await getAudioFromIndexedDB(soundscapeIndex);
+          if (cachedDataUrl) {
+            console.log(
+              `Playing playlist item from cache, soundscape ID: ${soundscapeIndex}`
+            );
+            audio.src = cachedDataUrl;
+            audio.title = soundscape.name;
+            audio.setAttribute("image", soundscape.image);
+            audio.setAttribute("index", soundscapeIndex);
+            audio.volume = soundscape.volume || 1.0;
+            setCurrentURL(cachedDataUrl);
+            setPlaying(true);
+
+            return audio
+              .play()
+              .then(() => {
+                setMessage(
+                  `Playing cached version of: ${soundscape.name} (Playlist: ${playlist.name})`
+                );
+
+                setCurrentPlaylist(playlist);
+                setCurrentPlaylistIndex(index);
+
+                window.dispatchEvent(
+                  new CustomEvent("playlist-change", {
+                    detail: { playlist, index },
+                  })
+                );
+
+                const minutes = parseInt(item.duration);
+                clearTimeout(playlistTimer);
+                const timer = setTimeout(
+                  () => {
+                    playPlaylistItem(playlist, index + 1);
+                  },
+                  minutes * 60 * 1000
+                );
+
+                setPlaylistTimer(timer);
+                return true;
+              })
+              .catch((err) => {
+                console.error("Error playing cached playlist audio:", err);
+                setMessage("Failed to play cached playlist audio");
+
+                setTimeout(() => {
+                  playPlaylistItem(playlist, index + 1);
+                }, 2000);
+                return false;
+              });
+          }
+          return false;
+        } catch (error) {
+          console.error("Error accessing cached playlist audio:", error);
+          return false;
+        }
+      };
+
+      const handleAudioError = async (e) => {
+        console.error(
+          `Error loading playlist audio from URL: ${soundscape.url}`,
+          e
+        );
+        setMessage(
+          "Network error: Attempting to load playlist item from cache..."
+        );
+
+        audio.removeEventListener("error", handleAudioError);
+
+        const playedFromCache = await playFromCache();
+
+        if (!playedFromCache) {
+          setMessage(
+            `Network error: No cached version available for ${soundscape.name}`
+          );
+
+          setTimeout(() => {
+            playPlaylistItem(playlist, index + 1);
+          }, 2000);
+        }
+      };
+
+      if (cachedSoundscapes.includes(soundscapeIndex)) {
+        const playedFromCache = await playFromCache();
+        if (playedFromCache) {
+          return;
+        }
+      }
+
+      audio.addEventListener("error", handleAudioError);
+
+      audio.src = soundscape.url;
+      audio.title = soundscape.name;
+      audio.setAttribute("image", soundscape.image);
+      audio.setAttribute("index", soundscapeIndex);
+      audio.volume = soundscape.volume || 1.0;
+      setCurrentURL(soundscape.url);
+      setPlaying(true);
+
+      if (isOnline) {
+        saveAudioToIndexedDB(soundscapeIndex, soundscape.url)
+          .then(() => {
+            if (!cachedSoundscapes.includes(soundscapeIndex)) {
+              setCachedSoundscapes((prev) => [...prev, soundscapeIndex]);
+            }
+          })
+          .catch((error) => {
+            console.error("Error saving audio data URL to IndexedDB:", error);
+          });
+      }
+
+      // Play the audio
+      audio.play().catch((error) => {
+        console.error("Error playing playlist audio:", error);
+      });
+
+      // Set message
+      setMessage(
+        `Playing playlist: ${playlist.name} - ${soundscape.name} (${item.duration} minutes)`
+      );
+
+      // Set up playlist state
+      setCurrentPlaylist(playlist);
+      setCurrentPlaylistIndex(index);
+
+      // Dispatch event to notify App component about playlist item change
+      window.dispatchEvent(
+        new CustomEvent("playlist-change", {
+          detail: { playlist, index },
+        })
+      );
+
+      // Set timer for next track
+      const minutes = parseInt(item.duration);
+      clearTimeout(playlistTimer);
+      const timer = setTimeout(
+        () => {
+          playPlaylistItem(playlist, index + 1);
+        },
+        minutes * 60 * 1000
+      );
+
+      setPlaylistTimer(timer);
+    },
+    [playlistTimer, cachedSoundscapes, isOnline, setCurrentURL]
+  );
+
+  const playNextLofiSound = useCallback(
+    (currentSoundIndex) => {
+      const lofiSounds = soundscapes.filter((sound) => sound.type === "lofi");
+
+      if (lofiSounds.length === 0) return;
+
+      if (
+        playedLofiSounds.length >= lofiSounds.length ||
+        lofiQueueRef.current.length === 0
+      ) {
+        console.log("All lofi sounds have been played, resetting queue");
+        setPlayedLofiSounds([]);
+
+        const newQueue = lofiSounds
+          .filter((sound) => sound.index !== currentSoundIndex)
+          .sort(() => Math.random() - 0.5)
+          .map((sound) => sound.index);
+
+        lofiQueueRef.current = newQueue;
+      }
+
+      const nextSoundIndex = lofiQueueRef.current.shift();
+      const nextSound = soundscapes[nextSoundIndex];
+
+      if (nextSound) {
+        console.log(
+          `Lofi radio playing next: ${nextSound.name} (index: ${nextSoundIndex})`
+        );
+
+        setPlayedLofiSounds((prev) => [...prev, nextSoundIndex]);
+
+        playSound(
+          nextSound.url,
+          nextSound.volume,
+          nextSound.name,
+          nextSound.image,
+          nextSound.index
+        );
+
+        setMessage(`Now playing: ${nextSound.name}`);
+        setTimeout(() => setMessage(""), 3000);
+      }
+    },
+    [playedLofiSounds, playSound]
+  );
 
   useEffect(() => {
     const handleOnline = () => {
@@ -286,50 +621,7 @@ function Home({ currentURL, setCurrentURL }) {
     return () => {
       audio.removeEventListener("ended", handleAudioEnded);
     };
-  }, [currentPlaylist]);
-
-  const playNextLofiSound = (currentSoundIndex) => {
-    const lofiSounds = soundscapes.filter((sound) => sound.type === "lofi");
-
-    if (lofiSounds.length === 0) return;
-
-    if (
-      playedLofiSounds.length >= lofiSounds.length ||
-      lofiQueueRef.current.length === 0
-    ) {
-      console.log("All lofi sounds have been played, resetting queue");
-      setPlayedLofiSounds([]);
-
-      const newQueue = lofiSounds
-        .filter((sound) => sound.index !== currentSoundIndex)
-        .sort(() => Math.random() - 0.5)
-        .map((sound) => sound.index);
-
-      lofiQueueRef.current = newQueue;
-    }
-
-    const nextSoundIndex = lofiQueueRef.current.shift();
-    const nextSound = soundscapes[nextSoundIndex];
-
-    if (nextSound) {
-      console.log(
-        `Lofi radio playing next: ${nextSound.name} (index: ${nextSoundIndex})`
-      );
-
-      setPlayedLofiSounds((prev) => [...prev, nextSoundIndex]);
-
-      playSound(
-        nextSound.url,
-        nextSound.volume,
-        nextSound.name,
-        nextSound.image,
-        nextSound.index
-      );
-
-      setMessage(`Now playing: ${nextSound.name}`);
-      setTimeout(() => setMessage(""), 3000);
-    }
-  };
+  }, [currentPlaylist, playNextLofiSound]);
 
   useEffect(() => {
     if (window.location.hostname === "/") {
@@ -472,7 +764,7 @@ function Home({ currentURL, setCurrentURL }) {
         });
       }
     });
-  }, []);
+  }, [playSound]);
 
   useEffect(() => {
     setPlaylists(getPlaylists());
@@ -517,7 +809,7 @@ function Home({ currentURL, setCurrentURL }) {
       window.removeEventListener("playlist-next", handlePlaylistNext);
       window.removeEventListener("playlist-previous", handlePlaylistPrevious);
     };
-  }, [currentPlaylist, playlistTimer]);
+  }, [currentPlaylist, playlistTimer, playPlaylistItem]);
 
   const handleAddToPlaylist = (soundscape) => {
     if (playlistItems.some((item) => item.index === soundscape.index)) {
@@ -561,12 +853,6 @@ function Home({ currentURL, setCurrentURL }) {
       return;
     }
 
-    const newPlaylist = savePlaylist(
-      playlistName,
-      playlistDescription,
-      playlistItems,
-      editingPlaylist?.id
-    );
     setPlaylists(getPlaylists());
     setShowPlaylistDialog(false);
     setPlaylistName("");
@@ -581,299 +867,6 @@ function Home({ currentURL, setCurrentURL }) {
     setPlaylistDescription("");
     setPlaylistItems([]);
     setEditingPlaylist(null);
-  };
-
-  // Simple function to set the volume based on the soundscape setting
-  const setAudioVolume = (soundscape) => {
-    if (!audioRef.current || !soundscape) return;
-
-    // Use the volume setting directly from the soundscape object
-    audioRef.current.volume = soundscape.volume || 1.0;
-  };
-
-  const playSound = async (url, volume, name, image, index) => {
-    const audio = audioRef.current || document.getElementById("player");
-
-    const currentSound = soundscapes[index];
-    const isLofi = currentSound?.type === "lofi";
-    if (isLofi) {
-      setPlayedLofiSounds((prev) => [...prev, index]);
-    }
-    audio.loop = !isLofi;
-
-    // Check if we are playing or pausing the same sound
-    const isSameSound = audio.src === url;
-    const isCurrentlyPlaying = !document.getElementById("player").paused;
-
-    // If clicking the currently playing sound, just pause it
-    if (isSameSound && isCurrentlyPlaying) {
-      audio.pause();
-      return;
-    }
-
-    // Extract the soundKey from the URL or name
-    const soundName = name.toLowerCase().replace(/\s+/g, "-");
-
-    // Increment the session count right when a new sound is selected to play
-    if (!isSameSound) {
-      window.incrementSessionCount?.(soundName);
-      console.log(
-        `Button clicked: incrementing session count for ${soundName}`
-      );
-    }
-
-    const soundscape = soundscapes.find((s) => s.url === url);
-    const soundscapeId = soundscape ? soundscape.index : index;
-
-    const playFromCache = async () => {
-      try {
-        const cachedDataUrl = await getAudioFromIndexedDB(soundscapeId);
-        if (cachedDataUrl) {
-          console.log(`Playing from cache for soundscape ID: ${soundscapeId}`);
-          audio.src = cachedDataUrl;
-          audio.title = name;
-          audio.setAttribute("image", image);
-          audio.setAttribute("index", soundscapeId);
-          setCurrentURL(cachedDataUrl);
-          audio.volume = soundscape ? soundscape.volume || 1.0 : volume || 1.0;
-
-          return audio
-            .play()
-            .then(() => {
-              setMessage(`Playing cached version of: ${name}`);
-              return true;
-            })
-            .catch((err) => {
-              console.error("Error playing cached audio:", err);
-              setMessage("Failed to play cached audio");
-              return false;
-            });
-        }
-        return false;
-      } catch (error) {
-        console.error("Error accessing cached audio:", error);
-        return false;
-      }
-    };
-
-    const handleAudioError = async (e) => {
-      console.error(`Error loading audio from URL: ${url}`, e);
-      setMessage("Network error: Attempting to load from cache...");
-      audio.removeEventListener("error", handleAudioError);
-
-      const playedFromCache = await playFromCache();
-
-      if (!playedFromCache) {
-        setMessage(`Network error: No cached version available for ${name}`);
-      }
-    };
-
-    if (cachedSoundscapes.includes(soundscapeId)) {
-      const playedFromCache = await playFromCache();
-      if (playedFromCache) {
-        return;
-      }
-    }
-
-    audio.addEventListener("error", handleAudioError);
-
-    audio.src = url;
-    audio.title = name;
-    audio.setAttribute("image", image);
-    audio.setAttribute("index", soundscapeId);
-    setCurrentURL(url);
-
-    if (soundscape) {
-      audio.volume = soundscape.volume || 1.0;
-
-      if (isOnline) {
-        saveAudioToIndexedDB(soundscape.index, url)
-          .then(() => {
-            // Update cached soundscapes list if this is newly cached
-            if (!cachedSoundscapes.includes(soundscape.index)) {
-              setCachedSoundscapes((prev) => [...prev, soundscape.index]);
-            }
-          })
-          .catch((error) => {
-            console.error("Error saving audio data URL to IndexedDB:", error);
-          });
-      }
-    } else {
-      // Fallback volume
-      audio.volume = volume || 1.0;
-    }
-
-    // Play the audio
-    audio.play().catch((error) => {
-      console.error("Error playing audio:", error);
-    });
-  };
-
-  const playPlaylistItem = async (playlist, index) => {
-    if (index >= playlist.items.length) {
-      playPlaylistItem(playlist, 0);
-      return;
-    }
-
-    const item = playlist.items[index];
-    const soundscapeIndex = item.index;
-    const soundscape = soundscapes[soundscapeIndex];
-
-    if (!soundscape) {
-      console.error(`Soundscape with index ${soundscapeIndex} not found`);
-      setTimeout(() => {
-        playPlaylistItem(playlist, index + 1);
-      }, 1000);
-      return;
-    }
-
-    const audio = audioRef.current || document.getElementById("player");
-
-    const playFromCache = async () => {
-      try {
-        const cachedDataUrl = await getAudioFromIndexedDB(soundscapeIndex);
-        if (cachedDataUrl) {
-          console.log(
-            `Playing playlist item from cache, soundscape ID: ${soundscapeIndex}`
-          );
-          audio.src = cachedDataUrl;
-          audio.title = soundscape.name;
-          audio.setAttribute("image", soundscape.image);
-          audio.setAttribute("index", soundscapeIndex);
-          audio.volume = soundscape.volume || 1.0;
-          setCurrentURL(cachedDataUrl);
-          setPlaying(true);
-
-          return audio
-            .play()
-            .then(() => {
-              setMessage(
-                `Playing cached version of: ${soundscape.name} (Playlist: ${playlist.name})`
-              );
-
-              setCurrentPlaylist(playlist);
-              setCurrentPlaylistIndex(index);
-
-              window.dispatchEvent(
-                new CustomEvent("playlist-change", {
-                  detail: { playlist, index },
-                })
-              );
-
-              const minutes = parseInt(item.duration);
-              clearTimeout(playlistTimer);
-              const timer = setTimeout(
-                () => {
-                  playPlaylistItem(playlist, index + 1);
-                },
-                minutes * 60 * 1000
-              );
-
-              setPlaylistTimer(timer);
-              return true;
-            })
-            .catch((err) => {
-              console.error("Error playing cached playlist audio:", err);
-              setMessage("Failed to play cached playlist audio");
-
-              setTimeout(() => {
-                playPlaylistItem(playlist, index + 1);
-              }, 2000);
-              return false;
-            });
-        }
-        return false;
-      } catch (error) {
-        console.error("Error accessing cached playlist audio:", error);
-        return false;
-      }
-    };
-
-    const handleAudioError = async (e) => {
-      console.error(
-        `Error loading playlist audio from URL: ${soundscape.url}`,
-        e
-      );
-      setMessage(
-        "Network error: Attempting to load playlist item from cache..."
-      );
-
-      audio.removeEventListener("error", handleAudioError);
-
-      const playedFromCache = await playFromCache();
-
-      if (!playedFromCache) {
-        setMessage(
-          `Network error: No cached version available for ${soundscape.name}`
-        );
-
-        setTimeout(() => {
-          playPlaylistItem(playlist, index + 1);
-        }, 2000);
-      }
-    };
-
-    if (cachedSoundscapes.includes(soundscapeIndex)) {
-      const playedFromCache = await playFromCache();
-      if (playedFromCache) {
-        return;
-      }
-    }
-
-    audio.addEventListener("error", handleAudioError);
-
-    audio.src = soundscape.url;
-    audio.title = soundscape.name;
-    audio.setAttribute("image", soundscape.image);
-    audio.setAttribute("index", soundscapeIndex);
-    audio.volume = soundscape.volume || 1.0;
-    setCurrentURL(soundscape.url);
-    setPlaying(true);
-
-    if (isOnline) {
-      saveAudioToIndexedDB(soundscapeIndex, soundscape.url)
-        .then(() => {
-          if (!cachedSoundscapes.includes(soundscapeIndex)) {
-            setCachedSoundscapes((prev) => [...prev, soundscapeIndex]);
-          }
-        })
-        .catch((error) => {
-          console.error("Error saving audio data URL to IndexedDB:", error);
-        });
-    }
-
-    // Play the audio
-    audio.play().catch((error) => {
-      console.error("Error playing playlist audio:", error);
-    });
-
-    // Set message
-    setMessage(
-      `Playing playlist: ${playlist.name} - ${soundscape.name} (${item.duration} minutes)`
-    );
-
-    // Set up playlist state
-    setCurrentPlaylist(playlist);
-    setCurrentPlaylistIndex(index);
-
-    // Dispatch event to notify App component about playlist item change
-    window.dispatchEvent(
-      new CustomEvent("playlist-change", {
-        detail: { playlist, index },
-      })
-    );
-
-    // Set timer for next track
-    const minutes = parseInt(item.duration);
-    clearTimeout(playlistTimer);
-    const timer = setTimeout(
-      () => {
-        playPlaylistItem(playlist, index + 1);
-      },
-      minutes * 60 * 1000
-    );
-
-    setPlaylistTimer(timer);
   };
 
   const stopPlaylist = () => {

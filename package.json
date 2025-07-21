@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "turbo dev",
     "build": "turbo build",
-    "lint": "oxlint .",
+    "lint": "oxlint --deny-warnings --ignore-pattern=\"**/*.astro\"",
     "format": "prettier --write \"**/*.{ts,tsx,md,html,json,css,yml}\""
   },
   "devDependencies": {

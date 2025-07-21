@@ -29,12 +29,10 @@ interface ClockWidgetProps {}
 export const ClockWidget: Component<ClockWidgetProps> = () => {
   // Use createStoredSignal directly
   const [clock, setClock] = createSignal({ time: "", date: "" });
-  const [clockContained, setClockContained] = createStoredSignal(
+  const [_clockContained, setClockContained] = createStoredSignal(
     "clockContained",
     true
   );
-  const [textStyle] = createStoredSignal("textStyle", "normal");
-
   // Update the clock each second
   onMount(() => {
     const updateClock = () => {

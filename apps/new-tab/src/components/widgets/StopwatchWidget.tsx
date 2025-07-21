@@ -15,7 +15,7 @@ export const StopwatchWidget: Component<StopwatchWidgetProps> = () => {
     "stopwatchRunning",
     false
   );
-  const [stopwatchContained, setStopwatchContained] = createStoredSignal(
+  const [_stopwatchContained, setStopwatchContained] = createStoredSignal(
     "stopwatchContained",
     true
   );

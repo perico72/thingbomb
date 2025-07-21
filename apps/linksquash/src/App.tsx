@@ -2,6 +2,7 @@ import { createStoredSignal } from "./hooks/localStorage";
 import { TextField, TextFieldRoot } from "@/components/ui/input";
 import { TrashIcon, Download, Upload, Plus } from "lucide-solid";
 import { createSignal, For, JSX } from "solid-js";
+import { Button } from "./components/ui/button";
 
 function debounce(fn: Function, ms: number) {
   let timeoutId: number | undefined;
@@ -222,50 +223,45 @@ function App() {
   });
 
   return (
-    <div class="p-10 text-center pt-20 max-w-4xl m-auto text-black dark:text-white">
+    <div class="p-10 text-center pt-20 max-w-4xl m-auto">
       <div class="flex gap-2 justify-between items-center">
-        <h1 class="text-xl tracking-tight font-medium text-black dark:text-white select-none">
+        <h1 class="text-xl tracking-tight font-medium select-none">
           Linksquash
         </h1>
         <div class="flex gap-2 justify-center items-center">
-          <button
+          <Button
             onClick={() => {
               const newEntry = { id: crypto.randomUUID(), path: "", url: "" };
               stableAliasArray.push(newEntry);
               setStableEntries([...stableAliasArray]);
             }}
-            class="text-white bg-black dark:text-black dark:bg-white rounded-lg font-normal px-3
-              py-2 w-full hover:bg-black/80 dark:hover:bg-white/80 flex items-center gap-2"
           >
             <Plus class="size-4" />
             Add new alias
-          </button>
-          <button
-            onClick={exportAliasesToCSV}
-            class="flex items-center gap-2 text-black bg-transparent dark:text-white rounded-lg
-              font-normal hover:bg-black/80 px-3 py-2 dark:hover:bg-white/20"
-          >
+          </Button>
+          <Button onClick={exportAliasesToCSV} variant="outline">
             <Download class="size-4" /> Export
-          </button>
-          <label
-            class="items-center flex gap-2 text-black bg-transparent dark:text-white rounded-lg
-              font-normal hover:bg-black/80 px-3 py-2 dark:hover:bg-white/20"
+          </Button>
+          <Button
+            variant="outline"
+            onClick={() => document.getElementById("import-file")!.click()}
           >
             <Upload class="size-4" /> Import
-            <input
-              type="file"
-              accept=".csv"
-              class="hidden"
-              onChange={importAliasesFromCSV}
-            />
-          </label>
+          </Button>
+          <input
+            type="file"
+            accept=".csv"
+            class="hidden"
+            onChange={importAliasesFromCSV}
+            id="import-file"
+          />
         </div>
       </div>
 
       <div class="mb-6 mt-4">
         <For each={stableEntries()}>
           {(entry) => (
-            <div class="flex gap-1 mt-1">
+            <div class="flex gap-2 mt-2 bg-neutral-800 p-2 rounded-lg">
               <TextFieldRoot class="flex-1">
                 <TextField
                   placeholder="Alias (/pathname)"
@@ -323,9 +319,9 @@ function App() {
                   class="font-semibold w-full"
                 />
               </TextFieldRoot>
-              <button
-                class="text-white bg-black dark:text-black dark:bg-white rounded-md border-1
-                  border-white/50 font-semibold p-1 hover:bg-black/80 dark:hover:bg-white/80"
+              <Button
+                size="default"
+                variant="outline"
                 onClick={() => {
                   const index = stableAliasArray.findIndex(
                     (item) => item.id === entry.id
@@ -337,12 +333,12 @@ function App() {
                   }
                 }}
               >
-                <TrashIcon class="size-5" />
-              </button>
+                <TrashIcon class="size-4" />
+              </Button>
             </div>
           )}
         </For>
-        <p class="text-[16px] mb-5 mt-5 text-zinc-800 dark:text-zinc-200">
+        <p class="text-[16px] mb-5 mt-4 text-neutral-800 dark:text-neutral-200">
           Create your own URL aliases on linksquash.com. Your aliases are all
           yours; aliases are stored locally in your browser and only work for
           you. Make sure you save backups since browsers can be unpredictable

@@ -3,35 +3,34 @@ import { Bookmark } from "../../types";
 import { createStoredSignal } from "@/hooks/localStorage";
 
 const PinnedBookmarks = () => {
-  const [bookmarksShown, setBookmarksShown] = createStoredSignal<Bookmark[]>(
-    "bookmarksShown",
-    []
+  const [bookmarksShown] = createStoredSignal<Bookmark[]>("bookmarksShown", []);
+  const [bookmarksContained] = createStoredSignal<boolean>(
+    "bookmarksContained",
+    true
   );
-  const [bookmarksContained, setBookmarksContained] =
-    createStoredSignal<boolean>("bookmarksContained", true);
 
   return (
     <Show when={bookmarksContained()}>
       <Show when={bookmarksShown().length > 0}>
         <br />
         <div class="flex gap-2 flex-wrap justify-center">
-          {(bookmarksShown() as Array<Bookmark>).map((bookmark: Bookmark) => (
+          {bookmarksShown().map((bookmark: Bookmark) => (
             <a
-              href={bookmark.url}
+              href={bookmark.url!}
               onmousedown={(e) => {
                 e.preventDefault();
                 if (!(e.ctrlKey || e.metaKey)) {
-                  window.location.href = bookmark.url;
+                  window.location.href = bookmark.url!;
                 } else {
-                  window.open(bookmark.url);
+                  window.open(bookmark.url!);
                 }
               }}
               onclick={(e) => {
                 e.preventDefault();
                 if (!(e.ctrlKey || e.metaKey)) {
-                  window.location.href = bookmark.url;
+                  window.location.href = bookmark.url!;
                 } else {
-                  window.open(bookmark.url);
+                  window.open(bookmark.url!);
                 }
               }}
               class="font-medium text-xl h-[45px] p-4 text-white bg-black/30 backdrop-blur-3xl flex

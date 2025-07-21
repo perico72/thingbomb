@@ -6,34 +6,13 @@ import { StopwatchWidgetControl } from "../widgets/StopwatchWidgetControl";
 import { createStoredSignal } from "@/hooks/localStorage";
 
 export const TopWidgetsContainer = () => {
-  const [itemsHidden, setItemsHidden] = createStoredSignal<boolean>(
-    "itemsHidden",
-    false
-  );
-  const [bookmarksContained, setBookmarksContained] = createStoredSignal(
-    "bookmarksContained",
-    true
-  );
-  const [natureSounds, setNatureSounds] = createStoredSignal(
-    "natureSounds",
-    false
-  );
-  const [focusSounds, setFocusSounds] = createStoredSignal(
-    "focusSounds",
-    false
-  );
-  const [ambienceSounds, setAmbienceSounds] = createStoredSignal(
-    "ambienceSounds",
-    false
-  );
-  const [counterContained, setCounterContained] = createStoredSignal(
-    "counterContained",
-    false
-  );
-  const [stopwatchContained, setStopwatchContained] = createStoredSignal(
-    "stopwatchContained",
-    false
-  );
+  const [itemsHidden] = createStoredSignal<boolean>("itemsHidden", false);
+  const [bookmarksContained] = createStoredSignal("bookmarksContained", true);
+  const [natureSounds] = createStoredSignal("natureSounds", false);
+  const [focusSounds] = createStoredSignal("focusSounds", false);
+  const [ambienceSounds] = createStoredSignal("ambienceSounds", false);
+  const [counterContained] = createStoredSignal("counterContained", false);
+  const [stopwatchContained] = createStoredSignal("stopwatchContained", false);
   return (
     <div
       id="top-widgets-container"
