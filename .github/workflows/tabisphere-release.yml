@@ -65,7 +65,7 @@ jobs:
         run: |
           FILENAME="${PROJECT_NAME}-${{ steps.version.outputs.version }}.zip"
           zip -r "$FILENAME" ./*
-          gh release create "${{ steps.version.outputs.version }}" --generate-notes "$FILENAME"
+          gh release create "[Tabisphere] ${{ steps.version.outputs.version }}" --generate-notes "$FILENAME"
 
   Chrome:
     if: needs.Version.outputs.created
