@@ -1,9 +1,4 @@
 {
-  "manifest_version": 3,
-  "name": "Tabisphere",
-  "version": "1.0.1",
-  "description": "Organize webpages like a pro",
-  "permissions": ["bookmarks", "contextMenus", "notifications", "tabs"],
   "action": {
     "default_title": "Tabisphere",
     "default_icon": {
@@ -13,8 +8,13 @@
   "background": {
     "service_worker": "background.js"
   },
-  "options_page": "index.html",
+  "description": "Organize webpages like a pro",
   "icons": {
     "128": "icon-128.png"
-  }
+  },
+  "manifest_version": 3,
+  "name": "Tabisphere",
+  "options_page": "index.html",
+  "permissions": ["bookmarks", "contextMenus", "notifications", "tabs"],
+  "version": "1.0.1"
 }

@@ -436,7 +436,10 @@ function App() {
       <div className="flex items-center gap-2 justify-between w-full">
         <h1 className="text-2xl font-semibold pl-2 select-none">Home</h1>
       </div>
-      <div className="flex items-center gap-2 justify-between w-full pl-2 py-2 sticky top-0 bg-background z-40">
+      <div
+        className="flex items-center gap-2 justify-between w-full pl-2 py-2 sticky top-0
+          bg-background z-40"
+      >
         {bookmarkTree.length > 0 ? (
           <div className="w-full">
             <div className="flex items-center justify-start gap-2 w-full">
@@ -523,7 +526,8 @@ function App() {
                     {tabs.map((tab) => (
                       <div
                         key={tab.id}
-                        className="text-[16px] bg-black/5 border border-black/10 rounded-xl p-2 px-3.5 font-medium flex flex-row gap-3 items-center"
+                        className="text-[16px] bg-black/5 border border-black/10 rounded-xl p-2 px-3.5 font-medium
+                          flex flex-row gap-3 items-center"
                       >
                         <div className="flex flex-col flex-1 overflow-hidden">
                           <span
@@ -611,7 +615,8 @@ function App() {
                 onBlur={() => setSearchShown(false)}
                 placeholder="Search"
                 className={cn(
-                  "h-[32px] w-0 border-0 shadow-none px-0 py-1 transition-all ring-0 focus-visible:ring-0",
+                  `h-[32px] w-0 border-0 shadow-none px-0 py-1 transition-all ring-0
+                  focus-visible:ring-0`,
                   {
                     "w-[120px] pr-3": searchShown || searchValue.length > 0,
                   }
@@ -678,7 +683,11 @@ function App() {
                     <Label htmlFor="folder-select">Folder</Label>
                     <select
                       id="folder-select"
-                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm
+                        ring-offset-background file:border-0 file:bg-transparent file:text-sm
+                        file:font-medium placeholder:text-muted-foreground focus-visible:outline-none
+                        focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2
+                        disabled:cursor-not-allowed disabled:opacity-50"
                       value={selectedFolder}
                       onChange={(e) => setSelectedFolder(e.target.value)}
                     >
@@ -856,7 +865,10 @@ function App() {
                                 }
                               }}
                             >
-                              <span className="absolute inset-0 hover:bg-foreground/5 rounded-md group-focus-within:bg-foreground/5 group-focus-within:outline-2 transition-all"></span>
+                              <span
+                                className="absolute inset-0 hover:bg-foreground/5 rounded-md
+                                  group-focus-within:bg-foreground/5 group-focus-within:outline-2 transition-all"
+                              ></span>
                               <div className="flex flex-row gap-1.5 items-center">
                                 <div
                                   className={cn(
@@ -1216,7 +1228,11 @@ function App() {
               <Label htmlFor="move-folder-select">Destination folder</Label>
               <select
                 id="move-folder-select"
-                className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm
+                  ring-offset-background file:border-0 file:bg-transparent file:text-sm
+                  file:font-medium placeholder:text-muted-foreground focus-visible:outline-none
+                  focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2
+                  disabled:cursor-not-allowed disabled:opacity-50"
                 value={selectedFolder}
                 onChange={(e) => setSelectedFolder(e.target.value)}
               >

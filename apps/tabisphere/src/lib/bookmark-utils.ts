@@ -276,8 +276,8 @@ export function getSpecialFolders(
             node.title === "Bookmarks Bar"
               ? "bookmarks-bar"
               : node.title === "Other Bookmarks"
-              ? "other"
-              : "mobile";
+                ? "other"
+                : "mobile";
 
           specialFolders.push({
             name: node.title,

@@ -110,7 +110,8 @@ export default function FilterDialog({
                     return (
                       <div
                         key={filter.id}
-                        className="flex gap-2 items-center border bg-background dark:bg-input/30 dark:border-input p-1 px-3 rounded-full w-fit"
+                        className="flex gap-2 items-center border bg-background dark:bg-input/30 dark:border-input
+                          p-1 px-3 rounded-full w-fit"
                       >
                         <div className="flex whitespace-nowrap">
                           <span className="text-sm font-medium">
@@ -167,7 +168,11 @@ export default function FilterDialog({
               <div className="space-y-2">
                 <Label>Filter category</Label>
                 <select
-                  className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                  className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm
+                    ring-offset-background file:border-0 file:bg-transparent file:text-sm
+                    file:font-medium placeholder:text-muted-foreground focus-visible:outline-none
+                    focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2
+                    disabled:cursor-not-allowed disabled:opacity-50"
                   value={currentFilter.category}
                   onChange={(e) => {
                     setCurrentFilter({
@@ -189,7 +194,11 @@ export default function FilterDialog({
               <div className="space-y-2">
                 <Label>Filter type</Label>
                 <select
-                  className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                  className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm
+                    ring-offset-background file:border-0 file:bg-transparent file:text-sm
+                    file:font-medium placeholder:text-muted-foreground focus-visible:outline-none
+                    focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2
+                    disabled:cursor-not-allowed disabled:opacity-50"
                   value={currentFilter.type}
                   onChange={(e) => {
                     setCurrentFilter({
@@ -219,18 +228,18 @@ export default function FilterDialog({
                     {currentFilter.category === "date"
                       ? "Number of days"
                       : currentFilter.type === "is-secure"
-                      ? "Enter 'true' for HTTPS only"
-                      : "Filter Value"}
+                        ? "Enter 'true' for HTTPS only"
+                        : "Filter Value"}
                   </Label>
                   <Input
                     placeholder={
                       currentFilter.category === "date"
                         ? "Enter number of days"
                         : currentFilter.type === "is-secure"
-                        ? "true or false"
-                        : currentFilter.category === "url"
-                        ? "Enter domain, path, or URL text"
-                        : "Enter text to filter by"
+                          ? "true or false"
+                          : currentFilter.category === "url"
+                            ? "Enter domain, path, or URL text"
+                            : "Enter text to filter by"
                     }
                     value={currentFilter.value}
                     onChange={(e) => {

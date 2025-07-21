@@ -80,9 +80,9 @@ function WhiteNoise() {
         <br />
         <br />
         <p className="text-red-200">
-          ⚠︎ Please check your volume before playing. White Noise can be intense
-          and potentially harmful at high volumes. Start at a low volume and
-          gradually increase it until you find a comfortable level. Try out{" "}
+          ⚠︎ Please check your volume before playing. White Noise can be
+          intense and potentially harmful at high volumes. Start at a low volume
+          and gradually increase it until you find a comfortable level. Try out{" "}
           <Link to="/pink-noise" className="text-red-400 hover:underline">
             Pink Noise
           </Link>{" "}

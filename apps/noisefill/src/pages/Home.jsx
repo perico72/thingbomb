@@ -762,9 +762,12 @@ function Home({ currentURL, setCurrentURL }) {
 
               const minutes = parseInt(item.duration);
               clearTimeout(playlistTimer);
-              const timer = setTimeout(() => {
-                playPlaylistItem(playlist, index + 1);
-              }, minutes * 60 * 1000);
+              const timer = setTimeout(
+                () => {
+                  playPlaylistItem(playlist, index + 1);
+                },
+                minutes * 60 * 1000
+              );
 
               setPlaylistTimer(timer);
               return true;
@@ -863,9 +866,12 @@ function Home({ currentURL, setCurrentURL }) {
     // Set timer for next track
     const minutes = parseInt(item.duration);
     clearTimeout(playlistTimer);
-    const timer = setTimeout(() => {
-      playPlaylistItem(playlist, index + 1);
-    }, minutes * 60 * 1000);
+    const timer = setTimeout(
+      () => {
+        playPlaylistItem(playlist, index + 1);
+      },
+      minutes * 60 * 1000
+    );
 
     setPlaylistTimer(timer);
   };
@@ -1142,7 +1148,7 @@ function Home({ currentURL, setCurrentURL }) {
                       <div
                         key={itemIndex}
                         className={`text-sm flex items-center gap-1 p-1 rounded ${
-                          currentPlaylist?.name === playlist.name &&
+                        currentPlaylist?.name === playlist.name &&
                           currentPlaylistIndex === itemIndex
                             ? "bg-gray-900"
                             : ""
