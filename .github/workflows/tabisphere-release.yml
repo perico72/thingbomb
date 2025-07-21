@@ -33,10 +33,10 @@ jobs:
           cache: npm
 
       - name: Install dependencies from monorepo root
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Build Tabisphere app from monorepo root
-        run: npm run build --workspace=tabisphere
+        run: pnpm run build
 
       - name: Create tag if necessary
         uses: fregante/daily-version-action@v2
