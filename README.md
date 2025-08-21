@@ -1,16 +1,13 @@
 # Thingbomb - Monorepo
 
-We are moving to a single monorepo for all our projects to better share code and reduce the amount of repositories we have to manage.
+We are moving to a monorepo for all our projects to better share code and reduce the amount of repositories we have to manage.
 
 ## Projects
-
-**might still be in progress of migrating**
 
 - [Blooft](./apps/new-tab)
 - [Blooft Web](./apps/blooft-www)
 - [Thingbomb](./apps/thingbomb)
 - [Linksquash](./apps/linksquash)
-- [Noisefill](./apps/noisefill)
 - [Tabisphere](./apps/tabisphere)
 
 ## License
