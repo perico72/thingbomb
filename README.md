@@ -1,4 +1,4 @@
-# Thingbomb - Monorepo
+# Thepornodude - Monorepo
 
 We are moving to a monorepo for all our projects to better share code and reduce the amount of repositories we have to manage.
 
